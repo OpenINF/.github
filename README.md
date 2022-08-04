@@ -6,8 +6,10 @@
 
 <br />
 
-> **Note**: This is a repository for default metadata and community health files for use across all
-> projects in the [@openinf](https://github.com/openinf) organization. If a given community health file doesn’t exist for a repository, the organization-wide defaults in this repository will be used.
+> **Note**: This is a repository for default metadata and community health files
+> for use across all projects in the [@openinf](https://github.com/openinf)
+> organization. If a given community health file doesn’t exist for a repository,
+> the organization-wide defaults in this repository will be used.
 
 <br />
 
@@ -26,7 +28,10 @@
 
 <br />
 
-> **Note**: While these files themseves won’t appear in the file browser or Git history of each repository, they will be surfaced throughout developers’ workflows, such as when opening a new issue or when viewing the Community Profile, just as if it were committed to the repository directly.[^1]
+> **Note**: While these files themseves won’t appear in the file browser or Git
+> history of each repository, they will be surfaced throughout developers’
+> workflows, such as when opening a new issue or when viewing the Community
+> Profile, just as if it were committed to the repository directly.[^1]
 
 <br />
 
@@ -34,7 +39,9 @@
 
 <br />
 
-> **Warning**: We cannot create organization-wide defaults for the following files and must be added to each individual repositories so that the file(s) will be included when a project is cloned, packaged, or downloaded.
+> **Warning**: We cannot create organization-wide defaults for the following
+> files and must be added to each individual repositories so that the file(s)
+> will be included when a project is cloned, packaged, or downloaded.
 
 <br />
 
@@ -44,4 +51,5 @@
 | `README`              | Homepage                 | Serves as a project landing page of sorts                            |
 | `LICENSE`             | Software License(s)      | The open source software license(s) associated with a project        |
 
-[^1]: https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/
+[^1]:
+    https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/
