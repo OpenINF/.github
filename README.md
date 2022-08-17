@@ -45,13 +45,13 @@
 
 <br />
 
-| Community health file | Title                    | Description                                                              |
-| --------------------- | ------------------------ | ------------------------------------------------------------------------ |
-| `AUTHORS`             | The OpenINF Authors      | Lists the code contributors of their respective project repositories[^2] |
-| `README`              | Homepage                 | Serves as a project landing page of sorts                                |
-| `LICENSE`             | Software License(s)      | The open source software license(s) associated with a project            |
+| Community health file | Title               | Description                                                              |
+| --------------------- | ------------------- | ------------------------------------------------------------------------ |
+| `AUTHORS`             | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
+| `README`              | Homepage            | Serves as a project landing page of sorts                                |
+| `LICENSE`             | Software License(s) | The open source software license(s) associated with a project            |
 
 [^1]:
     https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/
-[^2]:
-    https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values
+
+[^2]: https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values
