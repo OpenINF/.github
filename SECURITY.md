@@ -3,7 +3,7 @@
 # Security Policy
 
 The OpenINF team, currently composed of a single active maintainer, takes the
-security of OpenINF and the applications created with it its SDK seriously. This
+security of OpenINF and the applications created with its SDK seriously. This
 page describes how to report any vulnerabilities you may find and lists best
 practices to minimize the risk of introducing or being affected by a
 vulnerability.
