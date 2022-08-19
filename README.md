@@ -56,11 +56,11 @@
 
 [^2]: https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values
 
-[`AUTHORS`]: https://github.com/openinf/.github/blob/HEAD/AUTHORS.md "List of people who have contributed code to this project"
+[`AUTHORS`]: https://github.com/openinf/.github/blob/HEAD/AUTHORS "List of people who have contributed code to this project"
 [`CODE_OF_CONDUCT`]: https://github.com/openinf/.github/blob/HEAD/CODE_OF_CONDUCT.md "Standards for how to engage with this project community"
 [`CONTRIBUTING`]: https://github.com/openinf/.github/blob/HEAD/CONTRIBUTING.md "Contribution guidelines for this project"
-[`FUNDING`]: https://github.com/openinf/.github/blob/HEAD/FUNDING.md "Funding options for this project"
-[`LICENSE`]: https://github.com/openinf/.github/blob/HEAD/LICENSE.md "The open source software license(s) associated with this project"
+[`FUNDING`]: https://github.com/openinf/.github/blob/HEAD/FUNDING.yml "Funding options for this project"
+[`LICENSE`]: https://github.com/openinf/.github/blob/HEAD/LICENSE "The open source software license(s) associated with this project"
 [`README`]: https://github.com/openinf/.github/blob/HEAD/README.md "The landing/home page of this project"
 [`SECURITY`]: https://github.com/openinf/.github/blob/HEAD/SECURITY.md "Instructions for how to report a security vulnerability with this project"
 [`SUPPORT`]: https://github.com/openinf/.github/blob/HEAD/SUPPORT.md "Where to get help on this project"
