@@ -223,7 +223,7 @@
   // MD043/required-headings/required-headers - Required heading structure
   "MD043": {
     // List of headings
-    "headings": "+"
+    "headings": ["+"]
   },
 
   // MD044/proper-names - Proper names should have the correct capitalization
