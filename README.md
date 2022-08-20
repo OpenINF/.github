@@ -60,27 +60,27 @@
 
 [**@openinf**]: https://github.com/openinf
 [**@openinf/.github**]: https://github.com/openinf/.github
-[`AUTHORS`]:
+[`authors`]:
   https://github.com/openinf/.github/blob/HEAD/AUTHORS
   'List of people who have contributed code to this project'
-[`CODE_OF_CONDUCT`]:
+[`code_of_conduct`]:
   https://github.com/openinf/.github/blob/HEAD/CODE_OF_CONDUCT.md
   'Standards for how to engage with this project community'
-[`CONTRIBUTING`]:
+[`contributing`]:
   https://github.com/openinf/.github/blob/HEAD/CONTRIBUTING.md
   'Contribution guidelines for this project'
-[`FUNDING`]:
+[`funding`]:
   https://github.com/openinf/.github/blob/HEAD/FUNDING.yml
   'Funding options for this project'
-[`LICENSE`]:
+[`license`]:
   https://github.com/openinf/.github/blob/HEAD/LICENSE
   'The open source software license(s) associated with this project'
-[`README`]:
+[`readme`]:
   https://github.com/openinf/.github/blob/HEAD/README.md
   'The landing/home page of this project'
-[`SECURITY`]:
+[`security`]:
   https://github.com/openinf/.github/blob/HEAD/SECURITY.md
   'Instructions for how to report a security vulnerability with this project'
-[`SUPPORT`]:
+[`support`]:
   https://github.com/openinf/.github/blob/HEAD/SUPPORT.md
   'Where to get help on this project'
