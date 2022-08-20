@@ -1,14 +1,13 @@
-<div align="center">
+[//]: # DO-NOT-REMOVE-README-TITLE
 
-# @openinf/.github
-
-</div>
+<h1 align="center">@openinf/.github</h1>
 
 <br />
 
-> **Note**: This is a _special_ repository for default metadata and community health files
-> for use across all projects in the [**@openinf**] organization on GitHub. If a given file
-> doesn't exist for a repository, the organization-wide defaults in this repository will be used.
+> **Note**: This is a _special_ repository for default metadata and community
+> health files for use across all projects in the [**@openinf**] organization on
+> GitHub. If a given file doesn't exist for a repository, the organization-wide
+> defaults in this repository will be used.
 
 <br />
 
@@ -39,9 +38,9 @@
 <br />
 
 > **Warning**: We cannot create organization-wide defaults for the following
-> files as they are often unique per project. Therefore, they _must_ be added
-> to each individual repository so that they will be included when the project
-> is cloned, packaged, or downloaded. Refer to the ones contained in
+> files as they are often unique per project. Therefore, they _must_ be added to
+> each individual repository so that they will be included when the project is
+> cloned, packaged, or downloaded. Refer to the ones contained in
 > [**@openinf/.github**] for guidance on how these files are expected to look.
 
 <br />
@@ -57,15 +56,39 @@
 
 [^2]: https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values
 
+<!-- prettier-ignore-start -->
+<!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
+
+
 [**@openinf**]: https://github.com/openinf
 [**@openinf/.github**]: https://github.com/openinf/.github
-[`AUTHORS`]: https://github.com/openinf/.github/blob/HEAD/AUTHORS "List of people who have contributed code to this project"
-[`CODE_OF_CONDUCT`]: https://github.com/openinf/.github/blob/HEAD/CODE_OF_CONDUCT.md "Standards for how to engage with this project community"
-[`CONTRIBUTING`]: https://github.com/openinf/.github/blob/HEAD/CONTRIBUTING.md "Contribution guidelines for this project"
-[`FUNDING`]: https://github.com/openinf/.github/blob/HEAD/FUNDING.yml "Funding options for this project"
-[`LICENSE`]: https://github.com/openinf/.github/blob/HEAD/LICENSE "The open source software license(s) associated with this project"
-[`README`]: https://github.com/openinf/.github/blob/HEAD/README.md "The landing/home page of this project"
-[`SECURITY`]: https://github.com/openinf/.github/blob/HEAD/SECURITY.md "Instructions for how to report a security vulnerability with this project"
-[`SUPPORT`]: https://github.com/openinf/.github/blob/HEAD/SUPPORT.md "Where to get help on this project"
+[`AUTHORS`]:
+  https://github.com/openinf/.github/blob/HEAD/AUTHORS
+  'List of people who have contributed code to this project'
+[`CODE_OF_CONDUCT`]:
+  https://github.com/openinf/.github/blob/HEAD/CODE_OF_CONDUCT.md
+  'Standards for how to engage with the project community'
+[`CONTRIBUTING`]:
+  https://github.com/openinf/.github/blob/HEAD/CONTRIBUTING.md
+  'Contribution guidelines for this project'
+[`FUNDING`]:
+  https://github.com/openinf/.github/blob/HEAD/FUNDING.yml
+  'How to financially support maintenance/development of @openinf projects on GitHub using GitHub Sponsors'
+[`LICENSE`]:
+  https://github.com/openinf/.github/blob/HEAD/LICENSE
+  'The open source software license(s) associated with this project'
+[`README`]:
+  https://github.com/openinf/.github/blob/HEAD/README.md
+  'The landing/home page of this project'
+[`SECURITY`]:
+  https://github.com/openinf/.github/blob/HEAD/SECURITY.md
+  'Instructions on how to report security vulnerabilities for this project'
+[`SUPPORT`]:
+  https://github.com/openinf/.github/blob/HEAD/SUPPORT.md
+  'Where to get help on this project'
 
-[Community Profile]: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
+[Community Profile]:
+  https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
+
+<!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
+<!-- prettier-ignore-end -->
