@@ -223,11 +223,7 @@
   // MD043/required-headings/required-headers - Required heading structure
   "MD043": {
     // List of headings
-    "headings": [
-      "# Head",
-      "## Item",
-      "### Detail"
-    ]
+    "headings": ["# Head", "## Item", "### Detail"]
   },
 
   // MD044/proper-names - Proper names should have the correct capitalization
@@ -279,8 +275,6 @@
   // MD053/link-image-reference-definitions - Link and image reference definitions should be needed
   "MD053": {
     // Ignored definitions
-    "ignored_definitions": [
-      "//"
-    ]
+    "ignored_definitions": ["//"]
   }
 }
