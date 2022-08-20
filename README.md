@@ -29,8 +29,8 @@
 
 > **Note**: While these files themseves won't appear in the file browser or Git
 > history of each repository, they will be surfaced throughout developers'
-> workflows, such as when opening a new issue or when viewing the Community
-> Profile, just as if it were committed to the repository directly.[^1]
+> workflows, such as when opening a new issue or when viewing the
+> [Community Profile], just as if it were committed to the repository directly.[^1]
 
 <br />
 
@@ -67,3 +67,5 @@
 [`README`]: https://github.com/openinf/.github/blob/HEAD/README.md "The landing/home page of this project"
 [`SECURITY`]: https://github.com/openinf/.github/blob/HEAD/SECURITY.md "Instructions for how to report a security vulnerability with this project"
 [`SUPPORT`]: https://github.com/openinf/.github/blob/HEAD/SUPPORT.md "Where to get help on this project"
+
+[Community Profile]: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
