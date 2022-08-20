@@ -28,7 +28,7 @@
 
 > **Note**: While these files themseves won't appear in the file browser or Git
 > history of each repository, they will be surfaced throughout developers'
-> workflows, such as when opening a new issue or when viewing the [Community
+> workflows, such as when opening a new issue or when viewing the [Community >
 > Profile], just as if it were committed to the repository directly.[^1]
 
 <br />
