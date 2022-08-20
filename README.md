@@ -6,10 +6,9 @@
 
 <br />
 
-> **Note**: This is a repository for default metadata and community health files
-> for use across all projects in the [@openinf](https://github.com/openinf)
-> organization. If a given community health file doesn't exist for a repository,
-> the organization-wide defaults in this repository will be used.
+> **Note**: This is a _special_ repository for default metadata and community health files
+> for use across all projects in the [**@openinf**] organization on GitHub. If a given file
+> doesn't exist for a repository, the organization-wide defaults in this repository will be used.
 
 <br />
 
@@ -40,8 +39,10 @@
 <br />
 
 > **Warning**: We cannot create organization-wide defaults for the following
-> files and must be added to each individual repositories so that the file(s)
-> will be included when a project is cloned, packaged, or downloaded.
+> files as they are often unique per project. Therefore, they _must_ be added
+> to each individual repository so that they will be included when the project
+> is cloned, packaged, or downloaded. Refer to the ones contained in
+> [**@openinf/.github**] for guidance on how these files are expected to look.
 
 <br />
 
@@ -56,6 +57,8 @@
 
 [^2]: https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values
 
+[**@openinf**]: https://github.com/openinf
+[**@openinf/.github**]: https://github.com/openinf/.github
 [`AUTHORS`]: https://github.com/openinf/.github/blob/HEAD/AUTHORS "List of people who have contributed code to this project"
 [`CODE_OF_CONDUCT`]: https://github.com/openinf/.github/blob/HEAD/CODE_OF_CONDUCT.md "Standards for how to engage with this project community"
 [`CONTRIBUTING`]: https://github.com/openinf/.github/blob/HEAD/CONTRIBUTING.md "Contribution guidelines for this project"
