@@ -73,7 +73,7 @@
   https://github.com/openinf/.github/blob/HEAD/CONTRIBUTING.md
   'Contribution guidelines for this project'
 [`FUNDING`]:
-  https://github.com/openinf/.github/blob/HEAD/FUNDING.yml
+  https://github.com/openinf/.github/blob/HEAD/.github/FUNDING.yml
   'How to financially support maintenance/development of @openinf projects on GitHub using GitHub Sponsors'
 [`LICENSE`]:
   https://github.com/openinf/.github/blob/HEAD/LICENSE
