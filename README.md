@@ -51,10 +51,14 @@
 | [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
 | [`VISION`]            | Project Vision      | The goal(s) and/or scope of a project                                    |
 
+<br />
+
 > **Note**: The [`VISION`] file can be useful for offloading project goals that
 > should typically be specified in the root [`README`] file. It may optionally
 > exist alongside it as an alternative location to even include project scope as
 > well, but should be linked to from the root [`README`] file in these cases.
+
+<br />
 
 [^1]:
     https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/
