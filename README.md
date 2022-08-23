@@ -49,6 +49,10 @@
 | [`AUTHORS`]           | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
 | [`README`]            | Homepage            | Serves as a project landing page of sorts                                |
 | [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
+| [`VISION`]            | Project Vision      | The goals(s) and/or scope of a project                                   |
+
+> **Note**: The [`VISION`] file can be useful for offloading project goals that should typically be specified in the root
+> [`README`] file. It may optionally exist alongside it as an alternative location to even include project scope as well.
 
 [^1]:
     https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/
@@ -85,6 +89,9 @@
 [`SUPPORT`]:
   https://github.com/openinf/.github/blob/HEAD/SUPPORT.md
   'Where to get help on this project'
+[`VISION`]:
+  https://github.com/openinf/.github/blob/HEAD/VISION.md
+  'What the goal(s) and/or scope are of this project'
 
 [Community Profile]:
   https://github.com/openinf/.github/community
