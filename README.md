@@ -49,7 +49,7 @@
 | [`AUTHORS`]           | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
 | [`README`]            | Homepage            | Serves as a project landing page of sorts                                |
 | [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
-| [`VISION`]            | Project Vision      | The goals(s) and/or scope of a project                                   |
+| [`VISION`]            | Project Vision      | The goal(s) and/or scope of a project                                    |
 
 > **Note**: The [`VISION`] file can be useful for offloading project goals that
 > should typically be specified in the root [`README`] file. It may optionally
