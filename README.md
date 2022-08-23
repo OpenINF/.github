@@ -2,6 +2,15 @@
 
 <br />
 
+<div align="center">
+
+[![Code Style: Prettier][prettier-badge]][prettier-url]
+[![Commit Style: Conventional Commits][conventional-commits-badge]][conventional-commits-url]
+
+</div>
+
+<br />
+
 > **Note**: This is a _special_ repository for default metadata and community
 > health files for use across all projects in the [**@openinf**] organization on
 > GitHub. If a given file doesn't exist for a repository, the organization-wide
@@ -101,6 +110,11 @@
 
 [Community Profile]:
   https://github.com/openinf/.github/community
+
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=plastic "Code Style: Prettier"
+[prettier-url]: https://github.com/prettier/prettier "Code Style: Prettier"
+[conventional-commits-badge]: https://img.shields.io/badge/commit%20style-Conventional%20Commits-%23fa6673?style=plastic&logoColor=white&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggc3R5bGU9ImZpbGw6ICNGRkYiIGQ9Ik0xNSwyQTEzLDEzLDAsMSwxLDIsMTUsMTMsMTMsMCwwLDEsMTUsMm0wLTJBMTUsMTUsMCwxLDAsMzAsMTUsMTUsMTUsMCwwLDAsMTUsMFoiLz48L3N2Zz4K "Commit Style: Conventional Commits"
+[conventional-commits-url]: https://www.conventionalcommits.org "Commit Style: Conventional Commits"
 
 <!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
 <!-- prettier-ignore-end -->
