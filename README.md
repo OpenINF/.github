@@ -1,6 +1,3 @@
-
-[//]: ssh:// '# DO-NOT-REMOVE-README-TITLE'
-
 <h1 align="center">@openinf/.github</h1>
 
 <br />
@@ -29,7 +26,7 @@
 
 > **Note**: While these files themseves won't appear in the file browser or Git
 > history of each repository, they will be surfaced throughout developers'
-> workflows, such as when opening a new issue or when viewing the
+> workflows, such as when opening a new issue or when viewing the project's
 > [Community Profile], just as if it were committed to the repository directly.[^1]
 
 <br />
@@ -89,7 +86,7 @@
   'Where to get help on this project'
 
 [Community Profile]:
-  https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
+  https://github.com/openinf/.github/community
 
 <!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
 <!-- prettier-ignore-end -->
