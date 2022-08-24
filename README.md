@@ -11,10 +11,10 @@
 
 <br />
 
-> **Note**: This is a <em>✨special✨</em> repository for default metadata and community
-> health files for use across all projects in the [**@openinf**] organization on
-> GitHub. If a given file doesn't exist for a repository, the organization-wide
-> defaults in this repository will be used.
+> **Note**: This is a <em>✨special✨</em> repository for default metadata and
+> community health files for use across all projects in the [**@openinf**]
+> organization on GitHub. If a given file doesn't exist for a repository, the
+> organization-wide defaults in this repository will be used.
 
 <br />
 
