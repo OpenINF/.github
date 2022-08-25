@@ -126,6 +126,10 @@ By making a contribution to this project, I certify that:
   redistributed consistent with this project or the open source license(s)
   involved.
 
+## Reporting Security Issues
+
+Please see [SECURITY.md](./SECURITY.md).
+
 ## Attribution
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
