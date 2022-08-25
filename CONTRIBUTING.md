@@ -130,9 +130,43 @@ By making a contribution to this project, I certify that:
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
 
-[code_of_conduct]: ./CODE_OF_CONDUCT.md
+
+<!-- prettier-ignore-start -->
+<!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
+
+[**@openinf**]: https://github.com/openinf
+[**@openinf/.github**]: https://github.com/openinf/.github
+[`AUTHORS`]:
+  https://github.com/openinf/.github/blob/HEAD/AUTHORS
+  'List of people who have contributed code to this project'
+[`CODE_OF_CONDUCT`]:
+  ./CODE_OF_CONDUCT.md
+  'Standards for how to engage with the project community'
+[`CONTRIBUTING`]:
+  ./CONTRIBUTING.md
+  'Contribution guidelines for this project'
+[`FUNDING`]:
+  ./.github/FUNDING.yml
+  'How to financially support maintenance/development of @openinf projects on GitHub using GitHub Sponsors'
+[`LICENSE`]:
+  ./LICENSE
+  'The open source software license(s) associated with this project'
+[`README`]:
+  ./README.md
+  'The landing/home page of this project'
+[`SECURITY`]:
+  ./SECURITY.md
+  'Instructions on how to report security vulnerabilities for this project'
+[`SUPPORT`]:
+  ./SUPPORT.md
+  'Where to get help on this project'
+[`VISION`]:
+  ./VISION.md
+  'What the goal(s) and/or scope are of this project'
+
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
+[dco]: https://developercertificate.org
 [draft pull request]:
   https://help.github.com/en/articles/about-pull-requests#draft-pull-requests
 [early and often]: https://www.worklytics.co/blog/commit-early-push-often/
@@ -143,8 +177,6 @@ By making a contribution to this project, I certify that:
 [i-help]:
   https://github.com/search?q=org%3Aopeninf+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
 
-<!-- [irc-channel]: https://webchat.freenode.net/#openinf -->
-
 [twitter-account]: https://twitter.com/openinf
 [issue]:
   http://help.github.com/en/github/managing-your-work-on-github/creating-an-issue
@@ -152,3 +184,6 @@ By making a contribution to this project, I certify that:
   https://github.com/search?q=org%3Aopeninf+is%3Apr+is%3Aopen+label%3A%22help+wanted%22
 [pull request]:
   https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request
+  
+<!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
+<!-- prettier-ignore-end -->
