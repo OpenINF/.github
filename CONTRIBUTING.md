@@ -130,7 +130,6 @@ By making a contribution to this project, I certify that:
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
 
-
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
 
