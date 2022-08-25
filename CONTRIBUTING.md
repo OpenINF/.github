@@ -183,6 +183,6 @@ By making a contribution to this project, I certify that:
   https://github.com/search?q=org%3Aopeninf+is%3Apr+is%3Aopen+label%3A%22help+wanted%22
 [pull request]:
   https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request
-  
+
 <!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
 <!-- prettier-ignore-end -->
