@@ -14,7 +14,7 @@ on the _matrix.org_ network. It’s a synchronous chat channel for lightweight
 communication. Good uses of it are for asking questions, casual conversation,
 collaboration, and quick exchanges.
 
-**[@openinf][twitter-account] on Twitter:** The OpenINF support account on
+**[@OpenINF][twitter-account] on Twitter:** The OpenINF support account on
 Twitter.
 
 [docs-site]: https://open.inf.is/docs
