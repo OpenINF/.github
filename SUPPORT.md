@@ -19,4 +19,4 @@ Twitter.
 
 [docs-site]: https://open.inf.is/
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
-[twitter-account]: https://twitter.com/openinf
+[twitter-account]: https://twitter.com/OpenINF
