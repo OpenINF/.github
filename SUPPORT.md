@@ -17,6 +17,6 @@ collaboration, and quick exchanges.
 **[@openinf][twitter-account] on Twitter:** The OpenINF support account on
 Twitter.
 
-[docs-site]: https://open.inf.is/
+[docs-site]: https://open.inf.is/docs
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
 [twitter-account]: https://twitter.com/OpenINF
