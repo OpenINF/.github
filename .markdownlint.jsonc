@@ -1,5 +1,7 @@
 {
   // Example markdownlint JSON(C) configuration with all properties set to their default value
+  // initially, but with some OpenINF Community-specific changes made to it.
+  // See https://github.com/DavidAnson/markdownlint/blob/HEAD/doc/Rules.md
 
   // Default state for all rules
   "default": true,
