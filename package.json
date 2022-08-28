@@ -2,18 +2,18 @@
   "name": "@openinf/.github",
   "version": "0.0.0-development",
   "description": "",
+  "keywords": [],
+  "repository": "https://github.com/openinf/.github",
+  "license": "MIT",
+  "author": "The OpenINF Authors",
   "main": "",
   "directories": {
-    "doc": "doc",
     "lib": "lib",
+    "doc": "doc",
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/openinf/.github",
-  "keywords": [],
-  "author": "The OpenINF Authors",
-  "license": "MIT",
   "devDependencies": {}
 }
