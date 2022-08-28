@@ -11,11 +11,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "openinf/.github",
+  "repository": "https://github.com/openinf/.github",
   "keywords": [],
   "author": "The OpenINF Authors",
   "license": "MIT",
-  "bugs": "https://github.com/openinf/.github/issues",
-  "homepage": "https://github.com/openinf/.github#readme",
   "devDependencies": {}
 }
