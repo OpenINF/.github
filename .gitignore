@@ -1,0 +1,5 @@
+# Ignore Node.js modules dir.
+node_modules/
+
+# Ignore secrets.
+.env
