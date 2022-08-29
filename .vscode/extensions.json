@@ -5,6 +5,7 @@
     "esbenp.prettier-vscode",
     "mrmlnc.vscode-json5",
     "redhat.vscode-yaml",
-    "bungcip.better-toml"
+    "bungcip.better-toml",
+    "aaron-bond.better-comments"
   ]
 }
