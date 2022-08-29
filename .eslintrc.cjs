@@ -11,8 +11,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:markdown/recommended',
-    // Disables all rules that conflict with Prettier -- leave it at the bottom.
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended', // // Disables rules conflicting w/ Prettier.
   ],
   plugins: ['markdown', 'only-warn', 'prettier'],
   rules: {
