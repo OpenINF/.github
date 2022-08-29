@@ -22,7 +22,15 @@
 
 <h2 align="center">Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>  
 
-<br /><br />
+<br />
+
+> **Note**: While these files themseves won't appear in the file browser or Git
+> history of each repository, they will be surfaced throughout developers'
+> workflows, such as when opening a new issue or when viewing the project's
+> [Community Profile], just as if it were committed to the repository
+> directly.[^1]
+
+<br /><div align="center">
 
 | File name                                    | Title                        | Description                                                                                                          |
 | -------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -33,19 +41,19 @@
 | [`SECURITY`]                                 | Security&nbsp;Policy         | Gives instructions for how to report a security vulnerability in a project                                           |
 | [`SUPPORT`]                                  | Support&nbsp;Resources       | Lets people know about ways to get help with a project                                                               |
 
-<br /><br />
-
-> **Note**: While these files themseves won't appear in the file browser or Git
-> history of each repository, they will be surfaced throughout developers'
-> workflows, such as when opening a new issue or when viewing the project's
-> [Community Profile], just as if it were committed to the repository
-> directly.[^1]
-
-<br /><br />
+</div><br />
 
 <h2 align="center">Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>  
 
-<br /><br /><div align="center">
+<br />
+
+> **Warning**: We cannot create organization-wide defaults for the following
+> files as they are often unique per project. Therefore, they _must_ be added to
+> each individual repository so that they will be included when the project is
+> cloned, packaged, or downloaded. Refer to the ones contained in
+> [**@openinf/.github**] for guidance on how these files are expected to look.
+
+<br /><div align="center">
 
 | File name             | Title               | Description                                                              |
 | --------------------- | ------------------- | ------------------------------------------------------------------------ |
@@ -54,15 +62,7 @@
 | [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
 | [`VISION`]            | Project Vision      | The goal(s) and/or scope of a project                                    |
 
-</div><br /><br />
-
-> **Warning**: We cannot create organization-wide defaults for the following
-> files as they are often unique per project. Therefore, they _must_ be added to
-> each individual repository so that they will be included when the project is
-> cloned, packaged, or downloaded. Refer to the ones contained in
-> [**@openinf/.github**] for guidance on how these files are expected to look.
-
-<br />
+</div><br />
 
 > **Note**: The [`VISION`] file can be useful for offloading project goals that
 > should typically be specified in the root [`README`] file. It may optionally
