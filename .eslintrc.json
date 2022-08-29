@@ -1,0 +1,75 @@
+{
+  "root": true,
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "settings": {
+    "import/resolver": "node"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:markdown/recommended",
+    "plugin:prettier/recommended" // Disables rules conflicting w/ Prettier
+  ],
+  "plugins": ["markdown", "only-warn", "prettier"],
+  "rules": {
+    // Core ESLint Rules
+    "quotes": [
+      1,
+      "single",
+      { "allowTemplateLiterals": true, "avoidEscape": true }
+    ]
+  },
+  "overrides": [
+    {
+      // CommonJS Files
+      "files": ["*.?(c)js", ".*.?(c)js"],
+      "env": { "node": true }
+    },
+    {
+      // TypeScript Files
+      "files": ["*.mts", ".*.mts", "*.?(c)ts", ".*.?(c|m)ts", "**/*.?(c|m)ts"],
+      "plugins": ["@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/strict",
+        "plugin:prettier/recommended" // Disables rules conflicting w/ Prettier
+      ]
+    },
+    {
+      // JSON?(5|C) Files
+      "files": [".*.json?(5|c)", "*.json?(5|c)", "OWNERS"],
+      "parser": "jsonc-eslint-parser",
+      "plugins": ["jsonc"],
+      "extends": [
+        "plugin:jsonc/base",
+        "plugin:jsonc/recommended-with-json", // JSON recommended config
+        "plugin:jsonc/recommended-with-jsonc", // JSONC recommended config
+        "plugin:jsonc/recommended-with-json5", // JSON5 recommended config
+        "plugin:jsonc/prettier" // Disables rules conflicting w/ Prettier
+      ],
+      "rules": {
+        "jsonc/auto": "error"
+      }
+    },
+    {
+      // Overrides for JSON?(5|C) Files (in our codebase, nonregular JSON files)
+      "files": [".*.json?(5|c)", "OWNERS"],
+      "rules": {
+        "jsonc/no-comments": 0
+      }
+    },
+    {
+      // ES Module Files
+      "files": ["**/*.mjs", "eslint.config.js"],
+      "parser": "@babel/eslint-parser",
+      "parserOptions": {
+        "babelOptions": {
+          "configFile": "babel.config.json"
+        }
+      }
+    }
+  ]
+}

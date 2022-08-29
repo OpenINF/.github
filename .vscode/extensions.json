@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-json5",
+    "redhat.vscode-yaml",
+    "bungcip.better-toml",
+    "aaron-bond.better-comments"
+  ]
+}

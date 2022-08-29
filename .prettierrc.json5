@@ -7,18 +7,18 @@
   "trailingComma": "es5",
   "overrides": [
     {
+      // Markdown Files
       "files": "**/*.md",
       "options": {
-        "parser": "markdown",
+        "parser": "mdx",
         "proseWrap": "always"
       }
     },
     {
-      "files": "**/*.html",
+      // JSON?(5|C) Files
+      "files": ["OWNERS", ".*.json?(5|c)"],
       "options": {
-        "bracketSameLine": true,
-        "singleAttributePerLine": false,
-        "singleQuote": false
+        "parser": "json"
       }
     }
   ]

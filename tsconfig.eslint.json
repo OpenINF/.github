@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "types": ["@types/node"],
+    "noEmit": true,
+    "allowJs": true
+  },
+  "extends": "./tsconfig.base.json",
+  "include": [
+    ".*.json?(5|c)",
+    "*.json?(5|c)",
+    "**/*.?(m|c)ts",
+    "**/*.?(m|c)js",
+    "**/*.md"
+  ]
+}
