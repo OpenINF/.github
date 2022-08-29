@@ -1,7 +1,6 @@
 *                       text=auto
 .*.jsonc                diff=jsonc linguist-language=jsonc
 .*.json5                diff=json5 linguist-language=json5
-.eslintrc.json          diff=jsonc linguist-language=jsonc
 .devcontainer/*.json    diff=jsonc linguist-language=jsonc
 .eslintrc.json          diff=jsonc linguist-language=jsonc
 .vscode/*.json          diff=jsonc linguist-language=jsonc
