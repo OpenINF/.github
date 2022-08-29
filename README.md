@@ -20,11 +20,11 @@
 
 <br />
 
----
+<h2 align="center">Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>  
 
-<br />
+<br /><br />
 
-| Community health file                        | Title                        | Description                                                                                                          |
+| File name                                    | Title                        | Description                                                                                                          |
 | -------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | [`CODE_OF_CONDUCT`]                          | Code&nbsp;of&nbsp;Conduct    | Defines standards for how to engage in a community                                                                   |
 | [`CONTRIBUTING`]                             | Contribution&nbsp;Guidelines | Communicates how people should contribute to a project                                                               |
@@ -33,7 +33,7 @@
 | [`SECURITY`]                                 | Security&nbsp;Policy         | Gives instructions for how to report a security vulnerability in a project                                           |
 | [`SUPPORT`]                                  | Support&nbsp;Resources       | Lets people know about ways to get help with a project                                                               |
 
-<br />
+<br /><br />
 
 > **Note**: While these files themseves won't appear in the file browser or Git
 > history of each repository, they will be surfaced throughout developers'
@@ -41,26 +41,26 @@
 > [Community Profile], just as if it were committed to the repository
 > directly.[^1]
 
-<br />
+<br /><br />
 
----
+<h2 align="center">Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>  
 
-<br />
+<br /><br /><div align="center">
+
+| File name             | Title               | Description                                                              |
+| --------------------- | ------------------- | ------------------------------------------------------------------------ |
+| [`AUTHORS`]           | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
+| [`README`]            | Homepage            | Serves as a project landing page of sorts                                |
+| [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
+| [`VISION`]            | Project Vision      | The goal(s) and/or scope of a project                                    |
+
+</div><br /><br />
 
 > **Warning**: We cannot create organization-wide defaults for the following
 > files as they are often unique per project. Therefore, they _must_ be added to
 > each individual repository so that they will be included when the project is
 > cloned, packaged, or downloaded. Refer to the ones contained in
 > [**@openinf/.github**] for guidance on how these files are expected to look.
-
-<br />
-
-| Community health file | Title               | Description                                                              |
-| --------------------- | ------------------- | ------------------------------------------------------------------------ |
-| [`AUTHORS`]           | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
-| [`README`]            | Homepage            | Serves as a project landing page of sorts                                |
-| [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
-| [`VISION`]            | Project Vision      | The goal(s) and/or scope of a project                                    |
 
 <br />
 
