@@ -6,8 +6,8 @@
 
 [![Code Style: Prettier][prettier-badge]][prettier-url]
 [![Commit Style: Conventional Commits][conventional-commits-badge]][conventional-commits-url]
-![](https://badgen.net/matrix/members/openinf/mozilla.org)
-[![Chat on Matrix](https://matrix.to/img/matrix-badge.svg)](https://matrix.to/#/#openinf:matrix.org)
+[![Chat on Matrix][matrix-badge--badgen]][matrix-url]
+[![Chat on Matrix][matrix-badge--shields]][matrix-url]
 
 </div>
 
@@ -113,10 +113,13 @@
 [Community Profile]:
   https://github.com/openinf/.github/community
 
-[prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg "Code Style: Prettier"
-[prettier-url]: https://github.com/prettier/prettier "Code Style: Prettier"
 [conventional-commits-badge]: https://img.shields.io/badge/commit%20style-Conventional-%23fa6673 "Commit Style: Conventional Commits"
 [conventional-commits-url]: https://www.conventionalcommits.org "Commit Style: Conventional Commits"
+[matrix-badge--badgen]: https://badgen.net/matrix/members/openinf/mozilla.org "Chat on Matrix"
+[matrix-badge--shields]: https://img.shields.io/badge/matrix-join%20chat-%2346BC99 "Chat on Matrix"
+[matrix-url]: https://matrix.to/#/#openinf:matrix.org "You&apos;re invited to talk on Matrix"
+[prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg "Code Style: Prettier"
+[prettier-url]: https://github.com/prettier/prettier "Code Style: Prettier"
 
 <!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
 <!-- prettier-ignore-end -->
