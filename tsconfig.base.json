@@ -20,5 +20,6 @@
     "types": ["node"],
     "strictNullChecks": true
   },
-  "include": ["**/*.ts", "**/*.js", "**/*.mts", "**/*.mjs"]
+  "include": ["src/**/*"],
+  "files": ["src/index.mts"]
 }

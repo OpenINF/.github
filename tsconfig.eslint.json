@@ -5,5 +5,11 @@
     "allowJs": true
   },
   "extends": "./tsconfig.base.json",
-  "include": [".eslintrc", "**/*.mts", "**/*.md", "**/*.mjs", ".*.cjs"]
+  "include": [
+    ".*.json?(5|c)",
+    "*.json?(5|c)",
+    "**/*.?(m|c)ts",
+    "**/*.?(m|c)js",
+    "**/*.md"
+  ]
 }

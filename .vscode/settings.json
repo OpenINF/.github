@@ -9,6 +9,7 @@
   // Auto-fix JS/TS files with ESLint using amphtml's custom settings. Needs
   // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "[js]": { "editor.formatOnSave": false },
 
   // Auto-fix non-JS/TS files with Prettier using our custom settings. Needs
   // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
@@ -47,7 +48,9 @@
     ".vscode/*.json": "jsonc",
     "OWNERS": "json5",
     "tsconfig.*.json": "jsonc",
-    "tsconfig.json": "jsonc"
+    "tsconfig.json": "jsonc",
+    ".eslintrc.json": "jsonc",
+    ".prettierrc.json5": "json5"
   },
 
   // ---------------------------------------------------------------------------
