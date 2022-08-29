@@ -22,7 +22,7 @@
 
 <h2 align="center">
   Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
-</h2>{' '}
+</h2>
 
 <br />
 
