@@ -33,8 +33,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'plugin:@typescript-eslint/strict',
-        // Disables all rules that conflict with Prettier -- leave this last!
-        'plugin:prettier/recommended',
+        'plugin:prettier/recommended', // // Disables rules conflicting w/ Prettier.
       ],
     },
     {
