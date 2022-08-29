@@ -2,6 +2,12 @@
   "name": "@openinf/.github",
   "version": "0.0.0-development",
   "description": "",
+  "packageManager": "npm",
+  "engines": {
+    "node": "^16.13.0",
+    "npm": "^8.1.0",
+    "npx": "^8.1.0"
+  },
   "keywords": [],
   "repository": "https://github.com/openinf/.github",
   "license": "MIT",
