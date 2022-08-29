@@ -1,0 +1,25 @@
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "quoteProps": "as-needed",
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      // Markdown Files
+      "files": "**/*.md",
+      "options": {
+        "parser": "mdx",
+        "proseWrap": "always"
+      }
+    },
+    {
+      // JSON?(5|C) Files
+      "files": ["OWNERS", ".*.json?(5|c)"],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
