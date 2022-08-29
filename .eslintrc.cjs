@@ -53,8 +53,7 @@ module.exports = {
         'plugin:jsonc/recommended-with-json', // JSON recommended config.
         'plugin:jsonc/recommended-with-jsonc', // JSONC recommended config.
         'plugin:jsonc/recommended-with-json5', // JSON5 recommended config.
-        // Disables all rules that conflict with Prettier.
-        'plugin:jsonc/prettier', // JSON prettier config -- leave this last!
+        'plugin:jsonc/prettier', // Disables rules conflicting w/ Prettier.
       ],
     },
     {
