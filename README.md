@@ -20,7 +20,9 @@
 
 <br />
 
-<h2 align="center">Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>  
+<h2 align="center">
+  Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
+</h2>
 
 <br />
 
@@ -43,7 +45,9 @@
 
 </div><br />
 
-<h2 align="center">Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>  
+<h2 align="center">
+  Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
+</h2>
 
 <br />
 
@@ -55,12 +59,12 @@
 
 <br /><div align="center">
 
-| File name             | Title               | Description                                                              |
-| --------------------- | ------------------- | ------------------------------------------------------------------------ |
-| [`AUTHORS`]           | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
-| [`README`]            | Homepage            | Serves as a project landing page of sorts                                |
-| [`LICENSE`]           | Software License(s) | The open source software license(s) associated with a project            |
-| [`VISION`]            | Project Vision      | The goal(s) and/or scope of a project                                    |
+| File name   | Title               | Description                                                              |
+| ----------- | ------------------- | ------------------------------------------------------------------------ |
+| [`AUTHORS`] | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
+| [`README`]  | Homepage            | Serves as a project landing page of sorts                                |
+| [`LICENSE`] | Software License(s) | The open source software license(s) associated with a project            |
+| [`VISION`]  | Project Vision      | The goal(s) and/or scope of a project                                    |
 
 </div><br />
 
