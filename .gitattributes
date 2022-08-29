@@ -1,4 +1,11 @@
-*               text=auto
-build/**        linguist-generated=false
-lib/**          linguist-generated=true
-doc/**          linguist-documentation
+*                       text=auto
+.*.jsonc                diff=jsonc linguist-language=jsonc
+.*.json5                diff=json5 linguist-language=json5
+.devcontainer/*.json    diff=jsonc linguist-language=jsonc
+.eslintrc.json          diff=jsonc linguist-language=jsonc
+.vscode/*.json          diff=jsonc linguist-language=jsonc
+build/**                linguist-generated=false
+doc/**                  linguist-documentation
+lib/**                  linguist-generated=true
+OWNERS                  diff=json5 linguist-language=json5
+tsconfig.json           diff=jsonc linguist-language=jsonc

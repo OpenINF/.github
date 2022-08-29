@@ -3,11 +3,10 @@ root = true
 
 # Base ruleset for all files.
 [*]
-# Non-configurable Prettier behaviors
+# Non-configurable Prettier behaviors.
 charset = utf-8
 insert_final_newline = true
-# Configurable Prettier behaviors
-# (change these if your Prettier config differs)
+# Configurable Prettier behaviors (change them here if Prettier config differs).
 end_of_line = lf
 indent_size = 2
 indent_style = space

@@ -1,0 +1,120 @@
+{
+  // See https://code.visualstudio.com/docs/getstarted/settings
+  // for the documentation about the extensions.json format.
+
+  // Editor
+  //////////////////////////////////////////////////////////////////////////////
+
+  // Auto-fix JS/TS files with ESLint using amphtml's custom settings. Needs
+  // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "[js]": { "editor.formatOnSave": false },
+
+  // Auto-fix non-JS/TS files with Prettier using our custom settings. Needs
+  // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[json5]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // Render vertical rulers after a certain number of monospace characters.
+  "editor.rulers": [80, 100], // Uses multiple values for multiple rulers.
+
+  // Files
+  //////////////////////////////////////////////////////////////////////////////
+
+  "files.associations": {
+    // Enable JSON5 syntax highlighting and auto-formatting for these files.
+    // Until VS Code adds native JSON5 support, this needs
+    // https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+    ".devcontainer/*.json": "jsonc",
+    ".vscode/*.json": "jsonc",
+    "OWNERS": "json5",
+    "tsconfig.*.json": "jsonc",
+    "tsconfig.json": "jsonc",
+    ".eslintrc.json": "jsonc",
+    ".prettierrc.json5": "json5"
+  },
+
+  // JavaScript/TypeScript
+  //////////////////////////////////////////////////////////////////////////////
+
+  // Disable JS/TS validation. (These should be handled by ESLint.)
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Remote
+  //////////////////////////////////////////////////////////////////////////////
+
+  // Fix 'EACCESS: permission denied error' trying to rename a folder in the
+  // open workspace until Windows Server adds native WSL2 support.
+  // https://code.visualstudio.com/docs/remote/troubleshooting#_i-see-eaccess-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace
+  "remote.WSL.fileWatcher.polling": true,
+
+  // All workspace files must be excluded from being watched otherwise the
+  // problem will persist.
+  "files.watcherExclude": {
+    "**/**/*": true
+  },
+
+  // Extensions
+  //////////////////////////////////////////////////////////////////////////////
+
+  // Better Comments
+  /////////////////////////////////////////////
+
+  // This setting will control whether multiline comments are styled using the
+  // annotation tags.
+  // When false, multiline comments will be presented without decoration.
+  "better-comments.multilineComments": true,
+
+  "better-comments.tags": [
+    {
+      "tag": "//",
+      "strikethrough": false
+    }
+  ],
+
+  // EditorConfig (https://editorconfig.org/)
+  /////////////////////////////////////////////
+
+  // The following settings should be inherited from the .editorconfig file and
+  // need not be re-specified in this file: files.encoding, files.eol,
+  // files.insertFinalNewline, and files.trimTrailingWhitespace.
+
+  "editorconfig.generateAuto": false,
+
+  // Prettier / Prettier-VSCode
+  /////////////////////////////////////////////
+
+  "prettier.useEditorConfig": true,
+  "prettier.requireConfig": true,
+
+  // ESLint (ESLint is a separate extension)
+  /////////////////////////////////////////////
+
+  "eslint.validate": ["javascript", "typescript", "json", "jsonc", "json5"],
+
+  // Always show the ESlint status bar item.
+  "eslint.alwaysShowStatus": true,
+
+  // Whether the extension contributes a lint task to lint a whole workspace.
+  "eslint.lintTask.enable": true,
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }]
+}
