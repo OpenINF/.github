@@ -9,8 +9,7 @@
       {
         "modules": false,
         "targets": {
-          "esmodules": true,
-          "node": "^16.13.0"
+          "esmodules": true
         }
       }
     ]
