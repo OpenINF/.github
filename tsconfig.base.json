@@ -9,17 +9,30 @@
     "downlevelIteration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext"
+    ],
     "module": "node16",
     "moduleResolution": "node16",
     "outDir": "lib",
     "resolveJsonModule": true,
     "rootDir": "src",
-    "rootDirs": ["src", "lib"],
-    "typeRoots": ["node_modules/@types"],
-    "types": ["node"],
+    "rootDirs": [
+      "src",
+      "lib"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
     "strictNullChecks": true
   },
-  "include": ["src/**/*"],
-  "files": ["src/index.mts"]
+  "include": [
+    "src/**/*"
+  ],
+  "files": [
+    "src/index.mts"
+  ]
 }
