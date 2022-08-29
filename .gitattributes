@@ -4,7 +4,7 @@
 .eslintrc.json          diff=jsonc linguist-language=jsonc
 .devcontainer/*.json    diff=jsonc linguist-language=jsonc
 .eslintrc.json          diff=jsonc linguist-language=jsonc
-.vscode/* .json         diff=jsonc linguist-language=jsonc
+.vscode/*.json          diff=jsonc linguist-language=jsonc
 build/**                linguist-generated=false
 doc/**                  linguist-documentation
 lib/**                  linguist-generated=true
