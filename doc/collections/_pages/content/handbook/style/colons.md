@@ -1,6 +1,7 @@
 # Colons
 
 **On this page**
+
 - [Introductory phrase preceding colon](#introductory-phrase-preceding-colon)
 - [Bold text preceding colon](#bold-text-preceding-colon)
 - [Code text preceding colon](#code-text-preceding-colon)
@@ -22,13 +23,14 @@ Not recommended: The fields are:
 
 ## Bold text preceding colon
 
-When non-italic (_roman_) text that precedes a colon is bold, make the colon bold too.
+When non-italic (_roman_) text that precedes a colon is bold, make the colon
+bold too.
 
 ## Code text preceding colon
 
 When text that precedes a colon is tagged as `<code>`, don't include the colon
-in the `<code>` tagging unless it is part of the code. For more information about
-formatting code, see [Some specific items to put in code font].
+in the `<code>` tagging unless it is part of the code. For more information
+about formatting code, see [Some specific items to put in code font].
 
 ## Colons within sentences
 
@@ -56,19 +58,20 @@ For information about when it's better to use colons than dashes, see [Dashes].
 <!-- Footer -->
 
 <small>
-![CC logo icon] ![CC BY icon] ![CC SA icon] Portions of this document are
-reproduced from work created and [shared by Google] and used according to terms
-described in the [Creative Commons 4.0 Attribution License]. For more information,
-refer to the [original source page].
+  ![CC logo icon] ![CC BY icon] ![CC SA icon] Portions of this document are
+  reproduced from work created and [shared by Google] and used according to
+  terms described in the [Creative Commons 4.0 Attribution License]. For more
+  information, refer to the [original source page].
 </small>
 
 ![CC logo icon] ![CC BY icon] Except as otherwise noted, this content is
 published under [CC BY 4.0].
 
-<small>Portions of this page are reproduced from work created and
-[shared by Google] and used according to terms described in the
-[Creative Commons 4.0 Attribution License]. For more information,
-refer to the [original source page].</small>
+<small>
+  Portions of this page are reproduced from work created and [shared by Google]
+  and used according to terms described in the [Creative Commons 4.0 Attribution
+  License]. For more information, refer to the [original source page].
+</small>
 
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
