@@ -9,6 +9,7 @@ scripts:
     md: node build/tasks/verify/verify-md.mjs
     svg: node build/tasks/verify/verify-svg.mjs
     toml: node build/tasks/verify/verify-svg.mjs
+    ts: node build/tasks/verify/verify-ts.mjs
     yaml: node build/tasks/verify/verify-yaml.mjs
   format:
     all: for i in build/tasks/format/*.mjs; do node "$i"; done
@@ -19,5 +20,6 @@ scripts:
     md: node build/tasks/format/format-md.mjs
     svg: node build/tasks/format/format-svg.mjs
     toml: node build/tasks/format/format-toml.mjs
+    ts: node build/tasks/format/format-ts.mjs
     yaml: node build/tasks/format/format-yaml.mjs
   test: nps verify.all

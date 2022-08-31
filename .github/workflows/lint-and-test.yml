@@ -31,6 +31,7 @@ jobs:
               - '**/*.*.md'
             js:
               - '**/*.js'
+              - '**/*.*.js'
               - '**/*.mjs'
             json:
               - '**/*.json'
@@ -76,5 +77,7 @@ jobs:
 
       # Only run tests if the PR touches behavior-related files.
       - name: Test
-        if: ${{ steps.filter.outputs.js == 'true' || steps.filter.outputs.json == 'true' || steps.filter.outputs.ts == 'true' }}
+        if: ${{ steps.filter.outputs.js == 'true' ||
+          steps.filter.outputs.json == 'true' ||
+          steps.filter.outputs.ts == 'true' }}
         run: npm t

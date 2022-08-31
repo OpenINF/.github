@@ -2,7 +2,7 @@ import yarnpkgShell from '@yarnpkg/shell';
 
 let code = 0;
 const scripts = [
-  `npx eslint --ext=.*.md,.md .`, // validate & style-check JS code blocks
+  `npx eslint --ext=.md .`, // validate & style-check JS code blocks
 ];
 
 scripts.forEach(async (v, i) => {

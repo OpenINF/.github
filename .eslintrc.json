@@ -4,13 +4,7 @@
     "es2022": true,
     "node": true
   },
-  "plugins": [
-    "jsonc",
-    "json-schema-validator",
-    "import",
-    "only-warn",
-    "prettier"
-  ],
+  "plugins": ["import", "only-warn", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
@@ -28,8 +22,10 @@
   },
   "reportUnusedDisableDirectives": true,
   "overrides": [
+    // Glob patterns in overrides use minimatch syntax.
     {
-      "files": ["*.ts", "*.mts"],
+      // Override for all files in the `src` directory.
+      "files": ["src/**/**.?(c|m)+(t|j)s"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": "./tsconfig.eslint.json"
@@ -50,7 +46,7 @@
             "directory": "./src"
           },
           "node": {
-            "extensions": [".js", ".ts", ".mts"]
+            "extensions": [".ts", ".mts"]
           }
         },
         "import/parsers": {
@@ -59,15 +55,8 @@
       }
     },
     {
-      "files": [
-        ".*.json",
-        ".*.json5",
-        ".*.jsonc",
-        "*.json",
-        "*.json5",
-        "*.jsonc",
-        "OWNERS"
-      ],
+      // Override for all JSON?(5|C) files.
+      "files": ["**.json?(5|c)", "OWNERS"],
       "parser": "jsonc-eslint-parser",
       "plugins": ["jsonc", "json-schema-validator"],
       "extends": [
@@ -83,7 +72,8 @@
       }
     },
     {
-      "files": [".*.json", ".*.json5", ".*.jsonc", "OWNERS"],
+      // Override for JSON(5|C) files that allow comments.
+      "files": ["**.json?(5|c)", "OWNERS"],
       "parser": "jsonc-eslint-parser",
       "plugins": ["jsonc", "json-schema-validator"],
       "rules": {
@@ -91,16 +81,16 @@
       }
     },
     {
-      "files": ["*.md", "*.*.md"],
+      "files": ["**.md"],
       "plugins": ["markdown"],
       "extends": ["plugin:markdown/recommended"]
     },
     {
-      "files": ["*.toml", ".*.toml"],
+      "files": ["**.t?(o)ml"],
       "parser": "toml-eslint-parser"
     },
     {
-      "files": ["*.yaml", "*.yml"],
+      "files": ["**.y?(a)ml"],
       "parser": "yaml-eslint-parser"
     }
   ]

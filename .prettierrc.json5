@@ -20,6 +20,30 @@
       "options": {
         "parser": "json"
       }
+    },
+    {
+      // JavaScript Files
+      "files": "**/*.?(c|m)js",
+      "options": {
+        "parser": "babel",
+        "parserOptions": {
+          "sourceType": "module"
+        }
+      }
+    },
+    {
+      // TypeScript Files
+      "files": "**/*.?(c|m)ts",
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      // YAML Files
+      "files": "**/**.y?(a)ml",
+      "options": {
+        "parser": "yaml"
+      }
     }
   ]
 }

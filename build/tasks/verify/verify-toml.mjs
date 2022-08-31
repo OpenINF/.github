@@ -2,7 +2,7 @@ import yarnpkgShell from '@yarnpkg/shell';
 
 let code = 0;
 const scripts = [
-  `npx eslint --ext=.*.toml,.toml .`, // validate
+  `npx eslint --ext=.toml .`, // validate
   `npx prettier -c {.*.toml,*.toml}`, // style-check
 ];
 
