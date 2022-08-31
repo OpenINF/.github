@@ -83,7 +83,7 @@
       }
     },
     {
-      "files": [".*.json", ".*.json5", ".*.jsonc"],
+      "files": [".*.json", ".*.json5", ".*.jsonc", OWNERS],
       "parser": "jsonc-eslint-parser",
       "plugins": ["jsonc", "json-schema-validator"],
       "rules": {
