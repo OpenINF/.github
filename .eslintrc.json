@@ -92,6 +92,7 @@
     },
     {
       "files": ["*.md", "*.*.md"],
+      "plugins": ["markdown"],
       "extends": ["plugin:markdown/recommended"]
     },
     {
