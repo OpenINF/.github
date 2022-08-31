@@ -1,0 +1,82 @@
+name: Lint and test
+
+# By default, runs when a pull request is opened, synchronized, or reopened.
+on: pull_request
+
+jobs:
+  lint_and_test:
+    name: Lint and test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.0.2
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/gallium
+      - name: Install
+        run: |
+          npm install
+          gem install bundler && bundle config set --local path 'vendor/bundle'
+          bundle install
+      # Checks to see if any files in the PR match one of the listed file types.
+      # We can use this filter to decide whether or not to run linters or tests.
+      # You can check if a file with a listed file type is in the PR by doing:
+      # if: ${{ steps.filter.outputs.md == 'true' }}
+      # This will return true if there's a Markdown file the PR has changed.
+      - uses: dorny/paths-filter@v2.10.2
+        id: filter
+        with:
+          filters: |
+            md:
+              - '**/*.md'
+              - '**/*.*.md'
+            js:
+              - '**/*.js'
+              - '**/*.mjs'
+            json:
+              - '**/*.json'
+              - '**/.*.json'
+              - '**/.*.jsonc'
+              - '**/.*.json5'
+            toml:
+              - '.*.toml'
+            ts:
+              - '**/*.ts'
+              - '**/*.mts'
+              - '**/*.d.ts'
+            yaml:
+              - '**/*.yml'
+              - '**/*.yaml'
+
+      # Use the filter to check if files with a specific file type were changed
+      # in the PR. If they were, run the relevant linters. Otherwise, skip.
+
+      - name: Verify JavaScript
+        if: ${{ steps.filter.outputs.js == 'true' }}
+        run: nps verify.js
+
+      - name: Verify JSON
+        if: ${{ steps.filter.outputs.json == 'true' }}
+        run: nps verify.json
+
+      - name: Verify Markdown
+        if: ${{ steps.filter.outputs.md == 'true' }}
+        run: nps verify.md
+
+      - name: Verify TOML
+        if: ${{ steps.filter.outputs.toml == 'true' }}
+        run: nps verify.toml
+
+      - name: Verify TypeScript
+        if: ${{ steps.filter.outputs.ts == 'true' }}
+        run: nps verify.ts
+
+      - name: Verify YAML
+        if: ${{ steps.filter.outputs.yaml == 'true' }}
+        run: nps verify.yaml
+
+      # Only run tests if the PR touches behavior-related files.
+      - name: Test
+        if: ${{ steps.filter.outputs.js == 'true' || steps.filter.outputs.json == 'true' || steps.filter.outputs.ts == 'true' }}
+        run: npm t

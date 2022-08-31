@@ -80,8 +80,7 @@
   /////////////////////////////////////////////
 
   // This setting will control whether multiline comments are styled using the
-  // annotation tags.
-  // When false, multiline comments will be presented without decoration.
+  // annotation tags. If false, multiline comments will be presented w/o decor.
   "better-comments.multilineComments": true,
 
   "better-comments.tags": [
@@ -109,7 +108,15 @@
   // ESLint (ESLint is a separate extension)
   /////////////////////////////////////////////
 
-  "eslint.validate": ["javascript", "typescript", "json", "jsonc", "json5"],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "json",
+    "jsonc",
+    "json5",
+    "yaml",
+    "toml"
+  ],
 
   // Always show the ESlint status bar item.
   "eslint.alwaysShowStatus": true,

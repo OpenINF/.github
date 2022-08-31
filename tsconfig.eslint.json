@@ -2,11 +2,20 @@
   "compilerOptions": {
     "types": ["@types/node"],
     "noEmit": true,
-    "allowJs": true
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true
   },
   "extends": "./tsconfig.base.json",
   "include": [
+    "lib",
+    "src",
+    "test",
+    "build",
     ".*.json?(5|c)",
+    "!.eslintrc.json",
     "*.json?(5|c)",
     "**/*.?(m|c)ts",
     "**/*.?(m|c)js",
