@@ -76,7 +76,7 @@
         "plugin:jsonc/recommended-with-jsonc",
         "plugin:jsonc/recommended-with-json5",
         "plugin:json-schema-validator/recommended",
-        "plugin:jsonc/prettier"
+        "plugin:jsonc/prettier" // Disables rules conflicting w/ Prettier
       ],
       "rules": {
         "jsonc/auto": 1
