@@ -2,7 +2,7 @@
 
 # @openinf/.github
 
-Common Markdown table-related utilities
+Org-level default metadata & community health files
 
 <br />
 
