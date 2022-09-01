@@ -48,26 +48,6 @@ sections on [list introductions] and [code-sample introductions].
 
 For information about when it's better to use colons than dashes, see [Dashes].
 
----
-
-<!-- Footer -->
-
-<small>
-  ![CC logo icon] ![CC BY icon] ![CC SA icon] Portions of this document are
-  reproduced from work created and [shared by Google] and used according to
-  terms described in the [Creative Commons 4.0 Attribution License]. For more
-  information, refer to the [original source page].
-</small>
-
-![CC logo icon] ![CC BY icon] Except as otherwise noted, this content is
-published under [CC BY 4.0].
-
-<small>
-  Portions of this page are reproduced from work created and [shared by Google]
-  and used according to terms described in the [Creative Commons 4.0 Attribution
-  License]. For more information, refer to the [original source page].
-</small>
-
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
 [Some specific items to put in code font]:
@@ -76,14 +56,5 @@ published under [CC BY 4.0].
 [list introductions]: ./lists.md#intros
 [code-sample introductions]: ./code-samples.md#intros
 [Dashes]: ./dashes.md#colons
-
-[CC logo icon]: ./img/cc_icon.svg "Creative Commons icon"
-[CC BY icon]: ./img/cc-by_icon.svg "Attribution icon"
-[CC BY 4.0]:
-  https://creativecommons.org/licenses/by/4.0/
-  "Creative Commons Attribution 4.0 International license (CC BY 4.0)"
-[shared by Google]: https://developers.google.com/readme/policies
-[Creative Commons 4.0 Attribution License]: https://creativecommons.org/licenses/by/4.0
-[original source page]: https://developers.google.com/style/colons
 <!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
 <!-- prettier-ignore-end -->
