@@ -6,8 +6,7 @@ Org-level default metadata & community health files
 
 <br />
 
-[!['View on npm'][npm-badge--shields]][npm-badge-url]
-[!['GitHub Language'][github-language--shields]][github-language-url]
+[!['View on npm (coming soon)'][npm-badge--shields]][npm-badge-url]
 [!['License: MIT'][license-badge--shields]][license-badge-url]
 [!['DeepScan grade'][deepscan-badge]][deepscan-url]
 
@@ -94,10 +93,19 @@ omissions and errors may exist, for which contributions are welcome._
 
 <br />
 
-<p align="center">&copy; The OpenINF Authors</center></p>
-<p align="center"><img height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/logo.svg" /></p>
+<div align="center">
+
+&copy; The OpenINF Authors
 
 <br />
+
+<a title="The OpenINF website" href="https://open.inf.is" rel="author">
+  <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/logo.svg?sanitize=true" />
+</a>
+
+</div>
+
+<br /><br />
 
 [^1]:
     <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/>
@@ -141,7 +149,7 @@ omissions and errors may exist, for which contributions are welcome._
 [Community Profile]:
   https://github.com/openinf/.github/community
 
-[deepscan-badge]: https://deepscan.io/api/teams/18447/projects/22132/branches/651065/badge/grade.svg 'DeepScan grade'
+[deepscan-badge]: https://badgen.net/deepscan/grade/team/18447/project/22132/branch/651065?icon=deepscan 'DeepScan grade'
 [deepscan-url]: https://deepscan.io/dashboard#view=project&tid=18447&pid=22132&bid=651065 'DeepScan grade'
 [deepsource-badge]: https://deepsource.io/gh/openinf/.github.svg/?label=active+issues&show_trend=true&token=L0v9-o_H8dv7EsWlUtV0899k
 [deepsource-url]: https://deepsource.io/gh/openinf/.github/?ref=repository-badge 'Active Issues: DeepSource'
@@ -150,10 +158,8 @@ omissions and errors may exist, for which contributions are welcome._
 [matrix-badge--badgen]: https://badgen.net/matrix/members/openinf/matrix.org 'Chat on Matrix'
 [matrix-badge--shields]: https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix 'Chat on Matrix'
 [matrix-url]: https://matrix.to/#/#openinf:matrix.org 'You&apos;re invited to talk on Matrix'
-[github-language-url]: https://github.com/openinf/.github
-[github-language--shields]: https://img.shields.io/github/languages/top/openinf/.github?color=blue&logo=github
 [license-badge-url]: https://spdx.org/licenses/MIT.html 'License: MIT'
-[license-badge--shields]: https://img.shields.io/github/license/openinf/gh-file-importer?color=blue 'License: MIT'
+[license-badge--shields]: https://img.shields.io/github/license/openinf/gh-file-importer?color=blue&logo=github 'License: MIT'
 [conventional-commits-badge]: https://img.shields.io/badge/commit%20style-Conventional-%23fa6673?logoColor=white&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggc3R5bGU9ImZpbGw6ICNGRkYiIGQ9Ik0xNSwyQTEzLDEzLDAsMSwxLDIsMTUsMTMsMTMsMCwwLDEsMTUsMm0wLTJBMTUsMTUsMCwxLDAsMzAsMTUsMTUsMTUsMCwwLDAsMTUsMFoiLz48L3N2Zz4K 'Commit Style: Conventional Commits'
 [conventional-commits-url]: https://www.conventionalcommits.org 'Commit Style: Conventional Commits'
 [npm-badge--shields]: https://img.shields.io/npm/v/@openinf/.github/latest.svg?logo=npm 'View on npm'
