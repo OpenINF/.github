@@ -1,75 +1,97 @@
 {
   "root": true,
-  "parserOptions": {
-    "project": "./tsconfig.eslint.json"
+  "env": {
+    "es2022": true,
+    "node": true
   },
-  "settings": {
-    "import/resolver": "node"
-  },
+  "plugins": ["import", "only-warn", "prettier"],
   "extends": [
     "eslint:recommended",
-    "plugin:markdown/recommended",
+    "plugin:import/recommended",
     "plugin:prettier/recommended" // Disables rules conflicting w/ Prettier
   ],
-  "plugins": ["markdown", "only-warn", "prettier"],
-  "rules": {
-    // Core ESLint Rules
-    "quotes": [
-      1,
-      "single",
-      { "allowTemplateLiterals": true, "avoidEscape": true }
-    ]
-  },
-  "overrides": [
-    {
-      // CommonJS Files
-      "files": ["*.?(c)js", ".*.?(c)js"],
-      "env": { "node": true }
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "babelOptions": {
+      "configFile": "./babel.config.json"
     },
+    "ecmaFeatures": {
+      "globalReturn": false
+    },
+    "sourceType": "module"
+  },
+  "reportUnusedDisableDirectives": true,
+  "overrides": [
+    // Glob patterns in overrides use minimatch syntax.
     {
-      // TypeScript Files
-      "files": ["*.mts", ".*.mts", "*.?(c)ts", ".*.?(c|m)ts", "**/*.?(c|m)ts"],
-      "plugins": ["@typescript-eslint"],
+      // Override for all files in the `src` directory.
+      "files": ["src/**/**.?(c|m)+(t|j)s"],
       "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.eslint.json"
+      },
       "extends": [
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@typescript-eslint/strict",
         "plugin:prettier/recommended" // Disables rules conflicting w/ Prettier
-      ]
-    },
-    {
-      // JSON?(5|C) Files
-      "files": [".*.json?(5|c)", "*.json?(5|c)", "OWNERS"],
-      "parser": "jsonc-eslint-parser",
-      "plugins": ["jsonc"],
-      "extends": [
-        "plugin:jsonc/base",
-        "plugin:jsonc/recommended-with-json", // JSON recommended config
-        "plugin:jsonc/recommended-with-jsonc", // JSONC recommended config
-        "plugin:jsonc/recommended-with-json5", // JSON5 recommended config
-        "plugin:jsonc/prettier" // Disables rules conflicting w/ Prettier
       ],
-      "rules": {
-        "jsonc/auto": "error"
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true,
+            "directory": "./src"
+          },
+          "node": {
+            "extensions": [".ts", ".mts"]
+          }
+        },
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".mts"]
+        }
       }
     },
     {
-      // Overrides for JSON?(5|C) Files (in our codebase, nonregular JSON files)
-      "files": [".*.json?(5|c)", "OWNERS"],
+      // Override for all JSON?(5|C) files.
+      "files": ["**.json?(5|c)", "OWNERS"],
+      "parser": "jsonc-eslint-parser",
+      "plugins": ["jsonc", "json-schema-validator"],
+      "extends": [
+        "plugin:jsonc/base",
+        "plugin:jsonc/recommended-with-json",
+        "plugin:jsonc/recommended-with-jsonc",
+        "plugin:jsonc/recommended-with-json5",
+        "plugin:json-schema-validator/recommended",
+        "plugin:jsonc/prettier" // Disables rules conflicting w/ Prettier
+      ],
+      "rules": {
+        "jsonc/auto": 1
+      }
+    },
+    {
+      // Override for JSON(5|C) files that allow comments.
+      "files": ["**.json?(5|c)", "OWNERS"],
+      "parser": "jsonc-eslint-parser",
+      "plugins": ["jsonc", "json-schema-validator"],
       "rules": {
         "jsonc/no-comments": 0
       }
     },
     {
-      // ES Module Files
-      "files": ["**/*.mjs", "eslint.config.js"],
-      "parser": "@babel/eslint-parser",
-      "parserOptions": {
-        "babelOptions": {
-          "configFile": "babel.config.json"
-        }
-      }
+      "files": ["**.md"],
+      "plugins": ["markdown"],
+      "extends": ["plugin:markdown/recommended"]
+    },
+    {
+      "files": ["**.t?(o)ml"],
+      "parser": "toml-eslint-parser"
+    },
+    {
+      "files": ["**.y?(a)ml"],
+      "parser": "yaml-eslint-parser"
     }
   ]
 }

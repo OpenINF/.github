@@ -2,14 +2,20 @@
   "compilerOptions": {
     "types": ["@types/node"],
     "noEmit": true,
-    "allowJs": true
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true
   },
   "extends": "./tsconfig.base.json",
   "include": [
-    ".*.json?(5|c)",
-    "*.json?(5|c)",
-    "**/*.?(m|c)ts",
-    "**/*.?(m|c)js",
-    "**/*.md"
+    "lib",
+    "src",
+    "test",
+    "build",
+    "**/**.json?(5|c)",
+    "**/**.?(m|c)+(j|t)s",
+    "**/**.md"
   ]
 }
