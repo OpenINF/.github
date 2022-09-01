@@ -1,6 +1,8 @@
 ---
 title: Colons
 key_point: A colon indicates that closely-related information follows.
+original_url: https://developers.google.com/style/colons
+original_title: Colons | Google developer documentation style guide
 ---
 
 ## Introductory phrase preceding colon
