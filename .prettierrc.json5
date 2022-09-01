@@ -8,7 +8,7 @@
   "overrides": [
     {
       // Markdown Files
-      "files": "**/*.md",
+      "files": "**/**.md",
       "options": {
         "parser": "mdx",
         "proseWrap": "always"
@@ -16,14 +16,14 @@
     },
     {
       // JSON?(5|C) Files
-      "files": ["OWNERS", ".*.json?(5|c)"],
+      "files": ["OWNERS", "**.json?(5|c)"],
       "options": {
         "parser": "json"
       }
     },
     {
       // JavaScript Files
-      "files": "**/*.?(c|m)js",
+      "files": "**/**.?(c|m)js",
       "options": {
         "parser": "babel",
         "parserOptions": {
@@ -33,7 +33,7 @@
     },
     {
       // TypeScript Files
-      "files": "**/*.?(c|m)ts",
+      "files": ["**/**.?(c|m)ts", "**/*.d.ts"],
       "options": {
         "parser": "typescript"
       }
