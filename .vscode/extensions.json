@@ -6,6 +6,7 @@
     "mrmlnc.vscode-json5",
     "redhat.vscode-yaml",
     "bungcip.better-toml",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "DavidAnson.vscode-markdownlint"
   ]
 }
