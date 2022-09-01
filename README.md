@@ -76,13 +76,13 @@
 <br />
 
 [^1]:
-    https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/
+    <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/>
 
-[^2]: https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values
+[^2]:
+    <https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values>
 
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
-
 
 [**@openinf**]: https://github.com/openinf
 [**@openinf/.github**]: https://github.com/openinf/.github
@@ -97,7 +97,7 @@
   'Contribution guidelines for this project'
 [`FUNDING`]:
   https://github.com/openinf/.github/blob/HEAD/.github/FUNDING.yml
-  'How to financially support maintenance/development of @openinf projects on GitHub using GitHub Sponsors'
+  'How to financially support maintenance/development of @openinf projects'
 [`LICENSE`]:
   https://github.com/openinf/.github/blob/HEAD/LICENSE
   'The open source software license(s) associated with this project'
