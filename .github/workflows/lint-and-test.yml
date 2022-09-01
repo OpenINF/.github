@@ -16,7 +16,7 @@ jobs:
           node-version: lts/gallium
       - name: Install
         run: |
-          npm install
+          npm ci
       # Checks to see if any files in the PR match one of the listed file types.
       # We can use this filter to decide whether or not to run linters or tests.
       # You can check if a file with a listed file type is in the PR by doing:
@@ -27,29 +27,26 @@ jobs:
         with:
           filters: |
             md:
-              - '**/*.md'
-              - '**/*.*.md'
+              - '**/**.md'
             js:
-              - '**/*.js'
-              - '**/*.*.js'
-              - '**/*.mjs'
+              - '**/**.?(c|m)js'
             json:
-              - '**/*.json'
-              - '**/.*.json'
-              - '**/.*.jsonc'
-              - '**/.*.json5'
+              - '**/**.json?(5|c)'
+              - 'OWNERS'
             toml:
-              - '.*.toml'
+              - '**/**.t?(o)ml'
             ts:
-              - '**/*.ts'
-              - '**/*.mts'
+              - '**/**.?(c|m)ts'
               - '**/*.d.ts'
             yaml:
-              - '**/*.yml'
-              - '**/*.yaml'
+              - '**/**.y?(a)ml'
 
       # Use the filter to check if files with a specific file type were changed
       # in the PR. If they were, run the relevant linters. Otherwise, skip.
+
+      - name: Verify Markdown
+        if: ${{ steps.filter.outputs.md == 'true' }}
+        run: nps verify.md
 
       - name: Verify JavaScript
         if: ${{ steps.filter.outputs.js == 'true' }}
@@ -58,10 +55,6 @@ jobs:
       - name: Verify JSON
         if: ${{ steps.filter.outputs.json == 'true' }}
         run: nps verify.json
-
-      - name: Verify Markdown
-        if: ${{ steps.filter.outputs.md == 'true' }}
-        run: nps verify.md
 
       - name: Verify TOML
         if: ${{ steps.filter.outputs.toml == 'true' }}
