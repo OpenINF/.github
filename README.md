@@ -6,7 +6,6 @@
 
 [![Code Style: Prettier][prettier-badge]][prettier-url]
 [![Commit Style: Conventional Commits][conventional-commits-badge]][conventional-commits-url]
-[![Chat on Matrix][matrix-badge--badgen]][matrix-url]
 [![Chat on Matrix][matrix-badge--shields]][matrix-url]
 
 </div>
