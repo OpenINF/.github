@@ -7,22 +7,19 @@
   "trailingComma": "es5",
   "overrides": [
     {
-      // Markdown Files
-      "files": "**/**.md",
+      "files": ["**/**.md"],
       "options": {
-        "parser": "mdx",
+        "parser": "markdown",
         "proseWrap": "always"
       }
     },
     {
-      // JSON?(5|C) Files
-      "files": ["OWNERS", "**.json?(5|c)"],
+      "files": ["OWNERS", "**/**.json?(5|c)"],
       "options": {
         "parser": "json"
       }
     },
     {
-      // JavaScript Files
       "files": "**/**.?(c|m)js",
       "options": {
         "parser": "babel",
@@ -32,14 +29,12 @@
       }
     },
     {
-      // TypeScript Files
       "files": ["**/**.?(c|m)ts", "**/*.d.ts"],
       "options": {
         "parser": "typescript"
       }
     },
     {
-      // YAML Files
       "files": "**/**.y?(a)ml",
       "options": {
         "parser": "yaml"

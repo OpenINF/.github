@@ -102,6 +102,7 @@
   // Prettier / Prettier-VSCode
   /////////////////////////////////////////////
 
+  "prettier.configPath": "./.prettierrc.json",
   "prettier.useEditorConfig": true,
   "prettier.requireConfig": true,
 
