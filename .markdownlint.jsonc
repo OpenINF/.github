@@ -86,7 +86,7 @@
     // Include code blocks
     "code_blocks": true,
     // Include tables
-    "tables": true,
+    "tables": false,
     // Include headings
     "headings": true,
     // Include headings
@@ -221,10 +221,7 @@
   "MD042": true,
 
   // MD043/required-headings/required-headers - Required heading structure
-  "MD043": {
-    // List of headings
-    "headings": ["+"]
-  },
+  "MD043": false,
 
   // MD044/proper-names - Proper names should have the correct capitalization
   "MD044": {

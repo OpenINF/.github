@@ -8,7 +8,7 @@ page describes how to report any vulnerabilities you may find and lists best
 practices to minimize the risk of introducing or being affected by a
 vulnerability.
 
-## Reporting vulnerabilities
+## Reporting Vulnerabilities
 
 In the rare event that you find a vulnerability in the OpenINF SDK itself,
 [email us](mailto:security@inf.is). We hope to regularly work with the
@@ -18,7 +18,7 @@ reporting should be available shortly for those uncomfortable with that medium.
 Anonymous reports will also gladly be accepted. We also hope to introduce a
 healthy manner of incentivizing reporting in the near term.
 
-## Best practices
+## Best Practices
 
 - **Keep current with the latest OpenINF SDK releases.** We regularly update the
   various packages that the OpenINF SDK is composed of, and these updates may
@@ -44,4 +44,4 @@ healthy manner of incentivizing reporting in the near term.
   to maintain our secure software ecosystems.
 
 [^1]:
-    https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program/
+    <https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program/>
