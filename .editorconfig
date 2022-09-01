@@ -15,6 +15,6 @@ max_line_length = 80
 # your editor might.
 trim_trailing_whitespace = true
 
-[*.md]
+[**.md]
 # Trailing whitespace is significant in Markdown.
 trim_trailing_whitespace = false

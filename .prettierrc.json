@@ -1,0 +1,44 @@
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "quoteProps": "as-needed",
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": ["**/**.md"],
+      "options": {
+        "parser": "markdown",
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": ["OWNERS", "**/**.json?(5|c)"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "**/**.?(c|m)js",
+      "options": {
+        "parser": "babel",
+        "parserOptions": {
+          "sourceType": "module"
+        }
+      }
+    },
+    {
+      "files": ["**/**.?(c|m)ts", "**/*.d.ts"],
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": "**/**.y?(a)ml",
+      "options": {
+        "parser": "yaml"
+      }
+    }
+  ]
+}

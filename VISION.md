@@ -1,4 +1,6 @@
-<!-- https://opensource.guide/best-practices/#write-down-your-projects-vision -->
+<!--
+  https://opensource.guide/best-practices/#write-down-your-projects-vision
+-->
 
 # Vision
 
