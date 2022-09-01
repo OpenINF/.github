@@ -62,7 +62,6 @@ omissions and errors may exist, for which contributions are welcome._
 
 </div><br />
 
-
 ## Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
 
 <br />
