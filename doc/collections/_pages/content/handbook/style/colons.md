@@ -1,14 +1,7 @@
-# Colons
-
-**On this page**
-
-- [Introductory phrase preceding colon](#introductory-phrase-preceding-colon)
-- [Bold text preceding colon](#bold-text-preceding-colon)
-- [Code text preceding colon](#code-text-preceding-colon)
-- [Colons within sentences](#colons-within-sentences)
-- [See also](#see-also)
-
-**Key Point:** A colon indicates that closely-related information follows.
+---
+title: Colons
+key_point: A colon indicates that closely-related information follows.
+---
 
 ## Introductory phrase preceding colon
 
