@@ -5,6 +5,8 @@ original_url: https://developers.google.com/style/colons
 original_title: Colons | Google developer documentation style guide
 ---
 
+<section id="phrase-preceding-colon" markdown="1">
+
 ## Introductory phrase preceding colon
 
 When a colon introduces a list, the text that precedes the colon must be able to
@@ -12,9 +14,11 @@ stand alone as a complete sentence.
 
 ### Examples
 
-Recommended: The fields are defined as follows:
+<p class="example"><span class="compare-better">Recommended:</span> The fields are defined as
+follows:</p>
+<p class="example"><span class="compare-worse">Not recommended:</span> The fields are:</p>
 
-Not recommended: The fields are:
+</section>
 
 ## Bold text preceding colon
 
