@@ -24,10 +24,14 @@ stand alone as a complete sentence.
 
 </section>
 
+<section id="bold-text-preceding-colon" markdown="1">
+
 ## Bold text preceding colon
 
 When non-italic (_roman_) text that precedes a colon is bold, make the colon
 bold too.
+
+</section>
 
 ## Code text preceding colon
 
