@@ -87,13 +87,21 @@ omissions and errors may exist, for which contributions are welcome._
 > exist alongside it as an alternative location to even include project scope as
 > well, but should be linked to from the root [`README`] file in these cases.
 
-<br />
+<br /><br />
 
 ---
 
 <br />
 
 <div align="center">
+
+## Show Your Support
+
+<!-- Give a ⭐️ if this project helped you! -->
+
+If you like the project, [give it a star ⭐️], it will be a great encouragement to us.
+
+<br /><br />
 
 &copy; The OpenINF Authors
 
@@ -115,6 +123,8 @@ omissions and errors may exist, for which contributions are welcome._
 
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
+
+[give it a star ⭐️]: https://github.com/openinf/.github/stargazers
 
 [**@openinf**]: https://github.com/openinf
 [**@openinf/.github**]: https://github.com/openinf/.github
