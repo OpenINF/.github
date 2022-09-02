@@ -33,11 +33,15 @@ bold too.
 
 </section>
 
+<section id="code-text-preceding-colon" markdown="1">
+
 ## Code text preceding colon
 
 When text that precedes a colon is tagged as `<code>`, don't include the colon
 in the `<code>` tagging unless it is part of the code. For more information
 about formatting code, see [Some specific items to put in code font].
+
+</section>
 
 ## Colons within sentences
 
