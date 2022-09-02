@@ -14,9 +14,13 @@ stand alone as a complete sentence.
 
 ### Examples
 
-<p class="example"><span class="compare-better">Recommended:</span> The fields are defined as
-follows:</p>
-<p class="example"><span class="compare-worse">Not recommended:</span> The fields are:</p>
+<p class="example">
+  <span class="compare-better">Recommended:</span> The fields are defined as
+  follows:
+</p>
+<p class="example">
+  <span class="compare-worse">Not recommended:</span> The fields are:
+</p>
 
 </section>
 
