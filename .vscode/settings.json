@@ -61,20 +61,6 @@
   "typescript.validate.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
 
-  // Remote
-  //////////////////////////////////////////////////////////////////////////////
-
-  // Fix 'EACCESS: permission denied error' trying to rename a folder in the
-  // open workspace until Windows Server adds native WSL2 support.
-  // https://code.visualstudio.com/docs/remote/troubleshooting#_i-see-eaccess-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace
-  "remote.WSL.fileWatcher.polling": true,
-
-  // All workspace files must be excluded from being watched otherwise the
-  // problem will persist.
-  "files.watcherExclude": {
-    "**/**/*": true
-  },
-
   // Extensions
   //////////////////////////////////////////////////////////////////////////////
 
