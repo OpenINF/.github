@@ -7,7 +7,7 @@ updates:
       interval: weekly
       day: tuesday
       timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
-      time: 13:00
+      time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
       - emmitrovic
@@ -19,7 +19,7 @@ updates:
       interval: weekly
       day: tuesday
       timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
-      time: 13:00
+      time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
       - emmitrovic
@@ -31,7 +31,7 @@ updates:
       interval: weekly
       day: tuesday
       timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
-      time: 13:00
+      time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
       - emmitrovic
@@ -43,7 +43,7 @@ updates:
       interval: weekly
       day: tuesday
       timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
-      time: 13:00
+      time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
       - emmitrovic
