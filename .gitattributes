@@ -1,4 +1,4 @@
-*                       text=auto linguist-detectable
+*                       text=auto eol=lf linguist-detectable
 .*.jsonc                diff=jsonc linguist-language=jsonc
 .*.json5                diff=json5 linguist-language=json5
 .devcontainer/*.json    diff=jsonc linguist-language=jsonc
