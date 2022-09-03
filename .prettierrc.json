@@ -29,7 +29,7 @@
       }
     },
     {
-      "files": ["**/**.?(c|m)ts", "**/*.d.ts"],
+      "files": ["**/**.?(c|m)ts", "**/*.d.?(c|m)ts"],
       "options": {
         "parser": "typescript"
       }
