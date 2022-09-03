@@ -35,6 +35,12 @@
       }
     },
     {
+      "files": "**/**.t?(o)ml",
+      "options": {
+        "parser": "toml"
+      }
+    },
+    {
       "files": "**/**.y?(a)ml",
       "options": {
         "parser": "yaml"

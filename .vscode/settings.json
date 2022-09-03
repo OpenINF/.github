@@ -48,7 +48,9 @@
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
     ".eslintrc.json": "jsonc",
-    ".prettierrc.json5": "json5"
+    ".prettierrc.json": "json5",
+    ".prettierrc.json5": "json5",
+    ".deepsource.toml": "toml"
   },
 
   // JavaScript/TypeScript
