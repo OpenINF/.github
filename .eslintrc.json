@@ -46,17 +46,24 @@
             "directory": "./src"
           },
           "node": {
-            "extensions": [".ts", ".mts"]
+            "extensions": [".ts", ".cts", ".mts", ".d.ts", ".d.cts", ".d.mts"]
           }
         },
         "import/parsers": {
-          "@typescript-eslint/parser": [".ts", ".mts"]
+          "@typescript-eslint/parser": [
+            ".ts",
+            ".cts",
+            ".mts",
+            ".d.ts",
+            ".d.cts",
+            ".d.mts"
+          ]
         }
       }
     },
     {
       // Override for all JSON?(5|C) files.
-      "files": ["**.json?(5|c)", "OWNERS"],
+      "files": ["**.json?(5|c)", ".*.json?(5|c)", "OWNERS"],
       "parser": "jsonc-eslint-parser",
       "plugins": ["jsonc", "json-schema-validator"],
       "extends": [
@@ -73,9 +80,17 @@
     },
     {
       // Override for JSON(5|C) files that allow comments.
-      "files": ["**.json?(5|c)", "OWNERS"],
+      "files": ["**.json?(5|c)", ".*.json?(5|c)", "OWNERS"],
       "parser": "jsonc-eslint-parser",
       "plugins": ["jsonc", "json-schema-validator"],
+      "extends": [
+        "plugin:jsonc/base",
+        "plugin:jsonc/recommended-with-json",
+        "plugin:jsonc/recommended-with-jsonc",
+        "plugin:jsonc/recommended-with-json5",
+        "plugin:json-schema-validator/recommended",
+        "plugin:jsonc/prettier" // Disables rules conflicting w/ Prettier
+      ],
       "rules": {
         "jsonc/no-comments": 0
       }

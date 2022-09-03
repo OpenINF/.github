@@ -5,7 +5,7 @@
   // Editor
   //////////////////////////////////////////////////////////////////////////////
 
-  // Auto-fix JS/TS files with ESLint using amphtml's custom settings. Needs
+  // Auto-fix JS/TS files with ESLint using custom settings. Needs
   // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "[js]": { "editor.formatOnSave": false },
