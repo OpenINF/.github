@@ -1,4 +1,4 @@
-*                       text=auto
+*                       text=auto linguist-detectable
 .*.jsonc                diff=jsonc linguist-language=jsonc
 .*.json5                diff=json5 linguist-language=json5
 .devcontainer/*.json    diff=jsonc linguist-language=jsonc
@@ -9,3 +9,4 @@ doc/**                  linguist-documentation
 lib/**                  linguist-generated=true
 OWNERS                  diff=json5 linguist-language=json5
 tsconfig.json           diff=jsonc linguist-language=jsonc
+tsconfig.*.json         diff=jsonc linguist-language=jsonc

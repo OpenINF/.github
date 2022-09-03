@@ -1,12 +1,27 @@
 {
   "recommendations": [
+    "aaron-bond.better-comments",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
+    "drewbourne.vscode-remark-lint",
+    "eamodio.gitlens",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
+    "Gruntfuggly.todo-tree",
+    "hookyqr.beautify",
+    "ionutvmi.path-autocomplete",
+    "knisterpeter.vscode-commitizen",
+    "lunaryorn.fish-ide",
     "mrmlnc.vscode-json5",
+    "ms-azuretools.vscode-docker",
     "redhat.vscode-yaml",
-    "bungcip.better-toml",
-    "aaron-bond.better-comments",
-    "DavidAnson.vscode-markdownlint"
+    "sissel.shopify-liquid",
+    "streetsidesoftware.code-spell-checker",
+    "travisthetechie.write-good-linter",
+    "skyapps.fish-vscode",
+    "yzhang.markdown-all-in-one",
+    "tamasfe.even-better-toml"
   ]
 }
