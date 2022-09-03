@@ -61,5 +61,6 @@ echo no-autostart >>~/.gnupg/gpg.conf
 # creating a new one when gpgtunnel connection is made.
 rm ~/.gnupg/S.gpg-agent
 
-echo "\nto enable commit signing, open a new shell and run:"
+echo ""
+echo "to enable commit signing, open a new shell and run:"
 echo "git config --global commit.gpgsign true"
