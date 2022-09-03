@@ -6,6 +6,11 @@
     ":preserveSemverRanges",
     "github>whitesource/merge-confidence:beta"
   ],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": true,
+    "assignees": ["@DerekNonGeneric"]
+  },
   "lockFileMaintenance": { "enabled": true },
   "postUpdateOptions": ["npmDedupe"],
   "platformCommit": true,
@@ -22,7 +27,7 @@
       "packageRules": [
         {
           "matchDepTypes": ["dependencies"],
-          "commitMessagePrefix": "deps:",
+          "commitMessagePrefix": "chore(deps):",
           "labels": ["dependencies", "deps-production"]
         }
       ]
