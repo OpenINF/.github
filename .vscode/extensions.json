@@ -5,7 +5,6 @@
     "christian-kohler.path-intellisense",
     "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
-    "drewbourne.vscode-remark-lint",
     "eamodio.gitlens",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
@@ -18,10 +17,10 @@
     "ms-azuretools.vscode-docker",
     "redhat.vscode-yaml",
     "sissel.shopify-liquid",
-    "streetsidesoftware.code-spell-checker",
-    "travisthetechie.write-good-linter",
     "skyapps.fish-vscode",
-    "yzhang.markdown-all-in-one",
-    "tamasfe.even-better-toml"
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml",
+    "travisthetechie.write-good-linter",
+    "yzhang.markdown-all-in-one"
   ]
 }
