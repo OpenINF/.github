@@ -1,26 +1,50 @@
+# $schema: https://json.schemastore.org/dependabot-2.0.json
 version: 2
 updates:
-
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
+      day: tuesday
+      timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
+      time: 13:00
     open-pull-requests-limit: 10
+    reviewers:
+      - emmitrovic
+      - openinf/wg-a-team
 
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: daily
-     open-pull-requests-limit: 10
+      interval: weekly
+      day: tuesday
+      timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
+      time: 13:00
+    open-pull-requests-limit: 10
+    reviewers:
+      - emmitrovic
+      - openinf/wg-a-team
 
-  - package-ecosystem: docker
+  - package-ecosystem: bundler
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
+      day: tuesday
+      timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
+      time: 13:00
     open-pull-requests-limit: 10
+    reviewers:
+      - emmitrovic
+      - openinf/wg-a-team
 
   - package-ecosystem: docker
     directory: /.devcontainer
     schedule:
-      interval: daily
+      interval: weekly
+      day: tuesday
+      timezone: Europe/Belgrade # https://time.is/Serbia#time_difference
+      time: 13:00
     open-pull-requests-limit: 10
+    reviewers:
+      - emmitrovic
+      - openinf/wg-a-team
