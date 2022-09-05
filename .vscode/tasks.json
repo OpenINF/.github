@@ -6,7 +6,7 @@
     {
       "label": "Serve",
       "type": "shell",
-      "command": "bundle exec jekyll serve --livereload",
+      "command": "bundle exec jekyll serve --force_polling --livereload --baseurl='' --source ./doc --destination ./doc/_site",
       "group": {
         "kind": "test",
         "isDefault": true
@@ -16,7 +16,7 @@
     {
       "label": "Build",
       "type": "shell",
-      "command": "bundle exec jekyll build",
+      "command": "bundle exec jekyll build  --source ./doc --destination ./doc/_site --profile --trace",
       "group": {
         "kind": "build",
         "isDefault": true
