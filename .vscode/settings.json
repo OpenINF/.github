@@ -5,6 +5,9 @@
   // Editor
   //////////////////////////////////////////////////////////////////////////////
 
+  "editor.experimental.pasteActions.enabled": true,
+  "editor.stickyScroll.enabled": false,
+
   // Auto-fix JS/TS files with ESLint using custom settings. Needs
   // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
@@ -28,12 +31,33 @@
   },
 
   "[yaml]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   // Render vertical rulers after a certain number of monospace characters.
   "editor.rulers": [80, 100], // Uses multiple values for multiple rulers.
+
+  // Terminal
+  //////////////////////////////////////////////////////////////////////////////
+
+  "terminal.integrated.profiles.linux":{
+    "fish": {
+      "path": "fish"
+    }
+  },
+
+  "terminal.integrated.automationProfile.linux": {
+    "path": "fish",
+    "icon": "terminal"
+  },
+
+  "terminal.integrated.env.linux": {
+    // TODO: Determine whether defining env-vars here would be preferable.
+  },
+
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.smoothScrolling": true,
 
   // Files
   //////////////////////////////////////////////////////////////////////////////
@@ -54,6 +78,12 @@
     ".renovaterc.json": "json5"
   },
 
+  // Markdown
+  //////////////////////////////////////////////////////////////////////////////
+
+  "markdown.experimental.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.experimental.updateLinksOnFileMove.externalFileGlobs": "*",
+
   // JavaScript/TypeScript
   //////////////////////////////////////////////////////////////////////////////
 
@@ -61,6 +91,12 @@
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.preferences.autoImportFileExcludePatterns": [
+    "**/node_modules/@types/node"
+  ],
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "**/node_modules/@types/node"
+  ],
 
   // Extensions
   //////////////////////////////////////////////////////////////////////////////
