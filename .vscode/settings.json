@@ -41,7 +41,7 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  "terminal.integrated.profiles.linux":{
+  "terminal.integrated.profiles.linux": {
     "fish": {
       "path": "fish"
     }
