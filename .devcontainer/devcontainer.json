@@ -29,8 +29,6 @@
     "esbenp.prettier-vscode",
     // https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
     "Gruntfuggly.todo-tree",
-    // https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
-    "hookyqr.beautify",
     // https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
     "ionutvmi.path-autocomplete",
     // https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen
