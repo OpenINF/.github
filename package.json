@@ -35,7 +35,7 @@
     "@typescript-eslint/parser": "5.36.2",
     "@yarnpkg/shell": "3.2.4",
     "editorconfig-checker": "4.0.2",
-    "eslint": "8.23.0",
+    "eslint": "8.24.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-node": "0.3.6",
     "eslint-import-resolver-typescript": "3.5.1",
