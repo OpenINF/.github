@@ -31,7 +31,7 @@
     "@babel/preset-env": "7.19.0",
     "@iktakahiro/markdown-it-katex": "4.0.1",
     "@types/node": "16.x",
-    "@typescript-eslint/eslint-plugin": "5.36.2",
+    "@typescript-eslint/eslint-plugin": "5.38.1",
     "@typescript-eslint/parser": "5.38.1",
     "@yarnpkg/shell": "3.2.4",
     "editorconfig-checker": "4.0.2",
