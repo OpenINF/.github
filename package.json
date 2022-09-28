@@ -30,7 +30,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.18.6",
     "@babel/preset-env": "7.19.3",
     "@iktakahiro/markdown-it-katex": "4.0.1",
-    "@types/node": "16.x",
+    "@types/node": "17.x",
     "@typescript-eslint/eslint-plugin": "5.38.1",
     "@typescript-eslint/parser": "5.38.1",
     "@yarnpkg/shell": "3.2.4",
