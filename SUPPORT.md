@@ -17,7 +17,7 @@ Conduct][coc].
 
 **[@OpenINF][twitter-account] on Twitter:** The OpenINF support account on
 Twitter. <abbr title="Direct Messages">DMs</abbr> (Direct Messages) are open. Be
-sure to follow the [Twitter Rules] and our [Code of Conduct].
+sure to follow the [Twitter Rules][twitter-rules] and our [Code of Conduct][coc].
 
 [docs-site]: https://open.inf.is/docs
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
