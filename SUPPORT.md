@@ -13,7 +13,7 @@ tutorial resources.
 channel on the _matrix.org_ network. It’s a synchronous chat channel for
 lightweight communication. Good uses of it are for asking questions, casual
 conversation, collaboration, and quick exchanges. Be sure to follow our [Code of
-Conduct].
+Conduct][coc].
 
 **[@OpenINF][twitter-account] on Twitter:** The OpenINF support account on
 Twitter. <abbr title="Direct Messages">DMs</abbr> (Direct Messages) are open. Be
