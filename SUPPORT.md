@@ -21,7 +21,7 @@ sure to follow the [Twitter Rules][twitter-rules] and our [Code of
 Conduct][coc].
 
 [coc]: ./CODE_OF_CONDUCT.md
-[docs-site]: https://open.inf.is/docs
+[docs-site]: https://open.inf.is
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
 [twitter-account]: https://twitter.com/OpenINF
 [twitter-rules]: https://help.twitter.com/en/rules-and-policies/twitter-rules
