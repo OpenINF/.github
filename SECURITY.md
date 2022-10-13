@@ -38,7 +38,7 @@ healthy manner of incentivizing reporting in the near term.
   if your dependencies have had security updates and update the pin accordingly.
   Doing this manually, however, can become tedious. It is advisable to use an
   automated dependency update tool that fits into your workflows, such as
-  WhiteSource Renovate (also known as Renovatebot), which we are thankful to
+  Mend Renovate (also known as Renovatebot), which we are thankful to
   have as one of our organization's trusted partners in automated dependency
   management.[^1] We hope you, dearest reader, will soon join us in our journey
   to maintain our secure software ecosystems.
