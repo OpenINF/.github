@@ -3,3 +3,10 @@ node_modules/
 
 # Ignore secrets.
 .env
+
+# Ignore Bundler locally installed gems.
+/vendor/
+
+# Ignore Jekyll build products & tempfiles.
+_site/
+.jekyll-cache/

@@ -1,7 +1,9 @@
 import yarnpkgShell from '@yarnpkg/shell';
 
 let code = 0;
-const scripts = [`npx prettier --write "**/*.md"`];
+const scripts = [
+  'prettier --write "**/*.md"'
+];
 
 console.log('\r\nAutoformatting all Markdown files using Prettier\r\n');
 

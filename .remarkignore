@@ -1,0 +1,4 @@
+node_modules/
+/vendor/
+/doc/_site/
+_site/**/*.md

@@ -1,6 +1,6 @@
 !.*
 package.json
 package-lock.json
-node_modules/
 /doc/_site/
-/vendor/
+node_modules/
+vendor/
