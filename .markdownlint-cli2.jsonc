@@ -12,16 +12,12 @@
   "globs": ["**/**.md"],
 
   // Define glob expressions to ignore
-<<<<<<< HEAD
   "ignores": [
     "LICENSE",
     "/vendor/**/*",
     "node_modules/**/*",
     "/doc/_site/**/*"
   ],
-=======
-  "ignores": ["LICENSE", "/vendor/**/*", "node_modules/**/*", "/doc/_site/**/*"],
->>>>>>> 3d1518f (style(md): add format/verify tasks for md files)
 
   "markdownItPlugins": [
     // Use a plugin to recognize math
