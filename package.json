@@ -4,7 +4,7 @@
   "description": "",
   "packageManager": "npm@8.1.0+",
   "engines": {
-    "node": "^16.13.0",
+    "node": "^18.0.0",
     "npm": "^8.1.0",
     "npx": "^8.1.0"
   },
@@ -30,7 +30,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.19.6",
     "@babel/preset-env": "7.19.4",
     "@iktakahiro/markdown-it-katex": "4.0.1",
-    "@types/node": "16.x",
+    "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
     "@yarnpkg/shell": "3.2.4",
