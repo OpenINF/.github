@@ -12,7 +12,13 @@
   "globs": ["**/**.md"],
 
   // Define glob expressions to ignore
-  "ignores": ["LICENSE"],
+  "ignores": [
+    "LICENSE",
+    "vendor/**/*",
+    "lib/**/*",
+    "doc/.jekyll-cache/**/*",
+    "doc/_site/**/*"
+  ],
 
   "markdownItPlugins": [
     // Use a plugin to recognize math

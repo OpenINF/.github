@@ -1,6 +1,10 @@
-<div align="center">
+<h1 align="center">
 
-# @openinf/.github
+@openinf/.github
+
+</h1>
+
+<div align="center">
 
 Org-level default metadata & community health files
 
@@ -38,7 +42,7 @@ omissions and errors may exist, for which contributions are welcome._
 
 <br />
 
-## Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
+<h2>Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>
 
 <br />
 
@@ -61,7 +65,7 @@ omissions and errors may exist, for which contributions are welcome._
 
 </div><br />
 
-## Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
+<h2>Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>
 
 <br />
 
@@ -95,7 +99,7 @@ omissions and errors may exist, for which contributions are welcome._
 
 <div align="center">
 
-## Show Your Support
+<h2>Show Your Support</h2>
 
 <!-- Give a ⭐️ if this project helped you! -->
 
@@ -109,7 +113,7 @@ to us.
 <br />
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
-  <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/logo.svg?sanitize=true" />
+  <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/logo.svg?sanitize=true">
 </a>
 
 </div>
