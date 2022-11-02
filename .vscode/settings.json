@@ -153,7 +153,8 @@
   "eslint.lintTask.enable": true,
 
   // Avoids having to globally install ESLint.
-  "eslint.packageManager": "pnpm",
+  // TODO(DerekNonGeneric): See about switching to pnpm!
+  // "eslint.packageManager": "pnpm",
 
   "eslint.enable": true,
 
