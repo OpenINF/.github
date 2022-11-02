@@ -2,7 +2,7 @@
   "name": "@openinf/.github",
   "version": "0.0.0-development",
   "description": "",
-  "packageManager": "npm@8.1.0+",
+  "packageManager": "npm@8.19.2+sha1.db90e88584d065f51b069ab46b4f02f5cf4898b7",
   "engines": {
     "node": "^16.13.0",
     "npm": "^8.1.0",
@@ -22,6 +22,10 @@
     "start": "nps",
     "test": "nps test"
   },
+  "peerDependencies": {
+    "@types/markdown-it": "*",
+    "markdown-it": "*"
+  },
   "devDependencies": {
     "@babel/core": "7.19.6",
     "@babel/eslint-parser": "7.19.1",
@@ -30,7 +34,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.19.6",
     "@babel/preset-env": "7.19.4",
     "@iktakahiro/markdown-it-katex": "4.0.1",
-    "@types/node": "16.x",
+    "@types/node": "~16.18.3",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
     "@yarnpkg/shell": "3.2.4",

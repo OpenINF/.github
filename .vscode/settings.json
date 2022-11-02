@@ -129,7 +129,9 @@
 
   "prettier.configPath": "./.prettierrc.json",
   "prettier.useEditorConfig": true,
+  // "prettier.prettierPath": "./node_modules/.pnpm/prettier@2.7.1",
   "prettier.requireConfig": true,
+  "prettier.resolveGlobalModules": true,
 
   // ESLint (ESLint is a separate extension)
   /////////////////////////////////////////////
@@ -149,5 +151,11 @@
 
   // Whether the extension contributes a lint task to lint a whole workspace.
   "eslint.lintTask.enable": true,
+
+  // Avoids having to globally install ESLint.
+  "eslint.packageManager": "pnpm",
+
+  "eslint.enable": true,
+
   "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }]
 }
