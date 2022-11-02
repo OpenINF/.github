@@ -4,7 +4,7 @@ on:
   push:
     branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
   schedule:
     # "At 10:00 UTC on Monday" https://time.is/UTC#time_difference
     - cron: '0 10 * * 1' # https://crontab.guru/#0_10_*_*_1
