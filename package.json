@@ -1,7 +1,7 @@
 {
   "name": "@openinf/.github",
   "version": "0.0.0-development",
-  "description": "Org-level default metadata & community health files for use across all OpenINF projects on GitHub ",
+  "description": "Org-level default metadata & community health files for use across all OpenINF projects on GitHub",
   "packageManager": "npm@8.19.2+sha1.db90e88584d065f51b069ab46b4f02f5cf4898b7",
   "engines": {
     "node": "^14.17.0 || ^16.13.0 || ^18.12.0",
