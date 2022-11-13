@@ -100,8 +100,8 @@ on Twitter.
 
 ## Code of Conduct
 
-By participating in this project, you are expected to uphold our [Code of
-Conduct][code_of_conduct].
+By participating in this project, you are expected to uphold our Code of
+Conduct. Please see the [`CODE_OF_CONDUCT.md`] file for expected behavior.
 
 ## Developer’s Certificate of Origin 1.1
 
