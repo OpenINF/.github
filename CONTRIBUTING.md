@@ -89,7 +89,7 @@ file a GitHub issue with details of what you’d like to see documented.
 ## Questions or thoughts?
 
 Support requests (e.g., asking questions) or feedback (e.g., constructive
-criticism) may be directed to the [`@openinf`][twitter-account] support account
+criticism) may be directed to the [`@OpenINF`][twitter-account] support account
 on Twitter.
 
 ## Additional resources
