@@ -17,15 +17,13 @@
     "sourceType": "module"
   },
   "plugins": [
-    "import",
     "json-schema-validator",
     "unicorn",
     "import",
     "wix-editor",
     "prettier",
     "simple-import-sort",
-    "promise",
-    "prettier"
+    "promise"
   ],
   "extends": [
     "eslint:recommended",
@@ -34,9 +32,8 @@
     "plugin:import/warnings",
     "plugin:regexp/recommended",
     "plugin:promise/recommended",
-    "plugin:prettier/recommended",
     "plugin:json-schema-validator/recommended",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "consistent-return": [1, { "treatUndefinedAsUnspecified": true }],
@@ -91,18 +88,17 @@
       },
       "plugins": [
         "@typescript-eslint",
-        "import",
         "unicorn",
         "import",
         "wix-editor",
         "prettier",
         "simple-import-sort",
-        "promise",
-        "prettier"
+        "promise"
       ],
       "extends": [
         "eslint:recommended",
         "plugin:import/recommended",
+        "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@typescript-eslint/strict",
@@ -110,8 +106,7 @@
         "plugin:import/warnings",
         "plugin:regexp/recommended",
         "plugin:promise/recommended",
-        "plugin:prettier/recommended",
-        "prettier"
+        "plugin:prettier/recommended"
       ],
       "settings": {
         "import/resolver": {
