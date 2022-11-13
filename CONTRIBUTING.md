@@ -150,7 +150,7 @@ Please see the [`SECURITY.md`] file.
   'Contribution guidelines for this project'
 [`FUNDING`]:
   ./.github/FUNDING.yml
-  'How to financially support maintenance/development of @openinf projects on GitHub using GitHub Sponsors'
+  'How to financially support maintenance/development of @OpenINF projects on GitHub using GitHub Sponsors'
 [`LICENSE`]:
   ./LICENSE
   'The open source software license(s) associated with this project'
