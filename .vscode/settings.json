@@ -13,16 +13,14 @@
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "[js]": { "editor.formatOnSave": false },
 
-  // Auto-fix non-JS/TS files with Prettier using our custom settings. Needs
-  // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
   "[json]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[json5]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[markdown]": {
@@ -41,23 +39,7 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  "terminal.integrated.profiles.linux": {
-    "fish": {
-      "path": "fish"
-    }
-  },
-
-  "terminal.integrated.automationProfile.linux": {
-    "path": "fish",
-    "icon": "terminal"
-  },
-
-  "terminal.integrated.env.linux": {
-    // TODO: Determine whether defining env-vars here would be preferable.
-  },
-
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.useWslProfiles": true,
 
   // Files
   //////////////////////////////////////////////////////////////////////////////
@@ -137,6 +119,7 @@
   /////////////////////////////////////////////
 
   "eslint.validate": [
+    "markdown",
     "javascript",
     "typescript",
     "json",
@@ -152,11 +135,9 @@
   // Whether the extension contributes a lint task to lint a whole workspace.
   "eslint.lintTask.enable": true,
 
+  "eslint.workingDirectories": ["./"],
+
   // Avoids having to globally install ESLint.
   // TODO(DerekNonGeneric): See about switching to pnpm!
-  // "eslint.packageManager": "pnpm",
-
-  "eslint.enable": true,
-
-  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }]
+  "eslint.packageManager": "npm"
 }
