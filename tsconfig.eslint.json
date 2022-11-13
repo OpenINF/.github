@@ -10,12 +10,11 @@
   },
   "extends": "./tsconfig.base.json",
   "include": [
-    "lib",
-    "src",
-    "test",
-    "build",
-    "**/**.json?(5|c)",
-    "**/**.?(m|c)+(j|t)s",
+    "build/**/*",
+    "doc/**/*",
+    "lib/**/*",
+    "src/**/*",
+    "test/**/*",
     "**/**.md"
   ]
 }
