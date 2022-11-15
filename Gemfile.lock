@@ -3,7 +3,7 @@ GEM
   specs:
     cgi (0.3.3)
     charlock_holmes (0.7.7)
-    github-linguist (7.23.0)
+    github-linguist (7.24.0)
       cgi
       charlock_holmes (~> 0.7.7)
       mini_mime (~> 1.0)
@@ -15,7 +15,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-linguist (~> 7.23)
+  github-linguist (~> 7.24)
 
 BUNDLED WITH
    2.3.7

@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "github-linguist", "~> 7.23"
+gem "github-linguist", "~> 7.24"
