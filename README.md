@@ -11,8 +11,8 @@ Org-level default metadata & community health files
 <br />
 
 [!['View on npm (coming soon)'][npm-badge--shields]][npm-badge-url]
-[!['License: MIT'][license-badge--shields]][license-badge-url]
 [!['DeepScan grade'][deepscan-badge]][deepscan-url]
+[!['License: MIT'][license-badge--shields]][license-badge-url]
 
 </div>
 
@@ -172,8 +172,8 @@ to us.
 [conventional-commits-url]: https://www.conventionalcommits.org 'Commit Style: Conventional Commits'
 [matrix-badge--shields]: https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix 'Chat on Matrix'
 [matrix-url]: https://matrix.to/#/#openinf:matrix.org 'You&apos;re invited to talk on Matrix'
+[license-badge--shields]: https://img.shields.io/badge/license-MIT-blue.svg?logo=github 'License: MIT'
 [license-badge-url]: https://spdx.org/licenses/MIT.html 'License: MIT'
-[license-badge--shields]: https://img.shields.io/github/license/openinf/gh-file-importer?color=blue&logo=github 'License: MIT'
 [npm-badge--shields]: https://img.shields.io/npm/v/@openinf/.github/latest.svg?logo=npm 'View on npm'
 [npm-badge-url]: https://www.npmjs.com/package/@openinf/.github#top 'View on npm'
 [prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier 'Code Style: Prettier'
