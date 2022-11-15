@@ -7,29 +7,34 @@
 
   "editor.experimental.pasteActions.enabled": true,
   "editor.stickyScroll.enabled": false,
-
-  // Auto-fix JS/TS files with ESLint using custom settings. Needs
-  // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
-  "[js]": { "editor.formatOnSave": false },
+  "editor.codeLens": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 
   "[json]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[json5]": {
-    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  "[jsonc]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[yaml]": {
-    "editor.formatOnSave": false,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -40,6 +45,27 @@
   //////////////////////////////////////////////////////////////////////////////
 
   "terminal.integrated.useWslProfiles": true,
+
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
 
   // Files
   //////////////////////////////////////////////////////////////////////////////
@@ -53,6 +79,7 @@
     "OWNERS": "json5",
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
+    ".ecrc.json5": "json5",
     ".eslintrc.json": "jsonc",
     ".prettierrc.json": "json5",
     ".prettierrc.json5": "json5",
@@ -111,7 +138,7 @@
 
   "prettier.configPath": "./.prettierrc.json",
   "prettier.useEditorConfig": true,
-  // "prettier.prettierPath": "./node_modules/.pnpm/prettier@2.7.1",
+  "prettier.prettierPath": "./node_modules/.pnpm/prettier@2.7.1",
   "prettier.requireConfig": true,
   "prettier.resolveGlobalModules": true,
 
@@ -125,8 +152,7 @@
     "json",
     "jsonc",
     "json5",
-    "yaml",
-    "toml"
+    "yaml"
   ],
 
   // Always show the ESlint status bar item.
@@ -137,7 +163,5 @@
 
   "eslint.workingDirectories": ["./"],
 
-  // Avoids having to globally install ESLint.
-  // TODO(DerekNonGeneric): See about switching to pnpm!
-  "eslint.packageManager": "npm"
+  "eslint.packageManager": "pnpm"
 }

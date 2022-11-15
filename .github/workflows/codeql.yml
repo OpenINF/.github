@@ -1,0 +1,57 @@
+# $schema: https://json.schemastore.org/github-workflow
+name: 'CodeQL'
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+  schedule:
+    # "At 10:00 UTC on Monday" https://time.is/UTC#time_difference
+    - cron: '0 10 * * 1' # https://crontab.guru/#0_10_*_*_1
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ['javascript', 'ruby']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Setup Ruby, JRuby and TruffleRuby
+        uses: ruby/setup-ruby@v1.120.0
+        with:
+          # Engine and version to use, see the syntax in the README. Reads from .ruby-version or .tool-versions if unset.
+          ruby-version: '.ruby-version'
+          bundler-cache: true
+          # The working directory to use for resolving paths for .ruby-version, .tool-versions and Gemfile.lock.
+          working-directory: './'
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: '${{ matrix.language }}'
+
+      - name: Run microsite build script
+        run: |
+          ./build/tasks/site/generate-microsite.mjs
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: '/language:${{ matrix.language }}'

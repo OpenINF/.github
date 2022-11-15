@@ -9,7 +9,11 @@
     "/vendor/**/*",
     "/lib/**/*",
     "doc/.jekyll-cache/**/*",
-    "doc/_site/**/*"
+    "doc/_site/**/*",
+    ".pnpm-lock.yaml",
+    "Gemfile.lock",
+    ".markdownlint.jsonc",
+    ".vscode/tasks.json"
   ],
   "AllowedContentTypes": [],
   "PassedFiles": [],

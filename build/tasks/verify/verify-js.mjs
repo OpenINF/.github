@@ -1,5 +1,25 @@
+import { EOL as newLineMarker } from 'node:os';
+
+import text from '@openinf/util-text';
 import yarnpkgShell from '@yarnpkg/shell';
 
-process.exitCode = await yarnpkgShell.execute(
-  `npx eslint --ext=.js,.cjs,.mjs .`
+console.log(
+  text.blueify(
+    `${
+      newLineMarker +
+      String(text.UnicodeEscapes.midlineEllipsis)
+        .padStart(3, ' ')
+        .padEnd(5, ' ')
+    } Running task named ${text.curlyQuote('verify.js')}, which executes ${
+      newLineMarker +
+      String(text.UnicodeEscapes.midlineEllipsis)
+        .padStart(3, ' ')
+        .padEnd(6, ' ') +
+      text.curlyQuote('node build/tasks/verify/verify-js.mjs') +
+      newLineMarker
+    }`
+  )
 );
+
+// TODO(DerekNonGeneric): Ensure that the files indeed build.
+process.exitCode = await yarnpkgShell.execute('eslint --ext=.js,.cjs,.mjs');

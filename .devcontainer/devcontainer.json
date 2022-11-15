@@ -1,12 +1,25 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options,
+// see documentation tentatively (until migrated) located at the following URL:
+// https://github.com/openinf/openinf.github.io/tree/live/.devcontainer/library-scripts/docs
 {
-  "name": "Jekyll (Community)",
+  "name": "Jekyll (OpenINF Community)",
   "build": {
     "dockerfile": "Dockerfile"
   },
-
-  // Set *default* container specific settings.json values on container create.
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "fish"
+  "runArgs": ["--cap-add=SYS_ADMIN", "--security-opt", "seccomp=unconfined"],
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "fish": {
+            "path": "fish"
+          }
+        }
+      }
+    }
   },
 
   // Add the IDs of extensions you want installed when the container is created.
@@ -55,7 +68,8 @@
     "yzhang.markdown-all-in-one"
   ],
 
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // Use 'forwardPorts' to make a list of ports inside the container available
+  // locally.
   "forwardPorts": [
     // Jekyll server
     4000,

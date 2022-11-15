@@ -15,6 +15,7 @@ Gemfile
 Gemfile.lock
 package.json
 package-lock.json
+pnpm-lock.yaml
 yarn.lock
 
 # Use the following if your site is built via Jekyll.
@@ -84,4 +85,4 @@ _tmp/
 _backup/
 # TODO: Comment the following line out if you don't want to
 #       ignore your build folder.
-build/
+# /build/

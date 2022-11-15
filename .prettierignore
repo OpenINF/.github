@@ -1,4 +1,12 @@
 !.*
+!.*.*
+!**/.*
+!**/.*.*
+!.**/**/*
+!.**/**.*.*
+!.**/.*/*
+!.**/.*.*.*
+
 .git/
 **/_site/
 **/node_modules/
@@ -6,3 +14,10 @@
 package.json
 
 LICENSE
+README.md
+Gemfile
+Gemfile.lock
+package.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
