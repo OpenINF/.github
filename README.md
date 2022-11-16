@@ -174,8 +174,8 @@ to us.
 [matrix-url]: https://matrix.to/#/#openinf:matrix.org 'You&apos;re invited to talk on Matrix'
 [license-badge--shields]: https://img.shields.io/badge/license-MIT-blue.svg?logo=github 'License: MIT'
 [license-badge-url]: https://spdx.org/licenses/MIT.html 'License: MIT'
-[npm-badge--shields]: https://img.shields.io/npm/v/@openinf/.github/latest.svg?logo=npm 'View on npm'
-[npm-badge-url]: https://www.npmjs.com/package/@openinf/.github#top 'View on npm'
+[npm-badge--shields]: https://img.shields.io/badge/packages-6-2a2a2a.svg?logo=npm 'View our packages on npm'
+[npm-badge-url]: https://www.npmjs.com/org/openinf 'View all of OpenINF&apos;s packages published to the npm registry'
 [prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier 'Code Style: Prettier'
 [prettier-url]: https://prettier.io/playground 'Code Style: Prettier'
 
