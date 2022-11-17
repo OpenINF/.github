@@ -30,13 +30,13 @@ end
 if test -e .nvmrc
     # Install the specified version of Node.js.
     nvm install
-    npm install -g npm # ensure latest version of npm is installed
-    npm audit fix # address any vulns in the npm CLI app itself
+    npm install -g pnpm # ensure latest version of npm is installed
+    # npm audit fix # address any vulns in the npm CLI app itself
 end
 
-# If there's a package.json, then run `npm install`.
+# If there's a package.json, then run `pnpm install`.
 if test package.json
-    npm install
+    pnpm install
 end
 
 echo 'rbenv rehash && nvm use' >>~/.config/fish/config.fish

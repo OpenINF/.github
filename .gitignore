@@ -27,3 +27,6 @@ dist/
 
 # Ignore TypeScript log files.
 tsconfig.tsbuildinfo
+
+# Ignore pnpm-specific files/folders not to track.
+.pnpm-store/

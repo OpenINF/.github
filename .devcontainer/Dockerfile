@@ -1,6 +1,6 @@
 # See here for image contents: https://github.com/openinf/docker-fish
 
-FROM dereknongeneric/fish
+FROM dereknongeneric/fish:latest
 
 # Needed by Linguist
 # See: https://github.com/github/linguist/blob/HEAD/README.md#dependencies

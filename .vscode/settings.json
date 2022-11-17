@@ -163,5 +163,6 @@
 
   "eslint.workingDirectories": ["./"],
 
-  "eslint.packageManager": "pnpm"
+  "eslint.packageManager": "pnpm",
+  "git.ignoreLimitWarning": true
 }
