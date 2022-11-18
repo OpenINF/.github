@@ -133,25 +133,17 @@
 
   "editorconfig.generateAuto": false,
 
-  // Prettier / Prettier-VSCode
-  /////////////////////////////////////////////
-
-  "prettier.configPath": "./.prettierrc.json",
-  "prettier.useEditorConfig": true,
-  "prettier.prettierPath": "./node_modules/.pnpm/prettier@2.7.1",
-  "prettier.requireConfig": true,
-  "prettier.resolveGlobalModules": true,
-
   // ESLint (ESLint is a separate extension)
   /////////////////////////////////////////////
 
   "eslint.validate": [
-    "markdown",
     "javascript",
-    "typescript",
     "json",
-    "jsonc",
     "json5",
+    "jsonc",
+    "markdown",
+    "toml",
+    "typescript",
     "yaml"
   ],
 
