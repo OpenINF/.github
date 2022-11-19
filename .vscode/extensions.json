@@ -21,7 +21,5 @@
     "travisthetechie.write-good-linter",
     "yzhang.markdown-all-in-one"
   ],
-  "unwantedRecommendations": [
-    "esbenp.prettier-vscode"
-  ]
+  "unwantedRecommendations": ["esbenp.prettier-vscode"]
 }
