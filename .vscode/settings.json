@@ -2,6 +2,9 @@
   // See https://code.visualstudio.com/docs/getstarted/settings
   // for the documentation about the extensions.json format.
 
+  // TODO: Maybe ensure fish shell is installed on the WSL as well as container?
+  // "task.allowAutomaticTasks": "on",
+
   // Editor
   //////////////////////////////////////////////////////////////////////////////
 
@@ -151,5 +154,5 @@
 
   "eslint.workingDirectories": ["./"],
 
-  "eslint.packageManager": "pnpm",
+  "eslint.packageManager": "pnpm"
 }
