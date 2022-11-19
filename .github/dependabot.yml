@@ -36,7 +36,8 @@ updates:
       - 'deps-dev'
       - 'javascript'
     ignore:
-      # Ignore all major TypeScript type definition updates from DefinitelyTyped for Node.js.
+      # Ignore all major TypeScript type definition updates from DefinitelyTyped
+      # for Node.js coming from Dependabot.
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
 

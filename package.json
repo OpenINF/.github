@@ -1,12 +1,13 @@
 {
+  "private": true,
   "name": "@openinf/.github",
   "version": "0.0.0-development",
-  "description": "Org-level default metadata & community health files for use across all OpenINF projects on GitHub",
-  "packageManager": "npm@8.19.3",
+  "description": "Org-level default metadata & community health files",
+  "packageManager": "pnpm@7.15.0",
   "engines": {
-    "node": "^14.17.0 || ^16.13.0 || ^18.12.0",
-    "npm": "^8.1.0",
-    "npx": "^8.1.0"
+    "node": "^14.15.0 || ^16.13.0 || ^18.12.0",
+    "npm": "^6.14.8 || ^8.1.0 || ^8.19.2 || ^9.0.0",
+    "npx": "^6.14.8 || ^8.1.0 || ^8.19.2 || ^9.0.0"
   },
   "keywords": [],
   "repository": "https://github.com/openinf/.github",
@@ -19,12 +20,9 @@
     "test": "test"
   },
   "scripts": {
+    "build": "nps build",
     "start": "nps",
     "test": "nps test"
-  },
-  "peerDependencies": {
-    "@types/markdown-it": "*",
-    "markdown-it": "*"
   },
   "devDependencies": {
     "@babel/core": "7.20.2",
@@ -34,6 +32,9 @@
     "@babel/plugin-transform-modules-commonjs": "7.19.6",
     "@babel/preset-env": "7.20.2",
     "@iktakahiro/markdown-it-katex": "4.0.1",
+    "@openinf/util-text": "1.1.2",
+    "@toml-tools/parser": "0.3.1",
+    "@types/markdown-it": "*",
     "@types/node": "14.x || 16.x || 18.x",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
@@ -43,15 +44,21 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-node": "0.3.6",
     "eslint-import-resolver-typescript": "3.5.2",
+    "eslint-plugin-etc": "2.0.2",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-json-schema-validator": "4.0.3",
     "eslint-plugin-jsonc": "2.5.0",
     "eslint-plugin-markdown": "3.0.0",
-    "eslint-plugin-only-warn": "1.0.3",
     "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-regexp": "1.10.0",
+    "eslint-plugin-simple-import-sort": "8.0.0",
     "eslint-plugin-toml": "0.3.1",
+    "eslint-plugin-unicorn": "44.0.2",
+    "eslint-plugin-wix-editor": "3.3.0",
     "eslint-plugin-yml": "1.2.0",
     "jsonc-eslint-parser": "2.1.0",
+    "markdown-it": "13.0.1",
     "markdown-it-abbr": "1.0.4",
     "markdown-it-anchor": "8.6.5",
     "markdown-it-footnote": "3.0.3",
@@ -64,7 +71,8 @@
     "markdownlint-rule-titlecase": "0.1.0",
     "nps": "5.10.0",
     "prettier": "2.7.1",
-    "prettier-plugin-toml": "0.3.1",
-    "typescript": "4.9.3"
+    "toml-eslint-parser": "0.4.0",
+    "typescript": "4.8.4",
+    "yaml-eslint-parser": "1.1.0"
   }
 }

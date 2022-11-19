@@ -1,14 +1,16 @@
 scripts:
+  compile:
+    site: node build/tasks/compile/compile-site.mjs
   verify:
     all: for i in build/tasks/verify/*.mjs; do node "$i"; done
     css: node build/tasks/verify/verify-css.mjs
-    editorconfigCompliance: node build/tasks/verify/verify-editorconfig-compliance.mjs
+    ecHarmony: node build/tasks/verify/verify-ec-harmony.mjs
     html: node build/tasks/verify/verify-html.mjs
     js: node build/tasks/verify/verify-js.mjs
     json: node build/tasks/verify/verify-json.mjs
     md: node build/tasks/verify/verify-md.mjs
     svg: node build/tasks/verify/verify-svg.mjs
-    toml: node build/tasks/verify/verify-svg.mjs
+    toml: node build/tasks/verify/verify-toml.mjs
     ts: node build/tasks/verify/verify-ts.mjs
     yaml: node build/tasks/verify/verify-yaml.mjs
   format:
