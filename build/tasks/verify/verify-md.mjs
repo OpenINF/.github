@@ -10,9 +10,9 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(5, ' ')
-    } Running script called ${text.curlyQuote(
+    } Running task called ${text.curlyQuote(
       'verify.yaml'
-    )}, which fires off ${
+    )}, which executes ${
       newLineMarker +
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')

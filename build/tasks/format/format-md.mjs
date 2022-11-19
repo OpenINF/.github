@@ -10,7 +10,7 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(5, ' ')
-    } Running script called ${text.curlyQuote('format.md')}, which executes ${
+    } Running task called ${text.curlyQuote('format.md')}, which executes ${
       newLineMarker +
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
