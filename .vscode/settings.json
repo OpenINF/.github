@@ -50,7 +50,6 @@
   "terminal.integrated.useWslProfiles": false,
 
   "terminal.integrated.profiles.linux": {
-
     "bash": null,
     "zsh": null,
     "fish": {
