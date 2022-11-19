@@ -12,9 +12,7 @@
   "tasks": [
     {
       "label": "Create fish shell terminal",
-      "dependsOn": [
-        "fish"
-      ],
+      "dependsOn": ["fish"],
       // Mark as the default build task so cmd/ctrl+shift+b will create them.
       "group": {
         "kind": "build",
