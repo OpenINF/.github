@@ -2,34 +2,42 @@
   // See https://code.visualstudio.com/docs/getstarted/settings
   // for the documentation about the extensions.json format.
 
+  // TODO: Maybe ensure fish shell is installed on the WSL as well as container?
+  // "task.allowAutomaticTasks": "on",
+
   // Editor
   //////////////////////////////////////////////////////////////////////////////
 
   "editor.experimental.pasteActions.enabled": true,
   "editor.stickyScroll.enabled": false,
-
-  // Auto-fix JS/TS files with ESLint using custom settings. Needs
-  // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
-  "[js]": { "editor.formatOnSave": false },
+  "editor.codeLens": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 
   "[json]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[json5]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+
   "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[yaml]": {
-    "editor.formatOnSave": false,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -39,7 +47,27 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  "terminal.integrated.useWslProfiles": true,
+  "terminal.integrated.useWslProfiles": false,
+
+  "terminal.integrated.profiles.linux": {
+
+    "bash": null,
+    "zsh": null,
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": null
+  },
+
+  "terminal.integrated.defaultProfile.linux": "fish",
+
+  "terminal.integrated.splitCwd": "workspaceRoot",
+
+  "terminal.integrated.shellIntegration.enabled": false,
 
   // Files
   //////////////////////////////////////////////////////////////////////////////
@@ -53,6 +81,7 @@
     "OWNERS": "json5",
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
+    ".ecrc.json5": "json5",
     ".eslintrc.json": "jsonc",
     ".prettierrc.json": "json5",
     ".prettierrc.json5": "json5",
@@ -106,38 +135,24 @@
 
   "editorconfig.generateAuto": false,
 
-  // Prettier / Prettier-VSCode
-  /////////////////////////////////////////////
-
-  "prettier.configPath": "./.prettierrc.json",
-  "prettier.useEditorConfig": true,
-  // "prettier.prettierPath": "./node_modules/.pnpm/prettier@2.7.1",
-  "prettier.requireConfig": true,
-  "prettier.resolveGlobalModules": true,
-
   // ESLint (ESLint is a separate extension)
   /////////////////////////////////////////////
 
   "eslint.validate": [
-    "markdown",
     "javascript",
-    "typescript",
     "json",
-    "jsonc",
     "json5",
-    "yaml",
-    "toml"
+    "JSON with Comments",
+    "markdown",
+    "toml",
+    "typescript",
+    "yaml"
   ],
-
-  // Always show the ESlint status bar item.
-  "eslint.alwaysShowStatus": true,
 
   // Whether the extension contributes a lint task to lint a whole workspace.
   "eslint.lintTask.enable": true,
 
   "eslint.workingDirectories": ["./"],
 
-  // Avoids having to globally install ESLint.
-  // TODO(DerekNonGeneric): See about switching to pnpm!
-  "eslint.packageManager": "npm"
+  "eslint.packageManager": "pnpm"
 }

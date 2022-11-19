@@ -10,21 +10,17 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(5, ' ')
-    } Running task named ${text.curlyQuote('format.toml')}, which executes ${
+    } Running task named ${text.curlyQuote(
+      'verify.ec-harmony'
+    )}, which executes ${
       newLineMarker +
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(6, ' ') +
-      text.curlyQuote('node build/tasks/format/format-toml.mjs') +
+      text.curlyQuote('node build/tasks/verify/verify-ec-harmony.mjs') +
       newLineMarker
     }`
   )
 );
 
-let code = 0;
-const scripts = ['eslint --ext=.toml --fix'];
-
-for await (const element of scripts) {
-  code = await yarnpkgShell.execute(element);
-  process.exitCode = code > 0 ? code : 0;
-}
+process.exitCode = await yarnpkgShell.execute("ec -config '.ecrc.json5'");

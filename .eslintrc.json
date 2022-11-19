@@ -172,7 +172,7 @@
       }
     },
     {
-      "files": ["package.json", ".ecrc.json"],
+      "files": ["package.json", ".ecrc.json5"],
       "parser": "jsonc-eslint-parser",
       "parserOptions": {
         "allowComments": true,
@@ -182,6 +182,7 @@
       "extends": [
         "plugin:jsonc/base",
         "plugin:jsonc/recommended-with-json",
+        "plugin:jsonc/recommended-with-json5",
         "plugin:json-schema-validator/recommended",
         "plugin:jsonc/prettier"
       ],
@@ -197,11 +198,27 @@
     },
     {
       "files": ["**.t?(o)ml", "**/*.t?(o)ml"],
-      "parser": "toml-eslint-parser"
+      "parser": "toml-eslint-parser",
+      "plugins": ["toml", "jsonc", "json-schema-validator"],
+      "extends": [
+        "plugin:toml/recommended",
+        "plugin:json-schema-validator/recommended",
+        "plugin:jsonc/prettier"
+      ]
     },
     {
       "files": [".github/**/*.yml", "*.y?(a)ml", "**/*.y?(a)ml"],
       "parser": "yaml-eslint-parser",
+      "plugins": [
+        "eslint-plugin-yml",
+        "eslint-plugin-jsonc",
+        "json-schema-validator"
+      ],
+      "extends": [
+        "plugin:yml/recommended",
+        "plugin:json-schema-validator/recommended",
+        "plugin:jsonc/prettier"
+      ],
       "rules": {
         "unicorn/filename-case": [
           "error",
