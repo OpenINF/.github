@@ -1,4 +1,6 @@
 scripts:
+  compile:
+    site: node build/tasks/compile/compile-site.mjs
   verify:
     all: for i in build/tasks/verify/*.mjs; do node "$i"; done
     css: node build/tasks/verify/verify-css.mjs

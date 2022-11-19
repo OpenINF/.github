@@ -16,7 +16,9 @@ jobs:
           node-version: lts/gallium
       - name: Install
         run: |
-          npm ci
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm install
       # Checks to see if any files in the PR match one of the listed file types.
       # We can use this filter to decide whether or not to run linters or tests.
       # You can check if a file with a listed file type is in the PR by doing:
