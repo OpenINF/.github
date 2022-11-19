@@ -2,7 +2,7 @@
 
 # If there's a .ruby-version, then run `rbenv install`.
 if test -e .ruby-version
-    rbenv install
+    rbenv install --verbose
 end
 
 echo 'set -Ux fish_user_paths ~/.rbenv/shims/ $fish_user_paths' >>~/.config/fish/config.fish
@@ -30,8 +30,8 @@ end
 if test -e .nvmrc
     # Install the specified version of Node.js.
     nvm install
-    npm install -g pnpm # ensure latest version of npm is installed
-    # npm audit fix # address any vulns in the npm CLI app itself
+    corepack enable
+    corepack prepare pnpm@latest --activate
 end
 
 # If there's a package.json, then run `pnpm install`.

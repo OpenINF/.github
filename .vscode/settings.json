@@ -27,7 +27,7 @@
   },
 
   "[jsonc]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
 
   "[markdown]": {
@@ -44,16 +44,12 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  "terminal.integrated.useWslProfiles": true,
+  "terminal.integrated.useWslProfiles": false,
 
   "terminal.integrated.profiles.linux": {
-    "bash": {
-      "path": "bash",
-      "icon": "terminal-bash"
-    },
-    "zsh": {
-      "path": "zsh"
-    },
+
+    "bash": null,
+    "zsh": null,
     "fish": {
       "path": "fish"
     },
@@ -61,11 +57,14 @@
       "path": "tmux",
       "icon": "terminal-tmux"
     },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
-    }
+    "pwsh": null
   },
+
+  "terminal.integrated.defaultProfile.linux": "fish",
+
+  "terminal.integrated.splitCwd": "workspaceRoot",
+
+  "terminal.integrated.shellIntegration.enabled": false,
 
   // Files
   //////////////////////////////////////////////////////////////////////////////
@@ -140,15 +139,12 @@
     "javascript",
     "json",
     "json5",
-    "jsonc",
+    "JSON with Comments",
     "markdown",
     "toml",
     "typescript",
     "yaml"
   ],
-
-  // Always show the ESlint status bar item.
-  "eslint.alwaysShowStatus": true,
 
   // Whether the extension contributes a lint task to lint a whole workspace.
   "eslint.lintTask.enable": true,
@@ -156,5 +152,4 @@
   "eslint.workingDirectories": ["./"],
 
   "eslint.packageManager": "pnpm",
-  "git.ignoreLimitWarning": true
 }
