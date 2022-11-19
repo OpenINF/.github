@@ -72,7 +72,7 @@
     "nps": "5.10.0",
     "prettier": "2.7.1",
     "toml-eslint-parser": "0.4.0",
-    "typescript": "4.8.4",
+    "typescript": "4.9.3",
     "yaml-eslint-parser": "1.1.0"
   }
 }
