@@ -47,10 +47,6 @@ jobs:
         with:
           languages: '${{ matrix.language }}'
 
-      - name: Run microsite build script
-        run: |
-          ./build/tasks/compile/compile-site.mjs
-
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
         with:
