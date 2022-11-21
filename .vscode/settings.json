@@ -25,12 +25,16 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
+  "[jsonc]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[markdown]": {
@@ -47,11 +51,15 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  "terminal.integrated.useWslProfiles": false,
+  "terminal.integrated.useWslProfiles": true,
 
   "terminal.integrated.profiles.linux": {
-    "bash": null,
-    "zsh": null,
+    "bash": {
+      "path": "bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
     "fish": {
       "path": "fish"
     },
@@ -62,7 +70,7 @@
     "pwsh": null
   },
 
-  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.linux": "bash",
 
   "terminal.integrated.splitCwd": "workspaceRoot",
 
@@ -87,12 +95,6 @@
     ".deepsource.toml": "toml",
     ".renovaterc.json": "json5"
   },
-
-  // Markdown
-  //////////////////////////////////////////////////////////////////////////////
-
-  "markdown.experimental.updateLinksOnFileMove.enabled": "prompt",
-  "markdown.experimental.updateLinksOnFileMove.externalFileGlobs": "*",
 
   // JavaScript/TypeScript
   //////////////////////////////////////////////////////////////////////////////
@@ -141,7 +143,7 @@
     "javascript",
     "json",
     "json5",
-    "JSON with Comments",
+    "jsonc",
     "markdown",
     "toml",
     "typescript",
