@@ -93,7 +93,8 @@
     ".prettierrc.json": "json5",
     ".prettierrc.json5": "json5",
     ".deepsource.toml": "toml",
-    ".renovaterc.json": "json5"
+    ".renovaterc.json": "json5",
+    ".snyk": "yaml"
   },
 
   // JavaScript/TypeScript
