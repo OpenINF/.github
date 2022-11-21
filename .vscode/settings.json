@@ -42,7 +42,7 @@
   },
 
   "[yaml]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
 
   // Render vertical rulers after a certain number of monospace characters.
@@ -80,9 +80,6 @@
   //////////////////////////////////////////////////////////////////////////////
 
   "files.associations": {
-    // Enable JSON5 syntax highlighting and auto-formatting for these files.
-    // Until VS Code adds native JSON5 support, this needs
-    // https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
     ".devcontainer/*.json": "jsonc",
     ".vscode/*.json": "jsonc",
     "OWNERS": "json5",
