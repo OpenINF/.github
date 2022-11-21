@@ -1,7 +1,7 @@
 # eslint-disable prettier/prettier
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 # See: https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/the-.snyk-file
-version: 1.25.0
+version: v1.25.0
 language-settings:
   ruby: 3.1.2
 ignore:
