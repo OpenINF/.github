@@ -7,6 +7,6 @@ language-settings:
 ignore:
   SNYK-RUBY-CGI-3136296:
     # eslint-disable-next-line yml/no-empty-mapping-value
-    - '*':
+    - '* > github-linguist > cgi':
       reason: None Given
       expires: '2024-01-01T00:00:00.0-05:00'
