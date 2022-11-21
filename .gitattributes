@@ -3,6 +3,7 @@
 .*.json5                diff=json5 linguist-language=json5
 .devcontainer/*.json    diff=jsonc linguist-language=jsonc
 .eslintrc.json          diff=jsonc linguist-language=jsonc
+.snyk                   diff=yaml linguist-language=yaml
 .vscode/*.json          diff=jsonc linguist-language=jsonc
 build/**                linguist-generated=false
 doc/**                  linguist-documentation

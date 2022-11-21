@@ -1,0 +1,12 @@
+# eslint-disable prettier/prettier
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+# See: https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/the-.snyk-file
+version: v1.25.0
+language-settings:
+  ruby: 3.1.2
+ignore:
+  SNYK-RUBY-CGI-3136296:
+    # eslint-disable-next-line yml/no-empty-mapping-value
+    - '* > github-linguist > cgi':
+      reason: None Given
+      expires: '2024-01-01T00:00:00.0-05:00'

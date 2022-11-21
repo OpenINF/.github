@@ -194,31 +194,28 @@
     {
       "files": ["**.md"],
       "plugins": ["markdown"],
-      "extends": ["plugin:markdown/recommended"]
+      "extends": ["plugin:markdown/recommended", "plugin:prettier/recommended"]
     },
     {
-      "files": ["**.t?(o)ml", "**/*.t?(o)ml"],
+      "files": [".*.t?(o)ml", "*.t?(o)ml", "**/.*.t?(o)ml", "**/*.t?(o)ml"],
       "parser": "toml-eslint-parser",
-      "plugins": ["toml", "jsonc", "json-schema-validator"],
-      "extends": [
-        "plugin:toml/recommended",
-        "plugin:json-schema-validator/recommended",
-        "plugin:jsonc/prettier"
-      ]
+      "plugins": ["toml"],
+      "extends": ["plugin:toml/standard"]
     },
     {
-      "files": [".github/**/*.yml", "*.y?(a)ml", "**/*.y?(a)ml"],
+      "files": [
+        ".*.y?(a)ml",
+        "*.y?(a)ml",
+        "**/*.y?(a)ml",
+        "**.y?(a)ml",
+        ".snyk"
+      ],
       "parser": "yaml-eslint-parser",
-      "plugins": [
-        "eslint-plugin-yml",
-        "eslint-plugin-jsonc",
-        "json-schema-validator"
-      ],
-      "extends": [
-        "plugin:yml/recommended",
-        "plugin:json-schema-validator/recommended",
-        "plugin:jsonc/prettier"
-      ],
+      "parserOptions": {
+        "defaultYAMLVersion": "1.2"
+      },
+      "plugins": ["eslint-plugin-yml"],
+      "extends": ["plugin:yml/standard", "plugin:yml/prettier"],
       "rules": {
         "unicorn/filename-case": [
           "error",
