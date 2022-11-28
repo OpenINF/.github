@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cgi (0.3.3)
+    cgi (0.3.5)
     charlock_holmes (0.7.7)
     github-linguist (7.24.0)
       cgi
