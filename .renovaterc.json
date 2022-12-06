@@ -20,10 +20,6 @@
   "commitMessageTopic": "{{depName}}",
   "packageRules": [
     {
-      "matchDepTypes": ["optionalDependencies"],
-      "addLabels": ["dependencies", "optional"]
-    },
-    {
       "packageRules": [
         {
           "matchDepTypes": ["dependencies"],
