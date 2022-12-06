@@ -28,7 +28,7 @@
         {
           "matchDepTypes": ["dependencies"],
           "commitMessagePrefix": "chore(deps):",
-          "labels": ["dependencies", "deps-production"]
+          "labels": ["dependencies", "deps-prod"]
         }
       ]
     },
