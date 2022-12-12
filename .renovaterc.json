@@ -11,8 +11,7 @@
     "automerge": true,
     "assignees": ["@DerekNonGeneric"]
   },
-  "lockFileMaintenance": { "enabled": true },
-  "postUpdateOptions": ["npmDedupe"],
+  "lockFileMaintenance": { "enabled": false },
   "platformCommit": true,
   "rangeStrategy": "pin",
   "semanticCommits": "enabled",
