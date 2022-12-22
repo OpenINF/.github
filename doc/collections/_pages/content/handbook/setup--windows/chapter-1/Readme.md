@@ -277,5 +277,3 @@ Add-AppPackage (Join-Path $RepoPath -ChildPath $WinGet_Name)
 ---
 
 # Acknowledgements:
-
-
