@@ -8,6 +8,10 @@
 
 https://aka.ms/appinst
 
+As a URL shorten-er & forwards to the GitHub repo below
+
+https://github.com/microsoft/winget-cli
+
 &nbsp;&nbsp;
 
 ### Setup
