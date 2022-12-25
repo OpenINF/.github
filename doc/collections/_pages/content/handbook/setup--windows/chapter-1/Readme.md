@@ -36,11 +36,9 @@ https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1
 
 &nbsp;&nbsp;
 
-// NOTE:
+///NOTE/// Currently, the Windows server SKUs don’t ship with the Microsoft Store client enabled. This creates challenges for updating applications delivered by the Microsoft Store. As the Windows Package Manager ships as a part of the Desktop App Installer, and that is also not generally default on server SKUs [&hellip;]
 
-&nbsp;&nbsp;
-
-> Currently, the Windows server SKUs don’t ship with the Microsoft Store client enabled. This creates challenges for updating applications delivered by the Microsoft Store. As the Windows Package Manager ships as a part of the Desktop App Installer, and that is also not generally default on server SKUs [&hellip;]
+<!-- TODO: References? -->
 
 &nbsp;&nbsp;
 
