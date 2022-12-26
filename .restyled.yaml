@@ -1,8 +1,13 @@
+
+# Configuring Restyled
+# https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled
+
+enabled: true
 auto: true
 
 commit_template: |
   style: apply changes from ${restyler.name} restyler
 
   Signed-off-by: Restyled Commits <commits@restyled.io>
-pull_requests: false
-restylers_version: dev
+pull_requests: true
+restylers_version: stable
