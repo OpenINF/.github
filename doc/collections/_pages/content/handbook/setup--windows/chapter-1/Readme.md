@@ -1,4 +1,7 @@
-# Chapter I: Install winget[^1]
+
+<!-- Begin GitHub-Flavored Markdown (GFM) -->
+
+# Chapter I: Install Winget[^1]
 
 &nbsp;&nbsp;
 
