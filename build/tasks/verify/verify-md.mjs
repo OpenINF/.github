@@ -15,7 +15,7 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(6, ' ') +
-      text.curlyQuote('node build/tasks/verify/verify-yaml.mjs') +
+      text.curlyQuote('node build/tasks/verify/verify-md.mjs') +
       newLineMarker
     }`
   )
