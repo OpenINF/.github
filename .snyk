@@ -3,10 +3,10 @@
 # See: https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/the-.snyk-file
 version: v1.25.0
 language-settings:
-  ruby: 3.1.2
+  ruby: 3.2.0
 ignore:
-  SNYK-RUBY-CGI-3136296:
+  SNYK-JS-JSON5-3182856:
     # eslint-disable-next-line yml/no-empty-mapping-value
-    - '* > github-linguist > cgi':
+    - '* > eslint-plugin-import > tsconfig-paths > json5':
       reason: None Given
       expires: '2024-01-01T00:00:00.0-05:00'
