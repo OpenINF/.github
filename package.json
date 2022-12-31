@@ -64,7 +64,7 @@
     "markdown-it-sup": "1.0.0",
     "markdown-it-task-lists": "2.1.1",
     "markdown-it-toc-done-right": "4.2.0",
-    "markdownlint-cli2": "0.5.1",
+    "markdownlint-cli2": "0.6.0",
     "markdownlint-cli2-formatter-default": "0.0.3",
     "markdownlint-rule-titlecase": "0.1.0",
     "nps": "5.10.0",
