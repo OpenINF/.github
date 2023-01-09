@@ -46,5 +46,6 @@ reporting in the near term.
 
 [^1]:
     https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository
+
 [^2]:
     https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program
