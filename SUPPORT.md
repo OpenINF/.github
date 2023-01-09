@@ -1,6 +1,4 @@
-<!-- https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project -->
-
-# Support
+# Support[^1]
 
 Having trouble? Please consult these official resources in order of appearance.
 
@@ -25,3 +23,5 @@ Conduct][coc].
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
 [twitter-account]: https://twitter.com/OpenINF
 [twitter-rules]: https://help.twitter.com/en/rules-and-policies/twitter-rules
+
+[^1]: https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project
