@@ -1,6 +1,4 @@
-<!-- https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository -->
-
-# Security Policy
+# Security Policy[^1]
 
 The OpenINF team, currently composed of a single active maintainer, takes the
 security of OpenINF and the applications created with its SDK seriously. This
@@ -11,12 +9,12 @@ vulnerability.
 ## Reporting Vulnerabilities
 
 In the rare event that you find a vulnerability in the OpenINF SDK itself,
-[email us](mailto:security@inf.is). We hope to regularly work with the
-cybersecurity community and the brilliant researchers in the field to arrive at
-positive outcomes for all parties involved. An alternative to email for
-reporting should be available shortly for those uncomfortable with that medium.
-Anonymous reports will also gladly be accepted. We also hope to introduce a
-healthy manner of incentivizing reporting in the near term.
+[email us]. We hope to regularly work with the cybersecurity community and the
+brilliant researchers in the field to arrive positive outcomes for all parties
+involved. An alternative to email fo reporting should be available shortly for
+those uncomfortable with that medium. Anonymous reports will also gladly be
+accepted. We also hope to introduce a healthy manner of incentivizing reporting
+in the near term.
 
 ## Best Practices
 
@@ -37,12 +35,16 @@ healthy manner of incentivizing reporting in the near term.
   specific versions for your dependencies. If you do, check periodically to see
   if your dependencies have had security updates and update the pin accordingly.
   Doing this manually, however, can become tedious. It is advisable to use an
-  automated dependency update tool that fits into your workflows, such as
-  [Mend Renovate](https://www.mend.io/free-developer-tools/renovate/) (also
-  known as Renovatebot), which we are thankful to have as one of our
-  organization's trusted partners in automated dependency management.[^1] We
+  automated dependency update tool that fits into your workflows, such as [Mend
+  Renovate] (also known as Renovatebot), which we are thankful to have as one of
+  our organization's trusted partners in automated dependency management.[^2] We
   hope you, dearest reader, will soon join us in our journey to maintain our
   secure software ecosystems.
 
+[email us]: mailto:security@inf.is
+[Mend Renovate]: https://www.mend.io/free-developer-tools/renovate
+
 [^1]:
-    <https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program/>
+    https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository
+[^2]:
+    https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program
