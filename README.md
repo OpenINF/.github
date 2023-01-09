@@ -126,9 +126,6 @@ to us.
 [^2]:
     <https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values>
 
-<!-- prettier-ignore-start -->
-<!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
-
 [give it a star ⭐️]: https://github.com/openinf/.github/stargazers
 
 [**@openinf**]: https://github.com/openinf
