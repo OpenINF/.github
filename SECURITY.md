@@ -42,9 +42,10 @@ in the near term.
   secure software ecosystems.
 
 [email us]: mailto:security@inf.is
-[Mend Renovate]: https://www.mend.io/free-developer-tools/renovate
+[mend renovate]: https://www.mend.io/free-developer-tools/renovate
 
 [^1]:
     https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository
+
 [^2]:
     https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program
