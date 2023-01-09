@@ -24,4 +24,5 @@ Conduct][coc].
 [twitter-account]: https://twitter.com/OpenINF
 [twitter-rules]: https://help.twitter.com/en/rules-and-policies/twitter-rules
 
-[^1]: https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project
+[^1]:
+    https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project
