@@ -25,4 +25,4 @@ dockerfile_paths = [".devcontainer/Dockerfile"]
 
 [[transformers]]
 name = "prettier"
-enabled = false
+enabled = true
