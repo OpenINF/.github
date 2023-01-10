@@ -5,7 +5,7 @@ version: v1.25.0
 language-settings:
   ruby: 3.2.0
 ignore:
-  SNYK-JS-JSON5-3182856:
+  SNYK-JS-DEBUG-3227433:
     # eslint-disable-next-line yml/no-empty-mapping-value
     - '* > eslint-plugin-import > debug':
       reason: None Given
