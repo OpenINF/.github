@@ -7,6 +7,6 @@ language-settings:
 ignore:
   SNYK-JS-JSON5-3182856:
     # eslint-disable-next-line yml/no-empty-mapping-value
-    - '* > eslint-plugin-import > tsconfig-paths > json5':
+    - '* > eslint-plugin-import > debug':
       reason: None Given
-      expires: '2024-01-01T00:00:00.0-05:00'
+      expires: '2025-01-01T00:00:00.0-05:00'
