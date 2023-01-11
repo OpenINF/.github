@@ -1,5 +1,5 @@
 ---
-title: Connecting to the Interwebs (Wireless networking)
+title: Connecting to the Interwebs (Wireless Networking)
 ---
 
 <!-- Begin GitHub-Flavored Markdown (GFM)
