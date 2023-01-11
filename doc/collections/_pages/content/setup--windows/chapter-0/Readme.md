@@ -7,8 +7,9 @@ See: https://docs.github.com/get-started/writing-on-github
 Spec: https://github.github.com/gfm/
 -->
 
-Before we can get started with development on our Windows Server machine, there are a few hurdles to overcome
-to have an actually-useful development environment.
+Before we can begin using our Windows Server machine as an effective software
+development environment, there are a few hurdles to overcome. This chapter deals
+with enabling and configuring connectivity to the Internet.
 
 ```
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
