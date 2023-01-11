@@ -22,9 +22,12 @@ reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\Syst
 
 ## Access to WiFi
 
-By default, access to WiFi is disabled in Windows Server 2022. This is because Airplane mode is enabled.
-It is also in an unconfigurable state (this preference cannot be changed by default). To be able to modify this
-preference, the following command must be run in an elevated Command Line Shell prompt.
+As a safe default, on fresh installations of Windows Server, WiFi connectivity
+is inaccessible because Airplane mode is enabled.
+
+Airplane mode is also unconfigurable (the default preference of "enabled" cannot
+be changed). The following command must be run in an elevated Command Line Shell
+prompt to modify this preference.
 
 ```cmd
 SC CONFIG RmSvc START= AUTO
