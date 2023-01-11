@@ -11,7 +11,12 @@ Before we can begin using our Windows Server machine as an effective software
 development environment, there are a few hurdles to overcome. This chapter deals
 with enabling and configuring connectivity to the Internet.
 
-```
+
+<!-- FIXME(DerekNonGeneric):
+Determine where from & document the below registry modification.
+-->
+
+```text
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
 ```
 
