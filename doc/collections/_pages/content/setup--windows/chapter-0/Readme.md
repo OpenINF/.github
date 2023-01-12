@@ -9,6 +9,13 @@ See: https://docs.github.com/get-started/writing-on-github
 Spec: https://github.github.com/gfm
 -->
 
+<!-- Not covered: Preparing device for (and installing) host OS --
+Windows Server 2016/2022 Standard with Desktop Experience.
+Windows Server 2016 Standard is for physical or minimally-virtualized environments.
+
+See: https://www.microsoft.com/en-us/d/windows-server-2016-standard/dg7gmgf0ds12/0004
+-->
+
 Before we can begin using our Windows Server machine as an effective software
 development environment, there are a few hurdles to overcome. This chapter deals
 with enabling and configuring connectivity to the Internet.
