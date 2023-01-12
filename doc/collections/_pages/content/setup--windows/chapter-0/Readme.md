@@ -1,5 +1,7 @@
 ---
 title: Connecting to the Interwebs (Wireless Networking)
+category: Documentation
+content_type: Install & Setup
 ---
 
 <!-- Begin GitHub-Flavored Markdown (GFM)
