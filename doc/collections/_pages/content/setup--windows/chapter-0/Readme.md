@@ -4,7 +4,7 @@ title: Connecting to the Interwebs (Wireless Networking)
 
 <!-- Begin GitHub-Flavored Markdown (GFM)
 See: https://docs.github.com/get-started/writing-on-github
-Spec: https://github.github.com/gfm/
+Spec: https://github.github.com/gfm
 -->
 
 Before we can begin using our Windows Server machine as an effective software
