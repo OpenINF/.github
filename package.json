@@ -44,7 +44,7 @@
     "eslint-import-resolver-node": "0.3.7",
     "eslint-import-resolver-typescript": "3.5.3",
     "eslint-plugin-etc": "2.0.2",
-    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-import": "2.27.0",
     "eslint-plugin-json-schema-validator": "4.0.3",
     "eslint-plugin-jsonc": "2.6.0",
     "eslint-plugin-markdown": "3.0.0",
