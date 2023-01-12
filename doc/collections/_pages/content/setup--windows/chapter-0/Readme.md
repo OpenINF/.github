@@ -34,7 +34,10 @@ reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\Syst
 As a safe default, on fresh installations of Windows Server, WiFi connectivity
 is inaccessible because Airplane mode is enabled.
 
-Airplane mode is also unconfigurable (the default preference of "enabled" cannot
+
+### Disabling Radio Management Service
+
+Airplane mode is also grayed-out/unconfigurable (the default preference of "enabled" cannot
 be changed). The following command must be run in an elevated Command Line Shell
 prompt to modify this preference.
 
