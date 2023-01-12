@@ -64,3 +64,6 @@ start service
 
 ```ps
 Start-Service WlanSvc –PassThru
+\```
+
+[^1]: https://github.com/MicrosoftDocs/windowsserverdocs/blob/main/WindowsServerDocs/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server.md#radio-management-service
