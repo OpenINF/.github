@@ -32,6 +32,14 @@ Airplane mode is also grayed-out/unconfigurable (the default preference of "enab
 be changed). The following commands must be run in an elevated Command Line Shell
 prompt to modify this preference.
 
+<!-- FIXME(DerekNonGeneric):
+Determine where from & document the below registry modification.
+-->
+
+```text
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
+```\
+
 ```cmd
 SC CONFIG RmSvc START= AUTO
 ```
