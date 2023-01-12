@@ -29,7 +29,7 @@ is inaccessible because Airplane mode is enabled.
 ### Configuring Radio Management Service (RmSvc)[^1]
 
 Airplane mode is also grayed-out/unconfigurable (the default preference of "enabled" cannot
-be changed). The following command must be run in an elevated Command Line Shell
+be changed). The following commands must be run in an elevated Command Line Shell
 prompt to modify this preference.
 
 ```cmd
