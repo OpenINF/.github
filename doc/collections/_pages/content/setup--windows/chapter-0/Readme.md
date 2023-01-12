@@ -35,7 +35,7 @@ As a safe default, on fresh installations of Windows Server, WiFi connectivity
 is inaccessible because Airplane mode is enabled.
 
 
-### Disabling Radio Management Service
+### Disabling Radio Management Service (RmSvc)[^1]
 
 Airplane mode is also grayed-out/unconfigurable (the default preference of "enabled" cannot
 be changed). The following command must be run in an elevated Command Line Shell
