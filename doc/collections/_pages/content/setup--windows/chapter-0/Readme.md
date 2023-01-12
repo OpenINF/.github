@@ -64,4 +64,3 @@ start service
 
 ```ps
 Start-Service WlanSvc –PassThru
-```
