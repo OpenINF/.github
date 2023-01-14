@@ -68,7 +68,7 @@
     "markdownlint-cli2-formatter-default": "0.0.3",
     "markdownlint-rule-titlecase": "0.1.0",
     "nps": "5.10.0",
-    "prettier": "2.8.2",
+    "prettier": "2.8.3",
     "typescript": "4.9.4"
   }
 }
