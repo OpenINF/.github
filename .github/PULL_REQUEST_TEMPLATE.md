@@ -13,9 +13,6 @@
   Please place an x (no spaces - [x]) in all [ ] that apply.
 -->
 
-<!-- the plugin(s) this PR is for -->
-
-## Rollup Plugin Name: `{name}`
 
 This PR contains:
 
