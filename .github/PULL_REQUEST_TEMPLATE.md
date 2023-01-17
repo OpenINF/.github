@@ -36,7 +36,7 @@ followed by a description of what is breaking.
 
 List any relevant issue numbers:
 
-### Description
+## Description
 
 <!--
 Please be thorough and clearly explain the problem being solved.
