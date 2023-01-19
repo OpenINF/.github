@@ -18,7 +18,7 @@ Pull Request Requirements:
 
 This PR contains:
 
-- [ ] bugfix
+- [ ] 🐞🔧 bugfixing (🐜/🦟/🐛/🦗/🐝 et al.)
 - [ ] feature
 - [ ] ♻️ refactoring
 - [ ] 📄 documentation
