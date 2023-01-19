@@ -22,7 +22,7 @@ This PR contains:
 - [ ] 🆕🎏 introducing new feature(s)
 - [ ] ♻️ refactoring
 - [ ] 📄 documentation modification(s)
-- [ ] other
+- [ ] 🔮 other
 
 Are tests included?
 
