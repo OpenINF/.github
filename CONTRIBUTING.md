@@ -134,9 +134,6 @@ Please see the [`SECURITY.md`] file.
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
 
-<!-- prettier-ignore-start -->
-<!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
-
 [**@openinf**]: https://github.com/openinf
 [**@openinf/.github**]: https://github.com/openinf/.github
 [`AUTHORS`]:
