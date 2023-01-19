@@ -21,7 +21,7 @@ This PR contains:
 - [ ] bugfix
 - [ ] feature
 - [ ] refactor
-- [ ] documentation
+- [ ] 📄 documentation
 - [ ] other
 
 Are tests included?
