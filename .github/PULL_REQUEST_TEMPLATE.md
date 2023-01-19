@@ -21,7 +21,7 @@ This PR contains:
 - [ ] 🐞🔧 bugfixing (🐜/🦟/🐛/🦗/🐝 et al.)
 - [ ] 🆕🎏 introducing new feature(s)
 - [ ] ♻️ refactoring
-- [ ] 📄 documentation
+- [ ] 📄 documentation modification(s)
 - [ ] other
 
 Are tests included?
