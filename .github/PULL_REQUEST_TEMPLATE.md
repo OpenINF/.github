@@ -20,7 +20,7 @@ This PR contains:
 
 - [ ] 🐞🔧 bugfixing (🐜/🦟/🐛/🦗/🐝 et al.)
 - [ ] 🆕🎏 introducing new feature(s)
-- [ ] ♻️ refactoring
+- [ ] ♻️ refactoring(s)
 - [ ] 📄 documentation modification(s)
 - [ ] 🔮 other
 
