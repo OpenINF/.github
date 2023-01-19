@@ -23,6 +23,11 @@ This PR contains:
 
 Are tests included?
 
+<!--
+If your PR fixes a bug (🐜/🐛/🐞), the existing tests are 100% sure not to cover
+the expected behavior. Update them, or add new ones. 🧪✅
+-->
+
 - [ ] yes (_bugfixes and features will not be merged without tests_)
 - [ ] no
 
