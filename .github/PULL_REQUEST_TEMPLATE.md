@@ -1,6 +1,6 @@
 <!--
 ⚡️ katchow! We ❤️ Pull Requests! If you remove or skip this template, you'll
-make the 🐼 sad and the mighty god of Github will appear and pile-drive the
+make the 🐼 sad and the mighty god of GitHub will appear and pile-drive the
 close button from a great height while making animal noises.
 
 Pull Request Requirements:
