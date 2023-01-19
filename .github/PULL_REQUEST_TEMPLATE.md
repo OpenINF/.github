@@ -3,6 +3,9 @@
 make the 🐼 sad and the mighty god of GitHub will appear and pile-drive the
 close button from a great height while making animal noises.
 
+Before submitting, we would advise you to first read
+https://github.com/OpenINF/.github/blob/HEAD/CONTRIBUTING.md
+
 Pull Request Requirements:
 
 - Please include tests to illustrate the problem this PR resolves.
