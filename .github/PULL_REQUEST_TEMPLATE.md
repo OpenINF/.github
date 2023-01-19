@@ -20,7 +20,7 @@ This PR contains:
 
 - [ ] bugfix
 - [ ] feature
-- [ ] refactor
+- [ ] ♻️ refactoring
 - [ ] 📄 documentation
 - [ ] other
 
