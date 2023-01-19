@@ -136,34 +136,25 @@ Please see the [`SECURITY.md`] file.
 
 [**@openinf**]: https://github.com/openinf
 [**@openinf/.github**]: https://github.com/openinf/.github
-[`AUTHORS`]:
+[`authors`]:
   https://github.com/openinf/.github/blob/HEAD/AUTHORS
   'List of people who have contributed code to this project'
-[`CODE_OF_CONDUCT`]:
+[`code_of_conduct`]:
   ./CODE_OF_CONDUCT.md
   'Standards for how to engage with the project community'
-[`CONTRIBUTING`]:
-  ./CONTRIBUTING.md
-  'Contribution guidelines for this project'
-[`FUNDING`]:
+[`contributing`]: ./CONTRIBUTING.md 'Contribution guidelines for this project'
+[`funding`]:
   ./.github/FUNDING.yml
   'How to financially support maintenance/development of @OpenINF projects on GitHub using GitHub Sponsors'
-[`LICENSE`]:
+[`license`]:
   ./LICENSE
   'The open source software license(s) associated with this project'
-[`README`]:
-  ./README.md
-  'The landing/home page of this project'
-[`SECURITY`]:
+[`readme`]: ./README.md 'The landing/home page of this project'
+[`security`]:
   ./SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
-[`SUPPORT`]:
-  ./SUPPORT.md
-  'Where to get help on this project'
-[`VISION`]:
-  ./VISION.md
-  'What the goal(s) and/or scope are of this project'
-
+[`support`]: ./SUPPORT.md 'Where to get help on this project'
+[`vision`]: ./VISION.md 'What the goal(s) and/or scope are of this project'
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
 [dco]: https://developercertificate.org
@@ -176,7 +167,6 @@ Please see the [`SECURITY.md`] file.
   https://github.com/search?q=org%3Aopeninf+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
 [i-help]:
   https://github.com/search?q=org%3Aopeninf+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
-
 [twitter-account]: https://twitter.com/openinf
 [issue]:
   http://help.github.com/en/github/managing-your-work-on-github/creating-an-issue
