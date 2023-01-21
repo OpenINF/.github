@@ -3,14 +3,3 @@
 # https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled
 
 enabled: false
-pull_requests: true
-restylers_version: dev
-
-restylers:
-  - prettier-markdown:
-      enabled: false
-
-commit_template: |
-  style: apply changes from ${restyler.name} restyler
-
-  Signed-off-by: Restyled Commits <commits@restyled.io>
