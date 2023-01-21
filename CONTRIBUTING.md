@@ -134,8 +134,8 @@ Please see the [`SECURITY.md`] file.
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
 
-[**@openinf**]: https://github.com/OpenINF
-[**@openinf/.github**]: https://github.com/OpenINF/.github
+[**@OpenINF**]: https://github.com/OpenINF
+[**@OpenINF/.github**]: https://github.com/OpenINF/.github
 [`authors`]:
   https://github.com/openinf/.github/blob/HEAD/AUTHORS
   'List of people who have contributed code to this project'
