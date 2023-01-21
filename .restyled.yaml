@@ -2,7 +2,7 @@
 # Configuring Restyled
 # https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled
 
-auto: true
+enabled: false
 pull_requests: true
 restylers_version: dev
 
