@@ -2,7 +2,6 @@
 # Configuring Restyled
 # https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled
 
-enabled: true
 auto: true
 pull_requests: true
 restylers_version: dev
@@ -10,7 +9,6 @@ restylers_version: dev
 restylers:
   - prettier-markdown:
       enabled: false
-
 
 commit_template: |
   style: apply changes from ${restyler.name} restyler
