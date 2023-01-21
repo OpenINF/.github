@@ -7,6 +7,11 @@ auto: true
 pull_requests: true
 restylers_version: dev
 
+restylers:
+  - prettier-markdown:
+      enabled: false
+
+
 commit_template: |
   style: apply changes from ${restyler.name} restyler
 
