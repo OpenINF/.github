@@ -172,7 +172,7 @@ Please see the [`SECURITY.md`] file.
 [i-help]:
   https://github.com/search?q=org%3Aopeninf+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
 [twitter-account]: https://twitter.com/openinf
-[issue]:
+[GitHub issue]:
   http://help.github.com/en/github/managing-your-work-on-github/creating-an-issue
 [pr-help]:
   https://github.com/search?q=org%3Aopeninf+is%3Apr+is%3Aopen+label%3A%22help+wanted%22
