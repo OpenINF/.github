@@ -147,7 +147,7 @@ Please see the [`SECURITY.md`][] file.
   ./CODE_OF_CONDUCT.md
   'Standards for how to engage with the project community'
 [`CONTRIBUTING.md`]: ./CONTRIBUTING.md 'Contribution guidelines for this project'
-[`funding`]:
+[`FUNDING.yml`]:
   ./.github/FUNDING.yml
   'How to financially support maintenance/development of @OpenINF projects on GitHub using GitHub Sponsors'
 [`license`]:
