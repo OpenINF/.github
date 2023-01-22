@@ -19,7 +19,7 @@ This project uses the following tools to organize discussion.
 - **Synchronous chat channel:** For casual conversation, collaboration, quick
   exchanges, and questions.
 
-## Issue tracker
+## Issue Tracker
 
 If you’ve found a bug, would like to request a new feature or make a proposal,
 file an [issue][]!
