@@ -66,7 +66,7 @@ the change by opening a new GitHub issue associated with the respective
 repository and propose your change there. Be sure to include implementation
 details and the rationale for the proposed change.
 
-## Pull requests
+## Pull Requests
 
 If you’d like to propose and collaborate on changes, open a [pull request][]!
 
