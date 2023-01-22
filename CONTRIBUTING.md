@@ -143,7 +143,7 @@ Please see the [`SECURITY.md`] file.
 [`authors`]:
   https://github.com/openinf/.github/blob/HEAD/AUTHORS
   'List of people who have contributed code to this project'
-[`code_of_conduct`]:
+[`CODE_OF_CONDUCT.md`]:
   ./CODE_OF_CONDUCT.md
   'Standards for how to engage with the project community'
 [`contributing`]: ./CONTRIBUTING.md 'Contribution guidelines for this project'
