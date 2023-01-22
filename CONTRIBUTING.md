@@ -84,7 +84,7 @@ Contributions to this project are [released][contrib-license] to the public
 under the project’s open source license. The license for a project is located in
 a file named `LICENSE` in the root directory of the repository.
 
-## Project documentation
+## Project Documentation
 
 The [`README.md`] in the root of the repository should contain or link to
 project documentation. If you cannot find the documentation you’re looking for,
