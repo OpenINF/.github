@@ -15,6 +15,7 @@ Windows Server 2016/2022 Standard with Desktop Experience.
 Windows Server 2016 Standard is for physical or minimally-virtualized environments.
 
 See: https://www.microsoft.com/en-us/d/windows-server-2016-standard/dg7gmgf0ds12/0004
+
 -->
 
 Before we can begin using our Windows Server machine as an effective software
