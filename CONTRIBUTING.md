@@ -24,7 +24,7 @@ This project uses the following tools to organize discussion.
 If you’ve found a bug, would like to request a new feature or make a proposal,
 file a [GitHub issue]!
 
-### Resolving open issues
+### Resolving Open Issues
 
 We track ongoing endeavors via the GitHub issues associated with each
 repository, and that’s where you can find tasks to undertake. First, check the
