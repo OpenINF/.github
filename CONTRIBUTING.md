@@ -59,7 +59,7 @@ push your code [early and often][]. If we haven’t heard from you in over a wee
 and someone else expresses interest in that issue, we may approve the new
 person’s work.
 
-### Opening a new issue
+### Opening a New Issue
 
 If you want to work on something that there is no GitHub issue for, then propose
 the change by opening a new GitHub issue associated with the respective
