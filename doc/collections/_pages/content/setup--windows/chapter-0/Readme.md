@@ -10,6 +10,7 @@ Spec: https://github.github.com/gfm
 -->
 
 <!-- Not covered: Preparing device for (and installing) host OS --
+
 Windows Server 2016/2022 Standard with Desktop Experience.
 Windows Server 2016 Standard is for physical or minimally-virtualized environments.
 
