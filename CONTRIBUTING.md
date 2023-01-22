@@ -154,7 +154,7 @@ Please see the [`SECURITY.md`][] file.
   ./LICENSE
   'The open source software license(s) associated with this project'
 [`README.md`]: ./README.md 'The landing/home page of this project'
-[`security`]:
+[`SECURITY.md`]:
   ./SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
 [`support`]: ./SUPPORT.md 'Where to get help on this project'
