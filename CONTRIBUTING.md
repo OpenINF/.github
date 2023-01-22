@@ -86,7 +86,7 @@ a file named `LICENSE` in the root directory of the repository.
 
 ## Project Documentation
 
-The [`README.md`] in the root of the repository should contain or link to
+The [`README.md`][] in the root of the repository should contain or link to
 project documentation. If you cannot find the documentation you’re looking for,
 please file a GitHub issue with details of what you’d like to see documented.
 
