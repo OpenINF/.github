@@ -171,7 +171,7 @@ Please see the [`SECURITY.md`] file.
   https://github.com/search?q=org%3Aopeninf+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
 [i-help]:
   https://github.com/search?q=org%3Aopeninf+is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
-[twitter-account]: https://twitter.com/openinf
+[twitter-account]: https://twitter.com/OpenINF
 [GitHub issue]:
   http://help.github.com/en/github/managing-your-work-on-github/creating-an-issue
 [pr-help]:
