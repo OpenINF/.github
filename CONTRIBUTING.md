@@ -132,7 +132,7 @@ By making a contribution to this project, I certify that:
 
 ## Reporting Security Issues
 
-Please see the [`SECURITY.md`] file.
+Please see the [`SECURITY.md`][] file.
 
 ## Attribution
 
