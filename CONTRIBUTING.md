@@ -68,7 +68,7 @@ details and the rationale for the proposed change.
 
 ## Pull Requests
 
-If you’d like to propose and collaborate on changes, open a [pull request][]!
+If you’d like to propose and collaborate on changes, open a [pull request]!
 
 Here are a few things you can do that will increase the likelihood of having
 your pull request merged:
