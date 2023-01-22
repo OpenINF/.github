@@ -90,7 +90,7 @@ The [`README.md`] in the root of the repository should contain or link to
 project documentation. If you cannot find the documentation you’re looking for,
 please file a GitHub issue with details of what you’d like to see documented.
 
-## Questions or thoughts?
+## Questions or Thoughts?
 
 Support requests (e.g., asking questions) or feedback (e.g., constructive
 criticism) may be directed to the [`@OpenINF`][twitter-account] support account
