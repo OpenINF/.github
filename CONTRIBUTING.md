@@ -157,7 +157,7 @@ Please see the [`SECURITY.md`][] file.
 [`SECURITY.md`]:
   ./SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
-[`support`]: ./SUPPORT.md 'Where to get help on this project'
+[`SUPPORT.md`]: ./SUPPORT.md 'Where to get help on this project'
 [`vision`]: ./VISION.md 'What the goal(s) and/or scope are of this project'
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
