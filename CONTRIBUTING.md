@@ -96,7 +96,7 @@ Support requests (e.g., asking questions) or feedback (e.g., constructive
 criticism) may be directed to the [`@OpenINF`][twitter-account] support account
 on Twitter.
 
-## Additional resources
+## Additional Resources
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
