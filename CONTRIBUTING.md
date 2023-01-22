@@ -153,7 +153,7 @@ Please see the [`SECURITY.md`][] file.
 [`LICENSE`]:
   ./LICENSE
   'The open source software license(s) associated with this project'
-[`readme`]: ./README.md 'The landing/home page of this project'
+[`README.md`]: ./README.md 'The landing/home page of this project'
 [`security`]:
   ./SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
