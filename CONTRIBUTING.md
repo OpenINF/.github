@@ -22,7 +22,7 @@ This project uses the following tools to organize discussion.
 ## Issue Tracker
 
 If you’ve found a bug, would like to request a new feature or make a proposal,
-file an [issue][]!
+file a [GitHub issue]!
 
 ### Resolving open issues
 
