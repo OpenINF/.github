@@ -48,7 +48,7 @@ Once you have identified an issue you would like to work on, follow these steps:
 1.  Comment on it and say you would like to work on that issue.
 2.  Wait for someone to confirm that you may work on the issue before writing
     any code. The person who confirms will add a
-    https://github.com/openinf/.github/labels/wip label to the issue to indicate
+    https://github.com/OpenINF/.github/labels/wip label to the issue to indicate
     that the issue has been assigned.
 3.  Once the issue has been labeled as a _work in progress_, write your code and
     submit your PR.
