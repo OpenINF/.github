@@ -140,7 +140,7 @@ Please see the [`SECURITY.md`][] file.
 
 [**@OpenINF**]: https://github.com/OpenINF
 [**@OpenINF/.github**]: https://github.com/OpenINF/.github
-[`authors`]:
+[`AUTHORS`]:
   https://github.com/OpenINF/.github/blob/HEAD/AUTHORS
   'List of people who have contributed code to this project'
 [`CODE_OF_CONDUCT.md`]:
