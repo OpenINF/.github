@@ -30,7 +30,7 @@ We track ongoing endeavors via the GitHub issues associated with each
 repository, and that’s where you can find tasks to undertake. First, check the
 labels on the issue you’re interested in.
 
-- Issues labeled https://github.com/openinf/.github/labels/help%20wanted or
+- Issues labeled https://github.com/OpenINF/.github/labels/help%20wanted or
   https://github.com/OpenINF/.github/labels/good%20first%20issue have been
   identified as desirable for community contribution. Feel free to work on
   <abbr title="Good First Issues">GFIs</abbr> even if not your first issue.
