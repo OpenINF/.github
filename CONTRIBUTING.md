@@ -39,7 +39,7 @@ labels on the issue you’re interested in.
   - List of [all incomplete pull requests labeled _help wanted_][pr-help]
 - If the issue does not have either of those labels, it may still be open for
   contribution.
-- Issues labeled https://github.com/openinf/.github/labels/wip are a _work in
+- Issues labeled https://github.com/OpenINF/.github/labels/wip are a _work in
   progress_ and generally not available, but may be available if there has been
   no activity on the issue or related PR for over a week.
 
