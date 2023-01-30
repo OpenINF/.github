@@ -11,7 +11,7 @@ vulnerability.
 In the rare event that you find a vulnerability in the OpenINF SDK itself,
 [email us]. We hope to regularly work with the cybersecurity community and the
 brilliant researchers in the field to arrive at positive outcomes for all
-parties involved. An alternative to email fo reporting should be available
+parties involved. An alternative to email for reporting should be available
 shortly for those uncomfortable with that medium. Anonymous reports will also
 gladly be accepted. We also hope to introduce a healthy manner of incentivizing
 reporting in the near term.
