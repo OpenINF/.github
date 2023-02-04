@@ -2,7 +2,6 @@ import { createRequire } from 'node:module';
 import { unified } from 'unified';
 
 const require = createRequire(import.meta.url);
-
 const infoStrings = [
   'ada',
   'bash',
