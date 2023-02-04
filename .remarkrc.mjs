@@ -41,12 +41,12 @@ const infoStrings = [
   'yaml',
 ];
 
-var fs = require('node:fs');
-var strip = require('strip-comments');
+const fs = require('node:fs');
+const strip = require('strip-comments');
 
-var projectTerms = strip(fs.readFileSync('./project-terms.txt', 'utf8'));
+const projectTerms = strip(fs.readFileSync('./project-terms.txt', 'utf8'));
 
-var naturalLanguage = unified().use([
+const naturalLanguage = unified().use([
   await import('retext-english'),
   await import('retext-syntax-urls'),
   await import('retext-equality'),
