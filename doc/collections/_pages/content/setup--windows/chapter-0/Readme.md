@@ -22,7 +22,7 @@ Before we can begin using our Windows Server machine as an effective software
 development environment, there are a few hurdles to overcome. This chapter deals
 with enabling and configuring connectivity to the Internet.
 
-## Access to WiFi
+## Access to Wi-Fi
 
 As a safe default, on fresh installations of Windows Server, WiFi connectivity
 is inaccessible because Airplane mode is enabled.
