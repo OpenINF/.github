@@ -24,7 +24,7 @@ with enabling and configuring connectivity to the Internet.
 
 ## Access to Wi-Fi
 
-As a safe default, on fresh installations of Windows Server, WiFi connectivity
+As a safe default &mdash; on fresh installations of Windows Server &mdash; Wi-Fi connectivity
 is inaccessible because Airplane mode is enabled.
 
 
