@@ -41,7 +41,7 @@ Determine where from & document the below registry modification.
 
 ```text
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
-```\
+```
 
 ```cmd
 SC CONFIG RmSvc START= AUTO
@@ -51,6 +51,8 @@ SC CONFIG RmSvc START= AUTO
 https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html
 https://support.lenovo.com/us/en/downloads/ds503062-fibocom-l850-gl-wireless-wan-driver-for-windows-10-version-1709-or-later-thinkpad
 -->
+
+If you’re using PowerShell, you should run:
 
 ```ps
 Install-WindowsFeature -Name Wireless-Networking
@@ -66,6 +68,6 @@ start service
 
 ```ps
 Start-Service WlanSvc –PassThru
-\```
+```
 
 [^1]: https://github.com/MicrosoftDocs/windowsserverdocs/blob/main/WindowsServerDocs/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server.md#radio-management-service
