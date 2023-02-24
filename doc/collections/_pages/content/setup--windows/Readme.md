@@ -15,5 +15,9 @@ Spec: https://github.github.com/gfm
 This section deals with preparing devices for (and installing) Windows
 Server as the host OS for modern software development workstations.
 
-<!-- TODO(DerekNonGeneric): explain rationale for decision to use Windows -->
+Although using Windows may not be a requirement for contributions, many have
+made the conscious decision not to go with the more common locked-down option
+of Apple products. Oftentimes, the hardware associated with the machine has
+the most compatibility with drivers specifically made for Windows while
+Linux driver support may be limited or non-existent in some cases.
 
