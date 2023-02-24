@@ -58,13 +58,13 @@ If you’re using PowerShell, you should run:
 Install-WindowsFeature -Name Wireless-Networking
 ```
 
-reboot
+A system reboot will be necessary, so run:
 
 ```ps
 shutdown –f –r –t 0
 ```
 
-start service
+Once the system has rebooted, using PowerShell, start the `WlanSvc` service:
 
 ```ps
 Start-Service WlanSvc –PassThru
