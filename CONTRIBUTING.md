@@ -30,8 +30,8 @@ We track ongoing endeavors via the GitHub issues associated with each
 repository, and that’s where you can find tasks to undertake. First, check the
 labels on the issue you’re interested in.
 
-- Issues labeled https://github.com/OpenINF/.github/labels/help%20wanted or
-  https://github.com/OpenINF/.github/labels/good%20first%20issue have been
+- Issues labeled <https://github.com/OpenINF/.github/labels/help%20wanted> or
+  <https://github.com/OpenINF/.github/labels/good%20first%20issue> have been
   identified as desirable for community contribution. Feel free to work on
   <abbr title="Good First Issues">GFIs</abbr> even if not your first issue.
   - List of [all issues labeled _good first issue_][i-gfi]
@@ -39,20 +39,20 @@ labels on the issue you’re interested in.
   - List of [all incomplete pull requests labeled _help wanted_][pr-help]
 - If the issue does not have either of those labels, it may still be open for
   contribution.
-- Issues labeled https://github.com/OpenINF/.github/labels/wip are a _work in
+- Issues labeled <https://github.com/OpenINF/.github/labels/wip> are a _work in
   progress_ and generally not available, but may be available if there has been
   no activity on the issue or related PR for over a week.
 
 Once you have identified an issue you would like to work on, follow these steps:
 
-1.  Comment on it and say you would like to work on that issue.
-2.  Wait for someone to confirm that you may work on the issue before writing
+1. Comment on it and say you would like to work on that issue.
+2. Wait for someone to confirm that you may work on the issue before writing
     any code. The person who confirms will add a
-    https://github.com/OpenINF/.github/labels/wip label to the issue to indicate
+    <https://github.com/OpenINF/.github/labels/wip> label to the issue to indicate
     that the issue has been assigned.
-3.  Once the issue has been labeled as a _work in progress_, write your code and
+3. Once the issue has been labeled as a _work in progress_, write your code and
     submit your PR.
-4.  Wait for code review and address any issues raised as soon as you can.
+4. Wait for code review and address any issues raised as soon as you can.
 
 Even if you are not done with the issue, create a [draft pull request][] and
 push your code [early and often][]. If we haven’t heard from you in over a week
@@ -82,7 +82,7 @@ your pull request merged:
 
 Contributions to this project are [released][contrib-license] to the public
 under the project’s open source license. The license for a project is located in
-a file named `LICENSE` in the root directory of the repository.
+a file named [`LICENSE`][] in the root directory of the repository.
 
 ## Project Documentation
 
@@ -138,18 +138,9 @@ Please see the [`SECURITY.md`][] file.
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
 
-[**@OpenINF**]: https://github.com/OpenINF
-[**@OpenINF/.github**]: https://github.com/OpenINF/.github
-[`AUTHORS`]:
-  https://github.com/OpenINF/.github/blob/HEAD/AUTHORS
-  'List of people who have contributed code to this project'
 [`CODE_OF_CONDUCT.md`]:
   ./CODE_OF_CONDUCT.md
   'Standards for how to engage with the project community'
-[`CONTRIBUTING.md`]: ./CONTRIBUTING.md 'Contribution guidelines for this project'
-[`FUNDING.yml`]:
-  ./.github/FUNDING.yml
-  'How to financially support maintenance/development of @OpenINF projects on GitHub using GitHub Sponsors'
 [`LICENSE`]:
   ./LICENSE
   'The open source software license(s) associated with this project'
@@ -157,11 +148,8 @@ Please see the [`SECURITY.md`][] file.
 [`SECURITY.md`]:
   ./SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
-[`SUPPORT.md`]: ./SUPPORT.md 'Where to get help on this project'
-[`VISION.md`]: ./VISION.md 'What the goal(s) and/or scope are of this project'
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
-[dco]: https://developercertificate.org
 [draft pull request]:
   https://help.github.com/en/articles/about-pull-requests#draft-pull-requests
 [early and often]: https://www.worklytics.co/blog/commit-early-push-often/

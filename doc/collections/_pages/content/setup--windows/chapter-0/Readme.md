@@ -28,7 +28,6 @@ with enabling and configuring connectivity to the Internet.
 As a safe default &mdash; on fresh installations of Windows Server &mdash; Wi-Fi connectivity
 is inaccessible because Airplane mode is enabled.
 
-
 ### Configuring Radio Management Service (RmSvc)[^1]
 
 Airplane mode is also grayed-out/unconfigurable (the default preference of "enabled" cannot
