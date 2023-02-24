@@ -30,3 +30,10 @@ offerings are more prepared to avoid having this happen.
 Of the Windows Server offerings, the Desktop Experience varietal is
 the only feasible choice as dealing with multimedia is often involved.
 
+Refer to the [Get started with Windows Server][] article to learn more about
+how to go about acquiring and installing it on your (hopefully) compatible
+system. Regardless of stated minimum system requirements, no less than
+16gb of RAM would be recommended.
+
+[Get started with Windows Server]: https://learn.microsoft.com/en-us/windows-server/get-started/get-started-with-windows-server
+
