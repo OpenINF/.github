@@ -21,3 +21,11 @@ of Apple products. Oftentimes, the hardware associated with the machine has
 the most compatibility with drivers specifically made for Windows while
 Linux driver support may be limited or non-existent in some cases.
 
+Windows as a software development workstation using one of the
+"Home" or "Professional" offerings has been a notoriously bad
+decision due to unexpected updates forcing the reboot at
+inconvenient times and which is something that the Server
+offerings are more prepared to avoid having this happen.
+
+
+
