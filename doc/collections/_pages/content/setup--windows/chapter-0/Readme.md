@@ -1,4 +1,5 @@
 ---
+
 title: Connecting to the Interwebs (Wireless Networking)
 category: Documentation
 content_type: Install & Setup
@@ -25,14 +26,14 @@ with enabling and configuring connectivity to the Internet.
 
 ## Access to Wi-Fi
 
-As a safe default &mdash; on fresh installations of Windows Server &mdash; Wi-Fi connectivity
-is inaccessible because Airplane mode is enabled.
+As a safe default &mdash; on fresh installations of Windows Server &mdash;
+Wi-Fi connectivity inaccessible because Airplane mode is enabled.
 
 ### Configuring Radio Management Service (RmSvc)[^1]
 
-Airplane mode is also grayed-out/unconfigurable (the default preference of "enabled" cannot
-be changed). The following commands must be run in an elevated Command Line Shell
-prompt to modify this preference.
+Airplane mode is also grayed-out/unconfigurable (the default preference of
+"enabled" cannot be changed). The following commands must be run in an elevated
+Command Line Shell prompt to modify this preference.
 
 <!-- FIXME(DerekNonGeneric):
 Determine where from & document the below registry modification.

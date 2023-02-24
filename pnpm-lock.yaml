@@ -42,7 +42,6 @@ specifiers:
   markdown-it-toc-done-right: 4.2.0
   markdownlint-cli2: 0.6.0
   markdownlint-cli2-formatter-default: 0.0.3
-  markdownlint-rule-titlecase: 0.1.0
   nps: 5.10.0
   prettier: 2.8.4
   typescript: 4.9.5
@@ -89,7 +88,6 @@ devDependencies:
   markdown-it-toc-done-right: 4.2.0
   markdownlint-cli2: 0.6.0
   markdownlint-cli2-formatter-default: 0.0.3_markdownlint-cli2@0.6.0
-  markdownlint-rule-titlecase: 0.1.0
   nps: 5.10.0
   prettier: 2.8.4
   typescript: 4.9.5
@@ -3457,17 +3455,6 @@ packages:
       yaml: 2.2.1
     dev: true
 
-  /markdownlint-rule-helpers/0.7.0:
-    resolution: {integrity: sha512-xZByWJNBaCMHo7nYPv/5aO8Jt68YcMvyouFXhuXmJzbqCsQy8rfCj0kYcv22kdK5PwAgMdbHg0hyTdURbUZtJw==}
-    dev: true
-
-  /markdownlint-rule-titlecase/0.1.0:
-    resolution: {integrity: sha512-PuYN2NCJGHYeA6CMInQhyywkiu1oix9Ipvf5n0jLiebmwB5ipO9iTtlNrYRUeAX7WamGy0V1OFVnD+ly45utSw==}
-    dependencies:
-      markdownlint-rule-helpers: 0.7.0
-      title-case: 3.0.3
-    dev: true
-
   /markdownlint/0.27.0:
     resolution: {integrity: sha512-HtfVr/hzJJmE0C198F99JLaeada+646B5SaG2pVoEakLFI6iRGsvMqrnnrflq8hm1zQgwskEgqSnhDW11JBp0w==}
     engines: {node: '>=14.18.0'}
@@ -4254,12 +4241,6 @@ packages:
     dependencies:
       globalyzer: 0.1.0
       globrex: 0.1.2
-    dev: true
-
-  /title-case/3.0.3:
-    resolution: {integrity: sha512-e1zGYRvbffpcHIrnuqT0Dh+gEJtDaxDSoG4JAIpq4oDFyooziLBIiYQv0GBT4FUAnUop5uZ1hiIAj7oAF6sOCA==}
-    dependencies:
-      tslib: 2.5.0
     dev: true
 
   /to-fast-properties/2.0.0:
