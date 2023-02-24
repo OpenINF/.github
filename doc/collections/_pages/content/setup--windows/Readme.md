@@ -27,5 +27,6 @@ decision due to unexpected updates forcing the reboot at
 inconvenient times and which is something that the Server
 offerings are more prepared to avoid having this happen.
 
-
+Of the Windows Server offerings, the Desktop Experience varietal is
+the only feasible choice as dealing with multimedia is often involved.
 
