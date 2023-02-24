@@ -11,7 +11,7 @@
     "automerge": true,
     "assignees": ["@DerekNonGeneric"]
   },
-  "lockFileMaintenance": { "enabled": false },
+  "lockFileMaintenance": { "enabled": true },
   "platformCommit": true,
   "rangeStrategy": "pin",
   "semanticCommits": "enabled",
@@ -22,7 +22,7 @@
       "packageRules": [
         {
           "matchDepTypes": ["dependencies"],
-          "commitMessagePrefix": "chore(deps):",
+          "commitMessagePrefix": "dep:",
           "labels": ["dependencies", "deps-prod"]
         }
       ]
