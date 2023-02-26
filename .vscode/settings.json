@@ -151,7 +151,7 @@
   // Whether the extension contributes a lint task to lint a whole workspace.
   "eslint.lintTask.enable": true,
 
-  "eslint.workingDirectories": ["./"],
-
-  "eslint.packageManager": "pnpm"
+  "eslint.workingDirectories": ["./"] /*,
+  // See: https://github.com/microsoft/vscode/issues/148903
+  "eslint.packageManager": "pnpm"     */
 }
