@@ -106,13 +106,10 @@
   // MD021/no-multiple-space-closed-atx - Multiple spaces inside hashes on closed atx style heading
   "MD021": true,
 
-  // MD022/blanks-around-headings/blanks-around-headers - Headings should be surrounded by blank lines
-  "MD022": {
-    // Blank lines above heading
-    "lines_above": 1,
-    // Blank lines below heading
-    "lines_below": 1
-  },
+  // MD022/blanks-around-headings/blanks-around-headers
+  // Headings should be surrounded by blank lines, but this rule is incompatible
+  // with frontmatter for some reason, so we disable it.
+  "MD022": false,
 
   // MD023/heading-start-left/header-start-left - Headings must start at the beginning of the line
   "MD023": true,
