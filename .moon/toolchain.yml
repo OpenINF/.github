@@ -35,10 +35,10 @@ node:
   # `package.json`.
   # dependencyVersionFormat: 'workspace'
 
-  # Infer and automatically create moon tasks from `package.json` scripts, per
-  # project.
-  # BEWARE(DerekNonGeneric): Tasks and scripts are not 1:1 in functionality, so
-  # please refer to the documentation.
+  # ///NOTE///
+  # Tasks & scripts are not 1:1 in functionality, so please refer
+  # to the documentation. Infer and automatically create moon tasks
+  # from `package.json` scripts, per project.
   inferTasksFromScripts: true
 
   # Sync a project's `dependsOn` as dependencies within the project's
