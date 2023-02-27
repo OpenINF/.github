@@ -9,7 +9,7 @@ GEM
       mini_mime (~> 1.0)
       rugged (~> 1.0)
     mini_mime (1.1.2)
-    rugged (1.5.0.1)
+    rugged (1.5.1)
 
 PLATFORMS
   x86_64-linux
