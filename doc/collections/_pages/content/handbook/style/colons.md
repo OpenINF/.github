@@ -12,7 +12,7 @@ original_title: Colons | Google developer documentation style guide
 When a colon introduces a list, the text that precedes the colon must be able to
 stand alone as a complete sentence.
 
-### Examples
+<strong>Examples</strong>
 
 <p class="example">
   <span class="compare-better">Recommended:</span> The fields are defined as
