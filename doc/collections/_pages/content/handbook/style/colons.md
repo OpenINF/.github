@@ -50,7 +50,7 @@ about formatting code, see [Some specific items to put in code font].
 In general, the first word in the text that follows a colon should be in
 lowercase. For exceptions, see [capitalization].
 
-### Examples
+<strong>Examples</strong>
 
 <p class="example">
   <span class="compare-better">Recommended:</span> Tone: concise,
