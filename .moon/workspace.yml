@@ -8,12 +8,13 @@ versionConstraint: '0.24.3'
 # or file system path.
 # extends: './shared/workspace.yml'
 
-# REQ'D(DerekNonGeneric): A map of all projects found within the workspace, or a
-# list of file system globs.
-# When using a map, each entry requires a unique project ID as the map key, and
+# When using a map, each entry requires a unique project ID as the map key and
 # a file system path to the project folder as the map value. File paths are
-# relative from the workspace root, and cannot reference projects located
+# relative to the workspace root and cannot reference projects located
 # outside the workspace boundary.
+#
+# A map of all projects found within the workspace or a list of file
+# system globs.
 projects:
   - 'doc/*'
 
