@@ -58,8 +58,6 @@
         "tamasfe.even-better-toml",
         // https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter
         "travisthetechie.write-good-linter",
-        // https://marketplace.visualstudio.com/items?itemName=travisthetechie.skyapps.fish-vscode
-        "skyapps.fish-vscode",
         // https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
         "yzhang.markdown-all-in-one"
       ]
