@@ -70,7 +70,7 @@ lowercase. For exceptions, see [capitalization][].
 For more information about how to punctuate introductory material, see the
 sections on [list introductions][] and [code-sample introductions][].
 
-For information about when it's better to use colons than dashes, see [Dashes].
+For information about when it's better to use colons than dashes, see [Dashes][].
 
 <!-- LINK DEFINITION LABELS - START -->
 [Some specific items to put in code font]:
