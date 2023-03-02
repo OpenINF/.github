@@ -28,8 +28,8 @@ stand alone as a complete sentence.
 
 ## Bold and Italic Text Preceding Colons
 
-When non-italic (_roman_) text that precedes a colon is bold, make the colon
-bold too.
+When non-italic (_roman_) text that precedes a colon is bold, the colon should
+not be made bold, italic, or otherwise (color-stylized, etc.).
 
 </section>
 
