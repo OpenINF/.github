@@ -26,7 +26,7 @@ stand alone as a complete sentence.
 
 <section id="bold-text-preceding-colon" markdown="1">
 
-## Bold and Italic Text Preceding Colon
+## Bold and Italic Text Preceding Colons
 
 When non-italic (_roman_) text that precedes a colon is bold, make the colon
 bold too.
