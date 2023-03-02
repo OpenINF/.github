@@ -45,7 +45,7 @@ about formatting code, see [Some specific items to put in code font].
 
 <section id="colon-in-sentence" markdown="1">
 
-## Colons within sentences
+## Colons Within Sentences
 
 In general, the first word in the text that follows a colon should be in
 lowercase. For exceptions, see [capitalization].
