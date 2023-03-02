@@ -2,7 +2,7 @@
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
 # Require a specific version of moon while running commands, otherwise fail.
-versionConstraint: '0.25.1'
+versionConstraint: 0.25.1
 
 # Extend and inherit an external configuration file. Must be a valid HTTPS URL
 # or file system path.
@@ -18,15 +18,14 @@ versionConstraint: '0.25.1'
 projects:
   - 'doc/*'
 
-
 # Configures the version control system to utilize within the workspace. A VCS
 # is required for determining touched (added, modified, etc) files, calculating
 # file hashes, computing affected files, and much more.
 vcs:
   # The manager/binary to use when managing the repository.
   # Accepts 'git', or 'svn'. Defaults to 'git'.
-  manager: 'git'
+  manager: git
 
   # The default branch (master/main/trunk) in the repository for comparing the
   # local branch against. For Git, this is typically 'master' or 'main'.
-  defaultBranch: 'main'
+  defaultBranch: main
