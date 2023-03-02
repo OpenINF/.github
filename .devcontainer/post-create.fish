@@ -60,6 +60,12 @@ chmod 700 ~/.gnupg
 
 echo no-autostart >>~/.gnupg/gpg.conf
 
+# Install moon
+# uncomment the below for moon support
+# curl -fsSL https://moonrepo.dev/install.sh | bash
+# echo 'set -Ux fish_user_paths ~/.moon/tools/moon/latest $fish_user_paths' >>~/.config/fish/config.fish
+# source ~/.config/fish/config.fish
+
 # Remove an existing Unix-domain socket file for remote port forwarding before
 # creating a new one when gpgtunnel connection is made.
 rm ~/.gnupg/S.gpg-agent
