@@ -28,7 +28,7 @@ with enabling and configuring connectivity to the Internet.
 ## Access to Wi-Fi
 
 As a safe default &mdash; on fresh installations of Windows Server &mdash;
-Wi-Fi connectivity inaccessible because Airplane mode is enabled.
+Wi-Fi connectivity is still inaccessible because Airplane mode is enabled.
 
 ### Configuring Radio Management Service (RmSvc)[^1]
 
