@@ -42,7 +42,8 @@ Determine where from & document the below registry modification.
 
 Consider creating a system restore checkpoint prior to making the following
 registry modification. As a general best-practice, this goes for most registry
-modifications. Do not (yet) proceed without a disposable system.
+modifications. Do not (yet) proceed without a disposable system or having made
+a restore point.
 
 ```text
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
@@ -71,7 +72,8 @@ A system reboot will be necessary, so run:
 shutdown –f –r –t 0
 ```
 
-Once the system has reboot, start the `WlanSvc` service:
+Once the system has reboot, start the `WlanSvc` service. Using PowerShell, you
+may run the following.
 
 ```ps
 Start-Service WlanSvc –PassThru
