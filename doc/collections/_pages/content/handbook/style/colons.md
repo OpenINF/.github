@@ -68,7 +68,7 @@ lowercase. For exceptions, see [capitalization].
 ## See Also
 
 For more information about how to punctuate introductory material, see the
-sections on [list introductions] and [code-sample introductions].
+sections on [list introductions][] and [code-sample introductions][].
 
 For information about when it's better to use colons than dashes, see [Dashes].
 
