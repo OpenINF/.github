@@ -35,7 +35,7 @@ bold too.
 
 <section id="code-text-preceding-colon" markdown="1">
 
-## Code text preceding colon
+## Code Text Preceding Colon
 
 When text that precedes a colon is tagged as `<code>`, don't include the colon
 in the `<code>` tagging unless it is part of the code. For more information
