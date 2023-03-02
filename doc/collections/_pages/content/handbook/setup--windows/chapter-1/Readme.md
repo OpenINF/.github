@@ -1,14 +1,18 @@
+---
+title: Installing Winget
+category: Documentation
+content_type: Install & Setup
+published: false
+---
+
 <!-- Begin GitHub-Flavored Markdown (GFM)
 
 See: https://docs.github.com/get-started/writing-on-github
 Spec: https://github.github.com/gfm/
+
 -->
 
-## Chapter I: Install Winget[^1]
-
-&nbsp;&nbsp;
-
-> This is not as simple as it may sound
+Installing Winget[^1] on Windows Server is not as simple as it may sound.
 
 &nbsp;&nbsp;
 
