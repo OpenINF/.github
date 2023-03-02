@@ -30,3 +30,7 @@ tsconfig.tsbuildinfo
 
 # Ignore pnpm-specific files/folders not to track.
 .pnpm-store/
+
+# Ignore Gemfile.lock allowing those changes to be
+# taken care of by regular lockfile maintenance.
+Gemfile.lock
