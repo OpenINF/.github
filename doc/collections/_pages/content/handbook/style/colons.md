@@ -72,13 +72,11 @@ sections on [list introductions] and [code-sample introductions].
 
 For information about when it's better to use colons than dashes, see [Dashes].
 
-<!-- prettier-ignore-start -->
-<!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
+<!-- LINK DEFINITION LABELS - START -->
 [Some specific items to put in code font]:
   ./code-in-text.md#some-specific-items-to-put-in-code-font
 [capitalization]: ./capitalization.md
 [list introductions]: ./lists.md#intros
 [code-sample introductions]: ./code-samples.md#intros
 [Dashes]: ./dashes.md#colons
-<!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
-<!-- prettier-ignore-end -->
+<!-- LINK DEFINITION LABELS - END -->
