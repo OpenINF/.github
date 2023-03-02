@@ -42,7 +42,7 @@
   },
 
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   // Render vertical rulers after a certain number of monospace characters.
@@ -70,7 +70,7 @@
     "pwsh": null
   },
 
-  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.linux": "fish",
 
   "terminal.integrated.splitCwd": "workspaceRoot",
 
