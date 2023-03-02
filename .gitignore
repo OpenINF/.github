@@ -36,5 +36,5 @@ tsconfig.tsbuildinfo
 Gemfile.lock
 
 # moon
-.moon/cache
-.moon/docker
+.moon/cache/
+.moon/docker/
