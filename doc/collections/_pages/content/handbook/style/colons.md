@@ -65,7 +65,7 @@ lowercase. For exceptions, see [capitalization].
 
 </section>
 
-## See also
+## See Also
 
 For more information about how to punctuate introductory material, see the
 sections on [list introductions] and [code-sample introductions].
