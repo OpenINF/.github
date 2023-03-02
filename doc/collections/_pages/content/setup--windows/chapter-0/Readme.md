@@ -1,5 +1,4 @@
 ---
-
 title: Connecting to the Interwebs (Wireless Networking)
 category: Documentation
 content_type: Install & Setup
@@ -7,8 +6,10 @@ published: false
 ---
 
 <!-- Begin GitHub-Flavored Markdown (GFM)
+
 See: https://docs.github.com/get-started/writing-on-github
 Spec: https://github.github.com/gfm
+
 -->
 
 <!-- Not covered: Preparing device for (and installing) host OS --
@@ -27,7 +28,7 @@ with enabling and configuring connectivity to the Internet.
 ## Access to Wi-Fi
 
 As a safe default &mdash; on fresh installations of Windows Server &mdash;
-Wi-Fi connectivity inaccessible because Airplane mode is enabled.
+Wi-Fi connectivity is still inaccessible because Airplane mode is enabled.
 
 ### Configuring Radio Management Service (RmSvc)[^1]
 
@@ -39,9 +40,16 @@ Command Line Shell prompt to modify this preference.
 Determine where from & document the below registry modification.
 -->
 
+Consider creating a system restore checkpoint prior to making the following
+registry modification. As a general best-practice, this goes for most registry
+modifications. Do not (yet) proceed without a disposable system or having made
+a restore point.
+
 ```text
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
 ```
+
+The following may be run in Windows Command Prompt (cmd.exe).
 
 ```cmd
 SC CONFIG RmSvc START= AUTO
@@ -58,13 +66,14 @@ If you’re using PowerShell, you should run:
 Install-WindowsFeature -Name Wireless-Networking
 ```
 
-reboot
+A system reboot will be necessary, so run:
 
 ```ps
 shutdown –f –r –t 0
 ```
 
-start service
+Once the system has reboot, start the `WlanSvc` service. Using PowerShell, you
+may run the following.
 
 ```ps
 Start-Service WlanSvc –PassThru
