@@ -7,7 +7,7 @@ original_title: Colons | Google developer documentation style guide
 
 <section id="phrase-preceding-colon" markdown="1">
 
-## Introductory phrase preceding colon
+## Introductory Phrase Preceding Colon
 
 When a colon introduces a list, the text that precedes the colon must be able to
 stand alone as a complete sentence.
