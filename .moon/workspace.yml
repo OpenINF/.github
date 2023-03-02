@@ -2,7 +2,7 @@
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
 # Require a specific version of moon while running commands, otherwise fail.
-versionConstraint: '0.24.3'
+versionConstraint: '0.25.1'
 
 # Extend and inherit an external configuration file. Must be a valid HTTPS URL
 # or file system path.
