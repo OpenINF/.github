@@ -50,8 +50,6 @@
         "streetsidesoftware.code-spell-checker",
         // https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
         "tamasfe.even-better-toml",
-        // https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter
-        "travisthetechie.write-good-linter",
         // https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
         "yzhang.markdown-all-in-one"
       ]
