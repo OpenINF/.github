@@ -8,6 +8,7 @@ specifiers:
   '@babel/plugin-transform-modules-commonjs': 7.21.2
   '@babel/preset-env': 7.20.2
   '@iktakahiro/markdown-it-katex': 4.0.1
+  '@moonrepo/cli': 0.25.1
   '@openinf/util-text': 1.1.2
   '@types/markdown-it': '*'
   '@types/node': 14.x || 16.x || 18.x
@@ -54,6 +55,7 @@ devDependencies:
   '@babel/plugin-transform-modules-commonjs': 7.21.2_@babel+core@7.21.0
   '@babel/preset-env': 7.20.2_@babel+core@7.21.0
   '@iktakahiro/markdown-it-katex': 4.0.1
+  '@moonrepo/cli': 0.25.1
   '@openinf/util-text': 1.1.2
   '@types/markdown-it': 12.2.3
   '@types/node': 18.14.2
@@ -1368,6 +1370,78 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@moonrepo/cli/0.25.1:
+    resolution: {integrity: sha512-IcswRYzMVKmkK9TA5QgGytKJjzQfn+YT0Ht3qzLY3kY9mZIlzYEYLmS5nvRv7wIm6AHPYBYn+8IdFLSCmXeR3Q==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      detect-libc: 2.0.1
+    optionalDependencies:
+      '@moonrepo/core-linux-arm64-gnu': 0.25.1
+      '@moonrepo/core-linux-arm64-musl': 0.25.1
+      '@moonrepo/core-linux-x64-gnu': 0.25.1
+      '@moonrepo/core-linux-x64-musl': 0.25.1
+      '@moonrepo/core-macos-arm64': 0.25.1
+      '@moonrepo/core-macos-x64': 0.25.1
+      '@moonrepo/core-windows-x64-msvc': 0.25.1
+    dev: true
+
+  /@moonrepo/core-linux-arm64-gnu/0.25.1:
+    resolution: {integrity: sha512-6OfnQDeFBHwUhUJAXdLSgewhZC3ysY+oPnxhf1IFl8UNvhBQJi+krVDHrqMFTXKUBs6XZmftuwdkRZze77i8jg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-linux-arm64-musl/0.25.1:
+    resolution: {integrity: sha512-/fS+WZo6HRbKOrHaz6y4YZcxr8XyukPd+FVAzkA19O/WljksYSpPdQqFNMU7ymbETogynpl1zw7atIjvcasOPg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-linux-x64-gnu/0.25.1:
+    resolution: {integrity: sha512-vwa4ZVMmt7WvDA18DISFB7YaeCH2pWcoInMgyp+/Bq8gBJ0u3EvLEjM2zceMeLIobuiPVYQFKBBWQc6N/DStzQ==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-linux-x64-musl/0.25.1:
+    resolution: {integrity: sha512-NUF4G/5HOzz8LtMelgNt6rABESXBTbCQaRq5nbIkL5zZM7xbDkJJ+DZr3mbdo/OtSh18oN4sSUKMytE738wutg==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-macos-arm64/0.25.1:
+    resolution: {integrity: sha512-7BMptb2W0Faoq+Dfyq8/q3V2lWAXZmTXXZea2VoDlc/lFjF72EgogFtFiaX+XC/1A+htmgPL5RIqANwV55LbrA==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-macos-x64/0.25.1:
+    resolution: {integrity: sha512-gf+3n7zMj499EaCsLuGBWOmTDu5jsfN6Nd2u7qfeNM8GmAEq+vphRM9DfOpnGF5uDHXPSO3nZGz5A/Q0e23t3A==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@moonrepo/core-windows-x64-msvc/0.25.1:
+    resolution: {integrity: sha512-wOPvxeORzQxq+8yyTJFjyTfQpDeZCXUx3fcMtl1TZi3RfwzpE2r+1HvFZxPb1kXDF4L3nXzegW0wcHCyBuwgTw==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@nicolo-ribaudo/eslint-scope-5-internals/5.1.1-v1:
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
     dependencies:
@@ -2128,6 +2202,11 @@ packages:
     dependencies:
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
+    dev: true
+
+  /detect-libc/2.0.1:
+    resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
+    engines: {node: '>=8'}
     dev: true
 
   /dir-glob/3.0.1:
