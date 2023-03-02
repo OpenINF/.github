@@ -39,7 +39,7 @@ bold too.
 
 When text that precedes a colon is tagged as `<code>`, don't include the colon
 in the `<code>` tagging unless it is part of the code. For more information
-about formatting code, see [Some specific items to put in code font].
+about formatting code, see [Some specific items to put in code font][].
 
 </section>
 
