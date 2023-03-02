@@ -42,8 +42,6 @@
         "ionutvmi.path-autocomplete",
         // https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen
         "knisterpeter.vscode-commitizen",
-        // https://marketplace.visualstudio.com/items?itemName=lunaryorn.fish-ide
-        "lunaryorn.fish-ide",
         // https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
         "mrmlnc.vscode-json5",
         // https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
