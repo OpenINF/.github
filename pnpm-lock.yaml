@@ -29,7 +29,7 @@ specifiers:
   eslint-plugin-regexp: 1.12.0
   eslint-plugin-simple-import-sort: 10.0.0
   eslint-plugin-toml: 0.3.1
-  eslint-plugin-unicorn: 45.0.2
+  eslint-plugin-unicorn: 46.0.0
   eslint-plugin-wix-editor: 3.3.0
   eslint-plugin-yml: 1.5.0
   markdown-it: 13.0.1
@@ -75,7 +75,7 @@ devDependencies:
   eslint-plugin-regexp: 1.12.0_eslint@8.35.0
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.35.0
   eslint-plugin-toml: 0.3.1_eslint@8.35.0
-  eslint-plugin-unicorn: 45.0.2_eslint@8.35.0
+  eslint-plugin-unicorn: 46.0.0_eslint@8.35.0
   eslint-plugin-wix-editor: 3.3.0
   eslint-plugin-yml: 1.5.0_eslint@8.35.0
   markdown-it: 13.0.1
@@ -2486,8 +2486,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-unicorn/45.0.2_eslint@8.35.0:
-    resolution: {integrity: sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==}
+  /eslint-plugin-unicorn/46.0.0_eslint@8.35.0:
+    resolution: {integrity: sha512-j07WkC+PFZwk8J33LYp6JMoHa1lXc1u6R45pbSAipjpfpb7KIGr17VE2D685zCxR5VL4cjrl65kTJflziQWMDA==}
     engines: {node: '>=14.18'}
     peerDependencies:
       eslint: '>=8.28.0'
