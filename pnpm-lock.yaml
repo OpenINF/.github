@@ -28,7 +28,7 @@ specifiers:
   eslint-plugin-promise: 6.1.1
   eslint-plugin-regexp: 1.12.0
   eslint-plugin-simple-import-sort: 10.0.0
-  eslint-plugin-toml: 0.3.1
+  eslint-plugin-toml: 0.4.0
   eslint-plugin-unicorn: 46.0.0
   eslint-plugin-wix-editor: 3.3.0
   eslint-plugin-yml: 1.5.0
@@ -74,7 +74,7 @@ devDependencies:
   eslint-plugin-promise: 6.1.1_eslint@8.36.0
   eslint-plugin-regexp: 1.12.0_eslint@8.36.0
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.36.0
-  eslint-plugin-toml: 0.3.1_eslint@8.36.0
+  eslint-plugin-toml: 0.4.0_eslint@8.36.0
   eslint-plugin-unicorn: 46.0.0_eslint@8.36.0
   eslint-plugin-wix-editor: 3.3.0
   eslint-plugin-yml: 1.5.0_eslint@8.36.0
@@ -2547,8 +2547,8 @@ packages:
       eslint: 8.36.0
     dev: true
 
-  /eslint-plugin-toml/0.3.1_eslint@8.36.0:
-    resolution: {integrity: sha512-glaDFIEeDUYb9VrNdKGiSOmeRQ+jAFJVV5xhu3chYOF8+YfMYiUQhpCwzgYYiFTR2Hv5TYlO02oRwKxjMIw17Q==}
+  /eslint-plugin-toml/0.4.0_eslint@8.36.0:
+    resolution: {integrity: sha512-z9LaGc7hRl+TDOUhqep7NPOe4mXev4Kime9cgoo82aTSAeK7RxR1ihHApCWeQVh7QKvZH1tkKnbErgWPw4Ol0A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -2556,7 +2556,7 @@ packages:
       debug: 4.3.4
       eslint: 8.36.0
       lodash: 4.17.21
-      toml-eslint-parser: 0.4.0
+      toml-eslint-parser: 0.5.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4347,6 +4347,13 @@ packages:
 
   /toml-eslint-parser/0.4.0:
     resolution: {integrity: sha512-lwMC8RPBoAksoMFpQnB4c3zz+o9JPv1sxsduVH9AHb2o4kxQl7mtP5YaYoS33+6IdVrzHAXxi4JgowJDERoynw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      eslint-visitor-keys: 3.3.0
+    dev: true
+
+  /toml-eslint-parser/0.5.0:
+    resolution: {integrity: sha512-SrneDiwkE/iQ3ndP/TkPN6Thfgd+ZGbtm7tV8WXlmVzUP2DIYXSCporm0Rgy/C40h7r9ANZfIW9YwQMUepqAmw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       eslint-visitor-keys: 3.3.0
