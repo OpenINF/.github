@@ -21,7 +21,7 @@ specifiers:
   eslint-import-resolver-typescript: 3.5.3
   eslint-plugin-etc: 2.0.2
   eslint-plugin-import: 2.27.5
-  eslint-plugin-json-schema-validator: 4.0.3
+  eslint-plugin-json-schema-validator: 4.1.0
   eslint-plugin-jsonc: 2.6.0
   eslint-plugin-markdown: 3.0.0
   eslint-plugin-prettier: 4.2.1
@@ -67,7 +67,7 @@ devDependencies:
   eslint-import-resolver-typescript: 3.5.3_eakrjjutlgqjxe5ydhtnd4qdmy
   eslint-plugin-etc: 2.0.2_vgl77cfdswitgr47lm5swmv43m
   eslint-plugin-import: 2.27.5_v7jo3sddp7aqau7pajjy572cju
-  eslint-plugin-json-schema-validator: 4.0.3_eslint@8.36.0
+  eslint-plugin-json-schema-validator: 4.1.0_eslint@8.36.0
   eslint-plugin-jsonc: 2.6.0_eslint@8.36.0
   eslint-plugin-markdown: 3.0.0_eslint@8.36.0
   eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
@@ -2451,8 +2451,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-json-schema-validator/4.0.3_eslint@8.36.0:
-    resolution: {integrity: sha512-REsXqE3fXb6aibHPtBmPdTtsDcc6YYXi5sHazVdGBPU+lNHuWZjhlYmZIIF8ZBiTWUCYJCefFzXpgcy6aqk4eg==}
+  /eslint-plugin-json-schema-validator/4.1.0_eslint@8.36.0:
+    resolution: {integrity: sha512-Qms50M0jkpmLP2W0KgSnHRrNVDf3V8HOLb84+3tOub8BVgLSosTdRQ98K+ayqBjLwvLzgFAbB+YulGNnw423Hg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -2463,9 +2463,9 @@ packages:
       eslint-utils: 3.0.0_eslint@8.36.0
       json-schema-migrate: 2.0.0
       jsonc-eslint-parser: 2.2.0
-      minimatch: 5.1.6
+      minimatch: 7.4.2
       synckit: 0.8.5
-      toml-eslint-parser: 0.4.0
+      toml-eslint-parser: 0.5.0
       tunnel-agent: 0.6.0
       yaml-eslint-parser: 1.2.0
     transitivePeerDependencies:
@@ -3609,8 +3609,8 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimatch/5.1.6:
-    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
+  /minimatch/7.4.2:
+    resolution: {integrity: sha512-xy4q7wou3vUoC9k1xGTXc+awNdGaGVHtFUaey8tiX4H1QRc04DZ/rmDFwNm2EBsuYEhAZ6SgMmYf3InGY6OauA==}
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
