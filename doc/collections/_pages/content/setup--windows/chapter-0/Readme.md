@@ -38,7 +38,6 @@ Command Line Shell prompt to modify this preference.
 
 <!-- FIXME(DerekNonGeneric):
 Determine where from & document the below registry modification.
--->
 
 Consider creating a system restore checkpoint prior to making the following
 registry modification. As a general best-practice, this goes for most registry
@@ -48,11 +47,20 @@ a restore point.
 ```text
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
 ```
+-->
 
-The following may be run in Windows Command Prompt (cmd.exe).
+The following may be run in Windows Command Prompt (cmd.exe), which is accessible via
+
+Start -> Windows System -> Command Prompt
 
 ```cmd
 SC CONFIG RmSvc START= AUTO
+```
+
+You should expect to see the following output.
+
+```console
+[SC] ChangeServiceConfig SUCCESS
 ```
 
 <!--
@@ -60,20 +68,38 @@ https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11
 https://support.lenovo.com/us/en/downloads/ds503062-fibocom-l850-gl-wireless-wan-driver-for-windows-10-version-1709-or-later-thinkpad
 -->
 
-If you’re using PowerShell, you should run:
+Next, we will be installing a Windows Feature.
+
+The following may be run in PowerShell, which is accessible via
+
+Start -> Windows PowerShell -> Windows PowerShell.
 
 ```ps
 Install-WindowsFeature -Name Wireless-Networking
 ```
 
-A system reboot will be necessary, so run:
+You should expect to see the following output.
+
+```text
+
+Success Restart Needed Exit Code      Feature Result
+------- -------------- ---------      --------------
+True    Yes            SuccessRest... {Wireless LAN Service}
+WARNING: You must restart this server to finish the installation process.
+```
+
+To heed the warning, which indicates that a system reboot will be necessary,
+the following command line may be run (using the same PowerShell session should be alright).
 
 ```ps
 shutdown –f –r –t 0
 ```
 
-Once the system has reboot, start the `WlanSvc` service. Using PowerShell, you
-may run the following.
+Once the system has reboot, start the `WlanSvc` service.
+
+The following may be run in PowerShell, which is accessible via
+
+Start -> Windows PowerShell -> Windows PowerShell.
 
 ```ps
 Start-Service WlanSvc –PassThru
