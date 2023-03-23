@@ -30,6 +30,8 @@ with enabling and configuring connectivity to the Internet.
 As a safe default &mdash; on fresh installations of Windows Server &mdash;
 Wi-Fi connectivity is still inaccessible because Airplane mode is enabled.
 
+![image](https://user-images.githubusercontent.com/17770407/227342179-50a79652-193f-4c5c-bab2-a7571e84301d.png)
+
 ### Configuring Radio Management Service (RmSvc)[^1]
 
 Airplane mode is also grayed-out/unconfigurable (the default preference of
@@ -62,11 +64,6 @@ You should expect to see the following output.
 ```console
 [SC] ChangeServiceConfig SUCCESS
 ```
-
-<!--
-https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html
-https://support.lenovo.com/us/en/downloads/ds503062-fibocom-l850-gl-wireless-wan-driver-for-windows-10-version-1709-or-later-thinkpad
--->
 
 Next, we will be installing a Windows Feature.
 
@@ -104,5 +101,16 @@ Start -> Windows PowerShell -> Windows PowerShell.
 ```ps
 Start-Service WlanSvc –PassThru
 ```
+
+Once this has all been completed, it may be possible that wireless connectivity is still inaccessible.
+
+<img width="601" alt="we-couldnt-find-wireless-devices-on-this-pc" src="https://user-images.githubusercontent.com/17770407/227344556-df034cfb-a1b4-40e2-aae4-d87b9abf4687.PNG">
+
+The remedy for this is to install the appropriate drivers for the wireless adapters for your device.
+
+<!--
+https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html
+https://support.lenovo.com/us/en/downloads/ds503062-fibocom-l850-gl-wireless-wan-driver-for-windows-10-version-1709-or-later-thinkpad
+-->
 
 [^1]: https://github.com/MicrosoftDocs/windowsserverdocs/blob/main/WindowsServerDocs/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server.md#radio-management-service
