@@ -25,10 +25,11 @@ Before we can begin using our Windows Server machine as an effective software
 development environment, there are a few hurdles to overcome. This chapter deals
 with enabling and configuring connectivity to the Internet.
 
-## Access to Wi-Fi
+## Access to Wireless Communication
 
 As a safe default &mdash; on fresh installations of Windows Server &mdash;
-Wi-Fi connectivity is still inaccessible because Airplane mode is enabled.
+wireless connectivity (such as Wi-Fi, cellular, and Bluetooth) is still inaccessible
+because Airplane mode is enabled.
 
 ![image](https://user-images.githubusercontent.com/17770407/227342179-50a79652-193f-4c5c-bab2-a7571e84301d.png)
 
@@ -65,6 +66,8 @@ You should expect to see the following output.
 [SC] ChangeServiceConfig SUCCESS
 ```
 
+### Installing the Wireless Networking Feature
+
 Next, we will be installing a Windows Feature.
 
 The following may be run in PowerShell, which is accessible via
@@ -78,7 +81,6 @@ Install-WindowsFeature -Name Wireless-Networking
 You should expect to see the following output.
 
 ```text
-
 Success Restart Needed Exit Code      Feature Result
 ------- -------------- ---------      --------------
 True    Yes            SuccessRest... {Wireless LAN Service}
@@ -93,6 +95,8 @@ shutdown –f –r –t 0
 ```
 
 Once the system has reboot, start the `WlanSvc` service.
+
+### Starting the `WlanSvc` Service
 
 The following may be run in PowerShell, which is accessible via
 
