@@ -21,7 +21,7 @@ specifiers:
   eslint-import-resolver-typescript: 3.5.3
   eslint-plugin-etc: 2.0.2
   eslint-plugin-import: 2.27.5
-  eslint-plugin-json-schema-validator: 4.1.0
+  eslint-plugin-json-schema-validator: 4.3.0
   eslint-plugin-jsonc: 2.6.0
   eslint-plugin-markdown: 3.0.0
   eslint-plugin-prettier: 4.2.1
@@ -67,7 +67,7 @@ devDependencies:
   eslint-import-resolver-typescript: 3.5.3_eakrjjutlgqjxe5ydhtnd4qdmy
   eslint-plugin-etc: 2.0.2_j4766f7ecgqbon3u7zlxn5zszu
   eslint-plugin-import: 2.27.5_as6wyplljmmarlclp2tx3tj6rq
-  eslint-plugin-json-schema-validator: 4.1.0_eslint@8.36.0
+  eslint-plugin-json-schema-validator: 4.3.0_eslint@8.36.0
   eslint-plugin-jsonc: 2.6.0_eslint@8.36.0
   eslint-plugin-markdown: 3.0.0_eslint@8.36.0
   eslint-plugin-prettier: 4.2.1_ywlv3zveqg2kxfq44lflihh5mm
@@ -2389,16 +2389,16 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-json-schema-validator/4.1.0_eslint@8.36.0:
-    resolution: {integrity: sha512-Qms50M0jkpmLP2W0KgSnHRrNVDf3V8HOLb84+3tOub8BVgLSosTdRQ98K+ayqBjLwvLzgFAbB+YulGNnw423Hg==}
+  /eslint-plugin-json-schema-validator/4.3.0_eslint@8.36.0:
+    resolution: {integrity: sha512-yy4QB4WaLz5WELwW6F7JxsBk0el+dwKLhjW0LX6Iec9ivzZOYfusX0vTAuj/lSxl/xXllpO7BW1T6IOy2G5+KQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
+      '@eslint-community/eslint-utils': 4.4.0_eslint@8.36.0
       ajv: 8.12.0
       debug: 4.3.4
       eslint: 8.36.0
-      eslint-utils: 3.0.0_eslint@8.36.0
       json-schema-migrate: 2.0.0
       jsonc-eslint-parser: 2.2.0
       minimatch: 7.4.3
