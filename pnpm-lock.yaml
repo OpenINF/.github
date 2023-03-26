@@ -41,7 +41,7 @@ specifiers:
   markdown-it-task-lists: 2.1.1
   markdown-it-toc-done-right: 4.2.0
   markdownlint-cli2: 0.6.0
-  markdownlint-cli2-formatter-default: 0.0.3
+  markdownlint-cli2-formatter-default: 0.0.4
   nps: 5.10.0
   prettier: 2.8.7
   typescript: 5.0.2
@@ -87,7 +87,7 @@ devDependencies:
   markdown-it-task-lists: 2.1.1
   markdown-it-toc-done-right: 4.2.0
   markdownlint-cli2: 0.6.0
-  markdownlint-cli2-formatter-default: 0.0.3_markdownlint-cli2@0.6.0
+  markdownlint-cli2-formatter-default: 0.0.4_markdownlint-cli2@0.6.0
   nps: 5.10.0
   prettier: 2.8.7
   typescript: 5.0.2
@@ -3455,6 +3455,14 @@ packages:
 
   /markdownlint-cli2-formatter-default/0.0.3_markdownlint-cli2@0.6.0:
     resolution: {integrity: sha512-QEAJitT5eqX1SNboOD+SO/LNBpu4P4je8JlR02ug2cLQAqmIhh8IJnSK7AcaHBHhNADqdGydnPpQOpsNcEEqCw==}
+    peerDependencies:
+      markdownlint-cli2: '>=0.0.4'
+    dependencies:
+      markdownlint-cli2: 0.6.0
+    dev: true
+
+  /markdownlint-cli2-formatter-default/0.0.4_markdownlint-cli2@0.6.0:
+    resolution: {integrity: sha512-xm2rM0E+sWgjpPn1EesPXx5hIyrN2ddUnUwnbCsD/ONxYtw3PX6LydvdH6dciWAoFDpwzbHM1TO7uHfcMd6IYg==}
     peerDependencies:
       markdownlint-cli2: '>=0.0.4'
     dependencies:
