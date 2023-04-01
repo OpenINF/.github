@@ -41,7 +41,6 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-node": "0.3.7",
     "eslint-import-resolver-typescript": "3.5.4",
-    "eslint-plugin-etc": "2.0.2",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-json-schema-validator": "4.3.0",
     "eslint-plugin-jsonc": "2.7.0",
