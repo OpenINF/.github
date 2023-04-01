@@ -18,6 +18,7 @@ GEM
       charlock_holmes (~> 0.7.7)
       mini_mime (~> 1.0)
       rugged (~> 1.0)
+    google-protobuf (3.22.2-aarch64-linux)
     google-protobuf (3.22.2-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
@@ -72,6 +73,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES
@@ -79,4 +81,4 @@ DEPENDENCIES
   jekyll (~> 4.3)
 
 BUNDLED WITH
-   2.4.7
+   2.4.10
