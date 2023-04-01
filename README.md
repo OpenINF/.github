@@ -119,7 +119,7 @@ greatly encourage us.
 <br /><br />
 
 [^1]:
-    <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files/>
+    <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files>
 
 [^2]:
     <https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values>
