@@ -24,7 +24,7 @@ console.log(
 );
 
 try {
-  await $`pnpx editorconfig-checker`;
+  await $`pnpm exec editorconfig-checker`;
   process.exitCode = 0;
 } catch (p) {
   process.exitCode = p.exitCode;
