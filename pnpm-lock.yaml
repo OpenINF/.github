@@ -62,8 +62,8 @@ importers:
         specifier: 2.27.5
         version: 2.27.5(@typescript-eslint/parser@5.57.0)(eslint-import-resolver-typescript@3.5.4)(eslint@8.37.0)
       eslint-plugin-json-schema-validator:
-        specifier: 4.3.0
-        version: 4.3.0(eslint@8.37.0)
+        specifier: 4.4.0
+        version: 4.4.0(eslint@8.37.0)
       eslint-plugin-jsonc:
         specifier: 2.7.0
         version: 2.7.0(eslint@8.37.0)
@@ -2385,8 +2385,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-json-schema-validator@4.3.0(eslint@8.37.0):
-    resolution: {integrity: sha512-yy4QB4WaLz5WELwW6F7JxsBk0el+dwKLhjW0LX6Iec9ivzZOYfusX0vTAuj/lSxl/xXllpO7BW1T6IOy2G5+KQ==}
+  /eslint-plugin-json-schema-validator@4.4.0(eslint@8.37.0):
+    resolution: {integrity: sha512-8A+9iL53ri4ayJV+/c9Q6r3hpU3ohHraLY6TJgI8bR1jvzHEIS7Z9fuvMkamVxZHOQlOUye+xeqlM/JjU5Nh9w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -2397,7 +2397,7 @@ packages:
       eslint: 8.37.0
       json-schema-migrate: 2.0.0
       jsonc-eslint-parser: 2.2.0
-      minimatch: 7.4.3
+      minimatch: 8.0.2
       synckit: 0.8.5
       toml-eslint-parser: 0.5.0
       tunnel-agent: 0.6.0
@@ -3568,9 +3568,9 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimatch@7.4.3:
-    resolution: {integrity: sha512-5UB4yYusDtkRPbRiy1cqZ1IpGNcJCGlEMG17RKzPddpyiPKoCdwohbED8g4QXT0ewCt8LTkQXuljsUfQ3FKM4A==}
-    engines: {node: '>=10'}
+  /minimatch@8.0.2:
+    resolution: {integrity: sha512-ikHGF67ODxj7vS5NKU2wvTsFLbExee+KXVCnBWh8Cg2hVJfBMQIrlo50qru/09E0EifjnU8dZhJ/iHhyXJM6Mw==}
+    engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
     dev: true
