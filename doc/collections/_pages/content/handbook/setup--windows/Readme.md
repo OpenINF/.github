@@ -35,4 +35,3 @@ Regardless of stated minimum system requirements, no less than 16gb of RAM would
 be recommended.
 
 [Get started with Windows Server]: https://learn.microsoft.com/en-us/windows-server/get-started/get-started-with-windows-server
-
