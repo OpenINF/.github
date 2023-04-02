@@ -23,9 +23,11 @@ console.log(
 
 let code = 0;
 const scripts = [
-  'eslint --ext=.md --fix', // validate & style-check JS/TS code blocks in Markdown
+  // validate & style-check JS/TS code blocks in Markdown
+  'eslint --ext=.md --fix',
   'prettier --write **/*{.*.md,.md}', // style-check
-  'markdownlint-cli2-fix "**/**.md" "#node_modules" "#vendor"', // validate Markdown
+  // validate Markdown
+  'markdownlint-cli2-fix "**/**.md" "#node_modules" "#vendor"',
 ];
 
 for await (const element of scripts) {

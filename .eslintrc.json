@@ -172,7 +172,7 @@
       }
     },
     {
-      "files": ["package.json", ".ecrc.json5"],
+      "files": ["package.json", ".ecrc"],
       "parser": "jsonc-eslint-parser",
       "parserOptions": {
         "allowComments": true,

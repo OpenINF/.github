@@ -40,6 +40,8 @@
         "Gruntfuggly.todo-tree",
         // https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
         "ionutvmi.path-autocomplete",
+        // https://marketplace.visualstudio.com/items?itemName=KatjanaKosic.vscode-json5
+        "KatjanaKosic.vscode-json5",
         // https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
         "ms-azuretools.vscode-docker",
         // https://marketplace.visualstudio.com/items?itemName=sissel.shopify-liquid

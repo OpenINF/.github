@@ -24,7 +24,8 @@ console.log(
 let code = 0;
 const scripts = [
   'eslint --ext=.json,.json5,.jsonc', // validate
-  'prettier -c {.*.json,.*.json5,.*.jsonc,*.json,*.json5,*.jsonc}', // style-check
+  // style-check
+  'prettier -c {.*.json,.*.json5,.*.jsonc,*.json,*.json5,*.jsonc,.ecrc}',
 ];
 
 for await (const element of scripts) {

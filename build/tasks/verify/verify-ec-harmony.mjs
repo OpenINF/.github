@@ -1,7 +1,7 @@
 import { EOL as newLineMarker } from 'node:os';
 
 import text from '@openinf/util-text';
-import yarnpkgShell from '@yarnpkg/shell';
+import { $ } from 'zx';
 
 console.log(
   text.blueify(
@@ -23,4 +23,9 @@ console.log(
   )
 );
 
-process.exitCode = await yarnpkgShell.execute("ec -config '.ecrc.json5'");
+try {
+  await $`pnpx editorconfig-checker`;
+  process.exitCode = 0;
+} catch (p) {
+  process.exitCode = p.exitCode;
+}

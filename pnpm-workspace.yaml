@@ -1,0 +1,4 @@
+# See https://pnpm.io/workspaces for usage and examples.
+
+packages:
+  - doc

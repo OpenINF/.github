@@ -1,135 +1,141 @@
 lockfileVersion: '6.0'
 
-devDependencies:
-  '@babel/core':
-    specifier: 7.21.4
-    version: 7.21.4
-  '@babel/eslint-parser':
-    specifier: 7.21.3
-    version: 7.21.3(@babel/core@7.21.4)(eslint@8.37.0)
-  '@babel/plugin-syntax-jsx':
-    specifier: 7.21.4
-    version: 7.21.4(@babel/core@7.21.4)
-  '@babel/plugin-syntax-top-level-await':
-    specifier: 7.14.5
-    version: 7.14.5(@babel/core@7.21.4)
-  '@babel/plugin-transform-modules-commonjs':
-    specifier: 7.21.2
-    version: 7.21.2(@babel/core@7.21.4)
-  '@babel/preset-env':
-    specifier: 7.21.4
-    version: 7.21.4(@babel/core@7.21.4)
-  '@iktakahiro/markdown-it-katex':
-    specifier: 4.0.1
-    version: 4.0.1
-  '@openinf/util-text':
-    specifier: 1.1.2
-    version: 1.1.2
-  '@types/markdown-it':
-    specifier: 12.2.3
-    version: 12.2.3
-  '@types/node':
-    specifier: ~16.18.23
-    version: 16.18.23
-  '@typescript-eslint/eslint-plugin':
-    specifier: 5.57.0
-    version: 5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.37.0)(typescript@5.0.3)
-  '@typescript-eslint/parser':
-    specifier: 5.57.0
-    version: 5.57.0(eslint@8.37.0)(typescript@5.0.3)
-  '@yarnpkg/shell':
-    specifier: 4.0.0-rc.42
-    version: 4.0.0-rc.42(typanion@3.12.1)
-  editorconfig-checker:
-    specifier: 5.0.1
-    version: 5.0.1
-  eslint:
-    specifier: 8.37.0
-    version: 8.37.0
-  eslint-config-prettier:
-    specifier: 8.8.0
-    version: 8.8.0(eslint@8.37.0)
-  eslint-import-resolver-node:
-    specifier: 0.3.7
-    version: 0.3.7
-  eslint-import-resolver-typescript:
-    specifier: 3.5.4
-    version: 3.5.4(eslint-plugin-import@2.27.5)(eslint@8.37.0)
-  eslint-plugin-import:
-    specifier: 2.27.5
-    version: 2.27.5(@typescript-eslint/parser@5.57.0)(eslint-import-resolver-typescript@3.5.4)(eslint@8.37.0)
-  eslint-plugin-json-schema-validator:
-    specifier: 4.3.0
-    version: 4.3.0(eslint@8.37.0)
-  eslint-plugin-jsonc:
-    specifier: 2.7.0
-    version: 2.7.0(eslint@8.37.0)
-  eslint-plugin-markdown:
-    specifier: 3.0.0
-    version: 3.0.0(eslint@8.37.0)
-  eslint-plugin-prettier:
-    specifier: 4.2.1
-    version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.37.0)(prettier@2.8.7)
-  eslint-plugin-promise:
-    specifier: 6.1.1
-    version: 6.1.1(eslint@8.37.0)
-  eslint-plugin-regexp:
-    specifier: 1.14.0
-    version: 1.14.0(eslint@8.37.0)
-  eslint-plugin-simple-import-sort:
-    specifier: 10.0.0
-    version: 10.0.0(eslint@8.37.0)
-  eslint-plugin-toml:
-    specifier: 0.4.0
-    version: 0.4.0(eslint@8.37.0)
-  eslint-plugin-unicorn:
-    specifier: 46.0.0
-    version: 46.0.0(eslint@8.37.0)
-  eslint-plugin-wix-editor:
-    specifier: 3.3.0
-    version: 3.3.0
-  eslint-plugin-yml:
-    specifier: 1.5.0
-    version: 1.5.0(eslint@8.37.0)
-  markdown-it:
-    specifier: 13.0.1
-    version: 13.0.1
-  markdown-it-abbr:
-    specifier: 1.0.4
-    version: 1.0.4
-  markdown-it-anchor:
-    specifier: 8.6.7
-    version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
-  markdown-it-footnote:
-    specifier: 3.0.3
-    version: 3.0.3
-  markdown-it-sub:
-    specifier: 1.0.0
-    version: 1.0.0
-  markdown-it-sup:
-    specifier: 1.0.0
-    version: 1.0.0
-  markdown-it-task-lists:
-    specifier: 2.1.1
-    version: 2.1.1
-  markdown-it-toc-done-right:
-    specifier: 4.2.0
-    version: 4.2.0
-  markdownlint-cli2:
-    specifier: 0.6.0
-    version: 0.6.0
-  markdownlint-cli2-formatter-default:
-    specifier: 0.0.4
-    version: 0.0.4(markdownlint-cli2@0.6.0)
-  nps:
-    specifier: 5.10.0
-    version: 5.10.0
-  prettier:
-    specifier: 2.8.7
-    version: 2.8.7
-  typescript:
-    specifier: 5.0.3
-    version: 5.0.3
+importers:
+
+  .:
+    devDependencies:
+      '@babel/core':
+        specifier: 7.21.4
+        version: 7.21.4
+      '@babel/eslint-parser':
+        specifier: 7.21.3
+        version: 7.21.3(@babel/core@7.21.4)(eslint@8.37.0)
+      '@babel/plugin-syntax-jsx':
+        specifier: 7.21.4
+        version: 7.21.4(@babel/core@7.21.4)
+      '@babel/plugin-syntax-top-level-await':
+        specifier: 7.14.5
+        version: 7.14.5(@babel/core@7.21.4)
+      '@babel/plugin-transform-modules-commonjs':
+        specifier: 7.21.2
+        version: 7.21.2(@babel/core@7.21.4)
+      '@babel/preset-env':
+        specifier: 7.21.4
+        version: 7.21.4(@babel/core@7.21.4)
+      '@iktakahiro/markdown-it-katex':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@openinf/util-text':
+        specifier: 1.1.2
+        version: 1.1.2
+      '@types/markdown-it':
+        specifier: 12.2.3
+        version: 12.2.3
+      '@types/node':
+        specifier: ~16.18.23
+        version: 16.18.23
+      '@typescript-eslint/eslint-plugin':
+        specifier: 5.57.0
+        version: 5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.37.0)(typescript@5.0.3)
+      '@typescript-eslint/parser':
+        specifier: 5.57.0
+        version: 5.57.0(eslint@8.37.0)(typescript@5.0.3)
+      '@yarnpkg/shell':
+        specifier: 4.0.0-rc.42
+        version: 4.0.0-rc.42(typanion@3.12.1)
+      editorconfig-checker:
+        specifier: 5.0.1
+        version: 5.0.1
+      eslint:
+        specifier: 8.37.0
+        version: 8.37.0
+      eslint-config-prettier:
+        specifier: 8.8.0
+        version: 8.8.0(eslint@8.37.0)
+      eslint-import-resolver-node:
+        specifier: 0.3.7
+        version: 0.3.7
+      eslint-import-resolver-typescript:
+        specifier: 3.5.4
+        version: 3.5.4(eslint-plugin-import@2.27.5)(eslint@8.37.0)
+      eslint-plugin-import:
+        specifier: 2.27.5
+        version: 2.27.5(@typescript-eslint/parser@5.57.0)(eslint-import-resolver-typescript@3.5.4)(eslint@8.37.0)
+      eslint-plugin-json-schema-validator:
+        specifier: 4.3.0
+        version: 4.3.0(eslint@8.37.0)
+      eslint-plugin-jsonc:
+        specifier: 2.7.0
+        version: 2.7.0(eslint@8.37.0)
+      eslint-plugin-markdown:
+        specifier: 3.0.0
+        version: 3.0.0(eslint@8.37.0)
+      eslint-plugin-prettier:
+        specifier: 4.2.1
+        version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.37.0)(prettier@2.8.7)
+      eslint-plugin-promise:
+        specifier: 6.1.1
+        version: 6.1.1(eslint@8.37.0)
+      eslint-plugin-regexp:
+        specifier: 1.14.0
+        version: 1.14.0(eslint@8.37.0)
+      eslint-plugin-simple-import-sort:
+        specifier: 10.0.0
+        version: 10.0.0(eslint@8.37.0)
+      eslint-plugin-toml:
+        specifier: 0.4.0
+        version: 0.4.0(eslint@8.37.0)
+      eslint-plugin-unicorn:
+        specifier: 46.0.0
+        version: 46.0.0(eslint@8.37.0)
+      eslint-plugin-wix-editor:
+        specifier: 3.3.0
+        version: 3.3.0
+      eslint-plugin-yml:
+        specifier: 1.5.0
+        version: 1.5.0(eslint@8.37.0)
+      markdown-it:
+        specifier: 13.0.1
+        version: 13.0.1
+      markdown-it-abbr:
+        specifier: 1.0.4
+        version: 1.0.4
+      markdown-it-anchor:
+        specifier: 8.6.7
+        version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
+      markdown-it-footnote:
+        specifier: 3.0.3
+        version: 3.0.3
+      markdown-it-sub:
+        specifier: 1.0.0
+        version: 1.0.0
+      markdown-it-sup:
+        specifier: 1.0.0
+        version: 1.0.0
+      markdown-it-task-lists:
+        specifier: 2.1.1
+        version: 2.1.1
+      markdown-it-toc-done-right:
+        specifier: 4.2.0
+        version: 4.2.0
+      markdownlint-cli2:
+        specifier: 0.6.0
+        version: 0.6.0
+      markdownlint-cli2-formatter-default:
+        specifier: 0.0.4
+        version: 0.0.4(markdownlint-cli2@0.6.0)
+      nps:
+        specifier: 5.10.0
+        version: 5.10.0
+      prettier:
+        specifier: 2.8.7
+        version: 2.8.7
+      typescript:
+        specifier: 5.0.3
+        version: 5.0.3
+      zx:
+        specifier: 7.2.1
+        version: 7.2.1
 
 packages:
 
@@ -1459,12 +1465,25 @@ packages:
       tslib: 2.5.0
     dev: true
 
+  /@types/fs-extra@11.0.1:
+    resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
+    dependencies:
+      '@types/jsonfile': 6.1.1
+      '@types/node': 16.18.23
+    dev: true
+
   /@types/json-schema@7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/jsonfile@6.1.1:
+    resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
+    dependencies:
+      '@types/node': 16.18.23
     dev: true
 
   /@types/linkify-it@3.0.2:
@@ -1488,12 +1507,24 @@ packages:
     resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
     dev: true
 
+  /@types/minimist@1.2.2:
+    resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
+    dev: true
+
   /@types/node@16.18.23:
     resolution: {integrity: sha512-XAMpaw1s1+6zM+jn2tmw8MyaRDIJfXxqmIQIS0HfoGYPuf7dUWeiUKopwq13KFX9lEp1+THGtlaaYx39Nxr58g==}
     dev: true
 
+  /@types/node@18.15.11:
+    resolution: {integrity: sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==}
+    dev: true
+
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/ps-tree@1.1.2:
+    resolution: {integrity: sha512-ZREFYlpUmPQJ0esjxoG1fMvB2HNaD3z+mjqdSosZvd3RalncI9NEur73P8ZJz4YQdL64CmV1w0RuqoRUlhQRBw==}
     dev: true
 
   /@types/semver@7.3.13:
@@ -1502,6 +1533,10 @@ packages:
 
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: true
+
+  /@types/which@2.0.2:
+    resolution: {integrity: sha512-113D3mDkZDjo+EeUEHCFy0qniNc1ZpecGiAU7WSo7YDoSzolZIQKpYFHrPpjkB2nuyahcKfrmLXeQlh7gqJYdw==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.37.0)(typescript@5.0.3):
@@ -1907,6 +1942,11 @@ packages:
       supports-color: 7.2.0
     dev: true
 
+  /chalk@5.2.0:
+    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: true
+
   /character-entities-legacy@1.1.4:
     resolution: {integrity: sha512-3Xnr+7ZFS1uxeiUDvV02wQ+QDbc55o97tIV5zHScSPJpcLm/r0DFPcoY3tYRp+VZukxuMeKgXYmsXQHO05zQeA==}
     dev: true
@@ -2021,6 +2061,11 @@ packages:
     dependencies:
       es5-ext: 0.10.62
       type: 1.2.0
+    dev: true
+
+  /data-uri-to-buffer@4.0.1:
+    resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
+    engines: {node: '>= 12'}
     dev: true
 
   /debug@3.2.7:
@@ -2674,6 +2719,14 @@ packages:
       reusify: 1.0.4
     dev: true
 
+  /fetch-blob@3.2.0:
+    resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
+    engines: {node: ^12.20 || >= 14.13}
+    dependencies:
+      node-domexception: 1.0.0
+      web-streams-polyfill: 3.2.1
+    dev: true
+
   /file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -2736,8 +2789,24 @@ packages:
       is-callable: 1.2.7
     dev: true
 
+  /formdata-polyfill@4.0.10:
+    resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
+    engines: {node: '>=12.20.0'}
+    dependencies:
+      fetch-blob: 3.2.0
+    dev: true
+
   /from@0.1.7:
     resolution: {integrity: sha512-twe20eF1OxVxp/ML/kq2p1uc6KvFK/+vs8WjEbeKmV2He22MKm7YF2ANIt+EOqhJ5L3K/SuuPhk0hWQDjOM23g==}
+    dev: true
+
+  /fs-extra@11.1.1:
+    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
     dev: true
 
   /fs.realpath@1.0.0:
@@ -3250,6 +3319,14 @@ packages:
       semver: 7.3.8
     dev: true
 
+  /jsonfile@6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
+    optionalDependencies:
+      graceful-fs: 4.2.11
+    dev: true
+
   /katex@0.12.0:
     resolution: {integrity: sha512-y+8btoc/CK70XqcHqjxiGWBOeIL8upbS0peTPXTvgrh21n1RiWWcIpSWM+4uXq+IAgNh9YYQWdc7LVDPDAEEAg==}
     hasBin: true
@@ -3520,6 +3597,20 @@ packages:
 
   /next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
+    dev: true
+
+  /node-domexception@1.0.0:
+    resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
+    engines: {node: '>=10.5.0'}
+    dev: true
+
+  /node-fetch@3.2.10:
+    resolution: {integrity: sha512-MhuzNwdURnZ1Cp4XTazr69K0BTizsBroX7Zx3UgDSVcZYKF/6p0CBe4EUb/hLqmzVhl0UpYfgRljQ4yxE+iCxA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      data-uri-to-buffer: 4.0.1
+      fetch-blob: 3.2.0
+      formdata-polyfill: 4.0.10
     dev: true
 
   /node-releases@2.0.10:
@@ -4333,6 +4424,11 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
+  /universalify@2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
+    dev: true
+
   /update-browserslist-db@1.0.10(browserslist@4.21.5):
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
     hasBin: true
@@ -4355,6 +4451,16 @@ packages:
     dependencies:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /web-streams-polyfill@3.2.1:
+    resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
+    engines: {node: '>= 8'}
+    dev: true
+
+  /webpod@0.0.2:
+    resolution: {integrity: sha512-cSwwQIeg8v4i3p4ajHhwgR7N6VyxAf+KYSSsY6Pd3aETE+xEU4vbitz7qQkB0I321xnhDdgtxuiSfk5r/FVtjg==}
+    hasBin: true
     dev: true
 
   /which-boxed-primitive@1.0.2:
@@ -4386,6 +4492,14 @@ packages:
   /which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
+    hasBin: true
+    dependencies:
+      isexe: 2.0.0
+    dev: true
+
+  /which@3.0.0:
+    resolution: {integrity: sha512-nla//68K9NU6yRiwDY/Q8aU6siKlSs64aEC7+IV56QoAuyQT2ovsJcgGYGyqMOmI/CGN1BOR6mM5EN0FBO+zyQ==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     hasBin: true
     dependencies:
       isexe: 2.0.0
@@ -4461,4 +4575,25 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zx@7.2.1:
+    resolution: {integrity: sha512-TgKwppaMLMNAXHhlhbBh7rMoOSx3/9qqnkv8frmhVlSomEuWkDijh/BCmYntkoS7ZQyemApAUyEi24jIrrS+hA==}
+    engines: {node: '>= 16.0.0'}
+    hasBin: true
+    dependencies:
+      '@types/fs-extra': 11.0.1
+      '@types/minimist': 1.2.2
+      '@types/node': 18.15.11
+      '@types/ps-tree': 1.1.2
+      '@types/which': 2.0.2
+      chalk: 5.2.0
+      fs-extra: 11.1.1
+      globby: 13.1.3
+      minimist: 1.2.8
+      node-fetch: 3.2.10
+      ps-tree: 1.2.0
+      webpod: 0.0.2
+      which: 3.0.0
+      yaml: 2.2.1
     dev: true

@@ -5,14 +5,16 @@
   "SpacesAftertabs": false,
   "NoColor": false,
   "Exclude": [
-    "/vendor/**/*",
-    "/lib/**/*",
-    "doc/.jekyll-cache/**/*",
-    "doc/_site/**/*",
-    ".pnpm-lock.yaml",
+    "(.devcontainer)",
+    "(.github)",
+    "(.vscode)",
+    "(doc)",
+    "(lib)",
+    "(vendor)",
+    "(\\.[md^\\\\]+)$",
+    "pnpm-lock.yaml",
     "Gemfile.lock",
-    ".markdownlint.jsonc",
-    ".vscode/tasks.json"
+    ".markdownlint.jsonc"
   ],
   "AllowedContentTypes": [],
   "PassedFiles": [],
