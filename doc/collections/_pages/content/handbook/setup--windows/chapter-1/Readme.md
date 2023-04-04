@@ -16,11 +16,11 @@ Installing Winget[^1] on Windows Server is not as simple as it may sound.
 
 &nbsp;&nbsp;
 
-https://aka.ms/appinst
+<https://aka.ms/appinst>
 
 As a URL shorten-er & forwards to the GitHub repo below
 
-https://github.com/microsoft/winget-cli
+<https://github.com/microsoft/winget-cli>
 
 &nbsp;&nbsp;
 
@@ -37,7 +37,7 @@ You will need the following setup to successfully install the MSIX bundle:
 
 &nbsp;&nbsp;
 
-https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1
+<https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1>
 
 &nbsp;&nbsp;
 
@@ -60,7 +60,7 @@ https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1
 > App Installer, and that is also not generally default on server SKUs
 > [&hellip;]
 >
-> &mdash;https://
+> &mdash;<https://>
 
 <!-- TODO: References? -->
 
@@ -80,7 +80,7 @@ A version with the Winget tool winds up as a release and MSIX package on GitHub
 
 &nbsp;&nbsp;
 
-Refs: https://github.com/microsoft/winget-cli/releases
+Refs: <https://github.com/microsoft/winget-cli/releases>
 
 &nbsp;&nbsp;
 
@@ -197,7 +197,7 @@ makeappx.exe unpack /p .\AppInstaller_x64.msix /d .\AppInstaller_64
 &nbsp;&nbsp;
 
 We first need to get this package from the store in the appropriate architecture
-extract. Using the URL https://store.rg-adguard.net/, we can get the download
+extract. Using the URL <https://store.rg-adguard.net/>, we can get the download
 URL for our component pretty easily to the download URL for our component.
 
 &nbsp;&nbsp;

@@ -15,7 +15,8 @@ Spec: https://github.github.com/gfm
 <!-- Not covered: Preparing device for (and installing) host OS --
 
 Windows Server 2016/2022 Standard with Desktop Experience.
-Windows Server 2016 Standard is for physical or minimally-virtualized environments.
+Windows Server 2016 Standard is for physical or minimally-virtualized
+environments.
 
 See: https://www.microsoft.com/en-us/d/windows-server-2016-standard/dg7gmgf0ds12/0004
 
@@ -28,8 +29,8 @@ with enabling and configuring connectivity to the Internet.
 ## Access to Wireless Communication
 
 As a safe default &mdash; on fresh installations of Windows Server &mdash;
-wireless connectivity (such as Wi-Fi, cellular, and Bluetooth) is still inaccessible
-because Airplane mode is enabled.
+wireless connectivity (such as Wi-Fi, cellular, and Bluetooth) is still
+inaccessible because Airplane mode is enabled.
 
 ![image](https://user-images.githubusercontent.com/17770407/227342179-50a79652-193f-4c5c-bab2-a7571e84301d.png)
 
@@ -39,20 +40,8 @@ Airplane mode is also grayed-out/unconfigurable (the default preference of
 "enabled" cannot be changed). The following commands must be run in an elevated
 Command Line Shell prompt to modify this preference.
 
-<!-- FIXME(DerekNonGeneric):
-Determine where from & document the below registry modification.
-
-Consider creating a system restore checkpoint prior to making the following
-registry modification. As a general best-practice, this goes for most registry
-modifications. Do not (yet) proceed without a disposable system or having made
-a restore point.
-
-```text
-reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\RadioManagement\SystemRadioState /ve /t REG_DWORD /d 0 /f
-```
--->
-
-The following may be run in Windows Command Prompt (cmd.exe), which is accessible via
+The following may be run in Windows Command Prompt (`cmd.exe`), which is
+accessible via:
 
 Start -> Windows System -> Command Prompt
 
@@ -88,7 +77,8 @@ WARNING: You must restart this server to finish the installation process.
 ```
 
 To heed the warning, which indicates that a system reboot will be necessary,
-the following command line may be run (using the same PowerShell session should be alright).
+the following command line may be run (using the same PowerShell session should
+be alright).
 
 ```ps
 shutdown –f –r –t 0
@@ -106,11 +96,13 @@ Start -> Windows PowerShell -> Windows PowerShell.
 Start-Service WlanSvc –PassThru
 ```
 
-Once this has all been completed, it may be possible that wireless connectivity is still inaccessible.
+Once this has all been completed, it may be possible that wireless connectivity
+is still inaccessible.
 
 <img width="601" alt="we-couldnt-find-wireless-devices-on-this-pc" src="https://user-images.githubusercontent.com/17770407/227344556-df034cfb-a1b4-40e2-aae4-d87b9abf4687.PNG">
 
-The remedy for this is to install the appropriate drivers for the wireless adapters for your device.
+The remedy for this is to install the appropriate drivers for the wireless
+adapter(s) of your device.
 
 <!--
 https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html

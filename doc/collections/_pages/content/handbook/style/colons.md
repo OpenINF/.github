@@ -1,7 +1,7 @@
 ---
 title: Colons
 key_point: A colon indicates that closely-related information follows.
-original_url: https://developers.google.com/style/colons
+original_url: <https://developers.google.com/style/colons>
 original_title: Colons | Google developer documentation style guide
 ---
 
@@ -70,13 +70,16 @@ lowercase. For exceptions, see [capitalization][].
 For more information about how to punctuate introductory material, see the
 sections on [list introductions][] and [code-sample introductions][].
 
-For information about when it's better to use colons than dashes, see [Dashes][].
+For information about when it's better to use colons than dashes, see
+[Dashes][].
 
 <!-- LINK DEFINITION LABELS - START -->
+
 [Some specific items to put in code font]:
   ./code-in-text.md#some-specific-items-to-put-in-code-font
 [capitalization]: ./capitalization.md
 [list introductions]: ./lists.md#intros
 [code-sample introductions]: ./code-samples.md#intros
 [Dashes]: ./dashes.md#colons
+
 <!-- LINK DEFINITION LABELS - END -->
