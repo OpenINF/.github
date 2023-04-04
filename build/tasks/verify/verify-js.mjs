@@ -1,7 +1,9 @@
+import 'zx/globals';
+
 import { EOL as newLineMarker } from 'node:os';
 
 import text from '@openinf/util-text';
-import yarnpkgShell from '@yarnpkg/shell';
+import { execute } from '@yarnpkg/shell';
 
 console.log(
   text.blueify(
@@ -15,11 +17,23 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(6, ' ') +
-      text.curlyQuote('node build/tasks/verify/verify-js.mjs') +
+      text.curlyQuote(import.meta.url) +
       newLineMarker
     }`
   )
 );
 
-// TODO(DerekNonGeneric): Ensure that the files indeed build.
-process.exitCode = await yarnpkgShell.execute('eslint --ext=.js,.cjs,.mjs');
+let exitCode = 0;
+const scripts = [
+  // TODO(DerekNonGeneric): Ensure that the files indeed build.
+  'eslint --ext=.js,.cjs,.mjs',
+];
+
+for await (const element of scripts) {
+  try {
+    exitCode = await execute(element);
+  } catch (p) {
+    exitCode = p.exitCode;
+  }
+  process.exitCode = exitCode > 0 ? exitCode : 0;
+}

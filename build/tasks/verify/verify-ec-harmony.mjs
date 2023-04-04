@@ -1,3 +1,5 @@
+import 'zx/globals';
+
 import { EOL as newLineMarker } from 'node:os';
 
 import text from '@openinf/util-text';
@@ -17,15 +19,20 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(6, ' ') +
-      text.curlyQuote('node build/tasks/verify/verify-ec-harmony.mjs') +
+      text.curlyQuote(import.meta.url) +
       newLineMarker
     }`
   )
 );
 
-try {
-  await $`pnpm exec editorconfig-checker`;
-  process.exitCode = 0;
-} catch (p) {
-  process.exitCode = p.exitCode;
+let exitCode = 0;
+const scripts = ['editorconfig-checker'];
+
+for await (const element of scripts) {
+  try {
+    exitCode = await $`pnpm exec ${element}`.exitCode;
+  } catch (p) {
+    exitCode = p.exitCode;
+  }
+  process.exitCode = exitCode > 0 ? exitCode : 0;
 }

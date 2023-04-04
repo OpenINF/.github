@@ -1,7 +1,9 @@
+import 'zx/globals';
+
 import { EOL as newLineMarker } from 'node:os';
 
 import text from '@openinf/util-text';
-import yarnpkgShell from '@yarnpkg/shell';
+import { execute } from '@yarnpkg/shell';
 
 console.log(
   text.blueify(
@@ -15,20 +17,24 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(6, ' ') +
-      text.curlyQuote('node build/tasks/verify/verify-json.mjs') +
+      text.curlyQuote(import.meta.url) +
       newLineMarker
     }`
   )
 );
 
-let code = 0;
+let exitCode = 0;
 const scripts = [
-  'eslint --ext=.json,.json5,.jsonc', // validate
+  'eslint --ext=.json,.json5,.jsonc,.ecrc', // validate
   // style-check
   'prettier -c {.*.json,.*.json5,.*.jsonc,*.json,*.json5,*.jsonc,.ecrc}',
 ];
 
 for await (const element of scripts) {
-  code = await yarnpkgShell.execute(element);
-  process.exitCode = code > 0 ? code : 0;
+  try {
+    exitCode = await execute(element);
+  } catch (p) {
+    exitCode = p.exitCode;
+  }
+  process.exitCode = exitCode > 0 ? exitCode : 0;
 }

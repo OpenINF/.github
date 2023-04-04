@@ -69,6 +69,10 @@
       }
     ],
     "import/max-dependencies": [1, { "max": 15 }],
+    "import/no-unresolved": [
+      2,
+      { "commonjs": true, "amd": true, "ignore": ["zx/globals"] }
+    ],
     "simple-import-sort/imports": 1,
     "simple-import-sort/exports": 1,
     "sort-imports": 0,
@@ -109,14 +113,23 @@
         "plugin:prettier/recommended"
       ],
       "settings": {
+        "import/extensions": [
+          ".cjs",
+          ".js",
+          ".mjs",
+          ".ts",
+          ".cts",
+          ".mts",
+          ".d.ts",
+          ".d.cts",
+          ".d.mts"
+        ],
         "import/resolver": {
           "typescript": {
             "alwaysTryTypes": true,
             "directory": "./src"
           },
-          "node": {
-            "extensions": [".ts", ".cts", ".mts", ".d.ts", ".d.cts", ".d.mts"]
-          }
+          "node": true
         },
         "import/parsers": {
           "@typescript-eslint/parser": [

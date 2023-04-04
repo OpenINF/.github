@@ -1,7 +1,9 @@
+import 'zx/globals';
+
 import { EOL as newLineMarker } from 'node:os';
 
 import text from '@openinf/util-text';
-// import yarnpkgShell from '@yarnpkg/shell';
+// import { $ } from 'zx';
 
 console.log(
   text.blueify(
@@ -15,7 +17,7 @@ console.log(
       String(text.UnicodeEscapes.midlineEllipsis)
         .padStart(3, ' ')
         .padEnd(6, ' ') +
-      text.curlyQuote('node build/tasks/verify/verify-svg.mjs') +
+      text.curlyQuote(import.meta.url) +
       newLineMarker
     }`
   )
