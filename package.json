@@ -65,7 +65,7 @@
     "markdownlint-cli2-formatter-default": "0.0.4",
     "nps": "5.10.0",
     "prettier": "2.8.7",
-    "typescript": "5.0.3",
+    "typescript": "5.0.4",
     "zx": "7.2.1"
   }
 }
