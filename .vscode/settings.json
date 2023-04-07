@@ -85,7 +85,7 @@
     "OWNERS": "json5",
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
-    ".ecrc": "json5",
+    ".ecrc.json": "json",
     ".eslintrc.json": "jsonc",
     ".prettierrc.json": "json5",
     ".prettierrc.json5": "json5",

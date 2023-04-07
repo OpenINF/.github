@@ -5,7 +5,7 @@ import { echoTaskRunning } from '../util.mjs';
 echoTaskRunning('verify.ec-harmony', import.meta.url);
 
 let exitCode = 0;
-const scripts = ["editorconfig-checker -config '.ecrc'"];
+const scripts = ["editorconfig-checker -config '.ecrc.json'"];
 
 for await (const element of scripts) {
   try {
