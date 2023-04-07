@@ -1,36 +1,15 @@
-import 'zx/globals';
+import { execute } from '@yarnpkg/shell';
 
-import { EOL as newLineMarker } from 'node:os';
+import { echoTaskRunning } from '../util.mjs';
 
-import text from '@openinf/util-text';
-import { $ } from 'zx';
-
-console.log(
-  text.blueify(
-    `${
-      newLineMarker +
-      String(text.UnicodeEscapes.midlineEllipsis)
-        .padStart(3, ' ')
-        .padEnd(5, ' ')
-    } Running task named ${text.curlyQuote(
-      'verify.ec-harmony'
-    )}, which executes ${
-      newLineMarker +
-      String(text.UnicodeEscapes.midlineEllipsis)
-        .padStart(3, ' ')
-        .padEnd(6, ' ') +
-      text.curlyQuote(import.meta.url) +
-      newLineMarker
-    }`
-  )
-);
+echoTaskRunning('verify.ec-harmony', import.meta.url);
 
 let exitCode = 0;
-const scripts = ['editorconfig-checker'];
+const scripts = ["editorconfig-checker -config '.ecrc'"];
 
 for await (const element of scripts) {
   try {
-    exitCode = await $`pnpm exec ${element}`.exitCode;
+    exitCode = await execute(`pnpm exec ${element}`);
   } catch (p) {
     exitCode = p.exitCode;
   }
