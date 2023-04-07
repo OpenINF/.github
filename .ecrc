@@ -11,7 +11,7 @@
     "(doc)",
     "(lib)",
     "(vendor)",
-    "(\\.[md^\\\\]+)$",
+    "\\.md$",
     "pnpm-lock.yaml",
     "Gemfile.lock",
     ".markdownlint.jsonc"
