@@ -5,9 +5,7 @@ import { echoTaskRunning } from '../util.mjs';
 echoTaskRunning('verify.ts', import.meta.url);
 
 let exitCode = 0;
-const scripts = [
-  'eslint --ext=.d.ts,.ts,.cts,.mts', // validate & style-check
-];
+const scripts = [];
 
 for await (const element of scripts) {
   try {

@@ -22,7 +22,3 @@ enabled = true
 
 [analyzers.meta]
 dockerfile_paths = [".devcontainer/Dockerfile"]
-
-[[transformers]]
-name = "prettier"
-enabled = false

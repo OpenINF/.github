@@ -28,7 +28,6 @@ omissions and errors may exist, for which contributions are welcome._
 
 <div align="center">
 
-[![Code Style: Prettier][prettier-badge]][prettier-url]
 [![Commit Style: Conventional Commits][conventional-commits-badge]][conventional-commits-url]
 [![Chat on Matrix][matrix-badge--shields]][matrix-url]
 
@@ -164,5 +163,3 @@ greatly encourage us.
 [matrix-url]: https://matrix.to/#/#openinf:matrix.org 'You&apos;re invited to talk on Matrix'
 [npm-badge--shields]: https://img.shields.io/badge/packages-6-2a2a2a.svg?logo=npm 'View our packages on npm'
 [npm-badge-url]: https://www.npmjs.com/org/openinf 'View all of OpenINF&apos;s packages published to the npm registry'
-[prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier 'Code Style: Prettier'
-[prettier-url]: https://prettier.io/playground 'Code Style: Prettier'

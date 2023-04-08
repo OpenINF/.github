@@ -40,10 +40,6 @@ updates:
       # for Node.js coming from Dependabot. We do not want any of those updates.
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
-      # Ignore monorepo dep bumping as they'll be better handled by Renovatebot
-      # in the single-PRs that get made.
-      - dependency-name: '@typescript-eslint/*'
-      - dependency-name: '@babel/*'
 
   - package-ecosystem: bundler
     directory: /

@@ -7,8 +7,6 @@ echoTaskRunning('format.md', import.meta.url);
 let exitCode = 0;
 const scripts = [
   // validate & style-check JS/TS code blocks in Markdown
-  'eslint --ext=.md --fix',
-  'prettier --write **/*{.*.md,.md}', // style-check
   // validate Markdown
   'markdownlint-cli2-fix "**/**.md" "#node_modules" "#vendor"',
 ];

@@ -9,8 +9,6 @@
     "christian-kohler.path-intellisense",
     // https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
     "davidanson.vscode-markdownlint",
-    // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-    "dbaeumer.vscode-eslint",
     // https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig
     "editorconfig.editorconfig",
     // https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
@@ -27,6 +25,5 @@
     "tamasfe.even-better-toml",
     // https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
     "yzhang.markdown-all-in-one"
-  ],
-  "unwantedRecommendations": ["esbenp.prettier-vscode"]
+  ]
 }

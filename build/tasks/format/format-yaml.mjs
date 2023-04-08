@@ -5,7 +5,7 @@ import { echoTaskRunning } from '../util.mjs';
 echoTaskRunning('format.yaml', import.meta.url);
 
 let exitCode = 0;
-const scripts = ['eslint --ext=.yml,.yaml --fix'];
+const scripts = [];
 
 for await (const element of scripts) {
   try {

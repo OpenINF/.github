@@ -5,9 +5,7 @@ import { echoTaskRunning } from '../util.mjs';
 echoTaskRunning('verify.toml', import.meta.url);
 
 let exitCode = 0;
-const scripts = [
-  'eslint --ext=.toml', // validate & style-check
-];
+const scripts = [];
 
 for await (const element of scripts) {
   try {

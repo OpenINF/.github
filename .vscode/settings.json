@@ -11,38 +11,34 @@
   "editor.experimental.pasteActions.enabled": true,
   "editor.stickyScroll.enabled": false,
   "editor.codeLens": true,
-  "eslint.format.enable": true,
   "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
 
   "[json]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   "[json5]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   "[jsonc]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   "[markdown]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   "[yaml]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": ""
   },
 
   // Render vertical rulers after a certain number of monospace characters.
@@ -86,9 +82,6 @@
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
     ".ecrc.json": "json",
-    ".eslintrc.json": "jsonc",
-    ".prettierrc.json": "json5",
-    ".prettierrc.json5": "json5",
     ".deepsource.toml": "toml",
     ".renovaterc.json": "json5",
     ".snyk": "yaml"
@@ -97,7 +90,7 @@
   // JavaScript/TypeScript
   //////////////////////////////////////////////////////////////////////////////
 
-  // Disable JS/TS validation. (These should be handled by ESLint.)
+  // Disable JS/TS validation. (These should be handled by Rome.)
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
@@ -132,26 +125,5 @@
   // need not be re-specified in this file: files.encoding, files.eol,
   // files.insertFinalNewline, and files.trimTrailingWhitespace.
 
-  "editorconfig.generateAuto": false,
-
-  // ESLint (ESLint is a separate extension)
-  /////////////////////////////////////////////
-
-  "eslint.validate": [
-    "javascript",
-    "json",
-    "json5",
-    "jsonc",
-    "markdown",
-    "toml",
-    "typescript",
-    "yaml"
-  ],
-
-  // Whether the extension contributes a lint task to lint a whole workspace.
-  "eslint.lintTask.enable": true,
-
-  "eslint.workingDirectories": ["./"] /*,
-  // See: https://github.com/microsoft/vscode/issues/148903
-  "eslint.packageManager": "pnpm"     */
+  "editorconfig.generateAuto": false
 }

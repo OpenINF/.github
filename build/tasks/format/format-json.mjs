@@ -5,7 +5,7 @@ import { echoTaskRunning } from '../util.mjs';
 echoTaskRunning('format.json', import.meta.url);
 
 let exitCode = 0;
-const scripts = ['eslint --ext=.json,.jsonc,.json5 --fix'];
+const scripts = [];
 
 for await (const element of scripts) {
   try {

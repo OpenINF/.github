@@ -5,10 +5,7 @@ import { echoTaskRunning } from '../util.mjs';
 echoTaskRunning('verify.yaml', import.meta.url);
 
 let exitCode = 0;
-const scripts = [
-  'prettier -c {.*.yml,.*.yaml,*.yml,*.yaml}', // style-check
-  'eslint --ext=.yml,.yaml', // validate & style-check
-];
+const scripts = [];
 
 for await (const element of scripts) {
   try {

@@ -7,7 +7,6 @@ echoTaskRunning('verify.css', import.meta.url);
 let exitCode = 0;
 const scripts = [
   // TODO(DerekNonGeneric): Ensure that the files indeed build.
-  'eslint --ext=.js,.cjs,.mjs',
 ];
 
 for await (const element of scripts) {
