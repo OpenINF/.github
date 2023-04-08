@@ -40,6 +40,7 @@
     "markdownlint-cli2": "0.6.0",
     "markdownlint-cli2-formatter-default": "0.0.4",
     "nps": "5.10.0",
+    "rome": "12.0.0",
     "typescript": "5.0.4",
     "zx": "7.2.1"
   }

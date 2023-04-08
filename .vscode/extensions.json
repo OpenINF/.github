@@ -17,6 +17,8 @@
     "ionutvmi.path-autocomplete",
     // https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
     "ms-azuretools.vscode-docker",
+    // https://marketplace.visualstudio.com/items?itemName=rome.rome
+    "rome.rome",
     // https://marketplace.visualstudio.com/items?itemName=sissel.shopify-liquid
     "sissel.shopify-liquid",
     // https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
