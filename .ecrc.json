@@ -12,6 +12,7 @@
     "(lib)",
     "(vendor)",
     "\\.md$",
+    "\\.mjs$",
     "pnpm-lock.yaml",
     "Gemfile.lock",
     ".markdownlint.jsonc"

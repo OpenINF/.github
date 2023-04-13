@@ -1,11 +1,18 @@
 import { execute } from '@yarnpkg/shell';
+import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
 echoTaskRunning('format.ts', import.meta.url);
 
+const TypeScriptObject =
+  await $`bundle exec github-linguist --breakdown --json | jq '.TypeScript.files'`;
+const TypeScriptFiles = JSON.parse(TypeScriptObject.stdout);
+
 let exitCode = 0;
-const scripts = ['eslint --ext=.ts,.cts,.mts --fix'];
+const scripts = [
+  `eslint --fix ${TypeScriptFiles.join(' ')}`, // fix style
+];
 
 for await (const element of scripts) {
   try {

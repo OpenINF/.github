@@ -1,14 +1,16 @@
 import { execute } from '@yarnpkg/shell';
+import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('verify.css', import.meta.url);
+echoTaskRunning('verify.js', import.meta.url);
+
+const JavaScriptObject =
+  await $`bundle exec github-linguist --breakdown --json | jq '.JavaScript.files'`;
+const JavaScriptFiles = JSON.parse(JavaScriptObject.stdout);
 
 let exitCode = 0;
-const scripts = [
-  // TODO(DerekNonGeneric): Ensure that the files indeed build.
-  'eslint --ext=.js,.cjs,.mjs',
-];
+const scripts = [`eslint ${JavaScriptFiles.join(' ')}`];
 
 for await (const element of scripts) {
   try {

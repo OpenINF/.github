@@ -1,13 +1,17 @@
 import { execute } from '@yarnpkg/shell';
+import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('verify.md', import.meta.url);
+echoTaskRunning('verify.markdown', import.meta.url);
+
+const MarkdownObject =
+  await $`bundle exec github-linguist --breakdown --json | jq '.Markdown.files'`;
+const MarkdownFiles = JSON.parse(MarkdownObject.stdout);
 
 let exitCode = 0;
 const scripts = [
-  // validate & style-check JS/TS code blocks in Markdown
-  'eslint --ext=.md',
+  `eslint ${MarkdownFiles.join(' ')}`,
   'prettier -c **/*{.*.md,.md}', // style-check
   // validate Markdown
   'markdownlint-cli2 "**/**.md" "#node_modules" "#vendor"',

@@ -1,13 +1,17 @@
 import { execute } from '@yarnpkg/shell';
+import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
 echoTaskRunning('verify.yaml', import.meta.url);
 
+const YAMLObject =
+  await $`bundle exec github-linguist --breakdown --json | jq '.YAML.files'`;
+const YAMLFiles = JSON.parse(YAMLObject.stdout);
+
 let exitCode = 0;
 const scripts = [
-  'prettier -c {.*.yml,.*.yaml,*.yml,*.yaml}', // style-check
-  'eslint --ext=.yml,.yaml', // validate & style-check
+  `eslint ${YAMLFiles.join(' ')}`, // validate & style-check
 ];
 
 for await (const element of scripts) {
