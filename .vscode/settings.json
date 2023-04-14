@@ -38,7 +38,7 @@
   },
 
   "[markdown]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "unifiedjs.vscode-remark"
   },
 
   "[yaml]": {

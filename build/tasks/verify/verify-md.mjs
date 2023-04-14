@@ -15,6 +15,7 @@ const scripts = [
   'prettier -c **/*{.*.md,.md}', // style-check
   // validate Markdown
   'markdownlint-cli2 "**/**.md" "#node_modules" "#vendor"',
+  'remark -qf .',
 ];
 
 for (const element of scripts) {
