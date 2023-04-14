@@ -1,10 +1,6 @@
-<h1 align="center">
-
-@openinf/.github
-
-</h1>
-
 <div align="center">
+
+## @openinf/.github
 
 Org-level default metadata & community health files
 
@@ -35,13 +31,13 @@ omissions and errors may exist, for which
 
 </div>
 
-<br />
+<br /><br />
 
 ---
 
 <br />
 
-<h2>Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>
+### Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
 
 <br />
 
@@ -64,7 +60,7 @@ omissions and errors may exist, for which
 
 </div><br />
 
-<h2>Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files</h2>
+### Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
 
 <br />
 
