@@ -18,11 +18,13 @@ Twitter. <abbr title="Direct Messages">DMs</abbr> (Direct Messages) are open. Be
 sure to follow the [Twitter Rules][twitter-rules] and our [Code of
 Conduct][coc].
 
+<!-- BEGIN LINK DEFINITIONS -->
+[^1]:
+    <https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project>
+
 [coc]: ./CODE_OF_CONDUCT.md
 [docs-site]: https://open.inf.is
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
 [twitter-account]: https://twitter.com/OpenINF
 [twitter-rules]: https://help.twitter.com/en/rules-and-policies/twitter-rules
-
-[^1]:
-    https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project
+<!-- END LINK DEFINITIONS -->

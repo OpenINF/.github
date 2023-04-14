@@ -9,7 +9,7 @@ vulnerability.
 ## Reporting Vulnerabilities
 
 In the rare event that you find a vulnerability in the OpenINF SDK itself,
-[email us]. We hope to regularly work with the cybersecurity community and the
+[email us][]. We hope to regularly work with the cybersecurity community and the
 brilliant researchers in the field to arrive at positive outcomes for all
 parties involved. An alternative to email for reporting should be available
 shortly for those uncomfortable with that medium. Anonymous reports will also
@@ -36,16 +36,18 @@ reporting in the near term.
   if your dependencies have had security updates and update the pin accordingly.
   Doing this manually, however, can become tedious. It is advisable to use an
   automated dependency update tool that fits into your workflows, such as [Mend
-  Renovate] (also known as Renovatebot), which we are thankful to have as one of
-  our organization's trusted partners in automated dependency management.[^2] We
-  hope you, dearest reader, will soon join us in our journey to maintain our
+  Renovate][] (also known as Renovatebot), which we are thankful to have as one
+  of our organization's trusted partners in automated dependency management.[^2]
+  We hope you, dearest reader, will soon join us in our journey to maintain our
   secure software ecosystems.
+
+<!-- BEGIN LINK DEFINITIONS -->
+[^1]:
+    <https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository>
+
+[^2]:
+    <https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program>
 
 [email us]: mailto:security@inf.is
 [Mend Renovate]: https://www.mend.io/free-developer-tools/renovate
-
-[^1]:
-    https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository
-
-[^2]:
-    https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program
+<!-- END LINK DEFINITIONS -->
