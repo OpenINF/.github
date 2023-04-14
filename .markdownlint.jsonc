@@ -21,7 +21,7 @@
   // MD004/ul-style - Unordered list style
   "MD004": {
     // List style
-    "style": "consistent"
+    "style": "dash"
   },
 
   // MD005/list-indent - Inconsistent indentation for list items at the same level
@@ -157,7 +157,7 @@
     // Spaces for multi-line unordered list items
     "ul_multi": 1,
     // Spaces for multi-line ordered list items
-    "ol_multi": 1
+    "ol_multi": 2
   },
 
   // MD031/blanks-around-fences - Fenced code blocks should be surrounded by blank lines
