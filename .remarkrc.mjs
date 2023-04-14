@@ -73,6 +73,9 @@ var naturalLanguage = unified().use([
 export default {
   plugins: [
     await import('remark-lint'),
+    ['remark-gfm'],
+    ['remark-footnotes'],
+    ['remark-frontmatter'],
     await import('remark-preset-lint-consistent'),
     // Leave this preset at the top so that it can be overridden.
     await import('remark-preset-lint-recommended'),
@@ -88,7 +91,6 @@ export default {
     [await import('remark-lint-code-block-style'), 'fenced'],
     [await import('remark-lint-fenced-code-flag'), { flags: infoStrings }],
     await import('remark-lint-definition-spacing'),
-    await import('remark-frontmatter'),
 
     // Remark Lint Style Guide preset and overrides.
     ['remark-preset-lint-markdown-style-guide'],
