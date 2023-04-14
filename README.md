@@ -75,12 +75,12 @@ omissions and errors may exist, for which contributions are welcome._
 
 <br /><div align="center">
 
-| File name   | Title               | Description                                                              |
-| ----------- | ------------------- | ------------------------------------------------------------------------ |
-| [`AUTHORS`] | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
-| [`README`]  | Homepage            | Serves as a project landing page of sorts                                |
-| [`LICENSE`] | Software License(s) | The open source software license(s) associated with a project            |
-| [`VISION`]  | Project Vision      | The goal(s) and/or scope of a project                                    |
+| File name      | Title               | Description                                                              |
+| -------------- | ------------------- | ------------------------------------------------------------------------ |
+| [`AUTHORS`]    | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
+| [`README`]     | Homepage            | Serves as a project landing page of sorts                                |
+| [`LICENSE.md`] | Software License(s) | The open source software license(s) associated with a project            |
+| [`VISION`]     | Project Vision      | The goal(s) and/or scope of a project                                    |
 
 </div><br />
 
@@ -136,8 +136,8 @@ greatly encourage us.
 [`FUNDING`]:
   https://github.com/OpenINF/.github/blob/HEAD/.github/FUNDING.yml
   'How to financially support maintenance/development of @OpenINF projects'
-[`LICENSE`]:
-  https://github.com/OpenINF/.github/blob/HEAD/LICENSE
+[`LICENSE.md`]:
+  https://github.com/OpenINF/.github/blob/HEAD/LICENSE.md
   'The open source software license(s) associated with this project'
 [`README`]:
   https://github.com/OpenINF/.github/blob/HEAD/README.md
