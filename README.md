@@ -11,7 +11,7 @@ Org-level default metadata & community health files
 <br />
 
 [!['View on npm (coming soon)'][npm-badge--shields]][npm-badge-url]
-[!['License: MIT'][license-badge--shields]][license-badge-url]
+[!['License: MIT/Apache-2.0'][license-badge--shields]][license-badge-url]
 
 </div>
 
@@ -95,14 +95,41 @@ omissions and errors may exist, for which contributions are welcome._
 
 <br />
 
+### Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to
+discuss what you would like to change. If for whatever reason you spot something
+to fix but cannot patch it yourself, please [open an issue][].
+
+<br />
+
+### License
+
+This project is licensed under either of
+
+- [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- [MIT license](https://opensource.org/licenses/MIT)
+
+at your option.
+
+The [SPDX](https://spdx.dev) license identifier for this project is
+`MIT OR Apache-2.0`.
+
+<br /><br />
+
+---
+
+<br />
+
 <div align="center">
 
-<h2>Show Your Support</h2>
+### Show Your Support
 
-<!-- Give a ⭐️ if this project helped you! -->
+<br />
 
-If you like the project or want to bookmark it, [give it a star ⭐️]; it will
-greatly encourage us.
+If you like the project (or want to bookmark it)&nbsp;&mdash;<br />
+&mdash;&nbsp;[give it a star ⭐️][]&nbsp;&mdash;&nbsp;it will greatly encourage
+us.
 
 <br /><br />
 
@@ -111,13 +138,14 @@ greatly encourage us.
 <br />
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
-  <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/logo.svg?sanitize=true">
+  <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/assets/img/svg/logo.svg?sanitize=true" />
 </a>
 
 </div>
 
 <br /><br />
 
+<!-- BEGIN LINK DEFINITIONS -->
 [^1]:
     <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files>
 
@@ -158,11 +186,13 @@ greatly encourage us.
 [conventional-commits-badge]: https://img.shields.io/badge/commit%20style-Conventional-%23fa6673?logoColor=white&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggc3R5bGU9ImZpbGw6ICNGRkYiIGQ9Ik0xNSwyQTEzLDEzLDAsMSwxLDIsMTUsMTMsMTMsMCwwLDEsMTUsMm0wLTJBMTUsMTUsMCwxLDAsMzAsMTUsMTUsMTUsMCwwLDAsMTUsMFoiLz48L3N2Zz4K 'Commit Style: Conventional Commits'
 [conventional-commits-url]: https://www.conventionalcommits.org 'Commit Style: Conventional Commits'
 [give it a star ⭐️]: https://github.com/OpenINF/.github/stargazers
-[license-badge--shields]: https://img.shields.io/badge/license-MIT-blue.svg?logo=github 'License: MIT'
-[license-badge-url]: https://spdx.org/licenses/MIT.html 'License: MIT'
+[license-badge--shields]: https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg?logo=github 'License: MIT/Apache 2.0'
+[license-badge-url]: #license 'License: MIT/Apache 2.0'
 [matrix-badge--shields]: https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix 'Chat on Matrix'
 [matrix-url]: https://matrix.to/#/#openinf:matrix.org 'You&apos;re invited to talk on Matrix'
 [npm-badge--shields]: https://img.shields.io/badge/packages-6-2a2a2a.svg?logo=npm 'View our packages on npm'
 [npm-badge-url]: https://www.npmjs.com/org/openinf 'View all of OpenINF&apos;s packages published to the npm registry'
+[open an issue]: https://github.com/OpenINF/.github/issues
 [prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier 'Code Style: Prettier'
 [prettier-url]: https://prettier.io/playground 'Code Style: Prettier'
+<!-- END LINK DEFINITIONS -->
