@@ -8,8 +8,6 @@
 **/node_modules/
 /vendor/**
 
-LICENSE
-README.md
 Gemfile
 Gemfile.lock
 package-lock.json

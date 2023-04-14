@@ -13,8 +13,6 @@
 /vendor/**
 package.json
 
-LICENSE
-README.md
 Gemfile
 Gemfile.lock
 package.json
