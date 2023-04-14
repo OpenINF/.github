@@ -34,9 +34,9 @@ labels on the issue you’re interested in.
   <https://github.com/OpenINF/.github/labels/good%20first%20issue> have been
   identified as desirable for community contribution. Feel free to work on
   <abbr title="Good First Issues">GFIs</abbr> even if not your first issue.
-  - List of [all issues labeled _good first issue_][i-gfi]
-  - List of [all issues labeled _help wanted_][i-help]
-  - List of [all incomplete pull requests labeled _help wanted_][pr-help]
+- List of [all issues labeled _good first issue_][i-gfi]
+- List of [all issues labeled _help wanted_][i-help]
+- List of [all incomplete pull requests labeled _help wanted_][pr-help]
 - If the issue does not have either of those labels, it may still be open for
   contribution.
 - Issues labeled <https://github.com/OpenINF/.github/labels/wip> are a _work in
@@ -45,14 +45,14 @@ labels on the issue you’re interested in.
 
 Once you have identified an issue you would like to work on, follow these steps:
 
-1. Comment on it and say you would like to work on that issue.
-2. Wait for someone to confirm that you may work on the issue before writing any
-   code. The person who confirms will add a
-   <https://github.com/OpenINF/.github/labels/wip> label to the issue to
-   indicate that the issue has been assigned.
-3. Once the issue has been labeled as a _work in progress_, write your code and
-   submit your PR.
-4. Wait for code review and address any issues raised as soon as you can.
+1.  Comment on it and say you would like to work on that issue.
+2.  Wait for someone to confirm that you may work on the issue before writing
+    any code. The person who confirms will add a
+    <https://github.com/OpenINF/.github/labels/wip> label to the issue to
+    indicate that the issue has been assigned.
+3.  Once the issue has been labeled as a _work in progress_, write your code and
+    submit your PR.
+4.  Wait for code review and address any issues raised as soon as you can.
 
 Even if you are not done with the issue, create a [draft pull request][] and
 push your code [early and often][]. If we haven’t heard from you in over a week
