@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "repository": "https://github.com/openinf/.github",
-  "license": "MIT",
+  "license": "MIT OR Apache-2.0",
   "author": "The OpenINF Authors",
   "main": "",
   "directories": {
