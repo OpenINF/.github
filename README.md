@@ -22,7 +22,8 @@ repository for default metadata and community health files for use across all
 projects in the [**@OpenINF**] organization on GitHub. If a given file doesn't
 exist for a repository, the organization-wide defaults in this repository will
 be used. As is the case with any software project in continuous development,
-omissions and errors may exist, for which contributions are welcome._
+omissions and errors may exist, for which [contributions are
+welcome](#contributing)_.
 
 <br />
 
