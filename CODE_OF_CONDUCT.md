@@ -10,8 +10,6 @@ Code of Conduct[^1]
 
 </div>
 
-_Be excellent to each other._
-
 We expect OpenINF community members to act professionally and respectfully, and
 we expect our social spaces to be safe and dignified environments.
 
