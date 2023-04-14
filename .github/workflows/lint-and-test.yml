@@ -14,11 +14,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/gallium
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
       - name: Install
         run: |
           corepack enable
           corepack prepare pnpm@latest --activate
           pnpm install
+          gem install bundler && bundle config set --local path 'vendor/bundle'
+          bundle install
       # Checks to see if any files in the PR match one of the listed file types.
       # We can use this filter to decide whether or not to run linters or tests.
       # You can check if a file with a listed file type is in the PR by doing:
@@ -28,51 +32,63 @@ jobs:
         id: filter
         with:
           filters: |
-            md:
-              - '**/**.md'
+            css:
+              - '**/*.css'
             js:
               - '**/**.?(c|m)js'
             json:
               - '**/**.json?(5|c)'
               - 'OWNERS'
+            md:
+              - '**/**.md'
+            svg:
+              - '**/*.svg'
             toml:
               - '**/**.t?(o)ml'
             ts:
               - '**/**.?(c|m)ts'
-              - '**/*.d.ts'
+              - '**/*.d.?(c|m)ts'
             yaml:
               - '**/**.y?(a)ml'
 
       # Use the filter to check if files with a specific file type were changed
       # in the PR. If they were, run the relevant linters. Otherwise, skip.
 
-      - name: Verify Markdown
-        if: ${{ steps.filter.outputs.md == 'true' }}
-        run: npx nps verify.md
+      - name: Verify CSS
+        if: ${{ steps.filter.outputs.css == 'true' }}
+        run: pnpm exec nps verify.css
 
       - name: Verify JavaScript
         if: ${{ steps.filter.outputs.js == 'true' }}
-        run: npx nps verify.js
+        run: pnpm exec nps verify.js
 
       - name: Verify JSON
         if: ${{ steps.filter.outputs.json == 'true' }}
-        run: npx nps verify.json
+        run: pnpm exec nps verify.json
+
+      - name: Verify Markdown
+        if: ${{ steps.filter.outputs.md == 'true' }}
+        run: pnpm exec nps verify.md
+
+      - name: Verify SVG
+        if: ${{ steps.filter.outputs.svg == 'true' }}
+        run: pnpm exec nps verify.svg
 
       - name: Verify TOML
         if: ${{ steps.filter.outputs.toml == 'true' }}
-        run: npx nps verify.toml
+        run: pnpm exec nps verify.toml
 
       - name: Verify TypeScript
         if: ${{ steps.filter.outputs.ts == 'true' }}
-        run: npx nps verify.ts
+        run: pnpm exec nps verify.ts
 
       - name: Verify YAML
         if: ${{ steps.filter.outputs.yaml == 'true' }}
-        run: npx nps verify.yaml
+        run: pnpm exec nps verify.yaml
 
       # Only run tests if the PR touches behavior-related files.
       - name: Test
         if: ${{ steps.filter.outputs.js == 'true' ||
           steps.filter.outputs.json == 'true' ||
           steps.filter.outputs.ts == 'true' }}
-        run: npm t
+        run: pnpm test
