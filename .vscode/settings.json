@@ -38,7 +38,7 @@
   },
 
   "[markdown]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-remark"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
 
   "[yaml]": {
