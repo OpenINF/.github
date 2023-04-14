@@ -42,6 +42,7 @@ reporting in the near term.
   secure software ecosystems.
 
 <!-- BEGIN LINK DEFINITIONS -->
+
 [^1]:
     <https://help.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository>
 
@@ -50,4 +51,5 @@ reporting in the near term.
 
 [email us]: mailto:security@inf.is
 [Mend Renovate]: https://www.mend.io/free-developer-tools/renovate
+
 <!-- END LINK DEFINITIONS -->

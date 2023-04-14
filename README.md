@@ -22,8 +22,8 @@ repository for default metadata and community health files for use across all
 projects in the [**@OpenINF**][] organization on GitHub. If a given file doesn't
 exist for a repository, the organization-wide defaults in this repository will
 be used. As is the case with any software project in continuous development,
-omissions and errors may exist, for which [contributions are
-welcome](#contributing)_.
+omissions and errors may exist, for which
+[contributions are welcome](#contributing)_.
 
 <br />
 
@@ -85,10 +85,11 @@ welcome](#contributing)_.
 
 </div><br />
 
-> **Note**: The [`VISION`][] file can be useful for offloading project goals that
-> should typically be specified in the root [`README`][] file. It may optionally
-> exist alongside it as an alternative location to even include project scope as
-> well, but should be linked to from the root [`README`][] file in these cases.
+> **Note**: The [`VISION`][] file can be useful for offloading project goals
+> that should typically be specified in the root [`README`][] file. It may
+> optionally exist alongside it as an alternative location to even include
+> project scope as well, but should be linked to from the root [`README`][] file
+> in these cases.
 
 <br /><br />
 
@@ -147,6 +148,7 @@ us.
 <br /><br />
 
 <!-- BEGIN LINK DEFINITIONS -->
+
 [^1]:
     <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files>
 
@@ -180,20 +182,36 @@ us.
 [`VISION`]:
   https://github.com/OpenINF/.github/blob/HEAD/VISION.md
   'What the goal(s) and/or scope are of this project'
-
 [**@OpenINF**]: https://github.com/OpenINF
 [**@OpenINF/.github**]: https://github.com/OpenINF/.github
 [Community Profile]: https://github.com/OpenINF/.github/community
-[conventional-commits-badge]: https://img.shields.io/badge/commit%20style-Conventional-%23fa6673?logoColor=white&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggc3R5bGU9ImZpbGw6ICNGRkYiIGQ9Ik0xNSwyQTEzLDEzLDAsMSwxLDIsMTUsMTMsMTMsMCwwLDEsMTUsMm0wLTJBMTUsMTUsMCwxLDAsMzAsMTUsMTUsMTUsMCwwLDAsMTUsMFoiLz48L3N2Zz4K 'Commit Style: Conventional Commits'
-[conventional-commits-url]: https://www.conventionalcommits.org 'Commit Style: Conventional Commits'
+[conventional-commits-badge]:
+  https://img.shields.io/badge/commit%20style-Conventional-%23fa6673?logoColor=white&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggc3R5bGU9ImZpbGw6ICNGRkYiIGQ9Ik0xNSwyQTEzLDEzLDAsMSwxLDIsMTUsMTMsMTMsMCwwLDEsMTUsMm0wLTJBMTUsMTUsMCwxLDAsMzAsMTUsMTUsMTUsMCwwLDAsMTUsMFoiLz48L3N2Zz4K
+  'Commit Style: Conventional Commits'
+[conventional-commits-url]:
+  https://www.conventionalcommits.org
+  'Commit Style: Conventional Commits'
 [give it a star ⭐️]: https://github.com/OpenINF/.github/stargazers
-[license-badge--shields]: https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg?logo=github 'License: MIT/Apache 2.0'
+[license-badge--shields]:
+  https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg?logo=github
+  'License: MIT/Apache 2.0'
 [license-badge-url]: #license 'License: MIT/Apache 2.0'
-[matrix-badge--shields]: https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix 'Chat on Matrix'
-[matrix-url]: https://matrix.to/#/#openinf:matrix.org 'You&apos;re invited to talk on Matrix'
-[npm-badge--shields]: https://img.shields.io/badge/packages-6-2a2a2a.svg?logo=npm 'View our packages on npm'
-[npm-badge-url]: https://www.npmjs.com/org/openinf 'View all of OpenINF&apos;s packages published to the npm registry'
+[matrix-badge--shields]:
+  https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix
+  'Chat on Matrix'
+[matrix-url]:
+  https://matrix.to/#/#openinf:matrix.org
+  "You're invited to talk on Matrix"
+[npm-badge--shields]:
+  https://img.shields.io/badge/packages-6-2a2a2a.svg?logo=npm
+  'View our packages on npm'
+[npm-badge-url]:
+  https://www.npmjs.com/org/openinf
+  "View all of OpenINF's packages published to the npm registry"
 [open an issue]: https://github.com/OpenINF/.github/issues
-[prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier 'Code Style: Prettier'
+[prettier-badge]:
+  https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier
+  'Code Style: Prettier'
 [prettier-url]: https://prettier.io/playground 'Code Style: Prettier'
+
 <!-- END LINK DEFINITIONS -->

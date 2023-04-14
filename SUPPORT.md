@@ -19,6 +19,7 @@ sure to follow the [Twitter Rules][twitter-rules] and our [Code of
 Conduct][coc].
 
 <!-- BEGIN LINK DEFINITIONS -->
+
 [^1]:
     <https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project>
 
@@ -27,4 +28,5 @@ Conduct][coc].
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
 [twitter-account]: https://twitter.com/OpenINF
 [twitter-rules]: https://help.twitter.com/en/rules-and-policies/twitter-rules
+
 <!-- END LINK DEFINITIONS -->
