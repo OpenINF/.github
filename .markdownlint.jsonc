@@ -9,13 +9,21 @@
   // Path to configuration file to extend
   "extends": null,
 
-  // MD001/heading-increment/header-increment - Heading levels should only increment by one level at a time
-  "MD001": true,
+  // MD001/heading-increment/header-increment - Heading levels should only
+  // increment by one level at a time. Prefer `remark-lint-heading-increment`,
+  // which is included in `remark-preset-lint-markdown-style-guide`, so we
+  // disable it here.
+  "MD001": false,
 
-  // MD002/first-heading-h1/first-header-h1 - First heading should be a top-level heading
+  // MD002/first-heading-h1/first-header-h1 - First heading should be a
+  // top-level heading. Prefer `remark-lint-first-heading-level`, which sets
+  // this value to `2` in .remarkrc.mjs, so we disable it here.
   "MD002": false,
 
-  // MD003/heading-style/header-style - Heading style
+  // MD003/heading-style/header-style - Heading style. Prefer
+  // `remark-lint-heading-style`, which is included in
+  // `remark-preset-lint-markdown-style-guide`, which sets this value to `atx`,
+  // so we disable it here.
   "MD003": false,
 
   // MD004/ul-style - Unordered list style

@@ -97,6 +97,7 @@ export default {
     ['remark-lint-no-file-name-mixed-case', false],
     ['remark-lint-no-heading-punctuation', ':.,;'],
     ['remark-lint-no-file-name-irregular-characters', false],
+    ['remark-lint-first-heading-level', 2],
 
     // Third-party plugins.
     await import('remark-validate-links'),
