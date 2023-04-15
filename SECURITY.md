@@ -1,4 +1,4 @@
-# Security Policy[^1]
+## Security Policy[^1]
 
 The OpenINF team, currently composed of a single active maintainer, takes the
 security of OpenINF and the applications created with its SDK seriously. This
@@ -6,7 +6,7 @@ page describes how to report any vulnerabilities you may find and lists best
 practices to minimize the risk of introducing or being affected by a
 vulnerability.
 
-## Reporting Vulnerabilities
+### Reporting Vulnerabilities
 
 In the rare event that you find a vulnerability in the OpenINF SDK itself,
 [email us][]. We hope to regularly work with the cybersecurity community and the
@@ -16,7 +16,7 @@ shortly for those uncomfortable with that medium. Anonymous reports will also
 gladly be accepted. We also hope to introduce a healthy manner of incentivizing
 reporting in the near term.
 
-## Best Practices
+### Best Practices
 
 - **Keep current with the latest OpenINF SDK releases.** We regularly update the
   various packages that the OpenINF SDK is composed of, and these updates may

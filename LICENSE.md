@@ -1,4 +1,4 @@
-# License
+## License
 
 This project is dual licensed under the following licenses:
 
@@ -9,7 +9,7 @@ This project is dual licensed under the following licenses:
 
 You may choose to use either license.
 
-## Contribution
+### Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be

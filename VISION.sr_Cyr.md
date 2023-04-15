@@ -1,8 +1,12 @@
-<!-- https://opensource.guide/best-practices/#write-down-your-projects-vision -->
-
-# Визија
+## Визија[^1]
 
 Циљ ОпенИНФ-а је да ојача заједницу отвореног извора помоћу алатки за
 агрегацију, усавршавање, проширење и примену информација произашле из различитих
 извора кроз успостављање пријатељских, отворених, друштвено оријентисаних
 развојних процеса.
+
+<!-- BEGIN LINK DEFINITIONS -->
+
+[^1]: <https://opensource.guide/best-practices/#write-down-your-projects-vision>
+
+<!-- END LINK DEFINITIONS -->

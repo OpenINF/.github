@@ -1,10 +1,4 @@
-<!--
-
-https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/setting-guidelines-for-repository-contributors
-
--->
-
-# Contributor Roles and Responsibilities
+## Contributor Roles and Responsibilities[^1]
 
 Want to contribute? Great! First, read this document, which is a set of
 guidelines to help you contribute to this project.
@@ -19,12 +13,12 @@ This project uses the following tools to organize discussion.
 - **Synchronous chat channel:** For casual conversation, collaboration, quick
   exchanges, and questions.
 
-## Issue Tracker
+### Issue Tracker
 
 If you’ve found a bug, would like to request a new feature or make a proposal,
 file a [GitHub issue][]!
 
-### Resolving Open Issues
+#### Resolving Open Issues
 
 We track ongoing endeavors via the GitHub issues associated with each
 repository, and that’s where you can find tasks to undertake. First, check the
@@ -59,14 +53,14 @@ push your code [early and often][]. If we haven’t heard from you in over a wee
 and someone else expresses interest in that issue, we may approve the new
 person’s work.
 
-### Opening a New Issue
+#### Opening a New Issue
 
 If you want to work on something that there is no GitHub issue for, then propose
 the change by opening a new GitHub issue associated with the respective
 repository and propose your change there. Be sure to include implementation
 details and the rationale for the proposed change.
 
-## Pull Requests
+### Pull Requests
 
 If you’d like to propose and collaborate on changes, open a [pull request][]!
 
@@ -84,30 +78,30 @@ Contributions to this project are [released][contrib-license] to the public
 under the project’s open source license. The license for a project is located in
 a file named [`LICENSE`][] in the root directory of the repository.
 
-## Project Documentation
+### Project Documentation
 
 The [`README.md`][] in the root of the repository should contain or link to
 project documentation. If you cannot find the documentation you’re looking for,
 please file a GitHub issue with details of what you’d like to see documented.
 
-## Questions or Thoughts?
+### Questions or Thoughts?
 
 Support requests (e.g., asking questions) or feedback (e.g., constructive
 criticism) may be directed to the [`@OpenINF`][twitter-account] support account
 on Twitter.
 
-## Additional Resources
+### Additional Resources
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
 - [GitHub Help](https://help.github.com)
 
-## Code of Conduct
+### Code of Conduct
 
 By participating in this project, you are expected to uphold our Code of
 Conduct. Please see the [`CODE_OF_CONDUCT.md`][] file for expected behavior.
 
-## Developer’s Certificate of Origin 1.1
+### Developer’s Certificate of Origin 1.1
 
 By making a contribution to this project, I certify that:
 
@@ -130,13 +124,18 @@ By making a contribution to this project, I certify that:
   redistributed consistent with this project or the open source license(s)
   involved.
 
-## Reporting Security Issues
+### Reporting Security Issues
 
 Please see the [`SECURITY.md`][] file.
 
-## Attribution
+### Attribution
 
 [Developer Certificate of Origin Legal Text](https://developercertificate.org/)
+
+<!-- BEGIN LINK DEFINITIONS -->
+
+[^1]:
+    <https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/setting-guidelines-for-repository-contributors>
 
 [`CODE_OF_CONDUCT.md`]:
   ./CODE_OF_CONDUCT.md
@@ -166,3 +165,5 @@ Please see the [`SECURITY.md`][] file.
   https://github.com/search?q=org%3Aopeninf+is%3Apr+is%3Aopen+label%3A%22help+wanted%22
 [pull request]:
   https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request
+
+<!-- END LINK DEFINITIONS -->

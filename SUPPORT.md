@@ -1,8 +1,8 @@
-# Support[^1]
+## Support[^1]
 
 Having trouble? Please consult these official resources in order of appearance.
 
-## Resources
+### Resources
 
 **[open.inf.is][docs-site] on the Web:** The OpenINF website. It has docs and
 tutorial resources.
