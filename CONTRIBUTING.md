@@ -28,9 +28,9 @@ labels on the issue you’re interested in.
   <https://github.com/OpenINF/.github/labels/good%20first%20issue> have been
   identified as desirable for community contribution. Feel free to work on
   <abbr title="Good First Issues">GFIs</abbr> even if not your first issue.
-- List of [all issues labeled _good first issue_][i-gfi]
-- List of [all issues labeled _help wanted_][i-help]
-- List of [all incomplete pull requests labeled _help wanted_][pr-help]
+  - List of [all issues labeled _good first issue_][i-gfi]
+  - List of [all issues labeled _help wanted_][i-help]
+  - List of [all incomplete pull requests labeled _help wanted_][pr-help]
 - If the issue does not have either of those labels, it may still be open for
   contribution.
 - Issues labeled <https://github.com/OpenINF/.github/labels/wip> are a _work in
@@ -76,7 +76,7 @@ your pull request merged:
 
 Contributions to this project are [released][contrib-license] to the public
 under the project’s open source license. The license for a project is located in
-a file named [`LICENSE`][] in the root directory of the repository.
+a file named [`LICENSE.md`][] in the root directory of the repository.
 
 ### Project Documentation
 
@@ -140,8 +140,8 @@ Please see the [`SECURITY.md`][] file.
 [`CODE_OF_CONDUCT.md`]:
   ./CODE_OF_CONDUCT.md
   'Standards for how to engage with the project community'
-[`LICENSE`]:
-  ./LICENSE
+[`LICENSE.md`]:
+  ./LICENSE.md
   'The open source software license(s) associated with this project'
 [`README.md`]: ./README.md 'The landing/home page of this project'
 [`SECURITY.md`]:
