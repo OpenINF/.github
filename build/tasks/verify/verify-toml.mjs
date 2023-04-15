@@ -3,7 +3,7 @@
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('verify.toml', import.meta.url);
+echoTaskRunning('verify-toml', import.meta.url);
 
 // const TOMLObject =
 //   await $`bundle exec github-linguist --breakdown --json | jq '.TOML.files'`;
@@ -16,7 +16,7 @@ echoTaskRunning('verify.toml', import.meta.url);
 
 // for await (const element of scripts) {
 //   try {
-//     exitCode = await execute(element);
+//     exitCode = await execute(`pnpm exec ${element}`);
 //   } catch (p) {
 //     exitCode = p.exitCode;
 //   }

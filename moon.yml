@@ -1,0 +1,212 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+
+language: javascript
+
+project:
+  name: workspace
+  description: The project workspace root
+
+platform: node
+
+tasks:
+  compile-site:
+    command: node build/tasks/compile/compile-site.mjs
+    options:
+      envFile: true
+  verify-all:
+    command: noop
+    deps:
+      - '~:verify-css'
+      - '~:verify-html'
+      - '~:verify-js'
+      - '~:verify-json'
+      - '~:verify-md'
+      - '~:verify-svg'
+      - '~:verify-toml'
+      - '~:verify-ts'
+      - '~:verify-yaml'
+    inputs:
+      - '**/*.css'
+      - '**/*.html'
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
+      - '**/*.json'
+      - '**/*.json5'
+      - '**/*.jsonc'
+      - '**/*.md'
+      - '**/*.svg'
+      - '**/*.tml'
+      - '**/*.toml'
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
+      - '**/*.yaml'
+      - '**/*.yml'
+    options:
+      runDepsInParallel: true
+      mergeInputs: append
+  verify-css:
+    command: node build/tasks/verify/verify-css.mjs
+    inputs:
+      - '**/*.css'
+  verify-html:
+    command: node build/tasks/verify/verify-html.mjs
+    inputs:
+      - '**/*.html'
+  verify-js:
+    command: node build/tasks/verify/verify-js.mjs
+    inputs:
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
+  verify-json:
+    command: node build/tasks/verify/verify-json.mjs
+    inputs:
+      - '**/*.json'
+      - '**/*.json5'
+      - '**/*.jsonc'
+  verify-md:
+    command: node build/tasks/verify/verify-md.mjs
+    inputs:
+      - '**/*.md'
+  verify-svg:
+    command: node build/tasks/verify/verify-svg.mjs
+    inputs:
+      - '**/*.svg'
+  verify-toml:
+    command: node build/tasks/verify/verify-toml.mjs
+    inputs:
+      - '**/*.tml'
+      - '**/*.toml'
+  verify-ts:
+    command: node build/tasks/verify/verify-ts.mjs
+    inputs:
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
+  verify-yaml:
+    command: node build/tasks/verify/verify-yaml.mjs
+    inputs:
+      - '**/*.yaml'
+      - '**/*.yml'
+  format-all:
+    command: noop
+    deps:
+      - '~:format-css'
+      - '~:format-html'
+      - '~:format-js'
+      - '~:format-json'
+      - '~:format-md'
+      - '~:format-svg'
+      - '~:format-toml'
+      - '~:format-ts'
+      - '~:format-yaml'
+    inputs:
+      - '**/*.css'
+      - '**/*.html'
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
+      - '**/*.json'
+      - '**/*.json5'
+      - '**/*.jsonc'
+      - '**/*.md'
+      - '**/*.svg'
+      - '**/*.tml'
+      - '**/*.toml'
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
+      - '**/*.yaml'
+      - '**/*.yml'
+    options:
+      runDepsInParallel: true
+      mergeInputs: append
+  format-css:
+    command: node build/tasks/format/format-css.mjs
+    inputs:
+      - '**/*.css'
+    outputs:
+      - '**/*.css'
+  format-html:
+    command: node build/tasks/format/format-html.mjs
+    inputs:
+      - '**/*.html'
+    outputs:
+      - '**/*.html'
+  format-js:
+    command: node build/tasks/format/format-js.mjs
+    inputs:
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
+    outputs:
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
+  format-json:
+    command: node build/tasks/format/format-json.mjs
+    inputs:
+      - '**/*.json'
+      - '**/*.json5'
+      - '**/*.jsonc'
+    outputs:
+      - '**/*.json'
+      - '**/*.json5'
+      - '**/*.jsonc'
+  format-md:
+    command: node build/tasks/format/format-md.mjs
+    inputs:
+      - '**/*.md'
+    outputs:
+      - '**/*.md'
+  format-svg:
+    command: node build/tasks/format/format-svg.mjs
+    inputs:
+      - '**/*.svg'
+    outputs:
+      - '**/*.svg'
+  format-toml:
+    command: node build/tasks/format/format-toml.mjs
+    inputs:
+      - '**/*.tml'
+      - '**/*.toml'
+    outputs:
+      - '**/*.tml'
+      - '**/*.toml'
+  format-ts:
+    command: node build/tasks/format/format-ts.mjs
+    inputs:
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
+    outputs:
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
+  format-yaml:
+    command: node build/tasks/format/format-yaml.mjs
+    inputs:
+      - '**/*.yaml'
+      - '**/*.yml'
+    outputs:
+      - '**/*.yaml'
+      - '**/*.yml'
+  test-all:
+    command: moon run verify:all

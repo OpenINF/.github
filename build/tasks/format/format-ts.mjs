@@ -3,7 +3,7 @@ import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('format.ts', import.meta.url);
+echoTaskRunning('format-ts', import.meta.url);
 
 const TypeScriptObject =
   await $`bundle exec github-linguist --breakdown --json | jq '.TypeScript.files'`;
@@ -16,7 +16,7 @@ const scripts = [
 
 for await (const element of scripts) {
   try {
-    exitCode = await execute(element);
+    exitCode = await execute(`pnpm exec ${element}`);
   } catch (p) {
     exitCode = p.exitCode;
   }

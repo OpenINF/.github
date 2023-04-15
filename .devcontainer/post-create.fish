@@ -44,6 +44,11 @@ end
 
 echo 'rbenv rehash && nvm use' >> ~/.config/fish/config.fish
 
+# Install moon
+curl -fsSL https://moonrepo.dev/install/moon.sh | bash
+echo 'set -Ux fish_user_paths ~/.moon/bin $fish_user_paths' >> ~/.config/fish/config.fish
+source ~/.config/fish/config.fish
+
 # this will populate your ~/.gnupg directory with empty keyring files
 # it will create the ~/.gnupg directory if it does not already exist (expected)
 gpg --list-keys

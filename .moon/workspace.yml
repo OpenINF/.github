@@ -2,7 +2,7 @@
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
 # Require a specific version of moon while running commands, otherwise fail.
-versionConstraint: 0.25.1
+versionConstraint: 1.1.1
 
 # Extend and inherit an external configuration file. Must be a valid HTTPS URL
 # or file system path.
@@ -16,7 +16,7 @@ versionConstraint: 0.25.1
 # A map of all projects found within the workspace or a list of file
 # system globs.
 projects:
-  - 'doc/*'
+  workspace: ./
 
 # Configures the version control system to utilize within the workspace. A VCS
 # is required for determining touched (added, modified, etc) files, calculating

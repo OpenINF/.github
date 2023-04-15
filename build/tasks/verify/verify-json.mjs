@@ -3,7 +3,7 @@ import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('verify.json', import.meta.url);
+echoTaskRunning('verify-json', import.meta.url);
 
 const JSONObject =
   await $`bundle exec github-linguist --breakdown --json | jq '.JSON.files'`;
@@ -14,7 +14,7 @@ const scripts = [`eslint ${JSONFiles.join(' ')}`];
 
 for await (const element of scripts) {
   try {
-    exitCode = await execute(element);
+    exitCode = await execute(`pnpm exec ${element}`);
   } catch (p) {
     exitCode = p.exitCode;
   }

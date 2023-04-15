@@ -3,7 +3,7 @@
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('format.toml', import.meta.url);
+echoTaskRunning('format-toml', import.meta.url);
 
 // const TOMLObject =
 //   await $`bundle exec github-linguist --breakdown --json | jq '.TOML.files'`;
@@ -16,7 +16,7 @@ echoTaskRunning('format.toml', import.meta.url);
 
 // for await (const element of scripts) {
 //   try {
-//     exitCode = await execute(element);
+//     exitCode = await execute(`pnpm exec ${element}`);
 //   } catch (p) {
 //     exitCode = p.exitCode;
 //   }
@@ -25,3 +25,6 @@ echoTaskRunning('format.toml', import.meta.url);
 
 // TODO(DerekNonGeneric): Implement this task.
 process.exitCode = 0;
+
+// eslint-disable-next-line unicorn/no-process-exit
+process.exit(0);

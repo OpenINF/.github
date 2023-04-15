@@ -10,12 +10,13 @@
     "(.vscode)",
     "(doc)",
     "(lib)",
-    "(vendor)",
+    "vendor/",
     "\\.md$",
     "\\.mjs$",
     "pnpm-lock.yaml",
     "Gemfile.lock",
-    ".markdownlint.jsonc"
+    ".markdownlint.jsonc",
+    "LICENSE-*"
   ],
   "AllowedContentTypes": [],
   "PassedFiles": [],

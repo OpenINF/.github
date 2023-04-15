@@ -3,7 +3,7 @@ import { $ } from 'zx';
 
 import { echoTaskRunning } from '../util.mjs';
 
-echoTaskRunning('format.md', import.meta.url);
+echoTaskRunning('format-md', import.meta.url);
 
 const MarkdownObject =
   await $`bundle exec github-linguist --breakdown --json | jq '.Markdown.files'`;
@@ -20,9 +20,15 @@ const scripts = [
 
 for await (const element of scripts) {
   try {
-    exitCode = await execute(element);
+    exitCode = await execute(`pnpm exec ${element}`);
   } catch (p) {
     exitCode = p.exitCode;
   }
   process.exitCode = exitCode > 0 ? exitCode : 0;
 }
+
+// TODO(DerekNonGeneric): Implement this task.
+process.exitCode = 0;
+
+// eslint-disable-next-line unicorn/no-process-exit
+process.exit(0);
