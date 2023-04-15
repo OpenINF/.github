@@ -13,13 +13,13 @@ Org-level default metadata & community health files
 
 <br />
 
-_The high-level goal of `@openinf/.github` is to serve as a ✨special✨
-repository for default metadata and community health files for use across all
-projects in the [**@OpenINF**][] organization on GitHub. If a given file doesn't
-exist for a repository, the organization-wide defaults in this repository will
-be used. As is the case with any software project in continuous development,
-omissions and errors may exist, for which
-[contributions are welcome](#contributing)_.
+The `@openinf/.github` repository is a one-stop shop for default metadata and
+community health files for all [**@OpenINF**][] projects on GitHub. If a file
+does not exist for a specific project, these organization-wide defaults will be
+used. We are constantly working to improve this repository, so please feel free
+to [contribute](#contributing) if you notice any omissions or errors.
+
+Thanks!
 
 <br />
 
