@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.1)
+    addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     cgi (0.3.6)
     charlock_holmes (0.7.7)
@@ -18,8 +18,8 @@ GEM
       charlock_holmes (~> 0.7.7)
       mini_mime (~> 1.0)
       rugged (~> 1.0)
-    google-protobuf (3.22.2-aarch64-linux)
-    google-protobuf (3.22.2-x86_64-linux)
+    google-protobuf (3.22.3-aarch64-linux)
+    google-protobuf (3.22.3-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
@@ -62,9 +62,9 @@ GEM
       ffi (~> 1.0)
     rexml (3.2.5)
     rouge (4.1.0)
-    rugged (1.6.2)
+    rugged (1.6.3)
     safe_yaml (1.0.5)
-    sass-embedded (1.60.0)
+    sass-embedded (1.62.0)
       google-protobuf (~> 3.21)
       rake (>= 10.0.0)
     terminal-table (3.0.2)
