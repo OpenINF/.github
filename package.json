@@ -5,7 +5,7 @@
   "description": "Org-level default metadata & community health files",
   "packageManager": "pnpm@8.4.0",
   "engines": {
-    "node": "^16.14.0"
+    "node": "^18.0.0"
   },
   "keywords": [],
   "repository": "https://github.com/openinf/.github",
