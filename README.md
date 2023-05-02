@@ -41,11 +41,15 @@ Thanks!
 
 <br />
 
-> **Note**: While these files themselves won't appear in the file browser or Git
-> history of each repository, they will be surfaced throughout developers'
-> workflows, such as when opening a new issue or when viewing the project's
-> [Community Profile][], just as if it were committed to the repository
-> directly.[^1]
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
+  <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
+</picture><br>
+
+While these files themselves won't appear in the file browser or Git history of
+each repository, they will be surfaced throughout developers' workflows, such as
+when opening a new issue or when viewing the project's [Community Profile][],
+just as if it were committed to the repository directly.[^1]
 
 <br /><div align="center">
 
@@ -64,11 +68,16 @@ Thanks!
 
 <br />
 
-> **Warning**: We cannot create organization-wide defaults for the following
-> files as they are often unique per project. Therefore, they _must_ be added to
-> each individual repository so that they will be included when the project is
-> cloned, packaged, or downloaded. Refer to the ones contained in
-> [**@openinf/.github**][] for guidance on how these files are expected to look.
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/issue.svg">
+  <img alt="Issue" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/issue.svg">
+</picture><br>
+
+We cannot create organization-wide defaults for the following files as they are
+often unique per project. Therefore, they _must_ be added to each individual
+repository so that they will be included when the project is cloned, packaged,
+or downloaded. Refer to the ones contained in [**@openinf/.github**][] for
+guidance on how these files are expected to look.
 
 <br /><div align="center">
 
@@ -79,13 +88,19 @@ Thanks!
 | [`LICENSE.md`][] | Software License(s) | The open source software license(s) associated with a project            |
 | [`VISION.md`][]  | Project Vision      | The goal(s) and/or scope of a project                                    |
 
-</div><br />
+</div><br /><br />
 
-> **Note**: The [`VISION.md`][] file can be useful for offloading project goals
-> that should typically be specified in the root [`README.md`][] file. It may
-> optionally exist alongside it as an alternative location to even include
-> project scope as well, but should be linked to from the root [`README.md`][]
-> file in these cases.
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/tip.svg">
+  <img alt="Tip" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/tip.svg">
+</picture><br>
+    
+The [`VISION.md`][] file can be useful for offloading project goals
+that should typically be specified in the root [`README.md`][] file. It may
+optionally exist alongside it as an alternative location to even include
+project scope as well, but should be linked to from the root [`README.md`][]
+file in these cases.
+
 
 <br /><br />
 
