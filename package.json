@@ -4,9 +4,6 @@
   "version": "0.0.0-development",
   "description": "Org-level default metadata & community health files",
   "packageManager": "pnpm@8.4.0",
-  "engines": {
-    "node": "^16.14.0"
-  },
   "keywords": [],
   "repository": "https://github.com/openinf/.github",
   "license": "MIT OR Apache-2.0",
