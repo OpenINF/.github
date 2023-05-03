@@ -210,12 +210,6 @@
       "extends": ["plugin:markdown/recommended", "plugin:prettier/recommended"]
     },
     {
-      "files": [".*.t?(o)ml", "*.t?(o)ml", "**/.*.t?(o)ml", "**/*.t?(o)ml"],
-      "parser": "toml-eslint-parser",
-      "plugins": ["toml"],
-      "extends": ["plugin:toml/standard"]
-    },
-    {
       "files": [
         ".*.y?(a)ml",
         "*.y?(a)ml",
