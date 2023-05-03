@@ -37,7 +37,26 @@ Thanks!
 
 <br />
 
+### Table of Contents
+
+- [Cascading Metadata &amp; Community Health Files](#cascading-metadata-community-health-files)
+- [Local Metadata &amp; Community Health Files](#local-metadata-community-health-files)
+- [Contributing](#contributing)
+- [License](#license)
+
+<br /><br />
+
+---
+
+<br />
+
+<section id="cascading-metadata-community-health-files">
+
+<a name="cascading-metadata-community-health-files">
+
 ### Cascading&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
+
+</a>
 
 <br />
 
@@ -62,9 +81,17 @@ just as if it were committed to the repository directly.[^1]
 | [`SECURITY.md`][]                            | Security&nbsp;Policy         | Gives instructions for how to report a security vulnerability in a project                                           |
 | [`SUPPORT.md`][]                             | Support&nbsp;Resources       | Lets people know about ways to get help with a project                                                               |
 
-</div><br />
+</div></section>
+
+<br />
+
+<section id="local-metadata-community-health-files">
+
+<a name="local-metadata-community-health-files">
 
 ### Local&nbsp;Metadata&nbsp;&amp; Community&nbsp;Health&nbsp;Files
+
+</a>
 
 <br />
 
@@ -100,6 +127,8 @@ that should typically be specified in the root [`README.md`][] file. It may
 optionally exist alongside it as an alternative location to even include
 project scope as well, but should be linked to from the root [`README.md`][]
 file in these cases.
+
+</section>
 
 <br /><br />
 
