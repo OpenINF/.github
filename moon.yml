@@ -119,7 +119,7 @@ tasks:
       - '**/*.jsonc'
       - '**/*.md'
       - '**/*.svg'
-      - '.deepsource.toml'
+      - .deepsource.toml
       - '**/*.ts'
       - '**/*.cts'
       - '**/*.mts'
@@ -178,9 +178,9 @@ tasks:
   format-toml:
     command: node build/tasks/format/format-toml.mjs
     inputs:
-      - '.deepsource.toml'
+      - .deepsource.toml
     outputs:
-      - '.deepsource.toml'
+      - .deepsource.toml
   format-ts:
     command: node build/tasks/format/format-ts.mjs
     inputs:
