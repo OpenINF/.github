@@ -54,7 +54,7 @@ just as if it were committed to the repository directly.[^1]
 <br /><div align="center">
 
 | File name                                    | Title                        | Description                                                                                                          |
-| -------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| :------------------------------------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------- |
 | [`CODE_OF_CONDUCT.md`][]                     | Code&nbsp;of&nbsp;Conduct    | Defines standards for how to engage in a community                                                                   |
 | [`CONTRIBUTING.md`][]                        | Contribution&nbsp;Guidelines | Communicates how people should contribute to a project                                                               |
 | [`FUNDING.yml`][]                            | Funding                      | Displays a sponsor button per repository increasing visibility of project funding options                            |
@@ -74,7 +74,7 @@ just as if it were committed to the repository directly.[^1]
 </picture><br>
 
 We cannot create organization-wide defaults for the following files as they are
-often unique per project. Therefore, they _must_ be added to each individual
+often unique per project. Therefore, they must be added to each individual
 repository so that they will be included when the project is cloned, packaged,
 or downloaded. Refer to the ones contained in [**@openinf/.github**][] for
 guidance on how these files are expected to look.
@@ -82,13 +82,13 @@ guidance on how these files are expected to look.
 <br /><div align="center">
 
 | File name        | Title               | Description                                                              |
-| ---------------- | ------------------- | ------------------------------------------------------------------------ |
+| :--------------- | :------------------ | :----------------------------------------------------------------------- |
 | [`AUTHORS`][]    | The OpenINF Authors | Lists the code contributors of their respective project repositories[^2] |
 | [`README.md`][]  | Homepage            | Serves as a project landing page of sorts                                |
 | [`LICENSE.md`][] | Software License(s) | The open source software license(s) associated with a project            |
 | [`VISION.md`][]  | Project Vision      | The goal(s) and/or scope of a project                                    |
 
-</div><br /><br />
+</div><br />
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/tip.svg">
@@ -100,7 +100,6 @@ that should typically be specified in the root [`README.md`][] file. It may
 optionally exist alongside it as an alternative location to even include
 project scope as well, but should be linked to from the root [`README.md`][]
 file in these cases.
-
 
 <br /><br />
 
