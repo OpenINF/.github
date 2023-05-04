@@ -50,8 +50,8 @@ importers:
         specifier: 3.2.0
         version: 3.2.0
       dprint:
-        specifier: 0.36.0
-        version: 0.36.0
+        specifier: 0.36.1
+        version: 0.36.1
       editorconfig-checker:
         specifier: 5.0.1
         version: 5.0.1
@@ -2635,8 +2635,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dprint@0.36.0:
-    resolution: {integrity: sha512-41+02e7PbYNJLF4TWAWPwdCal9bcrJQaN1sCa7mco3uG3HMUee4v9jTEms9x6S93rUFFO2R5wcVUQDO9+jvFig==}
+  /dprint@0.36.1:
+    resolution: {integrity: sha512-F8TaWlieYtJc4ktqr0tjNwg/HN4wNPTU6rTq29MdoIKXi9gQmh7Ibqr0oyW1hsLpqBuAXjjwEYIos9plYkwENQ==}
     hasBin: true
     requiresBuild: true
     dependencies:
