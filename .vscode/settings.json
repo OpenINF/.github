@@ -2,9 +2,6 @@
   // See https://code.visualstudio.com/docs/getstarted/settings
   // for the documentation about the extensions.json format.
 
-  // TODO: Maybe ensure fish shell is installed on the WSL as well as container?
-  // "task.allowAutomaticTasks": "on",
-
   // Editor
   //////////////////////////////////////////////////////////////////////////////
 
@@ -13,23 +10,32 @@
   "editor.codeLens": true,
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
 
   "[json]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[json5]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[jsonc]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -38,6 +44,9 @@
   },
 
   "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -46,6 +55,9 @@
   },
 
   "[yaml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -147,15 +159,9 @@
     "json5",
     "jsonc",
     "markdown",
-    "toml",
     "typescript",
     "yaml"
   ],
 
-  // Whether the extension contributes a lint task to lint a whole workspace.
-  "eslint.lintTask.enable": true,
-
-  "eslint.workingDirectories": ["./"] /*,
-  // See: https://github.com/microsoft/vscode/issues/148903
-  "eslint.packageManager": "pnpm"     */
+  "eslint.workingDirectories": ["./"]
 }
