@@ -3,16 +3,18 @@
 !.*/**/*
 !package.json
 
+.bundle/
 .git/
-**/_site/
-**/node_modules/
-/vendor/**
+.pnpm-store/
+.moon/cache/
+
+_site/
+node_modules/
+vendor/
 
 Gemfile
 Gemfile.lock
-package-lock.json
 pnpm-lock.yaml
-yarn.lock
 
 # Use the following if your site is built via Jekyll.
 # If you don't have a CNAME file, comment the next line out.

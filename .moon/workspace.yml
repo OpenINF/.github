@@ -16,7 +16,7 @@ versionConstraint: 1.1.1
 # A map of all projects found within the workspace or a list of file
 # system globs.
 projects:
-  workspace: ./
+  workspace: .
 
 # Configures the version control system to utilize within the workspace. A VCS
 # is required for determining touched (added, modified, etc) files, calculating

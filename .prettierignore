@@ -1,21 +1,17 @@
 !.*
 !.*.*
-!**/.*
-!**/.*.*
-!.**/**/*
-!.**/**.*.*
-!.**/.*/*
-!.**/.*.*.*
+!.*/**/*
+!package.json
 
+.bundle/
 .git/
-**/_site/
-**/node_modules/
-/vendor/**
-package.json
+.pnpm-store/
+.moon/cache/
+
+_site/
+node_modules/
+vendor/
 
 Gemfile
 Gemfile.lock
-package.json
-package-lock.json
 pnpm-lock.yaml
-yarn.lock

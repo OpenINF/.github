@@ -1,7 +1,17 @@
 {
-  "includes": [".*.t?(o)ml", "*.t?(o)ml", "**/.*.t?(o)ml", "**/*.t?(o)ml"],
+  "includes": [
+    "**/**.json?(5|c)",
+    "**.json?(5|c)",
+    ".*.json?(5|c)",
+    "OWNERS",
+    ".*.t?(o)ml",
+    "*.t?(o)ml",
+    "**/.*.t?(o)ml",
+    "**/*.t?(o)ml"
+  ],
   "excludes": [],
   "plugins": [
+    "https://plugins.dprint.dev/json-0.17.2.wasm",
     "https://plugins.dprint.dev/toml-0.5.4.wasm"
   ]
 }

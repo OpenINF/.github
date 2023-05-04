@@ -157,12 +157,10 @@ tasks:
     command: node build/tasks/format/format-json.mjs
     inputs:
       - '**/*.json'
-      - '**/*.json5'
-      - '**/*.jsonc'
+      - OWNERS
     outputs:
       - '**/*.json'
-      - '**/*.json5'
-      - '**/*.jsonc'
+      - OWNERS
   format-md:
     command: node build/tasks/format/format-md.mjs
     inputs:

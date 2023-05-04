@@ -10,7 +10,7 @@ const JSONObject =
 const JSONFiles = JSON.parse(JSONObject.stdout);
 
 let exitCode = 0;
-const scripts = [`eslint ${JSONFiles.join(' ')}`];
+const scripts = [`dprint check ${JSONFiles.join(' ')}`];
 
 for await (const element of scripts) {
   try {
