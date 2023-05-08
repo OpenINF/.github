@@ -47,6 +47,11 @@ echo 'rbenv rehash && nvm use' >> ~/.config/fish/config.fish
 # Install moon
 curl -fsSL https://moonrepo.dev/install/moon.sh | bash >> /dev/null
 echo 'set -Ux fish_user_paths ~/.moon/bin $fish_user_paths' >> ~/.config/fish/config.fish
+
+# Install dprint
+curl -fsSL https://dprint.dev/install.sh | sh >> /dev/null
+echo 'set -Ux fish_user_paths ~/.dprint/bin/dprint' >> ~/.config/fish/config.fish
+
 source ~/.config/fish/config.fish
 
 # this will populate your ~/.gnupg directory with empty keyring files
