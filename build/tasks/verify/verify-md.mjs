@@ -11,8 +11,8 @@ const MarkdownFiles = JSON.parse(MarkdownObject.stdout);
 
 let exitCode = 0;
 const scripts = [
-  `eslint ${MarkdownFiles.join(' ')}`,
-  'prettier -c **/*{.*.md,.md}', // style-check
+  `eslint ${MarkdownFiles.join(' ')}`, // code-block style-check
+  `prettier --check ${MarkdownFiles.join(' ')}`, // style-check
   // validate Markdown
   'markdownlint-cli2 "**/**.md" "#node_modules" "#vendor"',
   'remark -qf .',
