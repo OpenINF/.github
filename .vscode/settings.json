@@ -40,6 +40,9 @@
   },
 
   "[toml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.dprint": true
+    },
     "editor.defaultFormatter": "dprint.dprint"
   },
 
@@ -51,6 +54,9 @@
   },
 
   "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -140,6 +146,9 @@
       "strikethrough": false
     }
   ],
+
+  // Dprint
+  "dprint.path": "~/.dprint/bin/dprint",
 
   // EditorConfig (https://editorconfig.org/)
   /////////////////////////////////////////////
