@@ -121,7 +121,7 @@ guidance on how these files are expected to look.
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/tip.svg">
   <img alt="Tip" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/tip.svg">
 </picture><br>
-    
+
 The [`VISION.md`][] file can be useful for offloading project goals
 that should typically be specified in the root [`README.md`][] file. It may
 optionally exist alongside it as an alternative location to even include
@@ -175,6 +175,7 @@ us.
 <br /><br />
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
+  <!-- markdownlint-disable-next-line line-length -->
   <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/assets/img/svg/logo.svg?sanitize=true" />
 </a>
 
