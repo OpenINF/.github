@@ -86,8 +86,8 @@ importers:
         specifier: 6.1.1
         version: 6.1.1(eslint@8.40.0)
       eslint-plugin-regexp:
-        specifier: 1.14.0
-        version: 1.14.0(eslint@8.40.0)
+        specifier: 1.15.0
+        version: 1.15.0(eslint@8.40.0)
       eslint-plugin-simple-import-sort:
         specifier: 10.0.0
         version: 10.0.0(eslint@8.40.0)
@@ -2993,8 +2993,8 @@ packages:
       eslint: 8.40.0
     dev: true
 
-  /eslint-plugin-regexp@1.14.0(eslint@8.40.0):
-    resolution: {integrity: sha512-5+bBSsRTTtkSf8+/iNSjiOW6qbjAdGyqv88HxPaBNFKxROK+UAdOGDl5Jr+csV5wW2BuOOvaG82zsvTriQBRFA==}
+  /eslint-plugin-regexp@1.15.0(eslint@8.40.0):
+    resolution: {integrity: sha512-YEtQPfdudafU7RBIFci81R/Q1yErm0mVh3BkGnXD2Dk8DLwTFdc2ITYH1wCnHKim2gnHfPFgrkh+b2ozyyU7ag==}
     engines: {node: ^12 || >=14}
     peerDependencies:
       eslint: '>=6.0.0'
