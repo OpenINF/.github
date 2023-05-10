@@ -11,7 +11,8 @@ tutorial resources.
 channel on the _matrix.org_ network. It’s a synchronous chat channel for
 lightweight communication. Good uses of it are for asking questions, casual
 conversation, collaboration, and quick exchanges. Be sure to follow our [Code of
-Conduct][coc].
+Conduct][coc]. The room is end-to-end encrypted and you will need to first be
+verified before messages can be seen (this is performed by in-room admins).
 
 **[@OpenINF][twitter-account] on Twitter:** The OpenINF support account on
 Twitter. <abbr title="Direct Messages">DMs</abbr> (Direct Messages) are open. Be
