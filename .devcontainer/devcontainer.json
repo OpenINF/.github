@@ -1,6 +1,6 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options,
-// see documentation tentatively (until migrated) located at the following URL:
-// https://github.com/openinf/openinf.github.io/tree/live/.devcontainer/library-scripts/docs
+// see documentation located at the following URL:
+// https://github.com/OpenINF/openinf-docker-fish/tree/main/library-scripts/docs
 {
   "name": "Jekyll (OpenINF Community)",
   "build": {
