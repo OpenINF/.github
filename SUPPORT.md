@@ -13,6 +13,7 @@ lightweight communication. Good uses of it are for asking questions, casual
 conversation, collaboration, and quick exchanges. Be sure to follow our [Code of
 Conduct][coc]. The room is end-to-end encrypted and you will need to first be
 verified before messages can be seen (this is performed by in-room admins).
+Invitation to the space would have to happen before room-verification can occur.
 
 **[@OpenINF][twitter-account] on Twitter:** The OpenINF support account on
 Twitter. <abbr title="Direct Messages">DMs</abbr> (Direct Messages) are open. Be
