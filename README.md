@@ -61,8 +61,8 @@ Thanks!
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
-  <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/light-theme/info.svg">
+  <img alt="Info" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/info.svg">
 </picture><br>
 
 While these files themselves won't appear in the file browser or Git history of
@@ -96,8 +96,8 @@ just as if it were committed to the repository directly.[^1]
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/issue.svg">
-  <img alt="Issue" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/issue.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/light-theme/issue.svg">
+  <img alt="Issue" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/issue.svg">
 </picture><br>
 
 We cannot create organization-wide defaults for the following files as they are
@@ -118,8 +118,8 @@ guidance on how these files are expected to look.
 </div><br />
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/tip.svg">
-  <img alt="Tip" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/tip.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/light-theme/tip.svg">
+  <img alt="Tip" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/tip.svg">
 </picture><br>
 
 The [`VISION.md`][] file can be useful for offloading project goals
