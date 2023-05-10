@@ -148,7 +148,7 @@
   ],
 
   // Dprint
-  "dprint.path": "~/.dprint/bin/dprint",
+  // "dprint.path": "~/.dprint/bin/dprint",
 
   // EditorConfig (https://editorconfig.org/)
   /////////////////////////////////////////////
