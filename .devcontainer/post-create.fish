@@ -2,7 +2,7 @@
 
 # If there's a .ruby-version, then run `rbenv install`.
 if test -e .ruby-version
-    # rbenv install --verbose
+    rbenv install --verbose
 end
 
 echo 'set -Ux fish_user_paths ~/.rbenv/shims/ $fish_user_paths' >> ~/.config/fish/config.fish
