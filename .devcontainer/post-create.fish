@@ -2,7 +2,7 @@
 
 # If there's a .ruby-version, then run `rbenv install`.
 if test -e .ruby-version
-    rbenv install --verbose
+    # rbenv install --verbose
 end
 
 echo 'set -Ux fish_user_paths ~/.rbenv/shims/ $fish_user_paths' >> ~/.config/fish/config.fish
@@ -44,13 +44,16 @@ end
 
 echo 'rbenv rehash && nvm use' >> ~/.config/fish/config.fish
 
+# Installs the moon and dprint tools, and it adds the tools to the user's $PATH.
+# It makes the tools available to the user when they open a new terminal window.
+
 # Install moon
 curl -fsSL https://moonrepo.dev/install/moon.sh | bash >> /dev/null
-echo 'set -Ux fish_user_paths ~/.moon/bin $fish_user_paths' >> ~/.config/fish/config.fish
+echo 'set -Ux fish_user_paths $HOME/.moon/bin $fish_user_paths' >> ~/.config/fish/config.fish
 
 # Install dprint
 curl -fsSL https://dprint.dev/install.sh | sh >> /dev/null
-echo 'set -Ux fish_user_paths ~/.dprint/bin/dprint' >> ~/.config/fish/config.fish
+echo 'set -Ux fish_user_paths $HOME/.dprint/bin $fish_user_paths' >> ~/.config/fish/config.fish
 
 source ~/.config/fish/config.fish
 
