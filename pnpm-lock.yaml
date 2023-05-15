@@ -1,276 +1,273 @@
 lockfileVersion: '6.0'
 
-importers:
-
-  .:
-    devDependencies:
-      '@babel/core':
-        specifier: 7.21.8
-        version: 7.21.8
-      '@babel/eslint-parser':
-        specifier: 7.21.8
-        version: 7.21.8(@babel/core@7.21.8)(eslint@8.40.0)
-      '@babel/plugin-syntax-jsx':
-        specifier: 7.21.4
-        version: 7.21.4(@babel/core@7.21.8)
-      '@babel/plugin-syntax-top-level-await':
-        specifier: 7.14.5
-        version: 7.14.5(@babel/core@7.21.8)
-      '@babel/plugin-transform-modules-commonjs':
-        specifier: 7.21.5
-        version: 7.21.5(@babel/core@7.21.8)
-      '@babel/preset-env':
-        specifier: 7.21.5
-        version: 7.21.5(@babel/core@7.21.8)
-      '@iktakahiro/markdown-it-katex':
-        specifier: 4.0.1
-        version: 4.0.1
-      '@moonrepo/cli':
-        specifier: 1.6.0
-        version: 1.6.0
-      '@openinf/util-text':
-        specifier: 1.1.2
-        version: 1.1.2
-      '@types/markdown-it':
-        specifier: 12.2.3
-        version: 12.2.3
-      '@types/node':
-        specifier: 18.x.x
-        version: 18.0.0
-      '@typescript-eslint/eslint-plugin':
-        specifier: 5.59.5
-        version: 5.59.5(@typescript-eslint/parser@5.59.5)(eslint@8.40.0)(typescript@5.0.4)
-      '@typescript-eslint/parser':
-        specifier: 5.59.5
-        version: 5.59.5(eslint@8.40.0)(typescript@5.0.4)
-      '@yarnpkg/shell':
-        specifier: 4.0.0-rc.43
-        version: 4.0.0-rc.43(typanion@3.12.1)
-      dictionary-en:
-        specifier: 3.2.0
-        version: 3.2.0
-      dprint:
-        specifier: 0.36.1
-        version: 0.36.1
-      editorconfig-checker:
-        specifier: 5.0.1
-        version: 5.0.1
-      eslint:
-        specifier: 8.40.0
-        version: 8.40.0
-      eslint-config-prettier:
-        specifier: 8.8.0
-        version: 8.8.0(eslint@8.40.0)
-      eslint-import-resolver-node:
-        specifier: 0.3.7
-        version: 0.3.7
-      eslint-import-resolver-typescript:
-        specifier: 3.5.5
-        version: 3.5.5(@typescript-eslint/parser@5.59.5)(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.27.5)(eslint@8.40.0)
-      eslint-plugin-import:
-        specifier: 2.27.5
-        version: 2.27.5(@typescript-eslint/parser@5.59.5)(eslint-import-resolver-typescript@3.5.5)(eslint@8.40.0)
-      eslint-plugin-json-schema-validator:
-        specifier: 4.5.0
-        version: 4.5.0(eslint@8.40.0)
-      eslint-plugin-jsonc:
-        specifier: 2.8.0
-        version: 2.8.0(eslint@8.40.0)
-      eslint-plugin-markdown:
-        specifier: 3.0.0
-        version: 3.0.0(eslint@8.40.0)
-      eslint-plugin-prettier:
-        specifier: 4.2.1
-        version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.40.0)(prettier@2.8.8)
-      eslint-plugin-promise:
-        specifier: 6.1.1
-        version: 6.1.1(eslint@8.40.0)
-      eslint-plugin-regexp:
-        specifier: 1.15.0
-        version: 1.15.0(eslint@8.40.0)
-      eslint-plugin-simple-import-sort:
-        specifier: 10.0.0
-        version: 10.0.0(eslint@8.40.0)
-      eslint-plugin-unicorn:
-        specifier: 47.0.0
-        version: 47.0.0(eslint@8.40.0)
-      eslint-plugin-wix-editor:
-        specifier: 3.3.0
-        version: 3.3.0
-      eslint-plugin-yml:
-        specifier: 1.7.0
-        version: 1.7.0(eslint@8.40.0)
-      markdown-it:
-        specifier: 13.0.1
-        version: 13.0.1
-      markdown-it-abbr:
-        specifier: 1.0.4
-        version: 1.0.4
-      markdown-it-anchor:
-        specifier: 8.6.7
-        version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
-      markdown-it-footnote:
-        specifier: 3.0.3
-        version: 3.0.3
-      markdown-it-sub:
-        specifier: 1.0.0
-        version: 1.0.0
-      markdown-it-sup:
-        specifier: 1.0.0
-        version: 1.0.0
-      markdown-it-task-lists:
-        specifier: 2.1.1
-        version: 2.1.1
-      markdown-it-toc-done-right:
-        specifier: 4.2.0
-        version: 4.2.0
-      markdownlint-cli2:
-        specifier: 0.7.1
-        version: 0.7.1
-      markdownlint-cli2-formatter-default:
-        specifier: 0.0.4
-        version: 0.0.4(markdownlint-cli2@0.7.1)
-      nps:
-        specifier: 5.10.0
-        version: 5.10.0
-      prettier:
-        specifier: 2.8.8
-        version: 2.8.8
-      remark:
-        specifier: 14.0.2
-        version: 14.0.2
-      remark-cli:
-        specifier: 11.0.0
-        version: 11.0.0
-      remark-directive:
-        specifier: 2.0.1
-        version: 2.0.1
-      remark-footnotes:
-        specifier: 4.0.1
-        version: 4.0.1
-      remark-frontmatter:
-        specifier: 4.0.1
-        version: 4.0.1
-      remark-gfm:
-        specifier: 3.0.1
-        version: 3.0.1
-      remark-github:
-        specifier: 11.2.4
-        version: 11.2.4
-      remark-heading-id:
-        specifier: 1.0.0
-        version: 1.0.0
-      remark-hint:
-        specifier: 1.0.10
-        version: 1.0.10
-      remark-html:
-        specifier: 15.0.2
-        version: 15.0.2
-      remark-lint:
-        specifier: 9.1.1
-        version: 9.1.1
-      remark-lint-blockquote-indentation:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-lint-checkbox-character-style:
-        specifier: 4.1.1
-        version: 4.1.1
-      remark-lint-checkbox-content-indent:
-        specifier: 4.1.1
-        version: 4.1.1
-      remark-lint-code-block-style:
-        specifier: 3.1.0
-        version: 3.1.0
-      remark-lint-definition-spacing:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-lint-fenced-code-flag:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-lint-first-heading-level:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-lint-maximum-line-length:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-no-duplicate-headings-in-section:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-lint-no-file-name-irregular-characters:
-        specifier: 2.1.1
-        version: 2.1.1
-      remark-lint-no-file-name-mixed-case:
-        specifier: 2.1.1
-        version: 2.1.1
-      remark-lint-no-heading-punctuation:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-lint-no-html:
-        specifier: 3.1.1
-        version: 3.1.1
-      remark-preset-lint-consistent:
-        specifier: 5.1.1
-        version: 5.1.1
-      remark-preset-lint-markdown-style-guide:
-        specifier: 5.1.2
-        version: 5.1.2
-      remark-preset-lint-recommended:
-        specifier: 6.1.2
-        version: 6.1.2
-      remark-preset-prettier:
-        specifier: 2.0.1
-        version: 2.0.1(prettier@2.8.8)
-      remark-retext:
-        specifier: 5.0.1
-        version: 5.0.1
-      remark-validate-links:
-        specifier: 12.1.1
-        version: 12.1.1
-      retext-english:
-        specifier: 4.1.0
-        version: 4.1.0
-      retext-equality:
-        specifier: 6.7.0
-        version: 6.7.0
-      retext-passive:
-        specifier: 4.2.0
-        version: 4.2.0
-      retext-profanities:
-        specifier: 7.2.2
-        version: 7.2.2
-      retext-readability:
-        specifier: 7.2.0
-        version: 7.2.0
-      retext-repeated-words:
-        specifier: 4.2.0
-        version: 4.2.0
-      retext-sentence-spacing:
-        specifier: 5.2.0
-        version: 5.2.0
-      retext-simplify:
-        specifier: 7.2.0
-        version: 7.2.0
-      retext-spell:
-        specifier: 5.3.0
-        version: 5.3.0
-      retext-syntax-mentions:
-        specifier: 3.1.0
-        version: 3.1.0
-      retext-syntax-urls:
-        specifier: 3.1.2
-        version: 3.1.2
-      strip-comments:
-        specifier: 2.0.1
-        version: 2.0.1
-      typescript:
-        specifier: 5.0.4
-        version: 5.0.4
-      unified:
-        specifier: 10.1.2
-        version: 10.1.2
-      zx:
-        specifier: 7.2.2
-        version: 7.2.2
+devDependencies:
+  '@babel/core':
+    specifier: 7.21.8
+    version: 7.21.8
+  '@babel/eslint-parser':
+    specifier: 7.21.8
+    version: 7.21.8(@babel/core@7.21.8)(eslint@8.40.0)
+  '@babel/plugin-syntax-jsx':
+    specifier: 7.21.4
+    version: 7.21.4(@babel/core@7.21.8)
+  '@babel/plugin-syntax-top-level-await':
+    specifier: 7.14.5
+    version: 7.14.5(@babel/core@7.21.8)
+  '@babel/plugin-transform-modules-commonjs':
+    specifier: 7.21.5
+    version: 7.21.5(@babel/core@7.21.8)
+  '@babel/preset-env':
+    specifier: 7.21.5
+    version: 7.21.5(@babel/core@7.21.8)
+  '@iktakahiro/markdown-it-katex':
+    specifier: 4.0.1
+    version: 4.0.1
+  '@moonrepo/cli':
+    specifier: 1.6.0
+    version: 1.6.0
+  '@openinf/util-text':
+    specifier: 1.1.2
+    version: 1.1.2
+  '@types/markdown-it':
+    specifier: 12.2.3
+    version: 12.2.3
+  '@types/node':
+    specifier: 18.x.x
+    version: 18.0.0
+  '@typescript-eslint/eslint-plugin':
+    specifier: 5.59.5
+    version: 5.59.5(@typescript-eslint/parser@5.59.5)(eslint@8.40.0)(typescript@5.0.4)
+  '@typescript-eslint/parser':
+    specifier: 5.59.5
+    version: 5.59.5(eslint@8.40.0)(typescript@5.0.4)
+  '@yarnpkg/shell':
+    specifier: 4.0.0-rc.43
+    version: 4.0.0-rc.43(typanion@3.12.1)
+  dictionary-en:
+    specifier: 3.2.0
+    version: 3.2.0
+  dprint:
+    specifier: 0.36.1
+    version: 0.36.1
+  editorconfig-checker:
+    specifier: 5.0.1
+    version: 5.0.1
+  eslint:
+    specifier: 8.40.0
+    version: 8.40.0
+  eslint-config-prettier:
+    specifier: 8.8.0
+    version: 8.8.0(eslint@8.40.0)
+  eslint-import-resolver-node:
+    specifier: 0.3.7
+    version: 0.3.7
+  eslint-import-resolver-typescript:
+    specifier: 3.5.5
+    version: 3.5.5(@typescript-eslint/parser@5.59.5)(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.27.5)(eslint@8.40.0)
+  eslint-plugin-import:
+    specifier: 2.27.5
+    version: 2.27.5(@typescript-eslint/parser@5.59.5)(eslint-import-resolver-typescript@3.5.5)(eslint@8.40.0)
+  eslint-plugin-json-schema-validator:
+    specifier: 4.5.0
+    version: 4.5.0(eslint@8.40.0)
+  eslint-plugin-jsonc:
+    specifier: 2.8.0
+    version: 2.8.0(eslint@8.40.0)
+  eslint-plugin-markdown:
+    specifier: 3.0.0
+    version: 3.0.0(eslint@8.40.0)
+  eslint-plugin-prettier:
+    specifier: 4.2.1
+    version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.40.0)(prettier@2.8.8)
+  eslint-plugin-promise:
+    specifier: 6.1.1
+    version: 6.1.1(eslint@8.40.0)
+  eslint-plugin-regexp:
+    specifier: 1.15.0
+    version: 1.15.0(eslint@8.40.0)
+  eslint-plugin-simple-import-sort:
+    specifier: 10.0.0
+    version: 10.0.0(eslint@8.40.0)
+  eslint-plugin-unicorn:
+    specifier: 47.0.0
+    version: 47.0.0(eslint@8.40.0)
+  eslint-plugin-wix-editor:
+    specifier: 3.3.0
+    version: 3.3.0
+  eslint-plugin-yml:
+    specifier: 1.7.0
+    version: 1.7.0(eslint@8.40.0)
+  markdown-it:
+    specifier: 13.0.1
+    version: 13.0.1
+  markdown-it-abbr:
+    specifier: 1.0.4
+    version: 1.0.4
+  markdown-it-anchor:
+    specifier: 8.6.7
+    version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
+  markdown-it-footnote:
+    specifier: 3.0.3
+    version: 3.0.3
+  markdown-it-sub:
+    specifier: 1.0.0
+    version: 1.0.0
+  markdown-it-sup:
+    specifier: 1.0.0
+    version: 1.0.0
+  markdown-it-task-lists:
+    specifier: 2.1.1
+    version: 2.1.1
+  markdown-it-toc-done-right:
+    specifier: 4.2.0
+    version: 4.2.0
+  markdownlint-cli2:
+    specifier: 0.7.1
+    version: 0.7.1
+  markdownlint-cli2-formatter-default:
+    specifier: 0.0.4
+    version: 0.0.4(markdownlint-cli2@0.7.1)
+  nps:
+    specifier: 5.10.0
+    version: 5.10.0
+  prettier:
+    specifier: 2.8.8
+    version: 2.8.8
+  remark:
+    specifier: 14.0.2
+    version: 14.0.2
+  remark-cli:
+    specifier: 11.0.0
+    version: 11.0.0
+  remark-directive:
+    specifier: 2.0.1
+    version: 2.0.1
+  remark-footnotes:
+    specifier: 4.0.1
+    version: 4.0.1
+  remark-frontmatter:
+    specifier: 4.0.1
+    version: 4.0.1
+  remark-gfm:
+    specifier: 3.0.1
+    version: 3.0.1
+  remark-github:
+    specifier: 11.2.4
+    version: 11.2.4
+  remark-heading-id:
+    specifier: 1.0.0
+    version: 1.0.0
+  remark-hint:
+    specifier: 1.0.10
+    version: 1.0.10
+  remark-html:
+    specifier: 15.0.2
+    version: 15.0.2
+  remark-lint:
+    specifier: 9.1.1
+    version: 9.1.1
+  remark-lint-blockquote-indentation:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-lint-checkbox-character-style:
+    specifier: 4.1.1
+    version: 4.1.1
+  remark-lint-checkbox-content-indent:
+    specifier: 4.1.1
+    version: 4.1.1
+  remark-lint-code-block-style:
+    specifier: 3.1.0
+    version: 3.1.0
+  remark-lint-definition-spacing:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-lint-fenced-code-flag:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-lint-first-heading-level:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-lint-maximum-line-length:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-no-duplicate-headings-in-section:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-lint-no-file-name-irregular-characters:
+    specifier: 2.1.1
+    version: 2.1.1
+  remark-lint-no-file-name-mixed-case:
+    specifier: 2.1.1
+    version: 2.1.1
+  remark-lint-no-heading-punctuation:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-lint-no-html:
+    specifier: 3.1.1
+    version: 3.1.1
+  remark-preset-lint-consistent:
+    specifier: 5.1.1
+    version: 5.1.1
+  remark-preset-lint-markdown-style-guide:
+    specifier: 5.1.2
+    version: 5.1.2
+  remark-preset-lint-recommended:
+    specifier: 6.1.2
+    version: 6.1.2
+  remark-preset-prettier:
+    specifier: 2.0.1
+    version: 2.0.1(prettier@2.8.8)
+  remark-retext:
+    specifier: 5.0.1
+    version: 5.0.1
+  remark-validate-links:
+    specifier: 12.1.1
+    version: 12.1.1
+  retext-english:
+    specifier: 4.1.0
+    version: 4.1.0
+  retext-equality:
+    specifier: 6.7.0
+    version: 6.7.0
+  retext-passive:
+    specifier: 4.2.0
+    version: 4.2.0
+  retext-profanities:
+    specifier: 7.2.2
+    version: 7.2.2
+  retext-readability:
+    specifier: 7.2.0
+    version: 7.2.0
+  retext-repeated-words:
+    specifier: 4.2.0
+    version: 4.2.0
+  retext-sentence-spacing:
+    specifier: 5.2.0
+    version: 5.2.0
+  retext-simplify:
+    specifier: 7.2.0
+    version: 7.2.0
+  retext-spell:
+    specifier: 5.3.0
+    version: 5.3.0
+  retext-syntax-mentions:
+    specifier: 3.1.0
+    version: 3.1.0
+  retext-syntax-urls:
+    specifier: 3.1.2
+    version: 3.1.2
+  strip-comments:
+    specifier: 2.0.1
+    version: 2.0.1
+  typescript:
+    specifier: 5.0.4
+    version: 5.0.4
+  unified:
+    specifier: 10.1.2
+    version: 10.1.2
+  zx:
+    specifier: 7.2.2
+    version: 7.2.2
 
 packages:
 
