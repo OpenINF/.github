@@ -140,8 +140,8 @@ importers:
         specifier: 2.8.8
         version: 2.8.8
       remark:
-        specifier: 14.0.2
-        version: 14.0.2
+        specifier: 14.0.3
+        version: 14.0.3
       remark-cli:
         specifier: 11.0.0
         version: 11.0.0
@@ -6246,7 +6246,7 @@ packages:
     resolution: {integrity: sha512-8JEWwArXquRq1/In4Ftz7gSG9Scwb1ijT2/dEuBETW9omqhmMRxcfjZ3iKqrak3BnCJeZSXCdWEmPhFKC8+RUQ==}
     hasBin: true
     dependencies:
-      remark: 14.0.2
+      remark: 14.0.3
       unified-args: 10.0.0
     transitivePeerDependencies:
       - supports-color
@@ -7071,8 +7071,8 @@ packages:
       - supports-color
     dev: true
 
-  /remark@14.0.2:
-    resolution: {integrity: sha512-A3ARm2V4BgiRXaUo5K0dRvJ1lbogrbXnhkJRmD0yw092/Yl0kOCZt1k9ZeElEwkZsWGsMumz6qL5MfNJH9nOBA==}
+  /remark@14.0.3:
+    resolution: {integrity: sha512-bfmJW1dmR2LvaMJuAnE88pZP9DktIFYXazkTfOIKZzi3Knk9lT0roItIA24ydOucI3bV/g/tXBA6hzqq3FV9Ew==}
     dependencies:
       '@types/mdast': 3.0.11
       remark-parse: 10.0.1

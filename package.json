@@ -63,7 +63,7 @@
     "markdownlint-cli2-formatter-default": "0.0.4",
     "nps": "5.10.0",
     "prettier": "2.8.8",
-    "remark": "14.0.2",
+    "remark": "14.0.3",
     "remark-cli": "11.0.0",
     "remark-directive": "2.0.1",
     "remark-footnotes": "4.0.1",
