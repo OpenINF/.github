@@ -34,6 +34,40 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections_dir: collections
+
+collections:
+  adrs:
+    sort_by: number
+    output: true
+    permalink: /:collection/:name
+  pages:
+    output: true
+    permalink: /:name
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "adrs"
+    values:
+      layout: "adr"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
