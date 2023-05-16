@@ -170,8 +170,8 @@ importers:
         specifier: 15.0.2
         version: 15.0.2
       remark-lint:
-        specifier: 9.1.1
-        version: 9.1.1
+        specifier: 9.1.2
+        version: 9.1.2
       remark-lint-blockquote-indentation:
         specifier: 3.1.2
         version: 3.1.2
@@ -6896,8 +6896,8 @@ packages:
       unist-util-visit: 4.1.2
     dev: true
 
-  /remark-lint@9.1.1:
-    resolution: {integrity: sha512-zhe6twuqgkx/9KgZyNyaO0cceA4jQuJcyzMOBC+JZiAzMN6mFUmcssWZyY30ko8ut9vQDMX/pyQnolGn+Fg/Tw==}
+  /remark-lint@9.1.2:
+    resolution: {integrity: sha512-m9e/aPlh7tsvfJfj8tPxrQzD6oEdb9Foko+Ya/6OwUP9EoGMfehv1Qtv26W1DoH58Wn8rT8CD+KuprTWscMmIA==}
     dependencies:
       '@types/mdast': 3.0.11
       remark-message-control: 7.1.1
@@ -6932,7 +6932,7 @@ packages:
     resolution: {integrity: sha512-DZQfomiVi/1x7NRByWrOiIC+olEGa1PpyykKrowvYp5qr/Seq60FqU7OjBJxtcOLzgnQcu9Y2JXdHxFi4AAPXQ==}
     dependencies:
       '@types/mdast': 3.0.11
-      remark-lint: 9.1.1
+      remark-lint: 9.1.2
       remark-lint-blockquote-indentation: 3.1.2
       remark-lint-checkbox-character-style: 4.1.2
       remark-lint-code-block-style: 3.1.0
@@ -6954,7 +6954,7 @@ packages:
     resolution: {integrity: sha512-MIAhnz0wDOq/MqLucSaAPquKGFE2I5SxqRjgWT+ZGK7TmqTxrro53e11/Pc19xPX4evmzI5CZdvaRnIoxP3ysQ==}
     dependencies:
       '@types/mdast': 3.0.11
-      remark-lint: 9.1.1
+      remark-lint: 9.1.2
       remark-lint-blockquote-indentation: 3.1.2
       remark-lint-code-block-style: 3.1.0
       remark-lint-definition-case: 3.1.1
@@ -7007,7 +7007,7 @@ packages:
     resolution: {integrity: sha512-x9kWufNY8PNAhY4fsl+KD3atgQdo4imP3GDAQYbQ6ylWVyX13suPRLkqnupW0ODRynfUg8ZRt8pVX0wMHwgPAg==}
     dependencies:
       '@types/mdast': 3.0.11
-      remark-lint: 9.1.1
+      remark-lint: 9.1.2
       remark-lint-final-newline: 2.1.1
       remark-lint-hard-break-spaces: 3.1.1
       remark-lint-list-item-bullet-indent: 4.1.1
