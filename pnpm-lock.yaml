@@ -176,8 +176,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       remark-lint-checkbox-character-style:
-        specifier: 4.1.1
-        version: 4.1.1
+        specifier: 4.1.2
+        version: 4.1.2
       remark-lint-checkbox-content-indent:
         specifier: 4.1.1
         version: 4.1.1
@@ -6337,8 +6337,8 @@ packages:
       unist-util-visit: 4.1.2
     dev: true
 
-  /remark-lint-checkbox-character-style@4.1.1:
-    resolution: {integrity: sha512-KPSW3wfHfB8m9hzrtHiBHCTUIsOPX5nZR7VM+2pMjwqnhI6Mp94DKprkNo1ekNZALNeoZIDWZUSYxSiiwFfmVQ==}
+  /remark-lint-checkbox-character-style@4.1.2:
+    resolution: {integrity: sha512-5ITz+1cCuJ3Jv/Q7rKgDEucCOnIgjWDnSHPJA1tb4TI/D316h+ALbDhZIpP8gyfAm6sBAh3Pwz9XZJN2uJB5UQ==}
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
@@ -6934,7 +6934,7 @@ packages:
       '@types/mdast': 3.0.11
       remark-lint: 9.1.1
       remark-lint-blockquote-indentation: 3.1.1
-      remark-lint-checkbox-character-style: 4.1.1
+      remark-lint-checkbox-character-style: 4.1.2
       remark-lint-code-block-style: 3.1.0
       remark-lint-emphasis-marker: 3.1.1
       remark-lint-fenced-code-marker: 3.1.1
