@@ -1,0 +1,13 @@
+version = 0.1
+
+[[task]]
+name = 'build'
+run = 'nps build'
+
+[[task]]
+name = 'start'
+run = 'nps'
+
+[[task]]
+name = 'test'
+run = 'nps test'

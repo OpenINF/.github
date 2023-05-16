@@ -60,6 +60,9 @@ curl -sLO http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1
 dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 rm libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 
+# Globally-install Chomp CLI
+pnpm add -g chomp
+
 echo 'rbenv rehash && nvm use' >> ~/.config/fish/config.fish
 
 # Installs the moon and dprint tools, and it adds the tools to the user's $PATH.
