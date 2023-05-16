@@ -173,8 +173,8 @@ importers:
         specifier: 9.1.1
         version: 9.1.1
       remark-lint-blockquote-indentation:
-        specifier: 3.1.1
-        version: 3.1.1
+        specifier: 3.1.2
+        version: 3.1.2
       remark-lint-checkbox-character-style:
         specifier: 4.1.2
         version: 4.1.2
@@ -6325,8 +6325,8 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remark-lint-blockquote-indentation@3.1.1:
-    resolution: {integrity: sha512-u9cjedM6zcK8vRicis5n/xeOSDIC3FGBCKc3K9pqw+nNrOjY85FwxDQKZZ/kx7rmkdRZEhgyHak+wzPBllcxBQ==}
+  /remark-lint-blockquote-indentation@3.1.2:
+    resolution: {integrity: sha512-5DOrFsZd5dXqA4p/VZvWSrqIWNFbBXjX7IV/FkVkxlNhNF/0FMf/4v8x1I2W3mzaZ7yDsWS/egpZnmligq1ckQ==}
     dependencies:
       '@types/mdast': 3.0.11
       pluralize: 8.0.0
@@ -6933,7 +6933,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       remark-lint: 9.1.1
-      remark-lint-blockquote-indentation: 3.1.1
+      remark-lint-blockquote-indentation: 3.1.2
       remark-lint-checkbox-character-style: 4.1.2
       remark-lint-code-block-style: 3.1.0
       remark-lint-emphasis-marker: 3.1.1
@@ -6955,7 +6955,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       remark-lint: 9.1.1
-      remark-lint-blockquote-indentation: 3.1.1
+      remark-lint-blockquote-indentation: 3.1.2
       remark-lint-code-block-style: 3.1.0
       remark-lint-definition-case: 3.1.1
       remark-lint-definition-spacing: 3.1.1
