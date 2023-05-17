@@ -63,6 +63,9 @@ rm libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 # Globally-install Chomp CLI
 pnpm add -g chomp
 
+# Globally-install Shopify CLI & theme
+pnpm add -g @shopify/cli@pre @shopify/theme@pre
+
 echo 'rbenv rehash && nvm use' >> ~/.config/fish/config.fish
 
 # Installs the moon and dprint tools, and it adds the tools to the user's $PATH.
