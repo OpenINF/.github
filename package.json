@@ -27,6 +27,7 @@
     "@iktakahiro/markdown-it-katex": "4.0.1",
     "@moonrepo/cli": "1.6.0",
     "@openinf/util-text": "1.1.2",
+    "@shopify/prettier-plugin-liquid": "1.0.6",
     "@types/markdown-it": "12.2.3",
     "@types/node": "18.x.x",
     "@typescript-eslint/eslint-plugin": "5.59.6",

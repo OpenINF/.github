@@ -39,6 +39,10 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  },
+
   "[toml]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.dprint": true
@@ -57,6 +61,8 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": true
     },
+    "editor.formatOnSave": true,
+    // "editor.defaultFormatter": "unifiedjs.vscode-remark"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
