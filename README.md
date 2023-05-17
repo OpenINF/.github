@@ -122,11 +122,10 @@ guidance on how these files are expected to look.
   <img alt="Tip" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/tip.svg">
 </picture><br>
 
-The [`VISION.md`][] file can be useful for offloading project goals
-that should typically be specified in the root [`README.md`][] file. It may
-optionally exist alongside it as an alternative location to even include
-project scope as well, but should be linked to from the root [`README.md`][]
-file in these cases.
+The [`VISION.md`][] file can be useful for offloading project goals that should
+typically be specified in the root [`README.md`][] file. It may optionally exist
+alongside it as an alternative location to even include project scope as well,
+but should be linked to from the root [`README.md`][] file in these cases.
 
 </section>
 
