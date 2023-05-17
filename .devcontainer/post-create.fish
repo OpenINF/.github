@@ -48,7 +48,7 @@ if test -e package.json
     set -Ux fish_user_paths $PNPM_HOME $fish_user_paths
     echo 'set -Ux fish_user_paths $PNPM_HOME $fish_user_paths' >> ~/.config/fish/config.fish
 
-    pnpm add -g pnpm
+    sudo pnpm add -g pnpm
     pnpm install
 end
 
@@ -57,7 +57,7 @@ end
 # > A more preferable way would be to build and keep the libssl.so.1.1 and libcrypto.so.1.1 libraries
 # > away from root and export LD_LIBRARY_PATH as needed.
 curl -sLO http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 rm libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 
 # Globally-install Chomp CLI
