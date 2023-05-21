@@ -1,11 +1,11 @@
 <!-- markdownlint-disable-next-line line-length -->
 <a href="##"><img src="https://raw.githubusercontent.com/OpenINF/openinf.github.io/live/assets/img/svg/logogram-color.svg?sanitize=true" alt="OpenINF logo" title="OpenINF" align="right" height="96" width="96" /></a>
 
-<div align="center">
+<div align="left">
 
-## @openinf/.github
+## `@openinf/.github`
 
-Org-level default metadata & community health files
+> Org-level default metadata & community health files
 
 <br />
 
