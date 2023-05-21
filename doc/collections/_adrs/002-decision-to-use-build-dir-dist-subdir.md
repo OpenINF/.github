@@ -19,13 +19,12 @@ We decided to have two directories:
 
 #### Codebase Overview
 
-```tree
-🏗️
+```dir
 ├── 📁 build
 │   └── 📂 tasks
-└── 📂 packages
+└── 📁 packages
     └── 📦 inf-log
-            📂 dist
+            └── 📂 dist
 ```
 
 ### Consequences
