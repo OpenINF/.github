@@ -7,6 +7,8 @@ source ~/.config/fish/config.fish
 
 rbenv rehash
 
+set -Ux fish_user_paths ~/.rbenv/shims/ $fish_user_paths
+
 # If there's a Gemfile, then install Bundler and run `bundle install`.
 if test -e Gemfile
     # Install Bundler.
