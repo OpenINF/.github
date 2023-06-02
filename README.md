@@ -3,7 +3,7 @@
 
 <div align="left">
 
-## `@openinf/.github`
+## `.github`
 
 > Org-level default metadata & community health files
 
@@ -16,7 +16,7 @@
 
 <br />
 
-The `@openinf/.github` repository is a one-stop shop for default metadata and
+The OpenINF `.github` repository is a one-stop shop for default metadata and
 community health files for all [**@OpenINF**][] projects on GitHub. If a file
 does not exist for a specific project, these organization-wide defaults will be
 used. We are constantly working to improve this repository, so please feel free
@@ -106,8 +106,8 @@ just as if it were committed to the repository directly.[^1]
 We cannot create organization-wide defaults for the following files as they are
 often unique per project. Therefore, they must be added to each individual
 repository so that they will be included when the project is cloned, packaged,
-or downloaded. Refer to the ones contained in [**@openinf/.github**][] for
-guidance on how these files are expected to look.
+or downloaded. Refer to the ones contained in this repository for guidance on
+how these files are expected to look.
 
 <br /><div align="center">
 
@@ -221,7 +221,6 @@ us.
   https://github.com/OpenINF/.github/blob/HEAD/VISION.md
   'What the goal(s) and/or scope are of this project'
 [**@OpenINF**]: https://github.com/OpenINF
-[**@OpenINF/.github**]: https://github.com/OpenINF/.github
 [Community Profile]: https://github.com/OpenINF/.github/community
 [conventional-commits-badge]:
   https://img.shields.io/badge/commit%20style-Conventional-%23fa6673?logoColor=white&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggc3R5bGU9ImZpbGw6ICNGRkYiIGQ9Ik0xNSwyQTEzLDEzLDAsMSwxLDIsMTUsMTMsMTMsMCwwLDEsMTUsMm0wLTJBMTUsMTUsMCwxLDAsMzAsMTUsMTUsMTUsMCwwLDAsMTUsMFoiLz48L3N2Zz4K
