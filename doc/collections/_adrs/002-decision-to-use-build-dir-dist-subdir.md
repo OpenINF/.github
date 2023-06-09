@@ -37,12 +37,25 @@ We decided to have two directories:
   Firefox and Chromium
 - Simplifies contribution for new contributors by following expected conventions
 
+Linguist prefers `.gitattributes` to be configured as below; otherwise, believes
+this directory to contain generated (non-source) build products.
+
+```ini
+build/**                linguist-generated=false
+```
+
 #### For "dist"
 
 - Final build artifacts clearly separated from the source code and buildsystem
 - Artifacts can be packaged or deployed directly from the "dist" directory
 - The "dist" directory can be emptied or archived without impacting source or
   build files
+
+We configure `.gitattributes` to be configured like so.
+
+```ini
+**/dist/**                linguist-generated=true
+```
 
 ### Next Steps
 
