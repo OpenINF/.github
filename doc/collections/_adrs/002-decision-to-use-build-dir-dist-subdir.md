@@ -37,11 +37,11 @@ We decided to have two directories:
   Firefox and Chromium
 - Simplifies contribution for new contributors by following expected conventions
 
-Linguist prefers `.gitattributes` to be configured as below; otherwise, believes
-this directory to contain generated (non-source) build products.
+Linguist prefers `.gitattributes` to be configured as below; otherwise, may
+believe this directory to contain generated (non-source) build products.[^1]
 
-```ini
-build/**                linguist-generated=false
+```gitattributes
+build/** linguist-generated=false
 ```
 
 #### For "dist"
@@ -51,10 +51,10 @@ build/**                linguist-generated=false
 - The "dist" directory can be emptied or archived without impacting source or
   build files
 
-We configure `.gitattributes` to be configured like so.
+We configure `.gitattributes` to be configured like so.[^1]
 
-```ini
-**/dist/**                linguist-generated=true
+```gitattributes
+dist/** linguist-generated=true
 ```
 
 ### Next Steps
@@ -62,3 +62,5 @@ We configure `.gitattributes` to be configured like so.
 - Implement the decision
 - Test the implementation
 - Release the implementation to the public
+
+[^1]: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
