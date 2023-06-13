@@ -34,7 +34,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Setup Ruby, JRuby and TruffleRuby
-        uses: ruby/setup-ruby@v1.150.0
+        uses: ruby/setup-ruby@v1.151.0
         with:
           # Engine and version to use, see the syntax in the README. Reads from .ruby-version or .tool-versions if unset.
           ruby-version: '.ruby-version'
