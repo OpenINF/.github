@@ -2,7 +2,7 @@
   "name": "@openinf/.github",
   "version": "0.0.0-development",
   "private": true,
-  "packageManager": "pnpm@8.5.1",
+  "packageManager": "pnpm@8.6.2",
   "description": "Org-level default metadata & community health files",
   "repository": "https://github.com/openinf/.github",
   "license": "MIT OR Apache-2.0",
