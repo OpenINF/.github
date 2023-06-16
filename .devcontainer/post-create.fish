@@ -47,17 +47,6 @@ if test -e package.json
     pnpm install
 end
 
-# Install libssl1.1 (needed by Chomp). According to https://stackoverflow.com/a/73604364 it's risky
-# on Ubuntu 22.04+ as it supports openssl-3.0.2, but we do it anyway since `dpkg` makes it easy to do.
-# > A more preferable way would be to build and keep the libssl.so.1.1 and libcrypto.so.1.1 libraries
-# > away from root and export LD_LIBRARY_PATH as needed.
-curl -sLO http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-rm libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-
-# Globally-install Chomp CLI
-pnpm add -g chomp
-
 # Globally-install Shopify CLI & theme
 pnpm add -g @shopify/cli@pre @shopify/theme@pre
 
