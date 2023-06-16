@@ -47,9 +47,6 @@ if test -e package.json
     pnpm install
 end
 
-# Globally-install Shopify CLI & theme
-pnpm add -g @shopify/cli@pre @shopify/theme@pre
-
 echo 'rbenv rehash && nvm use' >> ~/.config/fish/config.fish
 
 # Installs the moon and dprint tools, and it adds the tools to the user's $PATH.
