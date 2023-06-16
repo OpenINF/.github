@@ -32,14 +32,14 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       '@shopify/cli':
-        specifier: 3.46.0-pre.3
-        version: 3.46.0-pre.3(@types/node@18.0.0)(typescript@5.0.4)
+        specifier: 3.46.0
+        version: 3.46.0(@types/node@18.0.0)(typescript@5.0.4)
       '@shopify/prettier-plugin-liquid':
         specifier: 1.0.6
         version: 1.0.6(prettier@2.8.8)
       '@shopify/theme':
-        specifier: 3.46.0-pre.3
-        version: 3.46.0-pre.3(typescript@5.0.4)
+        specifier: 3.46.0
+        version: 3.46.0(typescript@5.0.4)
       '@types/markdown-it':
         specifier: 12.2.3
         version: 12.2.3
@@ -203,8 +203,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       remark-lint-maximum-line-length:
-        specifier: 3.1.2
-        version: 3.1.2
+        specifier: 3.1.3
+        version: 3.1.3
       remark-lint-no-duplicate-headings-in-section:
         specifier: 3.1.2
         version: 3.1.2
@@ -1488,8 +1488,8 @@ packages:
     resolution: {integrity: sha512-cIwzC93r3PQ/INeuwtZwkZIG2K8WWN0rRLZQhu+mr48Ay+i6sEki4GYfTsflse7hZ1BeDWrNb/Q9vgY3B31xHQ==}
     dev: true
 
-  /@bugsnag/js@7.16.7:
-    resolution: {integrity: sha512-i4MDIKhnPUMSpx5+XmKxrvFGAY6qZXcdBu+nplr2TrPymkJ+NNEpLyR6dijeqy5ehXaUnogN4RBfFeS9Btu1pw==}
+  /@bugsnag/js@7.20.2:
+    resolution: {integrity: sha512-Q08k0h0h6NFwFGkFmib39Uln2WpvJdqT1EGF1JlyYiGW03Y+VopVb9r37pZrRrN9IY08mxaIEO8la5xeaWAs6A==}
     dependencies:
       '@bugsnag/browser': 7.20.2
       '@bugsnag/node': 7.19.0
@@ -1894,8 +1894,8 @@ packages:
       - typescript
     dev: true
 
-  /@oclif/plugin-plugins@2.3.2(@types/node@18.0.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-jq/ik7A7bCO/oQp0/Znnpu8/JBXifAQ2OF2KmswbNYt7EpsLqz2DaI/CvkrXRSb+Edzx4Xx3usEgSyocVN/u2A==}
+  /@oclif/plugin-plugins@2.4.7(@types/node@18.0.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-6fzUDLWrSK7n6+EBrEekEEYrYTCneRoOF9TzojkjuFn1+ailvUlr98G90bblxKOyy8fqMe7QjvqwTgIDQ9ZIzg==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@oclif/color': 1.0.4
@@ -1965,12 +1965,12 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@shopify/cli-kit@3.46.0-pre.3(typescript@5.0.4):
-    resolution: {integrity: sha512-ILpY29HrW9XsW3nwAaUfzcnZPPOfXhUgUu7XacBT8arB8vNG5xcHzbJIHSDbZHCMj4Bi9D8XReEp2B5VCTsujA==}
+  /@shopify/cli-kit@3.46.0(typescript@5.0.4):
+    resolution: {integrity: sha512-VYCRm0tqEgCG9qUWzsr9oKXHiMCg8h3eCxtTVUdrl04wnTipiKXTz52kokhdBKVPtPyAbdZHyTTt9RuWVpSGiA==}
     engines: {node: '>=14.17.0'}
     os: [darwin, linux, win32]
     dependencies:
-      '@bugsnag/js': 7.16.7
+      '@bugsnag/js': 7.20.2
       '@iarna/toml': 2.2.5
       '@oclif/core': 2.1.4
       '@types/archiver': 5.3.2
@@ -2005,17 +2005,17 @@ packages:
       js-yaml: 4.1.0
       kill-port-process: 3.1.0
       latest-version: 7.0.0
-      liquidjs: 10.6.0
+      liquidjs: 10.7.0
       lodash: 4.17.21
       macaddress: 0.5.3
       mrmime: 1.0.1
       node-abort-controller: 3.0.1
-      node-fetch: 3.2.4
+      node-fetch: 3.3.1
       open: 8.4.2
-      pathe: 1.0.0
+      pathe: 1.1.0
       react: 18.2.0
-      semver: 7.3.8
-      simple-git: 3.16.0
+      semver: 7.5.0
+      simple-git: 3.17.0
       source-map-support: 0.5.21
       stacktracey: 2.1.8
       strip-ansi: 7.0.1
@@ -2026,7 +2026,7 @@ packages:
       tree-kill: 1.2.2
       ts-error: 1.0.6
       unique-string: 3.0.0
-      zod: 3.17.3
+      zod: 3.21.4
     transitivePeerDependencies:
       - '@types/react'
       - bufferutil
@@ -2037,8 +2037,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@shopify/cli@3.46.0-pre.3(@types/node@18.0.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-PKAnE8LwWzrIxEdzMyUzPKjhVsPLKR6cD0dXBDb2W2YGg8e2CYFsi+Gaqn3qo12GDhsUQ4r460z5M6FrNEN+cw==}
+  /@shopify/cli@3.46.0(@types/node@18.0.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-YoYAukj7/qVXtGdRLv0wKT3CoykT8gn6Qh7qd199A/hoKVtsFCOw7VQGJHI5mPq0a17bBCW/xtEqlglpj9NSFg==}
     engines: {node: '>=14.17.0'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -2046,9 +2046,9 @@ packages:
       '@oclif/core': 2.1.4
       '@oclif/plugin-commands': 2.2.13(@types/node@18.0.0)(typescript@5.0.4)
       '@oclif/plugin-help': 5.2.9(@types/node@18.0.0)(typescript@5.0.4)
-      '@oclif/plugin-plugins': 2.3.2(@types/node@18.0.0)(typescript@5.0.4)
-      '@shopify/cli-kit': 3.46.0-pre.3(typescript@5.0.4)
-      '@shopify/plugin-did-you-mean': 3.46.0-pre.3(typescript@5.0.4)
+      '@oclif/plugin-plugins': 2.4.7(@types/node@18.0.0)(typescript@5.0.4)
+      '@shopify/cli-kit': 3.46.0(typescript@5.0.4)
+      '@shopify/plugin-did-you-mean': 3.46.0(typescript@5.0.4)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -2062,13 +2062,13 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@shopify/plugin-did-you-mean@3.46.0-pre.3(typescript@5.0.4):
-    resolution: {integrity: sha512-ouo7+tqeNV3vkNwMNo/tUeIuHzV6Vta9a510kaovrslr50VXAIXF1gWTnQoiMc8gxWTbBsfHWi/dc6lHzgwXlg==}
+  /@shopify/plugin-did-you-mean@3.46.0(typescript@5.0.4):
+    resolution: {integrity: sha512-ru7yyXEUfIEnX+xYce9I4jKk8IyakEYJKcLTYTI8WddCSqtra0G95AIVplcLOtTNZtJCAwzddJ33Q+zHzWU54A==}
     engines: {node: '>=14.17.0'}
     os: [darwin, linux, win32]
     dependencies:
       '@oclif/core': 2.1.4
-      '@shopify/cli-kit': 3.46.0-pre.3(typescript@5.0.4)
+      '@shopify/cli-kit': 3.46.0(typescript@5.0.4)
       n-gram: 2.0.2
     transitivePeerDependencies:
       - '@types/react'
@@ -2091,13 +2091,13 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@shopify/theme@3.46.0-pre.3(typescript@5.0.4):
-    resolution: {integrity: sha512-84cuNx8WIris59R+6CoHIsbEzHcjAJgMHMp9Cq70bariwKYS+U5Jgsz2Tqp9T06ZEVyj9Z7TP8t2GTabCa39iQ==}
+  /@shopify/theme@3.46.0(typescript@5.0.4):
+    resolution: {integrity: sha512-GimEh5OZ0YdqxDgreHELHr+GftBf7bTlaSDl1uIcdSfiONm+U1DnAu6bwFDm7iAs4N6xzpCkzNWxcrm6u+FYUg==}
     engines: {node: '>=14.17.0'}
     os: [darwin, linux, win32]
     dependencies:
       '@oclif/core': 2.1.4
-      '@shopify/cli-kit': 3.46.0-pre.3(typescript@5.0.4)
+      '@shopify/cli-kit': 3.46.0(typescript@5.0.4)
     transitivePeerDependencies:
       - '@types/react'
       - bufferutil
@@ -2179,7 +2179,7 @@ packages:
     resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
     dependencies:
       '@types/jsonfile': 6.1.1
-      '@types/node': 18.0.0
+      '@types/node': 18.16.9
     dev: true
 
   /@types/hast@2.3.4:
@@ -5983,8 +5983,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /liquidjs@10.6.0:
-    resolution: {integrity: sha512-FyC0mJdS5B/tOd27LjGm+qX5TLQmXsnL2VnD5mnEZfTmNoAKx85YM+odke2lU/vME5R6r5Ef4Sig36Fb+umUhQ==}
+  /liquidjs@10.7.0:
+    resolution: {integrity: sha512-AEgEgbybxc17h2WBl5DTzj1tNy18ANpM/KJ2LigkNBwd/8sBc0uDaJH/MnvUbv1t2Md5RArTTZj5Wq1MGncIbg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
@@ -6980,15 +6980,6 @@ packages:
       whatwg-url: 5.0.0
     dev: true
 
-  /node-fetch@3.2.4:
-    resolution: {integrity: sha512-WvYJRN7mMyOLurFR2YpysQGuwYrJN+qrrpHjJDuKMcSPdfFccRUla/kng2mz6HWSBxJcqPbvatS6Gb4RhOzCJw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      data-uri-to-buffer: 4.0.1
-      fetch-blob: 3.2.0
-      formdata-polyfill: 4.0.10
-    dev: true
-
   /node-fetch@3.3.1:
     resolution: {integrity: sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -7490,8 +7481,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe@1.0.0:
-    resolution: {integrity: sha512-nPdMG0Pd09HuSsr7QOKUXO2Jr9eqaDiZvDwdyIhNG5SHYujkQHYKDfGQkulBxvbDHz8oHLsTgKN86LSwYzSHAg==}
+  /pathe@1.1.0:
+    resolution: {integrity: sha512-ODbEPR0KKHqECXW1GoxdDb+AZvULmXjVPy4rt+pGo2+TnjJTIPJQSVS6N63n8T2Ip+syHhbn52OewKicV0373w==}
     dev: true
 
   /pause-stream@0.0.11:
@@ -8158,8 +8149,8 @@ packages:
       unist-util-visit: 4.1.2
     dev: true
 
-  /remark-lint-maximum-line-length@3.1.2:
-    resolution: {integrity: sha512-KwddpVmNifTHNXwTQQgVufuUvv0hhu9kJVvmpNdEvfEc7tc3wBkaavyi3kKsUB8WwMhGtZuXVWy6OdPC1axzhw==}
+  /remark-lint-maximum-line-length@3.1.3:
+    resolution: {integrity: sha512-TA7IE+0c8agRm1k7JZr7ZZFiL44JMBAj1KlMxSTACBuebdPJe7IPaLIQga10bnz75jfWMzSiRURMFHo4lt3kdw==}
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
@@ -8575,7 +8566,7 @@ packages:
       remark-lint-list-item-indent: 3.1.1
       remark-lint-list-item-spacing: 4.1.1
       remark-lint-maximum-heading-length: 3.1.1
-      remark-lint-maximum-line-length: 3.1.2
+      remark-lint-maximum-line-length: 3.1.3
       remark-lint-no-blockquote-without-marker: 5.1.1
       remark-lint-no-consecutive-blank-lines: 4.1.2
       remark-lint-no-duplicate-headings: 3.1.1
@@ -8974,8 +8965,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver@7.3.8:
-    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
+  /semver@7.5.0:
+    resolution: {integrity: sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -9043,8 +9034,8 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /simple-git@3.16.0:
-    resolution: {integrity: sha512-zuWYsOLEhbJRWVxpjdiXl6eyAyGo/KzVW+KFhhw9MqEEJttcq+32jTWSGyxTdf9e/YCohxRE+9xpWFj9FdiJNw==}
+  /simple-git@3.17.0:
+    resolution: {integrity: sha512-JozI/s8jr3nvLd9yn2jzPVHnhVzt7t7QWfcIoDcqRIGN+f1IINGv52xoZti2kkYfoRhhRvzMSNPfogHMp97rlw==}
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
@@ -9810,7 +9801,7 @@ packages:
       '@types/concat-stream': 2.0.0
       '@types/debug': 4.1.7
       '@types/is-empty': 1.2.1
-      '@types/node': 18.0.0
+      '@types/node': 18.16.9
       '@types/unist': 2.0.6
       concat-stream: 2.0.0
       debug: 4.3.4(supports-color@8.1.1)
@@ -10365,8 +10356,8 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /zod@3.17.3:
-    resolution: {integrity: sha512-4oKP5zvG6GGbMlqBkI5FESOAweldEhSOZ6LI6cG+JzUT7ofj1ZOC0PJudpQOpT1iqOFpYYtX5Pw0+o403y4bcg==}
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: true
 
   /zwitch@2.0.4:
