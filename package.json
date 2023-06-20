@@ -27,7 +27,7 @@
     "@iktakahiro/markdown-it-katex": "4.0.1",
     "@moonrepo/cli": "1.6.0",
     "@openinf/util-text": "1.1.2",
-    "@shopify/cli": "3.46.0",
+    "@shopify/cli": "3.46.5",
     "@shopify/prettier-plugin-liquid": "1.0.6",
     "@shopify/theme": "3.46.0",
     "@types/markdown-it": "12.2.3",
