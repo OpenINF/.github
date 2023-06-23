@@ -1,6 +1,6 @@
 ## Security Policy[^1]
 
-The OpenINF team, currently composed of a single active maintainer, takes the
+The OpenINF SDK team, now benefitting from [dual Maintainership][], takes the
 security of OpenINF and the applications created with its SDK seriously. This
 page describes how to report any vulnerabilities you may find and lists best
 practices to minimize the risk of introducing or being affected by a
@@ -48,6 +48,9 @@ reporting in the near term.
 
 [^2]:
     <https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program>
+
+[dual Maintainership]:
+    <https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13696#user-content--how-this-could-work#user-content--how-this-could-work>
 
 [email us]: mailto:security@inf.is
 [Mend Renovate]: https://www.mend.io/free-developer-tools/renovate
