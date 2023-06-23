@@ -50,7 +50,7 @@ reporting in the near term.
     <https://www.mend.io/product-info/news/whitesource-renovate-users-now-rewarded-through-google-sponsored-openssf-program>
 
 [dual Maintainership]:
-    <https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13696#user-content--how-this-could-work#user-content--how-this-could-work>
+    <https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13696#user-content--how-this-could-work>
 
 [email us]: mailto:security@inf.is
 [Mend Renovate]: https://www.mend.io/free-developer-tools/renovate
