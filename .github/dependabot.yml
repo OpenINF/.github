@@ -10,12 +10,12 @@ updates:
       time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
-      - emmitrovic
-      - openinf/wg-a-team
+      - OpenINF/wg-a-team
     commit-message:
       prefix: 'chore(deps)'
     labels:
       - 'dependencies'
+      - 'deps-dev'
 
   - package-ecosystem: npm
     directory: /
@@ -26,8 +26,7 @@ updates:
       time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
-      - emmitrovic
-      - openinf/wg-a-team
+      - OpenINF/wg-a-team
     commit-message:
       prefix: 'chore(deps)'
       prefix-development: 'build(deps-dev)'
@@ -54,8 +53,7 @@ updates:
       time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
-      - emmitrovic
-      - openinf/wg-a-team
+      - OpenINF/wg-a-team
     commit-message:
       prefix: 'chore(deps)'
       prefix-development: 'build(deps-dev)'
@@ -73,10 +71,10 @@ updates:
       time: '13:00'
     open-pull-requests-limit: 10
     reviewers:
-      - emmitrovic
-      - openinf/wg-a-team
+      - OpenINF/wg-a-team
     commit-message:
       prefix: 'build(deps-dev)'
+      prefix-development: 'build(deps-dev)'
     labels:
       - 'dependencies'
       - 'deps-dev'
