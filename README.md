@@ -3,7 +3,7 @@
 
 <div align="left">
 
-## `.github`
+## `.github` [![Stars][stargazers-badge--shields]][stargazers-badge-url]
 
 > Org-level default metadata & community health files
 
@@ -160,21 +160,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 
 <br /><br />
 
----
-
-<br />
-
 <div align="center">
-
-### Show Your Support
-
-<br />
-
-If you like the project (or want to bookmark it)&nbsp;&mdash;<br />
-&mdash;&nbsp;[give it a star ⭐️][]&nbsp;&mdash;&nbsp;it will greatly encourage
-us.
-
-<br /><br />
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
   <!-- markdownlint-disable-next-line line-length -->
@@ -228,7 +214,6 @@ us.
 [conventional-commits-url]:
   https://www.conventionalcommits.org
   'Commit Style: Conventional Commits'
-[give it a star ⭐️]: https://github.com/OpenINF/.github/stargazers
 [license-badge--shields]:
   https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg?logo=github
   'License: MIT/Apache 2.0'
@@ -250,5 +235,11 @@ us.
   https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier
   'Code Style: Prettier'
 [prettier-url]: https://prettier.io/playground 'Code Style: Prettier'
+[stargazers-badge-url]:
+  https://github.com/OpenINF/.github/stargazers
+  'Stargazers'
+[stargazers-badge--shields]:
+  https://img.shields.io/github/stars/OpenINF/.github.svg?style=social&maxAge=3600&label=Star
+  'Stargazers'
 
 <!-- END LINK DEFINITIONS -->
