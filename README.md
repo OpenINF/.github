@@ -40,12 +40,19 @@ Thanks!
 
 <br />
 
-### Table of Contents
+<details open>
+<summary>
 
-- [Cascading Metadata &amp; Community Health Files](#cascading-metadata-community-health-files)
-- [Local Metadata &amp; Community Health Files](#local-metadata-community-health-files)
-- [Contributing](#contributing)
-- [License](#license)
+### Contents
+
+</summary>
+
+1. [Cascading Metadata &amp; Community Health Files](#cascading-metadata-community-health-files)
+1. [Local Metadata &amp; Community Health Files](#local-metadata-community-health-files)
+1. [Contributing](#contributing)
+1. [License](#license)
+
+</details>
 
 <br /><br />
 
