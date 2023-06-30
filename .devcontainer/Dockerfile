@@ -1,3 +1,4 @@
-# See here for image contents: https://github.com/OpenINF/openinf-docker-fish
+# Docker image contents available at OpenINF `docker-fisher` project.
+# See: https://github.com/OpenINF/docker-fisher
 
-FROM dereknongeneric/fish:latest
+FROM openinf/fisher-ubuntu:latest
