@@ -12,17 +12,18 @@ const MarkdownFiles = JSON.parse(MarkdownObject.stdout);
 let exitCode = 0;
 const scripts = [
   // fix style of JS/TS code blocks in Markdown
-  `eslint --fix ${MarkdownFiles.join(' ')}`,
-  'prettier --write **/*{.*.md,.md}', // Markdown fix sty;e
+  `moon run eslint --fix ${MarkdownFiles.join(' ')}`,
+  'moon run prettier --write **/*{.*.md,.md}', // Markdown fix style
   // validate Markdown
-  'markdownlint-cli2-fix "**/**.md" "#node_modules" "#vendor"',
+  'moon run markdownlint-cli2-fix "**/**.md" "#node_modules" "#vendor"',
 ];
 
 for await (const element of scripts) {
   try {
-    exitCode = await execute(`pnpm exec ${element}`);
+    exitCode = await execute(`moon exec ${element}`);
   } catch (p) {
     exitCode = p.exitCode;
+  }
   }
   process.exitCode = exitCode > 0 ? exitCode : 0;
 }
