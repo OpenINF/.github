@@ -50,40 +50,66 @@ tasks:
       runDepsInParallel: true
       mergeInputs: append
   verify-css:
-    command: node build/tasks/verify/verify-css.mjs
+    command: moon run verify.css
+    inputs:
+      - '**/*.css'
     inputs:
       - '**/*.css'
   verify-html:
-    command: node build/tasks/verify/verify-html.mjs
+    command: moon run verify.html
+    inputs:
+      - '**/*.html'
     inputs:
       - '**/*.html'
   verify-js:
-    command: node build/tasks/verify/verify-js.mjs
+    command: moon run verify.js
+    inputs:
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
     inputs:
       - '**/*.js'
       - '**/*.cjs'
       - '**/*.mjs'
   verify-json:
-    command: node build/tasks/verify/verify-json.mjs
+    command: moon run verify.json
+    inputs:
+      - '**/*.json'
+      - '**/*.json5'
+      - '**/*.jsonc'
     inputs:
       - '**/*.json'
       - '**/*.json5'
       - '**/*.jsonc'
   verify-md:
-    command: node build/tasks/verify/verify-md.mjs
+    command: moon run verify.md
+    inputs:
+      - '**/*.md'
     inputs:
       - '**/*.md'
   verify-svg:
-    command: node build/tasks/verify/verify-svg.mjs
+    command: moon run verify.svg
+    inputs:
+      - '**/*.svg'
     inputs:
       - '**/*.svg'
   verify-toml:
-    command: node build/tasks/verify/verify-toml.mjs
+    command: moon run verify.toml
+    inputs:
+      - '**/*.tml'
+      - '**/*.toml'
     inputs:
       - '**/*.tml'
       - '**/*.toml'
   verify-ts:
-    command: node build/tasks/verify/verify-ts.mjs
+    command: moon run verify.ts
+    inputs:
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
     inputs:
       - '**/*.ts'
       - '**/*.cts'
@@ -92,7 +118,13 @@ tasks:
       - '**/*.d.cts'
       - '**/*.d.mts'
   verify-yaml:
-    command: node build/tasks/verify/verify-yaml.mjs
+    command: moon run verify.yaml
+    inputs:
+      - '**/*.yaml'
+      - '**/*.yml'
+    outputs:
+      - '**/*.yaml'
+      - '**/*.yml'
     inputs:
       - '**/*.yaml'
       - '**/*.yml'
@@ -135,11 +167,20 @@ tasks:
       runDepsInParallel: true
       mergeInputs: append
   format-css:
-    command: node build/tasks/format/format-css.mjs
+    command: moon run format.css
     inputs:
       - '**/*.css'
     outputs:
       - '**/*.css'
+    inputs:
+      - '**/*.css'
+    outputs:
+  format-html:
+    command: moon run format.html
+    inputs:
+      - '**/*.html'
+    outputs:
+      - '**/*.html'
   format-html:
     command: node build/tasks/format/format-html.mjs
     inputs:
@@ -147,7 +188,15 @@ tasks:
     outputs:
       - '**/*.html'
   format-js:
-    command: node build/tasks/format/format-js.mjs
+    command: moon run format.js
+    inputs:
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
+    outputs:
+      - '**/*.js'
+      - '**/*.cjs'
+      - '**/*.mjs'
     inputs:
       - '**/*.js'
       - '**/*.cjs'
@@ -157,7 +206,13 @@ tasks:
       - '**/*.cjs'
       - '**/*.mjs'
   format-json:
-    command: node build/tasks/format/format-json.mjs
+    command: moon run format.json
+    inputs:
+      - '**/*.json'
+      - OWNERS
+    outputs:
+      - '**/*.json'
+      - OWNERS
     inputs:
       - '**/*.json'
       - OWNERS
@@ -165,25 +220,51 @@ tasks:
       - '**/*.json'
       - OWNERS
   format-md:
-    command: node build/tasks/format/format-md.mjs
+    command: moon run format.md
+    inputs:
+      - '**/*.md'
+    outputs:
+      - '**/*.md'
     inputs:
       - '**/*.md'
     outputs:
       - '**/*.md'
   format-svg:
-    command: node build/tasks/format/format-svg.mjs
+    command: moon run format.svg
+    inputs:
+      - '**/*.svg'
+    outputs:
+      - '**/*.svg'
     inputs:
       - '**/*.svg'
     outputs:
       - '**/*.svg'
   format-toml:
-    command: node build/tasks/format/format-toml.mjs
+    command: moon run format.toml
+    inputs:
+      - .deepsource.toml
+    outputs:
+      - .deepsource.toml
     inputs:
       - .deepsource.toml
     outputs:
       - .deepsource.toml
   format-ts:
-    command: node build/tasks/format/format-ts.mjs
+    command: moon run format.ts
+    inputs:
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
+    outputs:
+      - '**/*.ts'
+      - '**/*.cts'
+      - '**/*.mts'
+      - '**/*.d.ts'
+      - '**/*.d.cts'
+      - '**/*.d.mts'
     inputs:
       - '**/*.ts'
       - '**/*.cts'
@@ -199,7 +280,13 @@ tasks:
       - '**/*.d.cts'
       - '**/*.d.mts'
   format-yaml:
-    command: node build/tasks/format/format-yaml.mjs
+    command: moon run format.yaml
+    inputs:
+      - '**/*.yaml'
+      - '**/*.yml'
+    outputs:
+      - '**/*.yaml'
+      - '**/*.yml'
     inputs:
       - '**/*.yaml'
       - '**/*.yml'
