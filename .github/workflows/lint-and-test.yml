@@ -54,39 +54,59 @@ jobs:
 
       - name: Verify CSS
         if: ${{ steps.filter.outputs.css == 'true' }}
-        run: pnpm exec nps verify.css
+      - name: Verify CSS
+        if: ${{ steps.filter.outputs.css == 'true' }}
+        run: pnpm exec moon verify.css
 
       - name: Verify JavaScript
         if: ${{ steps.filter.outputs.js == 'true' }}
-        run: pnpm exec nps verify.js
+      - name: Verify JavaScript
+        if: ${{ steps.filter.outputs.js == 'true' }}
+        run: pnpm exec moon verify.js
 
       - name: Verify JSON
         if: ${{ steps.filter.outputs.json == 'true' }}
-        run: pnpm exec nps verify.json
+      - name: Verify JSON
+        if: ${{ steps.filter.outputs.json == 'true' }}
+        run: pnpm exec moon verify.json
 
       - name: Verify Markdown
         if: ${{ steps.filter.outputs.md == 'true' }}
-        run: pnpm exec nps verify.md
+      - name: Verify Markdown
+        if: ${{ steps.filter.outputs.md == 'true' }}
+        run: pnpm exec moon verify.md
 
       - name: Verify SVG
         if: ${{ steps.filter.outputs.svg == 'true' }}
-        run: pnpm exec nps verify.svg
+      - name: Verify SVG
+        if: ${{ steps.filter.outputs.svg == 'true' }}
+        run: pnpm exec moon verify.svg
 
       - name: Verify TOML
         if: ${{ steps.filter.outputs.toml == 'true' }}
-        run: pnpm exec nps verify.toml
+      - name: Verify TOML
+        if: ${{ steps.filter.outputs.toml == 'true' }}
+        run: pnpm exec moon verify.toml
 
       - name: Verify TypeScript
         if: ${{ steps.filter.outputs.ts == 'true' }}
-        run: pnpm exec nps verify.ts
+      - name: Verify TypeScript
+        if: ${{ steps.filter.outputs.ts == 'true' }}
+        run: pnpm exec moon verify.ts
 
       - name: Verify YAML
         if: ${{ steps.filter.outputs.yaml == 'true' }}
-        run: pnpm exec nps verify.yaml
+      - name: Verify YAML
+        if: ${{ steps.filter.outputs.yaml == 'true' }}
+        run: pnpm exec moon verify.yaml
 
       # Only run tests if the PR touches behavior-related files.
       - name: Test
         if: ${{ steps.filter.outputs.js == 'true' ||
           steps.filter.outputs.json == 'true' ||
           steps.filter.outputs.ts == 'true' }}
-        run: pnpm test
+      - name: Test
+        if: ${{ steps.filter.outputs.js == 'true' ||
+          steps.filter.outputs.json == 'true' ||
+          steps.filter.outputs.ts == 'true' }}
+        run: pnpm exec moon test
