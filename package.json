@@ -23,7 +23,7 @@
     "@babel/plugin-syntax-jsx": "7.21.4",
     "@babel/plugin-syntax-top-level-await": "7.14.5",
     "@babel/plugin-transform-modules-commonjs": "7.21.5",
-    "@babel/preset-env": "7.22.0",
+    "@babel/preset-env": "7.22.6",
     "@iktakahiro/markdown-it-katex": "4.0.1",
     "@moonrepo/cli": "1.6.0",
     "@openinf/util-text": "1.1.2",
