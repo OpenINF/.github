@@ -1,0 +1,8 @@
+# Sweep AI turns bug fixes & feature requests into code changes (https://sweep.dev)
+# For details on our config file, check out our docs at https://docs.sweep.dev
+# See: https://github.com/sweepai/sweep/blob/main/sweep.yaml
+
+gha_enabled: True
+# If you use this, frequently sync your default branch (i.e., main) to dev.
+branch: main
+draft: False
