@@ -4,6 +4,6 @@
 
 gha_enabled: True
 # If you use this, frequently sync your default branch (i.e., main) to dev.
-branch: 'main'
+branch: main
 blocked_dirs: ['.github/']
 draft: False
