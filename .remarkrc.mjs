@@ -79,7 +79,6 @@ export default {
     await import('remark-preset-lint-consistent'),
     // Leave this preset at the top so that it can be overridden.
     await import('remark-preset-lint-recommended'),
-    [await import('remark-lint-blockquote-indentation'), 2],
     [
       await import('remark-lint-checkbox-character-style'),
       {
@@ -88,14 +87,12 @@ export default {
       },
     ],
     await import('remark-lint-checkbox-content-indent'),
-    [await import('remark-lint-code-block-style'), 'fenced'],
-    [await import('remark-lint-fenced-code-flag'), { flags: infoStrings }],
-    await import('remark-lint-definition-spacing'),
 
     // Remark Lint Style Guide preset and overrides.
     ['remark-preset-lint-markdown-style-guide'],
-    ['remark-lint-no-file-name-mixed-case', false],
+    ['remark-lint-fenced-code-flag', { flags: infoStrings }],
     ['remark-lint-no-heading-punctuation', ':.,;'],
+    ['remark-lint-no-file-name-mixed-case', false],
     ['remark-lint-no-file-name-irregular-characters', false],
     ['remark-lint-first-heading-level', 2],
 
