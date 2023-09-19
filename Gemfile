@@ -2,6 +2,6 @@
 
 source "https://rubygems.org"
 
-gem "github-linguist", "~> 7.26"
+gem "github-linguist", "~> 7.27"
 
 gem "jekyll", "~> 4.3"
