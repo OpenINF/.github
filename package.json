@@ -39,7 +39,7 @@
     "dictionary-en": "3.2.0",
     "dprint": "0.40.2",
     "editorconfig-checker": "5.1.1",
-    "eslint": "8.47.0",
+    "eslint": "8.51.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-import-resolver-node": "0.3.9",
     "eslint-import-resolver-typescript": "3.6.0",
