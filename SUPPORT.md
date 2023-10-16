@@ -20,13 +20,14 @@ but this channel is now mostly defunct in favor of our Discord channel(s).
 [`#support` channel][] on the OpenINF Community Discord server. It’s a
 synchronous chat channel for lightweight communication (text only). It is good
 for asking questions (please stay on-topic). Casual conversation, collaboration,
-or other potentially off-topic quick exchanges would more appropriately occur in
-our [`#general` channel][]. Be sure to follow our [Code of Conduct][coc].
+and/or any other quick exchanges would more appropriately occur in our
+[`#general` channel][]. Be sure to follow our [Code of Conduct][coc].
 
-**[@OpenINF][twitter-account] on Twitter:** The OpenINF support account on
-Twitter. <abbr title="Direct Messages">DMs</abbr> (Direct Messages) are open. Be
-sure to follow the [Twitter Rules][twitter-rules] and our [Code of
-Conduct][coc].
+**[@OpenINF][x-twitter-account] on X (formerly Twitter):** The OpenINF Community
+support account on X (formerly Twitter).
+<abbr title="Direct Messages">DMs</abbr> (Direct Messages) remain open at all
+times. Be sure to follow the new [X Rules][x-twitter-rules] (formerly Twitter
+Rules) _and_ our [Code of Conduct][coc].
 
 <!-- BEGIN LINK DEFINITIONS -->
 
@@ -39,7 +40,7 @@ Conduct][coc].
 [`#general` channel]: https://discord.gg/9jYXBpVQ
 [docs-site]: https://open.inf.is
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
-[twitter-account]: https://twitter.com/OpenINF
-[twitter-rules]: https://help.twitter.com/en/rules-and-policies/twitter-rules
+[x-twitter-account]: https://twitter.com/OpenINF
+[x-twitter-rules]: https://help.twitter.com/en/rules-and-policies/x-rules
 
 <!-- END LINK DEFINITIONS -->
