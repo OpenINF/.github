@@ -21,7 +21,11 @@ but this channel is now mostly defunct in favor of our Discord channel(s).
 synchronous chat channel for lightweight communication (text only). It is good
 for asking questions (please stay on-topic). Casual conversation, collaboration,
 and/or any other quick exchanges would more appropriately occur in our
-[`#general` channel][]. Be sure to follow our [Code of Conduct][coc].
+[`#general` channel][]. Please use the [`#off-topic` channel][] for any other
+side <abbr title="conversations">convos</abbr> that may need to take place
+(e.g., gems, rails, etc.).
+
+Be sure to follow our [Code of Conduct][coc].
 
 **[@OpenINF][x-twitter-account] on X (formerly Twitter):** The OpenINF Community
 support account on X (formerly Twitter).
@@ -36,6 +40,7 @@ Rules) _and_ our [Code of Conduct][coc].
 
 [coc]: ./CODE_OF_CONDUCT.md
 [discord-support-channel]: https://discord.gg/CYJSYxjN
+[`#off-topic` channel]: https://discord.gg/FfdVR2Bj
 [`#support` channel]: https://discord.gg/CYJSYxjN
 [`#general` channel]: https://discord.gg/9jYXBpVQ
 [docs-site]: https://open.inf.is
