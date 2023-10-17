@@ -23,9 +23,7 @@ for asking questions (please stay on-topic). Casual conversation, collaboration,
 and/or any other quick exchanges would more appropriately occur in our
 [`#general` channel][]. Please use the [`#off-topic` channel][] for any other
 side <abbr title="conversations">convos</abbr> that may need to take place
-(e.g., gems, rails, etc.).
-
-Be sure to follow our [Code of Conduct][coc].
+(e.g., gems, rails, etc.). Be sure to follow our [Code of Conduct][coc].
 
 **[@OpenINF][x-twitter-account] on X (formerly Twitter):** The OpenINF Community
 support account on X (formerly Twitter).
