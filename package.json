@@ -29,7 +29,7 @@
     "@openinf/util-text": "1.1.2",
     "@shopify/cli": "3.48.2",
     "@shopify/prettier-plugin-liquid": "1.2.2",
-    "@shopify/theme": "3.48.2",
+    "@shopify/theme": "3.50.0",
     "@types/markdown-it": "13.0.0",
     "@types/node": "18.x.x",
     "@typescript-eslint/eslint-plugin": "6.4.0",
