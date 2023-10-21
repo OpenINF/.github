@@ -19,22 +19,14 @@
   "commitMessageTopic": "{{depName}}",
   "packageRules": [
     {
-      "packageRules": [
-        {
-          "matchDepTypes": ["dependencies"],
-          "commitMessagePrefix": "dep:",
-          "labels": ["dependencies", "deps-prod"]
-        }
-      ]
+      "matchDepTypes": ["dependencies"],
+      "commitMessagePrefix": "dep:",
+      "labels": ["dependencies", "deps-prod"]
     },
     {
-      "packageRules": [
-        {
-          "matchDepTypes": ["devDependencies"],
-          "commitMessagePrefix": "build(deps-dev):",
-          "labels": ["dependencies", "build", "deps-dev"]
-        }
-      ]
+      "matchDepTypes": ["devDependencies"],
+      "commitMessagePrefix": "build(deps-dev):",
+      "labels": ["dependencies", "build", "deps-dev"]
     }
   ]
 }
