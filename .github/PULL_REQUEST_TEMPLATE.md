@@ -14,7 +14,9 @@ Pull Request Requirements:
   apply below.
 -->
 
-# Pull Request Purpose
+## Pull Request Purpose
+
+_Make a selection on the purpose(s) of your changes._
 
 This PR contains the following:
 
@@ -24,7 +26,9 @@ This PR contains the following:
 - [ ] 📄 documentation modification(s)
 - [ ] 🔮 other
 
-Are tests included?
+### Testing
+
+_Have you included any tests in your submission?_
 
 <!--
 If your PR fixes a bug (🐜/🐛/🐞), the existing tests are
@@ -36,7 +40,9 @@ or add new ones. 🧪✅
       tests_)
 - [ ] no
 
-Breaking Changes?
+### Breaking Changes
+
+_Have you modified any aspect public API surface (i.e., caused breakage)?_
 
 <!--
 If yes, then include “BREAKING CHANGES: ” in the first
@@ -48,7 +54,9 @@ breaking.
       necessary_)
 - [ ] no
 
-## Description
+### Description
+
+_A concise recap summarily detailing what all are the changes being made._
 
 <!--
 Please be thorough and clearly explain the problem being

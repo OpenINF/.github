@@ -4,7 +4,13 @@
     "config:base",
     ":gitSignOff",
     ":preserveSemverRanges",
-    "github>whitesource/merge-confidence:beta"
+    "github>whitesource/merge-confidence:beta",
+    ":semanticCommitTypeAll(chore)",
+    "schedule:earlyMondays"
+  ],
+  "groupName": "all",
+  "ignorePresets": [
+    ":prHourlyLimit2"
   ],
   "vulnerabilityAlerts": {
     "labels": ["security"],
@@ -19,22 +25,22 @@
   "commitMessageTopic": "{{depName}}",
   "packageRules": [
     {
-      "packageRules": [
-        {
-          "matchDepTypes": ["dependencies"],
-          "commitMessagePrefix": "dep:",
-          "labels": ["dependencies", "deps-prod"]
-        }
+      "updateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
       ]
     },
     {
-      "packageRules": [
-        {
-          "matchDepTypes": ["devDependencies"],
-          "commitMessagePrefix": "build(deps-dev):",
-          "labels": ["dependencies", "build", "deps-dev"]
-        }
-      ]
+      "matchDepTypes": ["dependencies"],
+      "commitMessagePrefix": "chore(deps):",
+      "labels": ["dependencies", "deps-prod"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "commitMessagePrefix": "build(deps-dev):",
+      "labels": ["dependencies", "build", "deps-dev"]
     }
   ]
 }
