@@ -56,7 +56,7 @@ breaking.
 
 ### Description
 
-_A concise recap summarily detailing what all are the changes are thave have been made._
+_A concise recap summarily detailing what all are the changes being made._
 
 <!--
 Please be thorough and clearly explain the problem being
