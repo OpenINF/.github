@@ -1,8 +1,10 @@
-import { createRequire } from 'node:module';
+// -----------------------------------------------------------------------------
+// Requirements
+// -----------------------------------------------------------------------------
 
+import { readFileSync as fsReadFileSync } from 'node:fs';
 import { unified } from 'unified';
-
-const require = createRequire(import.meta.url);
+import strip from 'strip-comments';
 
 const infoStrings = [
   'ada',
@@ -44,12 +46,9 @@ const infoStrings = [
   'yaml',
 ];
 
-var fs = require('node:fs');
-var strip = require('strip-comments');
+const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
 
-var projectTerms = strip(fs.readFileSync('./project-terms.txt', 'utf8'));
-
-var naturalLanguage = unified().use([
+const naturalLanguage = unified().use([
   await import('retext-english'),
   await import('retext-syntax-urls'),
   await import('retext-equality'),
