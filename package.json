@@ -109,7 +109,7 @@
     "retext-syntax-urls": "4.0.0",
     "strip-comments": "2.0.1",
     "typescript": "5.2.2",
-    "unified": "11.0.3",
+    "unified": "11.0.4",
     "zx": "7.2.3"
   }
 }
