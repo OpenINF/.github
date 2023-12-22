@@ -75,8 +75,10 @@ your pull request merged:
 - Write a [good commit message][].
 
 Contributions to this project are [released][contrib-license] to the public
-under the project’s open source license. The license for a project is located in
-a file named [`LICENSE.md`][] in the root directory of the repository.
+under the project’s open-source license(s). The license(s) for a project may be
+located within the [`LICENSE`][] folder in the root directory of the repository.
+
+<!-- TODO: Guidance on SPDX corpus text files using `.txt` extension. -->
 
 ### Project Documentation
 
