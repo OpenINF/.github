@@ -45,7 +45,7 @@
 
   "[toml]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.dprint": true
+      "source.fixAll.dprint": "explicit"
     },
     "editor.defaultFormatter": "dprint.dprint"
   },
@@ -59,7 +59,7 @@
 
   "[markdown]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": true
+      "source.fixAll.markdownlint": "explicit"
     },
     "editor.formatOnSave": true,
     // "editor.defaultFormatter": "unifiedjs.vscode-remark"
@@ -98,7 +98,7 @@
     "pwsh": null
   },
 
-  "terminal.integrated.defaultProfile.linux": "fish",
+  // "terminal.integrated.defaultProfile.linux": "fish",
 
   "terminal.integrated.splitCwd": "workspaceRoot",
 
@@ -178,5 +178,7 @@
     "yaml"
   ],
 
-  "eslint.workingDirectories": ["./"]
+  "eslint.workingDirectories": [
+    "./"
+  ]
 }
