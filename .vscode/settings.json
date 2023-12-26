@@ -5,7 +5,6 @@
   // Editor
   //////////////////////////////////////////////////////////////////////////////
 
-  "editor.experimental.pasteActions.enabled": true,
   "editor.stickyScroll.enabled": false,
   "editor.codeLens": true,
   "eslint.format.enable": true,
