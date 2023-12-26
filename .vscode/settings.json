@@ -110,7 +110,6 @@
   "files.associations": {
     ".devcontainer/*.json": "jsonc",
     ".vscode/*.json": "jsonc",
-    "OWNERS": "json5",
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
     ".ecrc.json": "json",
