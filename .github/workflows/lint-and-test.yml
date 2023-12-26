@@ -34,9 +34,9 @@ jobs:
               - '**/*.css'
             js:
               - '**/**.?(c|m)js'
-            json:
-              - '**/**.json?(5|c)'
-              - 'OWNERS'
+            # json:
+            #   - '**/**.json?(5|c)'
+            #   - 'OWNERS.json5'
             md:
               - '**/**.md'
             svg:
