@@ -1,4 +1,4 @@
-## ADR 002: Use of a "build" Directory for Build System Logic
+## ADR 0003: Use of a &ldquo;build&rdquo; Directory for Build System Logic
 
 Date: 2023-05-11 Status: Accepted
 

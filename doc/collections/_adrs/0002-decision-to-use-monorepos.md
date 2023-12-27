@@ -1,4 +1,4 @@
-## ADR 001: Decision to Use Monorepos
+## ADR 0002: Decision to Use Monorepos
 
 Date: 2023-04-19
 
