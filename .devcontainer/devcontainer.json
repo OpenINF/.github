@@ -24,7 +24,14 @@
 	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  "forwardPorts": [
+    // Jekyll server
+    4000,
+    // Live reload server
+    35729,
+    // OpenSSH server
+    2222
+  ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "fish .devcontainer/post-create.fish",
