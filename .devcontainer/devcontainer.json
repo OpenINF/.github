@@ -27,7 +27,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "docker --version",
+  "postCreateCommand": "fish .devcontainer/post-create.fish",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
