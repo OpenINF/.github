@@ -16,12 +16,8 @@
 		"ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
 		"ghcr.io/devcontainers-contrib/features/curl-homebrew:1": {},
 		"ghcr.io/devcontainers-contrib/features/fish-apt-get:1": {},
-		"ghcr.io/devcontainers-contrib/features/ts-node:1": {},
-		"ghcr.io/devcontainers-contrib/features/turborepo-npm:1": {},
-		"ghcr.io/devcontainers-contrib/features/typescript:2": {},
 		"ghcr.io/devcontainers-contrib/features/wget-homebrew:1": {},
-		"ghcr.io/customink/codespaces-features/docker-log-level:1": {},
-		"ghcr.io/devcontainers-community/npm-features/typescript:1": {}
+		"ghcr.io/customink/codespaces-features/docker-log-level:1": {}
 	},
 
 	// Use this environment variable if you need to bind mount your local source code into a new container.
