@@ -9,4 +9,6 @@ technical_design:
  Status | Approved | | 
  Decision | See [abstract](./#abstract)&hellip; | |
 
+### Abstract
+
 <!-- More may be added. -->
