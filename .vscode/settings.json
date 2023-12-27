@@ -97,7 +97,7 @@
     "pwsh": null
   },
 
-  // "terminal.integrated.defaultProfile.linux": "fish",
+  // "terminal.integrated.defaultProfile.linux": "bash",
 
   "terminal.integrated.splitCwd": "workspaceRoot",
 
