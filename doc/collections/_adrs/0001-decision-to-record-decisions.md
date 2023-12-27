@@ -3,6 +3,6 @@
 | Date                                      | 2023-04-19           |                  |                  |
 | Authors                                   | Bard                 | @DerekNonGeneric | @DynamicWebPaige |
 | Status                                    | Approved             |                  |                  |
-| Decision                                  | See abstract&hellip; |                  |                  |
+| Decision                                  | See [abstract](./#abstract)&hellip; |                  |                  |
 
 <!-- More may be added. -->
