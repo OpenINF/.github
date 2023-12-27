@@ -1,6 +1,7 @@
 ## ADR 0003: Use of a &ldquo;build&rdquo; Directory for Build System Logic
 
-Date: 2023-05-11 Status: Accepted
+**Date**: 2023-05-11
+**Status**: Accepted
 
 Authors: Bard, Claude, @DerekNonGeneric
 
