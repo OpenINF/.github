@@ -8,7 +8,7 @@ technical_design:
 | Created | 2023-04-19 | |
 | Updated | 2023-04-19 | |
 | Authors | @OpenINF/ATeamBard | @DerekNonGeneric | @DynamicWebPaige |
-| State - | Final | |
+|   State | Final | |
 | Decision | The decision to record decisions was self-evident. | |
 
 ### Abstract
