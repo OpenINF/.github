@@ -3,7 +3,7 @@ technical_design:
 ----
 
 | ADR Title | Decision to Record Decisions | | |
-| ---:|:---:|:---:|:----:|
+| ---:|:--- |:---:|:----:|
 | ADR No. | 0001 | |
 | Created | 2023-04-19 | |
 | Updated | 2023-04-19 | |
