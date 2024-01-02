@@ -32,7 +32,7 @@
     2222
   ],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
+  // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "fish .devcontainer/post-create.fish",
 
 	// Configure tool-specific properties.
