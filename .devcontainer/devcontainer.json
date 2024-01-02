@@ -6,7 +6,7 @@
 {
 	"name": "Docker outside of Docker",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "openinf/fisher-ubuntu:latest",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
