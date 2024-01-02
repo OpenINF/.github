@@ -6,7 +6,7 @@
 {
 	"name": "Docker outside of Docker",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye"
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
