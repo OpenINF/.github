@@ -1,14 +1,10 @@
-## ADR 002: Use of a "build" Directory for Build System Logic
 
-Date: 2023-05-11 Status: Accepted
-
-Authors: Bard, Claude, @DerekNonGeneric
+## ADR 0003: Decision for “build” Directory of Build Logic
 
 ### Context
 
 We needed to determine where to place build-related scripts/configurations as
-well as build artifacts (object files, binaries, etc.) in the repository
-structure.
+well as build artifacts (object files, binaries, etc.).
 
 ### Decision
 
@@ -27,14 +23,13 @@ We decided to have two directories:
             └── 📂 dist
 ```
 
-### Consequences
+### Results
 
-#### For "build"
+#### For `build`
 
 - Provides isolation of build-specific logic from source code
 - Allows flexibility for platform/configuration-specific builds
-- Follows conventions established by large cross-platform web browsers like
-  Firefox and Chromium
+- Follows conventions established by large cross-platform software
 - Simplifies contribution for new contributors by following expected conventions
 
 Linguist prefers `.gitattributes` to be configured as below; otherwise, may
@@ -44,14 +39,14 @@ believe this directory to contain generated (non-source) build products.[^1]
 build/** linguist-generated=false
 ```
 
-#### For "dist"
+#### For `dist`
 
 - Final build artifacts clearly separated from the source code and buildsystem
 - Artifacts can be packaged or deployed directly from the "dist" directory
 - The "dist" directory can be emptied or archived without impacting source or
-  build files
+  buildsystem files.
 
-We configure `.gitattributes` to be configured like so.[^1]
+We configure `.gitattributes` to be configured as seen here:[^1]
 
 ```gitattributes
 dist/** linguist-generated=true
@@ -61,6 +56,6 @@ dist/** linguist-generated=true
 
 - Implement the decision
 - Test the implementation
-- Release the implementation to the public
+- Release after acceptable testing
 
 [^1]: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
