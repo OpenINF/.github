@@ -44,7 +44,7 @@ build/** linguist-generated=false
 - Final build artifacts clearly separated from the source code and buildsystem
 - Artifacts can be packaged or deployed directly from the "dist" directory
 - The "dist" directory can be emptied or archived without impacting source or
-  buildsystem files
+  buildsystem files.
 
 We configure `.gitattributes` to be configured as seen here:[^1]
 
