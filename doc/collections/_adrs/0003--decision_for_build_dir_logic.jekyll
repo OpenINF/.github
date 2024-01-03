@@ -56,5 +56,6 @@ dist/** linguist-generated=true
 
 - Implement the decision
 - Test the implementation
+- Release after acceptable testing
 
 [^1]: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
