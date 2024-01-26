@@ -176,5 +176,10 @@
     "yaml"
   ],
 
-  "eslint.workingDirectories": ["./"]
+  "eslint.workingDirectories": [
+    "./"
+  ],
+  "cSpell.words": [
+    "Irulen"
+  ]
 }
