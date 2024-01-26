@@ -1,4 +1,5 @@
 
 ## ADR 0004: Adopting a Dedicated Tools Directory
 
-
+Typically a project will necessitate additional scripts and utilities supporting the activities
+involved in project maintenance, development, and delivery.
