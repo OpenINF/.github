@@ -61,7 +61,11 @@ top-level “tools” directory convention can be found in the wild:
 - [Web Platform Tests][]
 - [Test262][]
 
+<br /><br />
+
 ### Alternatives Considered
+
+<br />
 
 Prevalent competing alternatives to this codebase layout convention do, however,
 exist. We’ll briefly weigh the pros and cons of popular alternative solutions,
