@@ -95,5 +95,12 @@ unmaintainable.
 [@OpenINF/ATeamXsGrok]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
 [@OpenINF/ATeamDerekNonGeneric]: https://github.com/OpenINF/wg-a-team#persons-roster
 
+<!-- Prior Art -->
+
+[Node.js Core]: https://github.com/nodejs/node
+[web.dev Site]: https://github.com/GoogleChrome/web.dev
+[Web Platform Tests]: https://github.com/web-platform-tests/wpt
+[Test262]: https://github.com/tc39/test262
+
 <!-- LINK LABEL DEFINITIONS - END -->
 
