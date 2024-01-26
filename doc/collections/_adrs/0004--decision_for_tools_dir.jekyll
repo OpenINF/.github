@@ -47,7 +47,11 @@ While the exact origins of this convention may be challenging to pinpoint, its
 widespread adoption is a testament to its utility and effectiveness in helping
 software engineers manage and organize their codebases.
 
+<br /><br />
+
 ### Exemplary Prior Art
+
+<br />
 
 A few notable high-profile open-source projects currently making good use of the
 top-level “tools” directory convention can be found in the wild:
