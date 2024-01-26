@@ -176,5 +176,19 @@
     "yaml"
   ],
 
-  "eslint.workingDirectories": ["./"]
+  "eslint.workingDirectories": [
+    "./"
+  ],
+
+  // cSpell
+  /////////////////////////////////////////////
+
+  "cSpell.customDictionaries": {
+    "project-terms": {
+      "name": "project-terms",
+      "path": "${workspaceRoot}/project-terms.txt",
+      "description": "Terms used in this project",
+      "addWords": true
+    }
+  }
 }
