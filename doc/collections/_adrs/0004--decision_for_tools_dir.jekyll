@@ -44,6 +44,16 @@ software engineers manage and organize their codebases.
 
 <br /><br />
 
+## Decision
+
+<br />
+
+We have resolved to adopt the top-level “tools” directory convention in our
+codebases to improve the organization, discoverability, and collaboration for
+our delvings into the ever-growing SLOCs supporting/relating to tools & scripts.
+
+<br /><br />
+
 ## Results
 
 <br />
