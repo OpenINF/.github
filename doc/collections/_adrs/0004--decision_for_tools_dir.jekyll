@@ -47,6 +47,24 @@ While the exact origins of this convention may be challenging to pinpoint, its
 widespread adoption is a testament to its utility and effectiveness in helping
 software engineers manage and organize their codebases.
 
+### Exemplary Prior Art
+
+A few notable high-profile open-source projects currently making good use of the
+top-level “tools” directory convention can be found in the wild:
+
+- [Node.js Core][]
+- [web.dev Site][]
+- [Web Platform Tests][]
+- [Test262][]
+
+### Alternatives Considered
+
+Prevalent competing alternatives to this codebase layout convention do, however,
+exist. We’ll briefly weigh the pros and cons of popular alternative solutions,
+focusing on drawbacks to obviate why they may not be suitable for _our_ needs.
+
+<!-- TODO(DerekNonGeneric): top-level scripts dir, build-system dir, etc.  -->
+
 <br /><br />
 
 ## Decision
