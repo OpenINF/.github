@@ -179,6 +179,10 @@
   "eslint.workingDirectories": [
     "./"
   ],
+
+// cSpell
+/////////////////////////////////////////////
+
   "cSpell.customDictionaries": {
     "project-terms": {
       "name": "project-terms",
