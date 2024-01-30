@@ -83,6 +83,9 @@ We have resolved to adopt the top-level “tools” directory convention in our
 codebases to improve the organization, discoverability, and collaboration for
 our delvings into the ever-growing SLOCs supporting/relating to tools & scripts.
 
+One fine example of perfect usage of this directory would be to store custom
+lint rules that are not already available as a package on the registry.
+
 <br /><br />
 
 ## Results
