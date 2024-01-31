@@ -10,6 +10,13 @@
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
 
+
+  "[javascript][json][json5][jsonc][typescript][yaml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+
   "[json]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
