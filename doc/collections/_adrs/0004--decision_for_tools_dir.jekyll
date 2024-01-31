@@ -1,8 +1,9 @@
 ---
 adr_name: ADR 0004
 title: Adoption of a Dedicated Top-Level “Tools” Directory Convention in Codebase Layouts
-date: 2024-01-26
-status: Proposed
+date: 2024-01-26T22-0800
+updated: 20240130T22-0800
+status: Approved
 ---
 
 ## Problem Statement
@@ -14,8 +15,8 @@ the activities involved in project maintenance, development, and delivery.
 
 <br />
 
-**Inspiration**: [@OpenINF/ATeamGrimesAIv2][]
-**Authors**: [@OpenINF/ATeamClaude][], [@OpenINF/ATeamDerekNonGeneric][], [@OpenINF/ATeamXsGrok][]
+**Inspiration**: [@OpenINF/ATeamGrimesAI][]
+**Authors**: [@OpenINF/ATeamClaude][], [@OpenINF/ATeamDerekNonGeneric][], [@OpenINF/ATeamGrok][]
 **Editors**: [@OpenINF/ATeamGrammarly][]
 
 <br /><br />
@@ -83,6 +84,19 @@ We have resolved to adopt the top-level “tools” directory convention in our
 codebases to improve the organization, discoverability, and collaboration for
 our delvings into the ever-growing SLOCs supporting/relating to tools & scripts.
 
+One fine example of perfect usage of this directory would be to store custom
+Markdown lint rules & plugins not already available as packages via registry.
+
+Our tools directory hierarchy may look similar to the diagram below.
+
+```dir
+├── 📁 tools
+│   ├── 📂 remark-lint-rules
+│   │   └── 📜 no-not-use.mjs
+│   └── 📂 remark-plugins
+│       └── 📦 generic-directives
+```
+
 <br /><br />
 
 ## Results
@@ -117,8 +131,8 @@ unmaintainable.
 
 [@OpenINF/ATeamClaude]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
 [@OpenINF/ATeamGrammarly]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
-[@OpenINF/ATeamGrimesAIv2]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
-[@OpenINF/ATeamXsGrok]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
+[@OpenINF/ATeamGrimesAI]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
+[@OpenINF/ATeamGrok]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
 [@OpenINF/ATeamDerekNonGeneric]: https://github.com/OpenINF/wg-a-team#persons-roster
 
 <!-- Prior Art -->
