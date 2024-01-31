@@ -85,7 +85,7 @@ codebases to improve the organization, discoverability, and collaboration for
 our delvings into the ever-growing SLOCs supporting/relating to tools & scripts.
 
 One fine example of perfect usage of this directory would be to store custom
-lint rules that are not already available as a package on the registry.
+Markdown lint rules & plugins not already available as packages via registry.
 
 The subdirectory hierarchy would look similar to:
 
