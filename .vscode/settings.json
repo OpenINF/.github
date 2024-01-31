@@ -7,7 +7,6 @@
 
   "editor.stickyScroll.enabled": false,
   "editor.codeLens": true,
-  "eslint.format.enable": true,
   "editor.formatOnSave": true,
 
   "[javascript][json][json5][jsonc][typescript][yaml]": {
@@ -21,12 +20,12 @@
     "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
 
-  "[toml]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.dprint": "explicit"
-    },
-    "editor.defaultFormatter": "dprint.dprint"
-  },
+  // "[toml]": {
+  //   "editor.codeActionsOnSave": {
+  //     "source.fixAll.dprint": "explicit"
+  //   },
+  //   "editor.defaultFormatter": "dprint.dprint"
+  // },
 
   "[markdown]": {
     "editor.codeActionsOnSave": {
@@ -64,9 +63,7 @@
   },
 
   // "terminal.integrated.defaultProfile.linux": "bash",
-
   "terminal.integrated.splitCwd": "workspaceRoot",
-
   "terminal.integrated.shellIntegration.enabled": false,
 
   // Files
@@ -109,7 +106,6 @@
   // This setting will control whether multiline comments are styled using the
   // annotation tags. If false, multiline comments will be presented w/o decor.
   "better-comments.multilineComments": true,
-
   "better-comments.tags": [
     {
       "tag": "//",
@@ -118,6 +114,8 @@
   ],
 
   // Dprint
+  /////////////////////////////////////////////
+
   "dprint.path": "~/.dprint/bin/dprint",
 
   // EditorConfig (https://editorconfig.org/)
@@ -132,6 +130,7 @@
   // ESLint (ESLint is a separate extension)
   /////////////////////////////////////////////
 
+  "eslint.format.enable": true,
   "eslint.validate": [
     "javascript",
     "json",
@@ -141,7 +140,6 @@
     "typescript",
     "yaml"
   ],
-
   "eslint.workingDirectories": [
     "./"
   ],
