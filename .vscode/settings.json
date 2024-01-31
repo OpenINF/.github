@@ -10,27 +10,11 @@
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
 
-
   "[javascript][json][json5][jsonc][typescript][yaml]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     }
-  },
-
-  "[json]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "[json5]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[liquid]": {
@@ -44,10 +28,6 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
 
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
   "[markdown]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": "explicit"
@@ -55,10 +35,6 @@
     "editor.formatOnSave": true,
     // "editor.defaultFormatter": "unifiedjs.vscode-remark"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[yaml]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   // Render vertical rulers after a certain number of monospace characters.
