@@ -87,7 +87,7 @@ our delvings into the ever-growing SLOCs supporting/relating to tools & scripts.
 One fine example of perfect usage of this directory would be to store custom
 Markdown lint rules & plugins not already available as packages via registry.
 
-The subdirectory hierarchy would look similar to:
+Our tools directory hierarchy may look similar to the diagram below.
 
 ```dir
 ├── 📁 tools
