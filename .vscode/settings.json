@@ -18,30 +18,18 @@
   },
 
   "[json]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[json5]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[jsonc]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   "[javascript]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -57,9 +45,6 @@
   },
 
   "[typescript]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
@@ -73,9 +58,6 @@
   },
 
   "[yaml]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
