@@ -10,32 +10,11 @@
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
 
-  "[json]": {
+  "[javascript][json][json5][jsonc][typescript][yaml]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "[json5]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "[jsonc]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "[javascript]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+      "source.fixAll.eslint": "explicit"
+    }
   },
 
   "[liquid]": {
@@ -49,13 +28,6 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
 
-  "[typescript]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
   "[markdown]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": "explicit"
@@ -63,13 +35,6 @@
     "editor.formatOnSave": true,
     // "editor.defaultFormatter": "unifiedjs.vscode-remark"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[yaml]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
 
   // Render vertical rulers after a certain number of monospace characters.
