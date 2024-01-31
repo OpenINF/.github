@@ -87,6 +87,16 @@ our delvings into the ever-growing SLOCs supporting/relating to tools & scripts.
 One fine example of perfect usage of this directory would be to store custom
 lint rules that are not already available as a package on the registry.
 
+The subdirectory hierarchy would look similar to:
+
+```dir
+├── 📁 tools
+│   ├── 📂 remark-lint-rules
+│   │   └── 📜 no-not-use.mjs
+│   └── 📂 remark-plugins
+│       └── 📦 generic-directives
+```
+
 <br /><br />
 
 ## Results
