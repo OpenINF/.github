@@ -61,6 +61,11 @@
     },
     "pwsh": null
   },
+  
+  "terminal.integrated.profiles.windows": {
+      "Git Bash": null
+  }
+    
 
   // The default terminal profile on Linux.
   "terminal.integrated.defaultProfile.linux": "fish",
