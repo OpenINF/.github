@@ -179,7 +179,6 @@
   // The following settings should be inherited from the .editorconfig file and
   // need not be re-specified in this file: files.encoding, files.eol,
   // files.insertFinalNewline, and files.trimTrailingWhitespace.
-
   "editorconfig.generateAuto": false,
 
   // ESLint (ESLint is a separate extension)
