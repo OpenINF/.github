@@ -63,7 +63,20 @@
   },
   
   "terminal.integrated.profiles.windows": {
-      "Git Bash": null
+    "Git Bash": null,
+    "pwsh": {
+      "path": "pwsh.exe",
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe",
+      ],
+      "args": [],
+      "icon": "terminal-cmd",
+    },
   }
     
 
