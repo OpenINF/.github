@@ -62,7 +62,8 @@
     "pwsh": null
   },
 
-  // "terminal.integrated.defaultProfile.linux": "bash",
+  // The default terminal profile on Linux.
+  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.splitCwd": "workspaceRoot",
   "terminal.integrated.shellIntegration.enabled": false,
 
