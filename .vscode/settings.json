@@ -61,7 +61,7 @@
     },
     "pwsh": null
   },
-  
+
   "terminal.integrated.profiles.windows": {
     "Git Bash": null,
     "pwsh": {
@@ -77,8 +77,8 @@
       "args": [],
       "icon": "terminal-cmd",
     },
-  }
-    
+  },
+
 
   // The default terminal profile on Linux.
   "terminal.integrated.defaultProfile.linux": "fish",
@@ -177,3 +177,4 @@
     }
   }
 }
+
