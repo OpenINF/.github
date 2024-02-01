@@ -43,8 +43,9 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  "terminal.integrated.useWslProfiles": true,
-
+  // A set of terminal profile customizations for Linux which allows adding,
+  // removing or changing how terminals are launched. Profiles are made up of
+  // a mandatory path, optional arguments and other presentation options.
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash"
@@ -62,6 +63,16 @@
     "pwsh": null
   },
 
+  // The default terminal profile on Linux.
+  "terminal.integrated.defaultProfile.linux": "fish",
+
+  // Controls whether or not WSL distros are shown in the terminal dropdown.
+  // Not actually recommended, but useful one-offs if that may be the case.
+  "terminal.integrated.useWslProfiles": true,
+
+  // A set of terminal profile customizations for Windows which allows adding,
+  // removing or changing how terminals are launched. Profiles are made up of
+  // a mandatory path, optional arguments and other presentation options.
   "terminal.integrated.profiles.windows": {
     "Git Bash": null,
     "pwsh": {
@@ -74,22 +85,28 @@
         "${env:windir}\\Sysnative\\cmd.exe",
         "${env:windir}\\System32\\cmd.exe",
       ],
-      "args": [],
       "icon": "terminal-cmd",
     },
   },
 
-
-  // The default terminal profile on Linux.
-  "terminal.integrated.defaultProfile.linux": "fish",
-
   // The default terminal profile on Windows.
   "terminal.integrated.defaultProfile.windows": "pwsh",
 
-  //
+  // Controls whether the terminal will ignore bracketed paste mode even if the
+  // terminal was put into the mode, omitting the `\x1b[200~` and `\x1b[201~`
+  // sequences when pasting. This is useful when the shell is not respecting the
+  // mode which can happen in sub-shells for example.
   "terminal.integrated.ignoreBracketedPasteMode": true,
 
-  //
+  // Controls the working directory a split terminal starts with.
+  //  - workspaceRoot: A new split terminal will use the workspace root as the
+  //    working directory. In a multi-root workspace a choice for which root
+  //    folder to use is offered.
+  //  - initial: A new split terminal will use the working directory that the
+  //    parent terminal started with.
+  //  - inherited: On macOS and Linux, a new split terminal will use the working
+  //    directory of the parent terminal. On Windows, this behaves the same as
+  //    initial.
   "terminal.integrated.splitCwd": "workspaceRoot",
 
   // Automatic script injection has been disabled.
