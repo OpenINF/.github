@@ -82,9 +82,17 @@
 
   // The default terminal profile on Linux.
   "terminal.integrated.defaultProfile.linux": "fish",
+
+  // The default terminal profile on Windows.
   "terminal.integrated.defaultProfile.windows": "pwsh",
+
+  //
   "terminal.integrated.ignoreBracketedPasteMode": true,
+
+  //
   "terminal.integrated.splitCwd": "workspaceRoot",
+
+  // Automatic script injection has been disabled.
   "terminal.integrated.shellIntegration.enabled": false,
 
   // Files
