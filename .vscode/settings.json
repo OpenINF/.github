@@ -82,6 +82,8 @@
 
   // The default terminal profile on Linux.
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.windows": "pwsh",
+  "terminal.integrated.ignoreBracketedPasteMode": true,
   "terminal.integrated.splitCwd": "workspaceRoot",
   "terminal.integrated.shellIntegration.enabled": false,
 
