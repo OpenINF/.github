@@ -178,7 +178,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 
 <br /><br />
 
-<!-- BEGIN LINK DEFINITIONS -->
+<!-- LINK LABEL DEFINITIONS - START -->
 
 [^1]:
     <https://github.blog/changelog/2019-02-21-organization-wide-community-health-files>
@@ -252,4 +252,4 @@ The [SPDX](https://spdx.dev) license identifier for this project is
   https://img.shields.io/github/stars/OpenINF/.github.svg?style=social&maxAge=3600&label=Star
   'Stargazers'
 
-<!-- END LINK DEFINITIONS -->
+<!-- LINK LABEL DEFINITIONS - END -->
