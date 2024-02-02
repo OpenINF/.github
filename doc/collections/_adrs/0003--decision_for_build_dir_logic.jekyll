@@ -1,7 +1,12 @@
+---
+adr_name: ADR 0003
+title:    Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
+date:     2023-05-11 13:00:00 -0800
+updated:  2024-02-02 13:00:00 -0800
+status:   Approved
+---
 
-## ADR 0003: Decision for “build” Directory of Build Logic
-
-### Context
+## Context
 
 We needed to determine where to place build-related scripts/configurations as
 well as build artifacts (object files, binaries, etc.).
