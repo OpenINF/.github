@@ -1,9 +1,9 @@
 ---
 adr_name: ADR 0004
-title: Adoption of a Dedicated Top-Level “Tools” Directory Convention in Codebase Layouts
-date: 2024-01-26T22-0800
-updated: 20240130T22-0800
-status: Approved
+title:    Adoption of Dedicated Top-Level “Tools” Directory in Codebase Layouts
+date:     2024-26-01 23:45:00 -0800
+updated:  2024-02-01 20:00:00 -0800
+status:   Approved
 ---
 
 ## Problem Statement
