@@ -1,9 +1,9 @@
 ---
 adr_name: ADR 0004
-title:    Adoption of Dedicated Top-Level “Tools” Directory in Codebase Layouts
-date:     2024-01-26 23:45:00 -0800
-updated:  2024-02-02 13:00:00 -0800
-status:   Approved
+title: Adoption of Dedicated Top-Level “Tools” Directory in Codebase Layouts
+date: 2024-01-26 23:45:00 -0800
+updated: 2024-02-02 13:00:00 -0800
+status: Approved
 ---
 
 ## Problem Statement
@@ -15,10 +15,9 @@ the activities involved in project maintenance, development, and delivery.
 
 <br />
 
-**Inspiration**: [@OpenINF/ATeamGrimesAI][]
-**Authors**: [@OpenINF/ATeamClaude][], [@OpenINF/ATeamDerekNonGeneric][],
-             [@OpenINF/ATeamGrok][]
-**Editors**: [@OpenINF/ATeamGrammarly][]
+**Inspiration**: [@OpenINF/ATeamGrimesAI][] **Authors**:
+[@OpenINF/ATeamClaude][], [@OpenINF/ATeamDerekNonGeneric][],
+[@OpenINF/ATeamGrok][] **Editors**: [@OpenINF/ATeamGrammarly][]
 
 <br /><br />
 
@@ -130,11 +129,15 @@ unmaintainable.
 
 <!-- Credits -->
 
-[@OpenINF/ATeamClaude]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
-[@OpenINF/ATeamGrammarly]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
-[@OpenINF/ATeamGrimesAI]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
+[@OpenINF/ATeamClaude]:
+  https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
+[@OpenINF/ATeamGrammarly]:
+  https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
+[@OpenINF/ATeamGrimesAI]:
+  https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
 [@OpenINF/ATeamGrok]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
-[@OpenINF/ATeamDerekNonGeneric]: https://github.com/OpenINF/wg-a-team#persons-roster
+[@OpenINF/ATeamDerekNonGeneric]:
+  https://github.com/OpenINF/wg-a-team#persons-roster
 
 <!-- Prior Art -->
 

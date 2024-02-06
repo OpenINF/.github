@@ -1,9 +1,9 @@
 ---
 adr_name: ADR 0003
-title:    Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
-date:     2023-05-11 13:00:00 -0800
-updated:  2024-02-02 13:00:00 -0800
-status:   Approved
+title: Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
+date: 2023-05-11 13:00:00 -0800
+updated: 2024-02-02 13:00:00 -0800
+status: Approved
 ---
 
 ## Context
