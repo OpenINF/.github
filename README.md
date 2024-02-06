@@ -1,4 +1,5 @@
 <!-- markdownlint-disable-next-line line-length -->
+
 <a href="##"><img src="https://raw.githubusercontent.com/OpenINF/openinf.github.io/live/assets/img/svg/logogram-color.svg?sanitize=true" alt="OpenINF logo" title="OpenINF" align="right" height="96" width="96" /></a>
 
 <div align="left">
@@ -117,12 +118,12 @@ how these files are expected to look.
 
 <br /><div align="center">
 
-| File name        | Title               | Description                                                              |
-| :--------------- | :------------------ | :----------------------------------------------------------------------- |
-| [`AUTHORS`][]    | The OpenINF Authors | Lists the contributors of their respective project repositories[^2][^3]  |
-| [`README.md`][]  | Homepage            | Serves as a project landing page of sorts                                |
-| [`LICENSE.md`][] | Software License(s) | The open source software license(s) associated with a project            |
-| [`VISION.md`][]  | Project Vision      | The goal(s) and/or scope of a project                                    |
+| File name        | Title               | Description                                                             |
+| :--------------- | :------------------ | :---------------------------------------------------------------------- |
+| [`AUTHORS`][]    | The OpenINF Authors | Lists the contributors of their respective project repositories[^2][^3] |
+| [`README.md`][]  | Homepage            | Serves as a project landing page of sorts                               |
+| [`LICENSE.md`][] | Software License(s) | The open source software license(s) associated with a project           |
+| [`VISION.md`][]  | Project Vision      | The goal(s) and/or scope of a project                                   |
 
 </div><br />
 
@@ -185,8 +186,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 [^2]:
     <https://docs.npmjs.com/cli/v8/configuring-npm/package-json#default-values>
 
-[^3]:
-    <https://opensource.google/documentation/reference/releasing/authors>
+[^3]: <https://opensource.google/documentation/reference/releasing/authors>
 
 [`AUTHORS`]:
   https://github.com/OpenINF/.github/blob/HEAD/AUTHORS
