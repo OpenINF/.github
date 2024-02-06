@@ -140,7 +140,6 @@ unmaintainable.
   https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
 [@OpenINF/ATeamGrimesAI]:
   https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
-[@OpenINF/ATeamGrok]: https://github.com/OpenINF/wg-a-team#ai-non-persons-roster
 [@OpenINF/ATeamDerekNonGeneric]:
   https://github.com/OpenINF/wg-a-team#persons-roster
 
