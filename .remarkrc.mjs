@@ -51,22 +51,22 @@ const infoStrings = [
 const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
 
 const naturalLanguage = unified().use([
-  await import('retext-english'),
-  await import('retext-syntax-urls'),
-  await import('retext-passive'),
+  [await import('retext-english'), {}],
+  [await import('retext-syntax-urls'), {}],
+  [await import('retext-passive'), {}],
   [await import('retext-readability'), { age: 21, minWords: 8 }],
-  await import('retext-repeated-words'),
+  [await import('retext-repeated-words'), {}],
   [
-    await import('retext-simplify'),
+    await import('retext-simplify'), {}],
     { ignore: ['function', 'interface', 'maintain'] },
   ],
   [await import('retext-sentence-spacing'), { preferred: 1 }],
-  await import('retext-syntax-mentions'),
+  [await import('retext-syntax-mentions'), {}],
   [
     await import('retext-spell'),
     { dictionary: await import('dictionary-en'), personal: projectTerms },
   ],
-  await import('retext-syntax-urls'),
+  [await import('retext-syntax-urls')],
 ]);
 
 export default {
@@ -75,9 +75,9 @@ export default {
     ['remark-gfm'],
     ['remark-footnotes'],
     ['remark-frontmatter'],
-    await import('remark-preset-lint-consistent'),
+    [await import('remark-preset-lint-consistent'), {}],
     // Leave this preset at the top so that it can be overridden.
-    await import('remark-preset-lint-recommended'),
+    [await import('remark-preset-lint-recommended'), {}],
     [
       await import('remark-lint-checkbox-character-style'),
       {
@@ -85,10 +85,10 @@ export default {
         unchecked: ' ',
       },
     ],
-    await import('remark-lint-checkbox-content-indent'),
+    [await import('remark-lint-checkbox-content-indent'), {}],
 
     // Remark Lint Style Guide preset and overrides.
-    ['remark-preset-lint-markdown-style-guide'],
+    ['remark-preset-lint-markdown-style-guide'), {}],
     ['remark-lint-no-file-name-consecutive-dashes', false],
     ['remark-lint-fenced-code-flag', { flags: infoStrings }],
     ['remark-lint-no-heading-punctuation', ':.,;'],
@@ -97,13 +97,13 @@ export default {
     ['remark-lint-first-heading-level', 2],
 
     // Third-party plugins.
-    [await import('remark-validate-links')],
-    [await import('remark-lint-maximum-line-length')],
-    [await import('remark-lint-no-duplicate-headings-in-section')],
+    [await import('remark-validate-links'), {}],
+    [await import('remark-lint-maximum-line-length'), {}],
+    [await import('remark-lint-no-duplicate-headings-in-section'), {}],
     [await import('remark-retext'), naturalLanguage],
 
     // Disables all rules that conflict with Prettier. Leave this preset at the
     // bottom so that it can't be overridden.
-    await import('remark-preset-prettier'),
+    [await import('remark-preset-prettier'), {}],
   ],
 };
