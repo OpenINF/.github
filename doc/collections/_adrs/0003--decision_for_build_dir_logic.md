@@ -16,7 +16,7 @@ well as build artifacts (object files, binaries, etc.).
 We decided to have two directories:
 
 - A "build" directory at workspace root containing build config and scripts
-- A "dist" subdirectory in each package root to contain final build artifacts
+- A "distrib" subdirectory in each package root to contain final build artifacts
 
 #### Codebase Overview
 
@@ -25,7 +25,7 @@ We decided to have two directories:
 │   └── 📂 tasks
 └── 📁 packages
     └── 📦 inf-log
-            └── 📂 dist
+            └── 📂 distrib
 ```
 
 ### Results
@@ -47,14 +47,14 @@ build/** linguist-generated=false
 #### For `dist`
 
 - Final build artifacts clearly separated from the source code and buildsystem
-- Artifacts can be packaged or deployed directly from the "dist" directory
-- The "dist" directory can be emptied or archived without impacting source or
+- Artifacts can be packaged or deployed directly from the "distrib" directory
+- The "distrib" directory can be emptied or archived without impacting source or
   buildsystem files.
 
 We configure `.gitattributes` to be configured as seen here:[^1]
 
 ```gitattributes
-dist/** linguist-generated=true
+distrib/** linguist-generated=true
 ```
 
 ### Next Steps
