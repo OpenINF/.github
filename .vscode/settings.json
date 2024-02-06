@@ -33,7 +33,7 @@
       "source.fixAll.markdownlint": "explicit"
     },
     "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "unifiedjs.vscode-remark"
+    "editor.defaultFormatter": "unifiedjs.vscode-remark"
     // "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
 
