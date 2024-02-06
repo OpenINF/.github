@@ -4,7 +4,7 @@
 
 // import { readFileSync as fsReadFileSync } from 'node:fs';
 import { unified } from 'unified';
-// import strip from 'strip-comments';
+import strip from 'strip-comments';
 
 const infoStrings = [
   'ada',
@@ -48,28 +48,28 @@ const infoStrings = [
   'yaml',
 ];
 
-// const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
+const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
 
-// const naturalLanguage = unified().use([
-//   await import('retext-english'),
-//   await import('retext-syntax-urls'),
-//   await import('retext-equality'),
-//   await import('retext-passive'),
-//   await import('retext-profanities'),
-//   [await import('retext-readability'), { age: 21, minWords: 8 }],
-//   await import('retext-repeated-words'),
-//   [
-//     await import('retext-simplify'),
-//     { ignore: ['function', 'interface', 'maintain'] },
-//   ],
-//   [await import('retext-sentence-spacing'), { preferred: 1 }],
-//   await import('retext-syntax-mentions'),
-//   [
-//     await import('retext-spell'),
-//     { dictionary: await import('dictionary-en'), personal: projectTerms },
-//   ],
-//   await import('retext-syntax-urls'),
-// ]);
+const naturalLanguage = unified().use([
+  await import('retext-english'),
+  await import('retext-syntax-urls'),
+  await import('retext-equality'),
+  await import('retext-passive'),
+  await import('retext-profanities'),
+  [await import('retext-readability'), { age: 21, minWords: 8 }],
+  await import('retext-repeated-words'),
+  [
+    await import('retext-simplify'),
+    { ignore: ['function', 'interface', 'maintain'] },
+  ],
+  [await import('retext-sentence-spacing'), { preferred: 1 }],
+  await import('retext-syntax-mentions'),
+  [
+    await import('retext-spell'),
+    { dictionary: await import('dictionary-en'), personal: projectTerms },
+  ],
+  await import('retext-syntax-urls'),
+]);
 
 export default {
   plugins: [
