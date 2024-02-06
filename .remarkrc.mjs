@@ -97,11 +97,11 @@ export default {
     ['remark-lint-first-heading-level', 2],
 
     // Third-party plugins.
-    await import('remark-validate-links'),
-    await import('remark-lint-maximum-line-length'),
-    // await import("remark-lint-are-links-valid"),
-    // await import("@sfdocs-internal/remark-lint-no-dead-url"),
-    await import('remark-lint-no-duplicate-headings-in-section'),
+    [await import('remark-validate-links')],
+    [await import('remark-lint-maximum-line-length')],
+    // await import('remark-lint-are-links-valid'),
+    [await import('@sfdocs-internal/remark-lint-no-dead-url')],
+    [await import('remark-lint-no-duplicate-headings-in-section')],
     [await import('remark-retext'), naturalLanguage],
 
     // Disables all rules that conflict with Prettier. Leave this preset at the
