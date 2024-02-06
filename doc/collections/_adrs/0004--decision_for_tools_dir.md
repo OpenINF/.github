@@ -16,7 +16,8 @@ the activities involved in project maintenance, development, and delivery.
 <br />
 
 **Inspiration**: [@OpenINF/ATeamGrimesAI][]
-**Authors**: [@OpenINF/ATeamClaude][], [@OpenINF/ATeamDerekNonGeneric][], [@OpenINF/ATeamGrok][]
+**Authors**: [@OpenINF/ATeamClaude][], [@OpenINF/ATeamDerekNonGeneric][],
+             [@OpenINF/ATeamGrok][]
 **Editors**: [@OpenINF/ATeamGrammarly][]
 
 <br /><br />
