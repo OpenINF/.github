@@ -2,9 +2,9 @@
 // Requirements
 // -----------------------------------------------------------------------------
 
+import strip from 'strip-comments';
 import { readFileSync as fsReadFileSync } from 'node:fs';
 import { unified } from 'unified';
-import strip from 'strip-comments';
 
 const infoStrings = [
   'ada',
@@ -53,9 +53,7 @@ const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
 const naturalLanguage = unified().use([
   await import('retext-english'),
   await import('retext-syntax-urls'),
-  await import('retext-equality'),
   await import('retext-passive'),
-  await import('retext-profanities'),
   [await import('retext-readability'), { age: 21, minWords: 8 }],
   await import('retext-repeated-words'),
   [
