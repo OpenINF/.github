@@ -2,8 +2,8 @@
 // Requirements
 // -----------------------------------------------------------------------------
 
-import strip from 'strip-comments';
 import { readFileSync as fsReadFileSync } from 'node:fs';
+import strip from 'strip-comments';
 import { unified } from 'unified';
 
 const infoStrings = [
