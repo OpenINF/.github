@@ -1,9 +1,9 @@
 ---
 adr_name: ADR 0003
-title:    Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
-date:     2023-05-11 13:00:00 -0800
-updated:  2024-02-02 13:00:00 -0800
-status:   Approved
+title: Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
+date: 2023-05-11 13:00:00 -0800
+updated: 2024-02-06 13:00:00 -0800
+status: Approved
 ---
 
 ## Context
@@ -16,7 +16,7 @@ well as build artifacts (object files, binaries, etc.).
 We decided to have two directories:
 
 - A "build" directory at workspace root containing build config and scripts
-- A "dist" subdirectory in each package root to contain final build artifacts
+- A "distrib" subdirectory in each package root to contain final build artifacts
 
 #### Codebase Overview
 
@@ -25,7 +25,7 @@ We decided to have two directories:
 │   └── 📂 tasks
 └── 📁 packages
     └── 📦 inf-log
-            └── 📂 dist
+            └── 📂 distrib
 ```
 
 ### Results
@@ -47,20 +47,21 @@ build/** linguist-generated=false
 #### For `dist`
 
 - Final build artifacts clearly separated from the source code and buildsystem
-- Artifacts can be packaged or deployed directly from the "dist" directory
-- The "dist" directory can be emptied or archived without impacting source or
+- Artifacts can be packaged or deployed directly from the "distrib" directory
+- The "distrib" directory can be emptied or archived without impacting source or
   buildsystem files.
 
 We configure `.gitattributes` to be configured as seen here:[^1]
 
 ```gitattributes
-dist/** linguist-generated=true
+distrib/** linguist-generated=true
 ```
 
 ### Next Steps
 
-- Implement the decision
-- Test the implementation
-- Release after acceptable testing
+> P.1 The development of AI without a blueprint of ethical principles will have
+> dangerous, unintended consequences. P.2 We must prevent dangerous, unintended
+> consequences. C. We must develop AI with a blueprint of ethical principles to
+> prevent dangerous, unintended consequences. &mdash; OpenINF Community Effort
 
 [^1]: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md

@@ -33,8 +33,9 @@
       "source.fixAll.markdownlint": "explicit"
     },
     "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "unifiedjs.vscode-remark"
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "unifiedjs.vscode-remark"
+    // "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
 
   // Render vertical rulers after a certain number of monospace characters.

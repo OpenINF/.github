@@ -2,9 +2,9 @@
 // Requirements
 // -----------------------------------------------------------------------------
 
-// import { readFileSync as fsReadFileSync } from 'node:fs';
+import { readFileSync as fsReadFileSync } from 'node:fs';
 import { unified } from 'unified';
-// import strip from 'strip-comments';
+import strip from 'strip-comments';
 
 const infoStrings = [
   'ada',
@@ -48,28 +48,26 @@ const infoStrings = [
   'yaml',
 ];
 
-// const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
+const projectTerms = strip(fsReadFileSync('./project-terms.txt', 'utf8'));
 
-// const naturalLanguage = unified().use([
-//   await import('retext-english'),
-//   await import('retext-syntax-urls'),
-//   await import('retext-equality'),
-//   await import('retext-passive'),
-//   await import('retext-profanities'),
-//   [await import('retext-readability'), { age: 21, minWords: 8 }],
-//   await import('retext-repeated-words'),
-//   [
-//     await import('retext-simplify'),
-//     { ignore: ['function', 'interface', 'maintain'] },
-//   ],
-//   [await import('retext-sentence-spacing'), { preferred: 1 }],
-//   await import('retext-syntax-mentions'),
-//   [
-//     await import('retext-spell'),
-//     { dictionary: await import('dictionary-en'), personal: projectTerms },
-//   ],
-//   await import('retext-syntax-urls'),
-// ]);
+const naturalLanguage = unified().use([
+  [await import('retext-english'), {}],
+  [await import('retext-syntax-urls'), {}],
+  [await import('retext-passive'), {}],
+  [await import('retext-readability'), { age: 21, minWords: 8 }],
+  [await import('retext-repeated-words'), {}],
+  [
+    await import('retext-simplify'),
+    { ignore: ['function', 'interface', 'maintain'] },
+  ],
+  [await import('retext-sentence-spacing'), { preferred: 1 }],
+  [await import('retext-syntax-mentions'), {}],
+  [
+    await import('retext-spell'),
+    { dictionary: await import('dictionary-en'), personal: projectTerms },
+  ],
+  [await import('retext-syntax-urls')],
+]);
 
 export default {
   plugins: [
@@ -77,9 +75,9 @@ export default {
     ['remark-gfm'],
     ['remark-footnotes'],
     ['remark-frontmatter'],
-    await import('remark-preset-lint-consistent'),
+    [await import('remark-preset-lint-consistent'), {}],
     // Leave this preset at the top so that it can be overridden.
-    await import('remark-preset-lint-recommended'),
+    [await import('remark-preset-lint-recommended'), {}],
     [
       await import('remark-lint-checkbox-character-style'),
       {
@@ -87,10 +85,11 @@ export default {
         unchecked: ' ',
       },
     ],
-    await import('remark-lint-checkbox-content-indent'),
+    [await import('remark-lint-checkbox-content-indent')],
 
     // Remark Lint Style Guide preset and overrides.
-    ['remark-preset-lint-markdown-style-guide'],
+    [await import('remark-preset-lint-markdown-style-guide')],
+    ['remark-lint-no-file-name-consecutive-dashes', false],
     ['remark-lint-fenced-code-flag', { flags: infoStrings }],
     ['remark-lint-no-heading-punctuation', ':.,;'],
     ['remark-lint-no-file-name-mixed-case', false],
@@ -98,15 +97,13 @@ export default {
     ['remark-lint-first-heading-level', 2],
 
     // Third-party plugins.
-    await import('remark-validate-links'),
-    await import('remark-lint-maximum-line-length'),
-    // await import("remark-lint-are-links-valid"),
-    // await import("@sfdocs-internal/remark-lint-no-dead-url"),
-    await import('remark-lint-no-duplicate-headings-in-section'),
-    // [await import('remark-retext'), naturalLanguage],
+    [await import('remark-validate-links'), {}],
+    [await import('remark-lint-maximum-line-length'), {}],
+    [await import('remark-lint-no-duplicate-headings-in-section'), {}],
+    [await import('remark-retext'), naturalLanguage],
 
     // Disables all rules that conflict with Prettier. Leave this preset at the
     // bottom so that it can't be overridden.
-    await import('remark-preset-prettier'),
+    [await import('remark-preset-prettier'), {}],
   ],
 };
