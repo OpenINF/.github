@@ -3,8 +3,8 @@
 // -----------------------------------------------------------------------------
 
 import { readFileSync as fsReadFileSync } from 'node:fs';
-import strip from 'strip-comments';
 import { unified } from 'unified';
+import strip from 'strip-comments';
 
 const infoStrings = [
   'ada',
