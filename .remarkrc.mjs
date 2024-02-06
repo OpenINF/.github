@@ -2,7 +2,7 @@
 // Requirements
 // -----------------------------------------------------------------------------
 
-// import { readFileSync as fsReadFileSync } from 'node:fs';
+import { readFileSync as fsReadFileSync } from 'node:fs';
 import { unified } from 'unified';
 import strip from 'strip-comments';
 
@@ -104,7 +104,7 @@ export default {
     // await import("remark-lint-are-links-valid"),
     // await import("@sfdocs-internal/remark-lint-no-dead-url"),
     await import('remark-lint-no-duplicate-headings-in-section'),
-    // [await import('remark-retext'), naturalLanguage],
+    [await import('remark-retext'), naturalLanguage],
 
     // Disables all rules that conflict with Prettier. Leave this preset at the
     // bottom so that it can't be overridden.
