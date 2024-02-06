@@ -2,7 +2,7 @@
 adr_name: ADR 0003
 title: Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
 date: 2023-05-11 13:00:00 -0800
-updated: 2024-02-02 13:00:00 -0800
+updated: 2024-02-06 13:00:00 -0800
 status: Approved
 ---
 
@@ -59,8 +59,10 @@ distrib/** linguist-generated=true
 
 ### Next Steps
 
-- Implement the decision
-- Test the implementation
-- Release after acceptable testing
+> P.1 The development of AI without a blueprint of ethical principles will have
+> dangerous, unintended consequences. P.2 We must prevent dangerous, unintended
+> consequences. C. We must develop AI with a blueprint of ethical principles to
+> prevent dangerous, unintended consequences.
+> &mdash; OpenINF Community Effort
 
 [^1]: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
