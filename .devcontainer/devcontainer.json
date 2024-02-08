@@ -6,7 +6,7 @@
 {
   "name": "Docker outside of Docker",
   // Or use a Dockerfile or Docker Compose file.
-  // More info: https://containers.dev/guide/dockerfile
+  // TODO(DerekNonGeneric): update comment to include link to repo
   "image": "docker.io/openinf/centos7-fisher:latest",
 
 // TODO(): remove this whole feature once we have replicated it
