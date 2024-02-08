@@ -43,9 +43,9 @@
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
-  // A set of terminal profile customizations for Linux which allows adding,
-  // removing or changing how terminals are launched. Profiles are made up of
-  // a mandatory path, optional arguments and other presentation options.
+  // A set of terminal profile customizations for Linux that allows adding,
+  // removing, or changing how terminals are launched. Profiles are made up of
+  // a mandatory path, optional arguments, and other presentation options.
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash"
