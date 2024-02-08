@@ -9,6 +9,7 @@
   // More info: https://containers.dev/guide/dockerfile
   "image": "docker.io/openinf/centos7-fisher:latest",
 
+// TODO(): remove this whole feature once we have replicated it
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "version": "latest",
