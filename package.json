@@ -25,7 +25,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.23.3",
     "@babel/preset-env": "7.23.9",
     "@iktakahiro/markdown-it-katex": "4.0.1",
-    "@moonrepo/cli": "1.21.4",
+    "@moonrepo/cli": "1.22.0",
     "@openinf/util-text": "1.1.2",
     "@shopify/prettier-plugin-liquid": "1.4.3",
     "@types/markdown-it": "13.0.7",
