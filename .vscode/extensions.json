@@ -31,7 +31,7 @@
     "tamasfe.even-better-toml",
     // https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-remark
     "unifiedjs.vscode-remark"
-  ],
+  ], // unwanted/yet-to-be evaluated; (xtra release cadence); we'll get to it ^^
   "unwantedRecommendations": [
     // https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode
     "Shopify.theme-check-vscode"
