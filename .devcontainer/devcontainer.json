@@ -27,7 +27,7 @@
 
   "onCreateCommand": "fisher install jorgebucaran/nvm.fish && nvm install",
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "rbenv rehash && rbenv version local (cat .ruby-version)",
+  "postCreateCommand": "echo 'Hey diddle diddle,'",
 
   // Configure tool-specific properties.
   "customizations": {
