@@ -6,7 +6,7 @@
   "description": "Org-level default metadata & community health files",
   "repository": "https://github.com/openinf/.github",
   "license": "MIT OR Apache-2.0 OR BlueOak-1.0.0",
-  "author": "The OpenINF Authors and Friends",
+  "author": "The OpenINF Authors & Friends",
   "directories": {
     "lib": "lib",
     "doc": "doc",
