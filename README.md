@@ -200,7 +200,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 [`FUNDING.yml`]:
   https://github.com/OpenINF/.github/blob/HEAD/.github/FUNDING.yml
   'How to financially support maintenance/development of @OpenINF projects'
-[`LICENSE.md`]:
+[`/LICENSE/`]:
   https://github.com/OpenINF/.github/blob/HEAD/LICENSE
   'The open source software license(s) associated with this project'
 [`README.md`]:
