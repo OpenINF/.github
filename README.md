@@ -250,7 +250,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 [npm-badge-url]:
   https://www.npmjs.com/org/openinf
   "View all of OpenINF's packages published to the npm registry"
-[open an issue]: https://github.com/OpenINF/.github/issues
+[opening an issue]: https://github.com/OpenINF/.github/issues
 [prettier-badge]:
   https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier
   'Code Style: Prettier'
