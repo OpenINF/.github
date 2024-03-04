@@ -17,16 +17,23 @@
     "Gruntfuggly.todo-tree",
     // https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
     "ms-azuretools.vscode-docker",
+    // https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+    "ms-vscode-remote.vscode-remote-extensionpack",
     // https://marketplace.visualstudio.com/items?itemName=KatjanaKosic.vscode-json5
     "KatjanaKosic.vscode-json5",
-    // https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode
-    "Shopify.theme-check-vscode",
+    // https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml
+    "redhat.vscode-xml",
+    // https://marketplace.visualstudio.com/items?itemName=sissel.shopify-liquid
+    "sissel.shopify-liquid",
     // https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
     "streetsidesoftware.code-spell-checker",
     // https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
     "tamasfe.even-better-toml",
     // https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-remark
     "unifiedjs.vscode-remark"
-  ],
-  "unwantedRecommendations": []
+  ], // unwanted/yet-to-be evaluated; (xtra release cadence); we'll get to it ^^
+  "unwantedRecommendations": [
+    // https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode
+    "Shopify.theme-check-vscode"
+  ]
 }
