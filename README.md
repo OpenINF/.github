@@ -235,9 +235,9 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 [**@OpenINF**]: https://github.com/OpenINF
 [Community Profile]: https://github.com/OpenINF/.github/community
 [license-badge--shields]:
-  https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg?logo=github
-  'License: MIT/Apache 2.0'
-[license-badge-url]: #license 'License: MIT/Apache 2.0'
+  https://img.shields.io/badge/license-MIT%2FApache--2.0%2FBlueOak--1.0.0-blue.svg?logo=github
+  'License: MIT/Apache 2.0/BlueOak 1.0.0'
+[license-badge-url]: ./#license 'License: MIT/Apache 2.0/BlueOak 1.0.0'
 [matrix-badge--shields]:
   https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix
   'Chat on Matrix'
