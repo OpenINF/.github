@@ -145,27 +145,44 @@ but should be linked to from the root [`README.md`][] file in these cases.
 
 <br />
 
-### Contributing
+<section id="contribution">
 
-Pull requests are welcome. For major changes, please open an issue first to
-discuss what you would like to change. If for whatever reason you spot something
-to fix but cannot patch it yourself, please [open an issue][].
+### Contributing
 
 <br />
 
+Pull requests are welcome. If you plan to make significant changes, please open
+an issue to discuss the change first. If you notice something that needs fixing
+but can't do it yourself, please let us know by [opening an issue][].
+
+</section>
+
+<br /><br />
+
+<section id="licenses">
+
 ### License
 
-This project is licensed under either of
+<br />
 
+This project is licensed under either of the following:
+
+- [The MIT License](https://opensource.org/licenses/MIT)
 - [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-- [MIT license](https://opensource.org/licenses/MIT)
+- [Blue Oak Model License, Version 1.0.0](https://blueoakcouncil.org/license/1.0.0)
 
 at your option.
 
 The [SPDX](https://spdx.dev) license identifier for this project is
-`MIT OR Apache-2.0`.
+`MIT OR Apache-2.0 OR BlueOak-1.0.0`.
+
+</section>
 
 <br /><br />
+
+---
+
+<br />
 
 <div align="center">
 
