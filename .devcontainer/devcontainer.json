@@ -4,9 +4,6 @@
 {
   "name": "🦞 OpenINF GrimesAI Salvage Tex: Lunar (OpenINF Community)",
   "image": "openinf/grimesai-salvage-tex:lunar",
-  "runArgs": ["--cap-add=SYS_ADMIN", "--security-opt", "seccomp=unconfined"],
-  "overrideCommand": false,
-  "mounts": ["type=bind,source=/home/runner/logs,target=/var/logs"],
 
   // Use this environment variable if you need to bind mount your local source
   // code into a new container.
@@ -27,8 +24,7 @@
   ],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": ["/bin/sh", "-c", "(/bin/sh (echo 'hey diddle diddle') >> 2>&1 /var/logs/garbage.log)"],
-
+  "postCreateCommand": "echo 'Hey diddle diddle'",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -37,10 +33,12 @@
       // Set *default* container-specific settings.json values on container
       // create.
       "settings": {
-        "terminal.integrated.profiles.linux": {
-          "fish": {
-            "path": "fish"
-          }
+        // "terminal.integrated.cwd": "~",
+        // "terminal.integrated.profiles.linux": {
+        //   "fish": {
+        //     "path": "/usr/local/bin/fish",
+        //     "args": ["-c"]
+        //   }
         },
         "terminal.integrated.defaultProfile.linux": "fish"
       },
