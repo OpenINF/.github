@@ -209,6 +209,11 @@
       "description": "Terms used in this project",
       "addWords": true
     }
-  }
+  },
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.automationProfile.linux": {
+    "path": "fish",
+  },
+
 }
 
