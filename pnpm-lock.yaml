@@ -4,280 +4,277 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
-
-  .:
-    devDependencies:
-      '@babel/core':
-        specifier: 7.24.0
-        version: 7.24.0
-      '@babel/eslint-parser':
-        specifier: 7.23.10
-        version: 7.23.10(@babel/core@7.24.0)(eslint@8.57.0)
-      '@babel/plugin-syntax-jsx':
-        specifier: 7.23.3
-        version: 7.23.3(@babel/core@7.24.0)
-      '@babel/plugin-syntax-top-level-await':
-        specifier: 7.14.5
-        version: 7.14.5(@babel/core@7.24.0)
-      '@babel/plugin-transform-modules-commonjs':
-        specifier: 7.23.3
-        version: 7.23.3(@babel/core@7.24.0)
-      '@babel/preset-env':
-        specifier: 7.24.0
-        version: 7.24.0(@babel/core@7.24.0)
-      '@iktakahiro/markdown-it-katex':
-        specifier: 4.0.1
-        version: 4.0.1
-      '@moonrepo/cli':
-        specifier: 1.22.7
-        version: 1.22.7
-      '@openinf/util-text':
-        specifier: 1.1.2
-        version: 1.1.2
-      '@shopify/prettier-plugin-liquid':
-        specifier: 1.4.4
-        version: 1.4.4(prettier@3.2.5)
-      '@types/markdown-it':
-        specifier: 13.0.7
-        version: 13.0.7
-      '@types/node':
-        specifier: 20.x
-        version: 20.11.28
-      '@typescript-eslint/eslint-plugin':
-        specifier: 7.2.0
-        version: 7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.2)
-      '@typescript-eslint/parser':
-        specifier: 7.2.0
-        version: 7.2.0(eslint@8.57.0)(typescript@5.4.2)
-      '@yarnpkg/shell':
-        specifier: 4.0.0
-        version: 4.0.0(typanion@3.14.0)
-      chomp:
-        specifier: 0.2.17
-        version: 0.2.17
-      dictionary-en:
-        specifier: 4.0.0
-        version: 4.0.0
-      dprint:
-        specifier: 0.45.0
-        version: 0.45.0
-      editorconfig-checker:
-        specifier: 5.1.5
-        version: 5.1.5
-      eslint:
-        specifier: 8.57.0
-        version: 8.57.0
-      eslint-config-prettier:
-        specifier: 9.1.0
-        version: 9.1.0(eslint@8.57.0)
-      eslint-import-resolver-node:
-        specifier: 0.3.9
-        version: 0.3.9
-      eslint-import-resolver-typescript:
-        specifier: 3.6.1
-        version: 3.6.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import:
-        specifier: 2.29.1
-        version: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-json-schema-validator:
-        specifier: 4.8.3
-        version: 4.8.3(eslint@8.57.0)
-      eslint-plugin-jsonc:
-        specifier: 2.13.0
-        version: 2.13.0(eslint@8.57.0)
-      eslint-plugin-markdown:
-        specifier: 4.0.1
-        version: 4.0.1(eslint@8.57.0)
-      eslint-plugin-prettier:
-        specifier: 5.1.3
-        version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.2.5)
-      eslint-plugin-promise:
-        specifier: 6.1.1
-        version: 6.1.1(eslint@8.57.0)
-      eslint-plugin-regexp:
-        specifier: 2.3.0
-        version: 2.3.0(eslint@8.57.0)
-      eslint-plugin-simple-import-sort:
-        specifier: 12.0.0
-        version: 12.0.0(eslint@8.57.0)
-      eslint-plugin-unicorn:
-        specifier: 51.0.1
-        version: 51.0.1(eslint@8.57.0)
-      eslint-plugin-wix-editor:
-        specifier: 3.3.0
-        version: 3.3.0
-      eslint-plugin-yml:
-        specifier: 1.12.2
-        version: 1.12.2(eslint@8.57.0)
-      markdown-it:
-        specifier: 14.0.0
-        version: 14.0.0
-      markdown-it-abbr:
-        specifier: 2.0.0
-        version: 2.0.0
-      markdown-it-anchor:
-        specifier: 8.6.7
-        version: 8.6.7(@types/markdown-it@13.0.7)(markdown-it@14.0.0)
-      markdown-it-footnote:
-        specifier: 4.0.0
-        version: 4.0.0
-      markdown-it-sub:
-        specifier: 2.0.0
-        version: 2.0.0
-      markdown-it-sup:
-        specifier: 2.0.0
-        version: 2.0.0
-      markdown-it-task-lists:
-        specifier: 2.1.1
-        version: 2.1.1
-      markdown-it-toc-done-right:
-        specifier: 4.2.0
-        version: 4.2.0
-      markdownlint-cli2:
-        specifier: 0.12.1
-        version: 0.12.1
-      markdownlint-cli2-formatter-default:
-        specifier: 0.0.4
-        version: 0.0.4(markdownlint-cli2@0.12.1)
-      nps:
-        specifier: 5.10.0
-        version: 5.10.0
-      prettier:
-        specifier: 3.2.5
-        version: 3.2.5
-      remark:
-        specifier: 15.0.1
-        version: 15.0.1
-      remark-cli:
-        specifier: 12.0.0
-        version: 12.0.0
-      remark-directive:
-        specifier: 3.0.0
-        version: 3.0.0
-      remark-footnotes:
-        specifier: 4.0.1
-        version: 4.0.1
-      remark-frontmatter:
-        specifier: 5.0.0
-        version: 5.0.0
-      remark-gfm:
-        specifier: 4.0.0
-        version: 4.0.0
-      remark-github:
-        specifier: 12.0.0
-        version: 12.0.0
-      remark-heading-id:
-        specifier: 1.0.1
-        version: 1.0.1
-      remark-hint:
-        specifier: 1.0.10
-        version: 1.0.10
-      remark-html:
-        specifier: 16.0.1
-        version: 16.0.1
-      remark-lint:
-        specifier: 9.1.2
-        version: 9.1.2
-      remark-lint-blockquote-indentation:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-checkbox-character-style:
-        specifier: 4.1.2
-        version: 4.1.2
-      remark-lint-checkbox-content-indent:
-        specifier: 4.1.2
-        version: 4.1.2
-      remark-lint-code-block-style:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-definition-spacing:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-fenced-code-flag:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-first-heading-level:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-maximum-line-length:
-        specifier: 3.1.3
-        version: 3.1.3
-      remark-lint-no-duplicate-headings-in-section:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-no-file-name-consecutive-dashes:
-        specifier: 2.1.2
-        version: 2.1.2
-      remark-lint-no-file-name-irregular-characters:
-        specifier: 2.1.2
-        version: 2.1.2
-      remark-lint-no-file-name-mixed-case:
-        specifier: 2.1.2
-        version: 2.1.2
-      remark-lint-no-heading-punctuation:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-lint-no-html:
-        specifier: 3.1.2
-        version: 3.1.2
-      remark-preset-lint-consistent:
-        specifier: 5.1.2
-        version: 5.1.2
-      remark-preset-lint-markdown-style-guide:
-        specifier: 5.1.3
-        version: 5.1.3
-      remark-preset-lint-recommended:
-        specifier: 6.1.3
-        version: 6.1.3
-      remark-preset-prettier:
-        specifier: 2.0.1
-        version: 2.0.1(prettier@3.2.5)
-      remark-retext:
-        specifier: 6.0.0
-        version: 6.0.0
-      remark-validate-links:
-        specifier: 13.0.0
-        version: 13.0.0
-      retext-english:
-        specifier: 5.0.0
-        version: 5.0.0
-      retext-passive:
-        specifier: 5.0.0
-        version: 5.0.0
-      retext-readability:
-        specifier: 8.0.0
-        version: 8.0.0
-      retext-repeated-words:
-        specifier: 5.0.0
-        version: 5.0.0
-      retext-sentence-spacing:
-        specifier: 6.0.0
-        version: 6.0.0
-      retext-simplify:
-        specifier: 8.0.0
-        version: 8.0.0
-      retext-spell:
-        specifier: 6.1.0
-        version: 6.1.0
-      retext-syntax-mentions:
-        specifier: 4.0.0
-        version: 4.0.0
-      retext-syntax-urls:
-        specifier: 4.0.0
-        version: 4.0.0
-      strip-comments:
-        specifier: 2.0.1
-        version: 2.0.1
-      typescript:
-        specifier: 5.4.2
-        version: 5.4.2
-      unified:
-        specifier: 11.0.4
-        version: 11.0.4
-      zx:
-        specifier: 7.2.3
-        version: 7.2.3
+devDependencies:
+  '@babel/core':
+    specifier: 7.24.0
+    version: 7.24.0
+  '@babel/eslint-parser':
+    specifier: 7.23.10
+    version: 7.23.10(@babel/core@7.24.0)(eslint@8.57.0)
+  '@babel/plugin-syntax-jsx':
+    specifier: 7.23.3
+    version: 7.23.3(@babel/core@7.24.0)
+  '@babel/plugin-syntax-top-level-await':
+    specifier: 7.14.5
+    version: 7.14.5(@babel/core@7.24.0)
+  '@babel/plugin-transform-modules-commonjs':
+    specifier: 7.23.3
+    version: 7.23.3(@babel/core@7.24.0)
+  '@babel/preset-env':
+    specifier: 7.24.0
+    version: 7.24.0(@babel/core@7.24.0)
+  '@iktakahiro/markdown-it-katex':
+    specifier: 4.0.1
+    version: 4.0.1
+  '@moonrepo/cli':
+    specifier: 1.23.0
+    version: 1.23.0
+  '@openinf/util-text':
+    specifier: 1.1.2
+    version: 1.1.2
+  '@shopify/prettier-plugin-liquid':
+    specifier: 1.4.4
+    version: 1.4.4(prettier@3.2.5)
+  '@types/markdown-it':
+    specifier: 13.0.7
+    version: 13.0.7
+  '@types/node':
+    specifier: 20.x
+    version: 20.11.28
+  '@typescript-eslint/eslint-plugin':
+    specifier: 7.2.0
+    version: 7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.2)
+  '@typescript-eslint/parser':
+    specifier: 7.2.0
+    version: 7.2.0(eslint@8.57.0)(typescript@5.4.2)
+  '@yarnpkg/shell':
+    specifier: 4.0.0
+    version: 4.0.0(typanion@3.14.0)
+  chomp:
+    specifier: 0.2.17
+    version: 0.2.17
+  dictionary-en:
+    specifier: 4.0.0
+    version: 4.0.0
+  dprint:
+    specifier: 0.45.0
+    version: 0.45.0
+  editorconfig-checker:
+    specifier: 5.1.5
+    version: 5.1.5
+  eslint:
+    specifier: 8.57.0
+    version: 8.57.0
+  eslint-config-prettier:
+    specifier: 9.1.0
+    version: 9.1.0(eslint@8.57.0)
+  eslint-import-resolver-node:
+    specifier: 0.3.9
+    version: 0.3.9
+  eslint-import-resolver-typescript:
+    specifier: 3.6.1
+    version: 3.6.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+  eslint-plugin-import:
+    specifier: 2.29.1
+    version: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+  eslint-plugin-json-schema-validator:
+    specifier: 4.8.3
+    version: 4.8.3(eslint@8.57.0)
+  eslint-plugin-jsonc:
+    specifier: 2.13.0
+    version: 2.13.0(eslint@8.57.0)
+  eslint-plugin-markdown:
+    specifier: 4.0.1
+    version: 4.0.1(eslint@8.57.0)
+  eslint-plugin-prettier:
+    specifier: 5.1.3
+    version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.2.5)
+  eslint-plugin-promise:
+    specifier: 6.1.1
+    version: 6.1.1(eslint@8.57.0)
+  eslint-plugin-regexp:
+    specifier: 2.3.0
+    version: 2.3.0(eslint@8.57.0)
+  eslint-plugin-simple-import-sort:
+    specifier: 12.0.0
+    version: 12.0.0(eslint@8.57.0)
+  eslint-plugin-unicorn:
+    specifier: 51.0.1
+    version: 51.0.1(eslint@8.57.0)
+  eslint-plugin-wix-editor:
+    specifier: 3.3.0
+    version: 3.3.0
+  eslint-plugin-yml:
+    specifier: 1.12.2
+    version: 1.12.2(eslint@8.57.0)
+  markdown-it:
+    specifier: 14.0.0
+    version: 14.0.0
+  markdown-it-abbr:
+    specifier: 2.0.0
+    version: 2.0.0
+  markdown-it-anchor:
+    specifier: 8.6.7
+    version: 8.6.7(@types/markdown-it@13.0.7)(markdown-it@14.0.0)
+  markdown-it-footnote:
+    specifier: 4.0.0
+    version: 4.0.0
+  markdown-it-sub:
+    specifier: 2.0.0
+    version: 2.0.0
+  markdown-it-sup:
+    specifier: 2.0.0
+    version: 2.0.0
+  markdown-it-task-lists:
+    specifier: 2.1.1
+    version: 2.1.1
+  markdown-it-toc-done-right:
+    specifier: 4.2.0
+    version: 4.2.0
+  markdownlint-cli2:
+    specifier: 0.12.1
+    version: 0.12.1
+  markdownlint-cli2-formatter-default:
+    specifier: 0.0.4
+    version: 0.0.4(markdownlint-cli2@0.12.1)
+  nps:
+    specifier: 5.10.0
+    version: 5.10.0
+  prettier:
+    specifier: 3.2.5
+    version: 3.2.5
+  remark:
+    specifier: 15.0.1
+    version: 15.0.1
+  remark-cli:
+    specifier: 12.0.0
+    version: 12.0.0
+  remark-directive:
+    specifier: 3.0.0
+    version: 3.0.0
+  remark-footnotes:
+    specifier: 4.0.1
+    version: 4.0.1
+  remark-frontmatter:
+    specifier: 5.0.0
+    version: 5.0.0
+  remark-gfm:
+    specifier: 4.0.0
+    version: 4.0.0
+  remark-github:
+    specifier: 12.0.0
+    version: 12.0.0
+  remark-heading-id:
+    specifier: 1.0.1
+    version: 1.0.1
+  remark-hint:
+    specifier: 1.0.10
+    version: 1.0.10
+  remark-html:
+    specifier: 16.0.1
+    version: 16.0.1
+  remark-lint:
+    specifier: 9.1.2
+    version: 9.1.2
+  remark-lint-blockquote-indentation:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-checkbox-character-style:
+    specifier: 4.1.2
+    version: 4.1.2
+  remark-lint-checkbox-content-indent:
+    specifier: 4.1.2
+    version: 4.1.2
+  remark-lint-code-block-style:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-definition-spacing:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-fenced-code-flag:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-first-heading-level:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-maximum-line-length:
+    specifier: 3.1.3
+    version: 3.1.3
+  remark-lint-no-duplicate-headings-in-section:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-no-file-name-consecutive-dashes:
+    specifier: 2.1.2
+    version: 2.1.2
+  remark-lint-no-file-name-irregular-characters:
+    specifier: 2.1.2
+    version: 2.1.2
+  remark-lint-no-file-name-mixed-case:
+    specifier: 2.1.2
+    version: 2.1.2
+  remark-lint-no-heading-punctuation:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-lint-no-html:
+    specifier: 3.1.2
+    version: 3.1.2
+  remark-preset-lint-consistent:
+    specifier: 5.1.2
+    version: 5.1.2
+  remark-preset-lint-markdown-style-guide:
+    specifier: 5.1.3
+    version: 5.1.3
+  remark-preset-lint-recommended:
+    specifier: 6.1.3
+    version: 6.1.3
+  remark-preset-prettier:
+    specifier: 2.0.1
+    version: 2.0.1(prettier@3.2.5)
+  remark-retext:
+    specifier: 6.0.0
+    version: 6.0.0
+  remark-validate-links:
+    specifier: 13.0.0
+    version: 13.0.0
+  retext-english:
+    specifier: 5.0.0
+    version: 5.0.0
+  retext-passive:
+    specifier: 5.0.0
+    version: 5.0.0
+  retext-readability:
+    specifier: 8.0.0
+    version: 8.0.0
+  retext-repeated-words:
+    specifier: 5.0.0
+    version: 5.0.0
+  retext-sentence-spacing:
+    specifier: 6.0.0
+    version: 6.0.0
+  retext-simplify:
+    specifier: 8.0.0
+    version: 8.0.0
+  retext-spell:
+    specifier: 6.1.0
+    version: 6.1.0
+  retext-syntax-mentions:
+    specifier: 4.0.0
+    version: 4.0.0
+  retext-syntax-urls:
+    specifier: 4.0.0
+    version: 4.0.0
+  strip-comments:
+    specifier: 2.0.1
+    version: 2.0.1
+  typescript:
+    specifier: 5.4.2
+    version: 5.4.2
+  unified:
+    specifier: 11.0.4
+    version: 11.0.4
+  zx:
+    specifier: 7.2.3
+    version: 7.2.3
 
 packages:
 
@@ -1659,72 +1656,72 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@moonrepo/cli@1.22.7:
-    resolution: {integrity: sha512-N4s5/JONW2vJtwDZKlsgejW9eQRoIT6Vu8TkitJf/fvNKZxGZkapNG+VWVRKy1hghX/4Khs4N5L4MqRhG8Ptsw==}
+  /@moonrepo/cli@1.23.0:
+    resolution: {integrity: sha512-2+1aF6d1GVxtzocAYIMKrMikw5lFzvD1B59gE8z3adi3AaPKft4ZRsxu5KbavZmgPYo8GhTJdNed3juua5N/5A==}
     hasBin: true
     requiresBuild: true
     dependencies:
       detect-libc: 2.0.2
     optionalDependencies:
-      '@moonrepo/core-linux-arm64-gnu': 1.22.7
-      '@moonrepo/core-linux-arm64-musl': 1.22.7
-      '@moonrepo/core-linux-x64-gnu': 1.22.7
-      '@moonrepo/core-linux-x64-musl': 1.22.7
-      '@moonrepo/core-macos-arm64': 1.22.7
-      '@moonrepo/core-macos-x64': 1.22.7
-      '@moonrepo/core-windows-x64-msvc': 1.22.7
+      '@moonrepo/core-linux-arm64-gnu': 1.23.0
+      '@moonrepo/core-linux-arm64-musl': 1.23.0
+      '@moonrepo/core-linux-x64-gnu': 1.23.0
+      '@moonrepo/core-linux-x64-musl': 1.23.0
+      '@moonrepo/core-macos-arm64': 1.23.0
+      '@moonrepo/core-macos-x64': 1.23.0
+      '@moonrepo/core-windows-x64-msvc': 1.23.0
     dev: true
 
-  /@moonrepo/core-linux-arm64-gnu@1.22.7:
-    resolution: {integrity: sha512-dj1Mzsh0iZMa19LgXpt4a55kI1IeuRYYbSgVHJA7Fe8F1fTjOy4AM8vrGe4ZqBEDxKgKrkJdv1wqRZg4Z71qeg==}
+  /@moonrepo/core-linux-arm64-gnu@1.23.0:
+    resolution: {integrity: sha512-YMDQwC6AWwivBKOaTKBlNoCU9kzb6zFKldsMQExIk0cYvvUfP16RxLy4rN5ENucVqJPw1bQBVXyNlEwjc1ljNg==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-linux-arm64-musl@1.22.7:
-    resolution: {integrity: sha512-IjgxrbL8pOyX1RATgLAqTFAtq/uByDexTYUXm3hFlgf/VDqS68JwH+MBHndBI903+0rV8NSDKjhYZTxCzZx+6Q==}
+  /@moonrepo/core-linux-arm64-musl@1.23.0:
+    resolution: {integrity: sha512-ytCkxuP3kAabff0bDKFLvn9Fx5HGioO3+gHyrylAM1dxBKw0DhxtWgCFEG65yN3EU+Ld56B2gMscEKO5VFve8g==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-linux-x64-gnu@1.22.7:
-    resolution: {integrity: sha512-qEFG18QnhYeUbCVDx1gVOUuClC+Oite5PQMQcXO47iKu5MenkiH9ldiVNzcTGI2Mo4CwIwgVkwaaTlJaGmTPCw==}
+  /@moonrepo/core-linux-x64-gnu@1.23.0:
+    resolution: {integrity: sha512-anO1X8h0iIDBusI7MtpqJjxlKHaTEalo/2+oP9JDIaRBJz/1v7s/RGXbWRrLkPTiCU1FQn4eYLezlscyM4WNcQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-linux-x64-musl@1.22.7:
-    resolution: {integrity: sha512-jkn/ff0BWzSd97MP3VJ+s9hlpmNrygL5WV4MzGq6TF/gr/uER8cHDdSsN4/Dt06NFH8EQxXkesBNG/EJXo1Axg==}
+  /@moonrepo/core-linux-x64-musl@1.23.0:
+    resolution: {integrity: sha512-d+gNZdq//iBDTaYD3WJSCOAv/bstPKjil7Q8yrI+IxeF4oKjkfDKWGu+p+g3Ujd46mEK8ASE26kcmOE0L8xmGw==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-macos-arm64@1.22.7:
-    resolution: {integrity: sha512-/PqWbaY/T+jNunQ0t7aypYsY77CZ50nyUmasYcUyoeYXu6c7e1+qtXIuIG4HWeKaTTjRZKoBXZiL+GkbXlTQeQ==}
+  /@moonrepo/core-macos-arm64@1.23.0:
+    resolution: {integrity: sha512-7ZHQuAyZkSgkjtm36/OwSpb0PFuH3J6BmFANDpTDqz4VMOBn8BllMnRNJmHa3U1U4USA5KR3/jj92ZzhlrqyDQ==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-macos-x64@1.22.7:
-    resolution: {integrity: sha512-X6ahl3b+Nwhdw84NdUA9Ss5VMFlIsmK01u6iwJFy/ymfXwK05tM2LdEBhpJWxOsOTNjFS3gJp4zvNkgsLQb+kQ==}
+  /@moonrepo/core-macos-x64@1.23.0:
+    resolution: {integrity: sha512-YybtXysfhjvjPk7y6X+mZSwYLkVXZTwA0z/7uQU/4b7E+tlEgoMyyw/V0DVE9bccab3VgNJ0VDvcKxSmibbcNA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-windows-x64-msvc@1.22.7:
-    resolution: {integrity: sha512-t6xgorQGAXOIUyoMYMkOq408Kdr+hwqMBlyaZjEXC+p2H2TRFNXBWCsz3yFst++V3OT9lfipD9QUDpeQ06WWrw==}
+  /@moonrepo/core-windows-x64-msvc@1.23.0:
+    resolution: {integrity: sha512-Aqae8pkrkYm/1n7DN+c6MRoDvTMkm5+1N3jjZb7y7ic2QVU3HVWZ0POGttQsTRJhwiYYQKEcJvIFpjQFt6XLcQ==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
