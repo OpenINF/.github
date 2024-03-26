@@ -105,7 +105,7 @@
     "retext-syntax-mentions": "4.0.0",
     "retext-syntax-urls": "4.0.0",
     "strip-comments": "2.0.1",
-    "typescript": "5.4.2",
+    "typescript": "5.4.3",
     "unified": "11.0.4",
     "zx": "7.2.3"
   }
