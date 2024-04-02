@@ -33,12 +33,12 @@
       // Set *default* container-specific settings.json values on container
       // create.
       "settings": {
-        "terminal.integrated.cwd": "~",
-        "terminal.integrated.profiles.linux": {
-          "fish": {
-            "path": "/usr/local/bin/fish",
-            "args": ["-c"]
-          }
+        // "terminal.integrated.cwd": "~",
+        // "terminal.integrated.profiles.linux": {
+        //   "fish": {
+        //     "path": "/usr/local/bin/fish",
+        //     "args": ["-c"]
+        //   }
         },
         "terminal.integrated.defaultProfile.linux": "fish"
       },
