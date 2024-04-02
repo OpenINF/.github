@@ -12,7 +12,7 @@
 FROM openinf/grimesai-salvage-tex:lunar
 
 # When one is in an npm ecosystem, perhaps it's customary to
-# add global to $PATH, but we have no reason in our situation.
+# add global to $PATH, but we haven't any reason.
 # ENV PATH=${NPM_GLOBAL}/bin:${PATH}
 
 ARG USERNAME=vscode
