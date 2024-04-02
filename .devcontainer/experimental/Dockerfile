@@ -23,7 +23,7 @@ ARG UPGRADE_PACKAGES="true"
 USER 0
 
 # COPY library-scripts/*.sh /tmp/library-scripts/
-# skipcq: DOK-DL3008
+# skipcq: DL3008
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
   # && /bin/bash /tmp/library-scripts/common-debian.sh "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" \
   # && /bin/bash /tmp/library-scripts/fish-debian.sh "${USERNAME}" \
