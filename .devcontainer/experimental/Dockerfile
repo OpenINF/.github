@@ -1,5 +1,4 @@
-# syntax=docker/dockerfile:1.7.0-labs
-
+# syntax=docker/dockerfile:1
 # ------------------------------------------------------------------------------
 # Copyright (c) The OpenINF Authors & Friends. All rights reserved.
 # License: MIT OR Apache-2.0 OR BlueOak-1.0.0
