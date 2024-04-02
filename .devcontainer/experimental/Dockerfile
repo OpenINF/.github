@@ -1,4 +1,5 @@
-FROM openinf/grimesai-salvage-tex:lunar@sha256:85db277df2bb6b07922478085cd612a67a9a7d3923b09135a7f6bd9bd65ca89a
+# syntax=docker/dockerfile:1
+FROM openinf/grimesai-salvage-tex:lunar
 
 # Add NPM global to PATH.
 ENV PATH=${NPM_GLOBAL}/bin:${PATH}
