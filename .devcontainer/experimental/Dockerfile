@@ -11,7 +11,7 @@
 FROM openinf/grimesai-salvage-tex:lunar
 
 # When one is in an npm ecosystem, perhaps it's customary to
-# add NPM_GLOBAL global to PATH and we shall see.
+# add value assigned NPM_GLOBAL (for global install dir) to PATH, and shall see.
 ENV PATH=${NPM_GLOBAL}/bin:${PATH}
 
 ARG USERNAME=vscode
