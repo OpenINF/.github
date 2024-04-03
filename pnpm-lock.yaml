@@ -81,8 +81,8 @@ importers:
         specifier: 2.29.1
         version: 2.29.1(@typescript-eslint/parser@7.2.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-json-schema-validator:
-        specifier: 4.9.0
-        version: 4.9.0(eslint@8.57.0)
+        specifier: 5.1.0
+        version: 5.1.0(eslint@8.57.0)
       eslint-plugin-jsonc:
         specifier: 2.15.0
         version: 2.15.0(eslint@8.57.0)
@@ -102,8 +102,8 @@ importers:
         specifier: 12.0.0
         version: 12.0.0(eslint@8.57.0)
       eslint-plugin-unicorn:
-        specifier: 51.0.1
-        version: 51.0.1(eslint@8.57.0)
+        specifier: 52.0.0
+        version: 52.0.0(eslint@8.57.0)
       eslint-plugin-wix-editor:
         specifier: 3.3.0
         version: 3.3.0
@@ -3389,8 +3389,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-json-schema-validator@4.9.0(eslint@8.57.0):
-    resolution: {integrity: sha512-cFw/lWw798mc8S4x2JGVjCT/m9ztOKbbbvpRmuJOBvVWPCjiQ1YrmFzudm+fD4KHlQ4i9Atl7Q966I/bigaOvQ==}
+  /eslint-plugin-json-schema-validator@5.1.0(eslint@8.57.0):
+    resolution: {integrity: sha512-ZmVyxRIjm58oqe2kTuy90PpmZPrrKvOjRPXKzq8WCgRgAkidCgm5X8domL2KSfadZ3QFAmifMgGTcVNhZ5ez2g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -3493,8 +3493,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-unicorn@51.0.1(eslint@8.57.0):
-    resolution: {integrity: sha512-MuR/+9VuB0fydoI0nIn2RDA5WISRn4AsJyNSaNKLVwie9/ONvQhxOBbkfSICBPnzKrB77Fh6CZZXjgTt/4Latw==}
+  /eslint-plugin-unicorn@52.0.0(eslint@8.57.0):
+    resolution: {integrity: sha512-1Yzm7/m+0R4djH0tjDjfVei/ju2w3AzUGjG6q8JnuNIL5xIwsflyCooW5sfBvQp2pMYQFSWWCFONsjCax1EHng==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: '>=8.56.0'
