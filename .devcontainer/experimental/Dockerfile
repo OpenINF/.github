@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1
+# syntax=docker/dockerfile:1@sha256:ac85f380a63b13dfcefa89046420e1781752bab202122f8f50032edf31be0021
 # ------------------------------------------------------------------------------
 # Copyright (c) The OpenINF Authors & Friends. All rights reserved.
 # License: MIT OR Apache-2.0 OR BlueOak-1.0.0
@@ -8,7 +8,7 @@
 #    Requirements
 # *********************
 
-FROM openinf/grimesai-salvage-tex:lunar
+FROM openinf/grimesai-salvage-tex:lunar@sha256:85db277df2bb6b07922478085cd612a67a9a7d3923b09135a7f6bd9bd65ca89a
 
 # When one is in an npm ecosystem, perhaps it's customary to
 # add value assigned to NPM_GLOBAL (for global install dir) to
