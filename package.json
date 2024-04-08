@@ -27,7 +27,7 @@
     "@iktakahiro/markdown-it-katex": "4.0.1",
     "@openinf/util-text": "1.1.2",
     "@shopify/prettier-plugin-liquid": "1.4.4",
-    "@types/markdown-it": "13.0.7",
+    "@types/markdown-it": "14.0.0",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
@@ -36,7 +36,7 @@
     "dictionary-en": "4.0.0",
     "dprint": "0.45.1",
     "editorconfig-checker": "5.1.5",
-    "eslint": "8.57.0",
+    "eslint": "9.0.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-node": "0.3.9",
     "eslint-import-resolver-typescript": "3.6.1",
@@ -106,6 +106,6 @@
     "strip-comments": "2.0.1",
     "typescript": "5.4.4",
     "unified": "11.0.4",
-    "zx": "7.2.3"
+    "zx": "8.0.0"
   }
 }
