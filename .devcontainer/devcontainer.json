@@ -3,29 +3,10 @@
 // https://github.com/OpenINF/docker-fisher
 {
   "name": "🦞 OpenINF GrimesAI Salvage Tex: Lunar (OpenINF Community)",
-  "image": "openinf/grimesai-salvage-tex:lunar",
-
-  // Use this environment variable if you need to bind mount your local source
-  // code into a new container.
-  "remoteEnv": {
-    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
-    "PATH": "${containerEnv:PATH}:~/.rbenv/shims/"
+  "build": {
+    "dockerfile": "./experimental/Dockerfile"
   },
-
-  // Use 'forwardPorts' to make a list of ports inside the container available
-  // locally.
-  "forwardPorts": [
-    // Jekyll server
-    4000,
-    // Live reload server
-    35729,
-    // OpenSSH server
-    2222
-  ],
-
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "echo 'Hey diddle diddle'",
-
+  "runArgs": [],
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
@@ -33,12 +14,10 @@
       // Set *default* container-specific settings.json values on container
       // create.
       "settings": {
-        // "terminal.integrated.cwd": "~",
-        // "terminal.integrated.profiles.linux": {
-        //   "fish": {
-        //     "path": "/usr/local/bin/fish",
-        //     "args": ["-c"]
-        //   }
+        "terminal.integrated.profiles.linux": {
+          "fish": {
+            "path": "fish"
+          }
         },
         "terminal.integrated.defaultProfile.linux": "fish"
       },
@@ -46,12 +25,14 @@
       "extensions": [
         // https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
         "aaron-bond.better-comments",
+        // https://marketplace.visualstudio.com/items?itemName=biomejs.biome
+        "biomejs.biome",
         // https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
         "davidanson.vscode-markdownlint",
         // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
         "dbaeumer.vscode-eslint",
         // https://marketplace.visualstudio.com/items?itemName=dprint.dprint
-        // "dprint.dprint",
+        "dprint.dprint",
         // https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig
         "editorconfig.editorconfig",
         // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
@@ -73,8 +54,29 @@
       ]
     }
   },
+  // Use 'forwardPorts' to make a list of ports inside the container available
+  // locally.
+  "forwardPorts": [
+    // Jekyll server
+    4000,
+    // Live reload server
+    35729,
+    // OpenSSH server
+    2222
+  ],
+  "overrideCommand": false,
 
-  // Uncomment to connect as root instead.
-  // More info: https://aka.ms/dev-containers-non-root.
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+
+  // Use 'postCreateCommand' to run commands after creating the container.
+  // https://code.visualstudio.com/docs/devcontainers/create-dev-container#_rebuild
+  "postCreateCommand": "fish -i '${containerWorkspaceFolder}/tools/devcontainer/post-create.fish'",
+  "postStartCommand": "fish -i '${containerWorkspaceFolder}/tools/devcontainer/post-start.fish'",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:~/.rbenv/shims/"
+  },
+  // Comment out to connect as root instead.
+  // More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode"
 }
