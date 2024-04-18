@@ -1536,8 +1536,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  electron-to-chromium@1.4.738:
-    resolution: {integrity: sha512-lwKft2CLFztD+vEIpesrOtCrko/TFnEJlHFdRhazU7Y/jx5qc4cqsocfVrBg4So4gGe9lvxnbLIoev47WMpg+A==}
+  electron-to-chromium@1.4.740:
+    resolution: {integrity: sha512-Yvg5i+iyv7Xm18BRdVPVm8lc7kgxM3r6iwqCH2zB7QZy1kZRNmd0Zqm0zcD9XoFREE5/5rwIuIAOT+/mzGcnZg==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -3057,8 +3057,8 @@ packages:
   remark-lint-file-extension@3.0.0:
     resolution: {integrity: sha512-wrOKiGvcl/ftB7FkeX2/l13ALvhKXV77HGR8AXo86cVY2pD+K0WdOC52DV3ldgpUXpWzE9kcgF8bbkxwzKpFFg==}
 
-  remark-lint-final-definition@4.0.0:
-    resolution: {integrity: sha512-2J7UXqa2uipXM7ptI2ORayptty/SaLtM+ii+vP8ZQHps2U2AlQmBTKF2VpQyL+/J6tM4g3Har4r7SoB01PeuUg==}
+  remark-lint-final-definition@4.0.1:
+    resolution: {integrity: sha512-51T9oSdA7wuhjSdgGo0snO1BY39Igt9cJQi7XpgtgFsbfQk8zSSAUAc/rLabY6+YCTpcPs6qmwvLXZ4mPX6Qlg==}
 
   remark-lint-final-newline@3.0.0:
     resolution: {integrity: sha512-NaPyn6FiOn3IV/6gIcwWfJmgraPT2IaVLjhakfPglZkKVfn/FrOfETyY8Bp+HLoSRI9967OH0yRDnK7/pPIWeQ==}
@@ -5041,7 +5041,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001610
-      electron-to-chromium: 1.4.738
+      electron-to-chromium: 1.4.740
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
 
@@ -5267,7 +5267,7 @@ snapshots:
 
   editorconfig-checker@5.1.5: {}
 
-  electron-to-chromium@1.4.738: {}
+  electron-to-chromium@1.4.740: {}
 
   emoji-regex@10.3.0: {}
 
@@ -7400,7 +7400,7 @@ snapshots:
       quotation: 2.0.3
       unified-lint-rule: 3.0.0
 
-  remark-lint-final-definition@4.0.0:
+  remark-lint-final-definition@4.0.1:
     dependencies:
       '@types/mdast': 4.0.3
       devlop: 1.1.0
@@ -7845,7 +7845,7 @@ snapshots:
       remark-lint-fenced-code-flag: 4.0.0
       remark-lint-fenced-code-marker: 4.0.0
       remark-lint-file-extension: 3.0.0
-      remark-lint-final-definition: 4.0.0
+      remark-lint-final-definition: 4.0.1
       remark-lint-hard-break-spaces: 4.0.0
       remark-lint-heading-increment: 4.0.0
       remark-lint-heading-style: 4.0.0
