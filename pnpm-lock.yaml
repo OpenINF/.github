@@ -269,9 +269,6 @@ importers:
       unified:
         specifier: 11.0.4
         version: 11.0.4
-      zx:
-        specifier: 8.0.2
-        version: 8.0.2
 
 packages:
 
@@ -1031,9 +1028,6 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  '@types/fs-extra@11.0.4':
-    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
-
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
 
@@ -1048,9 +1042,6 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
-
-  '@types/jsonfile@6.1.4':
-    resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
   '@types/linkify-it@5.0.0':
     resolution: {integrity: sha512-sVDA58zAw4eWAffKOaQH5/5j3XeayukzDk+ewSsnv3p4yJEZHCCzMDiZM8e0OUrRvmpGZ85jf4yDHkHsgBNr9Q==}
@@ -3802,11 +3793,6 @@ packages:
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  zx@8.0.2:
-    resolution: {integrity: sha512-3g+ePtPYmyrjRuASlJiUhkje1je4a47woML/fzTKBb9PA5BzRQbSswwyJ8nlFWJjA1ORRi6TMyAdhuz/jK+Gaw==}
-    engines: {node: '>= 16.0.0'}
-    hasBin: true
-
 snapshots:
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
@@ -4714,12 +4700,6 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@types/fs-extra@11.0.4':
-    dependencies:
-      '@types/jsonfile': 6.1.4
-      '@types/node': 20.12.7
-    optional: true
-
   '@types/hast@3.0.4':
     dependencies:
       '@types/unist': 3.0.2
@@ -4731,11 +4711,6 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
-
-  '@types/jsonfile@6.1.4':
-    dependencies:
-      '@types/node': 20.12.7
-    optional: true
 
   '@types/linkify-it@5.0.0': {}
 
@@ -8715,8 +8690,3 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zwitch@2.0.4: {}
-
-  zx@8.0.2:
-    optionalDependencies:
-      '@types/fs-extra': 11.0.4
-      '@types/node': 20.12.7
