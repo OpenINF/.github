@@ -31,7 +31,7 @@
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "7.9.0",
     "@typescript-eslint/parser": "7.9.0",
-    "@yarnpkg/shell": "4.0.0",
+    "@yarnpkg/shell": "4.0.2",
     "dictionary-en": "4.0.0",
     "dprint": "0.45.1",
     "editorconfig-checker": "5.1.5",
