@@ -37,9 +37,9 @@ Rules) _and_ our [Code of Conduct][coc].
     <https://help.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project>
 
 [coc]: ./CODE_OF_CONDUCT.md
-[`#off-topic` channel]: https://discord.gg/FfdVR2Bj
-[`#support` channel]: https://discord.gg/CYJSYxjN
-[`#general` channel]: https://discord.gg/9jYXBpVQ
+[`#off-topic` channel]: https://discord.gg/ACMjssFV
+[`#support` channel]: https://discord.gg/eZZtnHKN
+[`#general` channel]: https://discord.gg/gUPTCPjd
 [docs-site]: https://open.inf.is
 [matrix-channel]: https://matrix.to/#/#openinf:matrix.org
 [support-channel-discord]: https://discord.gg/CYJSYxjN
