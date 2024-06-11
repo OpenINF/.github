@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "github-linguist", "~> 7.28"
+gem "github-linguist", "~> 7.30"
 
 gem "jekyll", "~> 4.3.0"
 gem 'kramdown-parser-gfm', '~> 1.1'

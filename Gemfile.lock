@@ -14,7 +14,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    github-linguist (7.29.0)
+    github-linguist (7.30.0)
       cgi
       charlock_holmes (~> 0.7.7)
       mini_mime (~> 1.0)
@@ -89,7 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  github-linguist (~> 7.28)
+  github-linguist (~> 7.30)
   jekyll (~> 4.3.0)
   jekyll-redirect-from
   jekyll-relative-links
