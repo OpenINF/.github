@@ -96,8 +96,8 @@ importers:
         specifier: 12.1.0
         version: 12.1.0(eslint@9.6.0)
       eslint-plugin-unicorn:
-        specifier: 53.0.0
-        version: 53.0.0(eslint@9.6.0)
+        specifier: 54.0.0
+        version: 54.0.0(eslint@9.6.0)
       eslint-plugin-wix-editor:
         specifier: 3.3.0
         version: 3.3.0
@@ -1705,8 +1705,8 @@ packages:
     peerDependencies:
       eslint: '>=5.0.0'
 
-  eslint-plugin-unicorn@53.0.0:
-    resolution: {integrity: sha512-kuTcNo9IwwUCfyHGwQFOK/HjJAYzbODHN3wP0PgqbW+jbXqpNWxNVpVhj2tO9SixBwuAdmal8rVcWKBxwFnGuw==}
+  eslint-plugin-unicorn@54.0.0:
+    resolution: {integrity: sha512-XxYLRiYtAWiAjPv6z4JREby1TAE2byBC7wlh0V4vWDCpccOSU1KovWV//jqPXF6bq3WKxqX9rdjoRQ1EhdmNdQ==}
     engines: {node: '>=18.18'}
     peerDependencies:
       eslint: '>=8.56.0'
@@ -5461,7 +5461,7 @@ snapshots:
     dependencies:
       eslint: 9.6.0
 
-  eslint-plugin-unicorn@53.0.0(eslint@9.6.0):
+  eslint-plugin-unicorn@54.0.0(eslint@9.6.0):
     dependencies:
       '@babel/helper-validator-identifier': 7.24.5
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.6.0)
