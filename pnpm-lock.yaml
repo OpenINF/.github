@@ -267,8 +267,8 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
       unified:
-        specifier: 11.0.4
-        version: 11.0.4
+        specifier: 11.0.5
+        version: 11.0.5
 
 packages:
 
@@ -3596,8 +3596,8 @@ packages:
   unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
 
-  unified@11.0.4:
-    resolution: {integrity: sha512-apMPnyLjAX+ty4OrNap7yumyVAMlKx5IWU2wlzzUdYJO9A8f1p9m/gywF/GM2ZDFcjQPrx59Mc90KwmxsoklxQ==}
+  unified@11.0.5:
+    resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
 
   unist-builder@2.0.3:
     resolution: {integrity: sha512-f98yt5pnlMWlzP539tPc4grGMsFaQQlP/vM396b00jngsiINumNmsY8rkXjfoi1c6QaM8nQ3vaGDuoKWbe/1Uw==}
@@ -7176,7 +7176,7 @@ snapshots:
       '@types/mdast': 4.0.4
       mdast-util-directive: 3.0.0
       micromark-extension-directive: 3.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7192,7 +7192,7 @@ snapshots:
       '@types/mdast': 4.0.4
       mdast-util-frontmatter: 2.0.1
       micromark-extension-frontmatter: 2.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7203,7 +7203,7 @@ snapshots:
       micromark-extension-gfm: 3.0.0
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7231,7 +7231,7 @@ snapshots:
       hast-util-sanitize: 5.0.1
       hast-util-to-html: 9.0.1
       mdast-util-to-hast: 13.1.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   remark-lint-blockquote-indentation@4.0.0:
     dependencies:
@@ -7709,7 +7709,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       remark-message-control: 8.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7727,7 +7727,7 @@ snapshots:
       '@types/mdast': 4.0.4
       mdast-util-from-markdown: 2.0.0
       micromark-util-types: 2.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7747,7 +7747,7 @@ snapshots:
       remark-lint-rule-style: 4.0.0
       remark-lint-strong-marker: 4.0.0
       remark-lint-table-cell-padding: 5.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7796,7 +7796,7 @@ snapshots:
       remark-lint-table-pipe-alignment: 4.0.0
       remark-lint-table-pipes: 5.0.0
       remark-lint-unordered-list-marker-style: 4.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7816,7 +7816,7 @@ snapshots:
       remark-lint-no-undefined-references: 5.0.0
       remark-lint-no-unused-definitions: 4.0.0
       remark-lint-ordered-list-marker-style: 4.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7830,14 +7830,14 @@ snapshots:
       '@types/nlcst': 2.0.3
       mdast-util-to-nlcst: 7.0.1
       parse-latin: 7.0.0
-      unified: 11.0.4
+      unified: 11.0.5
       vfile: 6.0.1
 
   remark-stringify@11.0.0:
     dependencies:
       '@types/mdast': 4.0.4
       mdast-util-to-markdown: 2.1.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   remark-validate-links@13.0.1:
     dependencies:
@@ -7860,7 +7860,7 @@ snapshots:
       '@types/mdast': 4.0.4
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -7884,7 +7884,7 @@ snapshots:
     dependencies:
       '@types/nlcst': 2.0.3
       parse-english: 7.0.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   retext-passive@5.0.0:
     dependencies:
@@ -7943,7 +7943,7 @@ snapshots:
       nlcst-to-string: 4.0.0
       nspell: 2.1.5
       quotation: 2.0.3
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-visit: 5.0.0
       vfile: 6.0.1
 
@@ -7959,7 +7959,7 @@ snapshots:
       '@types/nlcst': 2.0.3
       ccount: 2.0.1
       nlcst-to-string: 4.0.0
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-modify-children: 4.0.0
       unist-util-position: 5.0.0
 
@@ -8354,7 +8354,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.2
       trough: 2.2.0
-      unified: 11.0.4
+      unified: 11.0.5
       vfile: 6.0.1
 
   unified-message-control@5.0.0:
@@ -8378,7 +8378,7 @@ snapshots:
       trough: 2.2.0
       vfile: 5.3.7
 
-  unified@11.0.4:
+  unified@11.0.5:
     dependencies:
       '@types/unist': 3.0.2
       bail: 2.0.2
