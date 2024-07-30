@@ -1,6 +1,13 @@
-<!-- markdownlint-disable-next-line line-length -->
-
-<a href="##"><img src="https://raw.githubusercontent.com/OpenINF/openinf.github.io/live/assets/img/svg/logogram-color.svg?sanitize=true" alt="OpenINF logo" title="OpenINF" align="right" height="96" width="96" /></a>
+<a href="https://open.inf.is">
+  <img
+    src="https://open.inf.is/assets/img/svg/logogram-color.svg"
+    alt="OpenINF logo"
+    title="OpenINF"
+    align="right"
+    height="96"
+    width="96"
+  />
+</a>
 
 <div align="left">
 
@@ -188,7 +195,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
   <!-- markdownlint-disable-next-line line-length -->
-  <img alt="The OpenINF logo" height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/assets/img/svg/logo.svg?sanitize=true" />
+  <img alt="The OpenINF logo" height="32px" width="32px" src="https://open.inf.is/assets/img/svg/logogram-color.svg" />
 </a>
 
 </div>
