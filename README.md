@@ -249,7 +249,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
   https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix
   'Chat on Matrix'
 [matrix-url]:
-  https://matrix.to/#/#openinf-space:matrix.org
+  https://matrix.to/#/%23openinf-space:matrix.org
   "You're invited to talk on Matrix"
 [npm-badge--shields]:
   https://img.shields.io/badge/packages-6-2a2a2a.svg?logo=npm
