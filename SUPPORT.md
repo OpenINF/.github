@@ -41,7 +41,7 @@ Rules) _and_ our [Code of Conduct][coc].
 [`#support` channel]: https://discord.gg/eZZtnHKN
 [`#general` channel]: https://discord.gg/gUPTCPjd
 [docs-site]: https://open.inf.is
-[matrix-channel]: https://matrix.to/#/#openinf:matrix.org
+[matrix-channel]: https://matrix.to/#/%23openinf:matrix.org
 [support-channel-discord]: https://discord.gg/CYJSYxjN
 [x-twitter-account]: https://twitter.com/OpenINF
 [x-twitter-rules]: https://help.twitter.com/en/rules-and-policies/x-rules
