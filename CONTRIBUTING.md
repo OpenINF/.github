@@ -140,14 +140,16 @@ Please see the [`SECURITY.md`][] file.
     <https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/setting-guidelines-for-repository-contributors>
 
 [`CODE_OF_CONDUCT.md`]:
-  ./CODE_OF_CONDUCT.md
+  https://github.com/OpenINF/.github/blob/HEAD/CODE_OF_CONDUCT.md
   'Standards for how to engage with the project community'
-[`LICENSE.md`]:
-  ./LICENSE.md
+[`LICENSE`]:
+  https://github.com/OpenINF/.github/tree/HEAD/LICENSE
   'The open source software license(s) associated with this project'
-[`README.md`]: ./README.md 'The landing/home page of this project'
+[`README.md`]:
+  https://github.com/OpenINF/.github/blob/HEAD/README.md
+  'The landing/home page of this project'
 [`SECURITY.md`]:
-  ./SECURITY.md
+  https://github.com/OpenINF/.github/blob/HEAD/SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
