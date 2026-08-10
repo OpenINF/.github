@@ -1,4 +1,4 @@
-## Vision[^1]
+# Vision[^1]
 
 The main motivations of OpenINF are to empower the open source community with
 tools to aggregate, curate, disseminate, and apply information derived from

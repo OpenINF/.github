@@ -1,4 +1,4 @@
-## Code of Conduct[^1]
+# Code of Conduct[^1]
 
 <div align="center">
 
