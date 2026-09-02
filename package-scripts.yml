@@ -16,6 +16,9 @@ scripts:
     json: node build/tasks/verify/verify-json.mts
     liquid: node build/tasks/verify/verify-liquid.mts
     md: node build/tasks/verify/verify-md.mts
+    # Outside verify/ on purpose: it needs a pull request in the environment,
+    # and verify.all runs everything in that directory.
+    pullRequest: node build/tasks/verify-pull-request.mts
     spelling: node build/tasks/verify/verify-spelling.mts
     toml: node build/tasks/verify/verify-toml.mts
     ts: node build/tasks/verify/verify-ts.mts
