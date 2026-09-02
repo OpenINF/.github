@@ -48,8 +48,8 @@ importers:
         specifier: 7.9.0
         version: 7.9.0(eslint@9.6.0)(typescript@5.4.5)
       '@yarnpkg/shell':
-        specifier: 4.0.2
-        version: 4.0.2(typanion@3.14.0)
+        specifier: 4.1.3
+        version: 4.1.3(typanion@3.14.0)
       dictionary-en:
         specifier: 4.0.0
         version: 4.0.0
@@ -1140,16 +1140,16 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
-  '@yarnpkg/fslib@3.1.0':
-    resolution: {integrity: sha512-wsj7/sUVSdXOIX/qwaON/Ky5GsP5gs9ry9DKwgLbWT7k3qw4/EcHAtfTtPhBYu33UibzBFI+fgB4wBRVH2XVaw==}
+  '@yarnpkg/fslib@3.1.5':
+    resolution: {integrity: sha512-hXaPIWl5GZA+rXcx+yaKWUuePJruZuD+3A5A2X6paEBfFsyCD7oEp88lSMj1ym1ehBWUmhNH/YGOp+SrbmSBPg==}
     engines: {node: '>=18.12.0'}
 
-  '@yarnpkg/parsers@3.0.2':
-    resolution: {integrity: sha512-/HcYgtUSiJiot/XWGLOlGxPYUG65+/31V8oqk17vZLW1xlCoR4PampyePljOxY2n8/3jz9+tIFzICsyGujJZoA==}
+  '@yarnpkg/parsers@3.1.0':
+    resolution: {integrity: sha512-WoxUM/Be4hfsX06FxsvpGgfYqwgivMV7/Ol7aFuSfSmY6rRaiju4QxOEe9RUS0iYcSHWl5i9AhB1cMoE0p+XiA==}
     engines: {node: '>=18.12.0'}
 
-  '@yarnpkg/shell@4.0.2':
-    resolution: {integrity: sha512-DLZSx06OoEbPY1uePt7pKEgpWDk96PldrCdWBPqI5Np5/YAEo6+toVcjz+6fORMOE8PS3Bsep1Nfm2mUrY1Oxg==}
+  '@yarnpkg/shell@4.1.3':
+    resolution: {integrity: sha512-5igwsHbPtSAlLdmMdKqU3atXjwhtLFQXsYAG0sn1XcPb3yF8WxxtWxN6fycBoUvFyIHFz1G0KeRefnAy8n6gdw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -1322,10 +1322,6 @@ packages:
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
     engines: {node: '>=4'}
-
-  chalk@3.0.0:
-    resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==}
-    engines: {node: '>=8'}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2215,6 +2211,10 @@ packages:
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+
+  js-yaml@4.3.2:
+    resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
 
   jsdoc-type-pratt-parser@4.0.0:
@@ -4800,20 +4800,20 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@yarnpkg/fslib@3.1.0':
+  '@yarnpkg/fslib@3.1.5':
     dependencies:
       tslib: 2.6.2
 
-  '@yarnpkg/parsers@3.0.2':
+  '@yarnpkg/parsers@3.1.0':
     dependencies:
-      js-yaml: 3.14.1
+      js-yaml: 4.3.2
       tslib: 2.6.2
 
-  '@yarnpkg/shell@4.0.2(typanion@3.14.0)':
+  '@yarnpkg/shell@4.1.3(typanion@3.14.0)':
     dependencies:
-      '@yarnpkg/fslib': 3.1.0
-      '@yarnpkg/parsers': 3.0.2
-      chalk: 3.0.0
+      '@yarnpkg/fslib': 3.1.5
+      '@yarnpkg/parsers': 3.1.0
+      chalk: 4.1.2
       clipanion: 4.0.0-rc.3(typanion@3.14.0)
       cross-spawn: 7.0.3
       fast-glob: 3.3.2
@@ -5012,11 +5012,6 @@ snapshots:
       ansi-styles: 3.2.1
       escape-string-regexp: 1.0.5
       supports-color: 5.5.0
-
-  chalk@3.0.0:
-    dependencies:
-      ansi-styles: 4.3.0
-      supports-color: 7.2.0
 
   chalk@4.1.2:
     dependencies:
@@ -6057,6 +6052,10 @@ snapshots:
       esprima: 4.0.1
 
   js-yaml@4.1.0:
+    dependencies:
+      argparse: 2.0.1
+
+  js-yaml@4.3.2:
     dependencies:
       argparse: 2.0.1
 
