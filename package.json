@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "private": true,
   "packageManager": "pnpm@9.1.1",
+  "engines": {
+    "node": "24.19.0"
+  },
   "description": "Org-level default metadata & community health files",
   "repository": "https://github.com/openinf/.github",
   "license": "MIT OR Apache-2.0 OR BlueOak-1.0.0",
@@ -104,6 +107,7 @@
     "retext-syntax-urls": "4.0.0",
     "strip-comments": "2.0.1",
     "typescript": "5.4.5",
-    "unified": "11.0.4"
+    "unified": "11.0.4",
+    "zx": "8.8.5"
   }
 }

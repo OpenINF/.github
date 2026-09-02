@@ -3,17 +3,32 @@ name: Lint and test
 # By default, runs when a pull request is opened, synchronized, or reopened.
 on: pull_request
 
+# Stated, not inherited: paths-filter needs `pull-requests: read`, and naming
+# any permission drops the rest to none.
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   lint_and_test:
     name: Lint and test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Otherwise the token stays in .git/config while `pnpm install` and
+          # the linters run. Nothing downstream needs it: no step pushes, and
+          # no dependency is git-hosted.
+          persist-credentials: false
       - name: Setup node
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          # engine-strict plus an exact engines.node means the runner's own
+          # Node is refused. Read rather than repeated.
+          node-version-file: .nvmrc
       - name: Setup Ruby, JRuby, and TruffleRuby
-        uses: ruby/setup-ruby@cacc9f1c0b3f4eb8a16a6bb0ed10897b43b9de49 # v1.176.0
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
       - name: Install
         run: |
           corepack enable
@@ -26,7 +41,7 @@ jobs:
       # You can check if a file with a listed file type is in the PR by doing:
       # if: ${{ steps.filter.outputs.md == 'true' }}
       # This will return true if there's a Markdown file the PR has changed.
-      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+      - uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d # v4.0.3
         id: filter
         with:
           filters: |
