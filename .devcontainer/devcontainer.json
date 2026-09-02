@@ -1,32 +1,48 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options,
-// see documentation located at the following URL:
-// https://github.com/OpenINF/docker-fisher
+// see https://containers.dev.
 {
-  "name": "🦞 OpenINF GrimesAI Salvage Tex: Lunar (OpenINF Community)",
+  "name": "OpenINF community health files",
+
   "build": {
-    "dockerfile": "./experimental/Dockerfile"
+    "dockerfile": "Dockerfile"
   },
-  "runArgs": [],
-  // Configure tool-specific properties.
+
+  // No Node version here on purpose: it lives in .nvmrc and engines.node, and
+  // post-create.sh checks those agree rather than adding a third copy.
+  "features": {
+    "ghcr.io/devcontainers-extra/features/pnpm:2": {},
+    // Binary only -- `gh` keeps its own credentials, so a first use still
+    // wants `gh auth login`.
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  // So the local binaries work when typed directly, not only under
+  // `pnpm exec`, and for every caller rather than fish alone.
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}"
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postStartCommand": "bash .devcontainer/post-start.sh",
+
   "customizations": {
-    // Configure properties specific to VS Code.
     "vscode": {
-      // Set *default* container-specific settings.json values on container
-      // create.
       "settings": {
         "terminal.integrated.profiles.linux": {
           "fish": {
             "path": "fish"
           }
         },
-        "terminal.integrated.defaultProfile.linux": "fish"
+        "terminal.integrated.defaultProfile.linux": "fish",
+
+        // Todo Tree never consults PATH, so the binary alone is not enough;
+        // see the Dockerfile. Here rather than .vscode/settings.json because
+        // it is a container path, and wrong anywhere else.
+        "todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
       },
-      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         // https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
         "aaron-bond.better-comments",
-        // https://marketplace.visualstudio.com/items?itemName=biomejs.biome
-        "biomejs.biome",
         // https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
         "davidanson.vscode-markdownlint",
         // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
@@ -54,29 +70,6 @@
       ]
     }
   },
-  // Use 'forwardPorts' to make a list of ports inside the container available
-  // locally.
-  "forwardPorts": [
-    // Jekyll server
-    4000,
-    // Live reload server
-    35729,
-    // OpenSSH server
-    2222
-  ],
-  "overrideCommand": false,
 
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-  "workspaceFolder": "/workspace",
-
-  // Use 'postCreateCommand' to run commands after creating the container.
-  // https://code.visualstudio.com/docs/devcontainers/create-dev-container#_rebuild
-  "postCreateCommand": "fish -i '${containerWorkspaceFolder}/tools/devcontainer/post-create.fish'",
-  "postStartCommand": "fish -i '${containerWorkspaceFolder}/tools/devcontainer/post-start.fish'",
-  "remoteEnv": {
-    "PATH": "${containerEnv:PATH}:~/.rbenv/shims/"
-  },
-  // Comment out to connect as root instead.
-  // More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "vscode"
+  "remoteUser": "node"
 }
