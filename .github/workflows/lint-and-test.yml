@@ -1,7 +1,14 @@
 name: Lint and test
 
-# By default, runs when a pull request is opened, synchronized, or reopened.
-on: pull_request
+# Also on main, for two reasons: a pull-request-only workflow leaves the
+# default branch with no status, so the README badge reports whichever branch
+# ran last; and the queue squashes without rebuilding, so nothing else sees
+# what actually landed.
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 # Stated, not inherited: paths-filter needs `pull-requests: read`, and naming
 # any permission drops the rest to none.
@@ -14,28 +21,36 @@ jobs:
     name: Lint and test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out project repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          # `verify.commits` compares against the base branch, which a
+          # single-commit checkout does not contain.
+          fetch-depth: 0
           # Otherwise the token stays in .git/config while `pnpm install` and
           # the linters run. Nothing downstream needs it: no step pushes, and
           # no dependency is git-hosted.
           persist-credentials: false
-      - name: Setup node
+      - name: Set up Node.js runtime
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          # engine-strict plus an exact engines.node means the runner's own
-          # Node is refused. Read rather than repeated.
-          node-version-file: .nvmrc
-      - name: Setup Ruby, JRuby, and TruffleRuby
-        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
+          # engineStrict plus an exact engines.node means the runner's own Node
+          # is refused. Read rather than repeated.
+          node-version-file: 'package.json'
       - name: Install
         run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+          # No corepack: node is unbundling it, and pnpm reads
+          # `packageManager` and fetches that version itself. Installing the
+          # named one rather than the newest saves fetching pnpm twice.
+          npm install --global "pnpm@$(node -p "require('./package.json').packageManager.replace('pnpm@','').split('+')[0]")"
+          pnpm --version
           pnpm install
-          gem install bundler && bundle config set --local path 'vendor/bundle'
-          bundle install
+          echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
+
+      # No build step. `nps build` runs Jekyll over doc/, which wants a Ruby
+      # toolchain that nothing below reads the output of -- the checks read
+      # the sources.
+
       # Checks to see if any files in the PR match one of the listed file types.
       # We can use this filter to decide whether or not to run linters or tests.
       # You can check if a file with a listed file type is in the PR by doing:
@@ -45,63 +60,77 @@ jobs:
         id: filter
         with:
           filters: |
-            css:
-              - '**/*.css'
+            dockerfile:
+              - '**/Dockerfile'
             js:
-              - '**/**.?(c|m)js'
-            # json:
-            #   - '**/**.json?(5|c)'
-            #   - 'OWNERS.json5'
+              - '**/*.js'
+              - '**/*.mjs'
+            json:
+              - '**/*.json'
+              - '**/*.json5'
+              - '**/*.jsonc'
+            liquid:
+              - '**/*.html'
+              - '**/*.liquid'
             md:
-              - '**/**.md'
-            svg:
-              - '**/*.svg'
+              - '**/*.md'
             toml:
-              - '**/**.t?(o)ml'
+              - '**/*.toml'
             ts:
-              - '**/**.?(c|m)ts'
-              - '**/*.d.?(c|m)ts'
+              - '**/*.ts'
+              - '**/*.mts'
             yaml:
-              - '**/**.y?(a)ml'
+              - '**/*.yml'
+              - '**/*.yaml'
+
+      # Not behind a filter: every pull request has commit messages, whatever
+      # it touches.
+      - name: Verify commit messages
+        run: nps verify.commits
 
       # Use the filter to check if files with a specific file type were changed
       # in the PR. If they were, run the relevant linters. Otherwise, skip.
-
-      - name: Verify CSS
-        if: ${{ steps.filter.outputs.css == 'true' }}
-        run: pnpm exec nps verify.css
+      - name: Verify Dockerfile
+        if: ${{ steps.filter.outputs.dockerfile == 'true' }}
+        run: nps verify.dockerfile
 
       - name: Verify JavaScript
         if: ${{ steps.filter.outputs.js == 'true' }}
-        run: pnpm exec nps verify.js
+        run: nps verify.js
 
       - name: Verify JSON
         if: ${{ steps.filter.outputs.json == 'true' }}
-        run: pnpm exec nps verify.json
+        run: nps verify.json
+
+      - name: Verify Liquid
+        if: ${{ steps.filter.outputs.liquid == 'true' }}
+        run: nps verify.liquid
 
       - name: Verify Markdown
         if: ${{ steps.filter.outputs.md == 'true' }}
-        run: pnpm exec nps verify.md
-
-      - name: Verify SVG
-        if: ${{ steps.filter.outputs.svg == 'true' }}
-        run: pnpm exec nps verify.svg
+        run: nps verify.md
 
       - name: Verify TOML
         if: ${{ steps.filter.outputs.toml == 'true' }}
-        run: pnpm exec nps verify.toml
+        run: nps verify.toml
 
       - name: Verify TypeScript
         if: ${{ steps.filter.outputs.ts == 'true' }}
-        run: pnpm exec nps verify.ts
+        run: nps verify.ts
 
       - name: Verify YAML
         if: ${{ steps.filter.outputs.yaml == 'true' }}
-        run: pnpm exec nps verify.yaml
+        run: nps verify.yaml
 
-      # Only run tests if the PR touches behavior-related files.
+      # Only run tests if the PR touches behavior-related files. On main
+      # everything runs, since nothing else checks what landed.
       - name: Test
-        if: ${{ steps.filter.outputs.js == 'true' ||
-          steps.filter.outputs.json == 'true' ||
-          steps.filter.outputs.ts == 'true' }}
-        run: pnpm test
+        if: ${{ github.event_name == 'push' || steps.filter.outputs.js == 'true' || steps.filter.outputs.json == 'true' || steps.filter.outputs.ts == 'true' }}
+        # verify.validForEC fetches the editorconfig-checker binary from the
+        # GitHub API on first use, and node_modules is new on every run here.
+        # Unauthenticated that is 60 requests an hour shared with every other
+        # job leaving this address, which is a job failing for no reason of
+        # its own. The wrapper reads GITHUB_TOKEN and the runner is given one.
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: nps test

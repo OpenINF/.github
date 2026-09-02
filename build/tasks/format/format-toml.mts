@@ -1,0 +1,25 @@
+/**
+ * @file Format TOML files to adhere to autofixable style guidelines.
+ * @author The OpenINF Authors & Friends
+ * @license MIT OR Apache-2.0 OR BlueOak-1.0.0
+ * @module {type ES6Module} build/tasks/format/format-toml
+ */
+
+import { exec, glob, quote } from '@openinf/.github/build/utils';
+
+const tomlFiles = await glob([
+  '**/*.toml',
+  '!doc/_site/',
+  '!lib/',
+  '!node_modules/',
+  '!vendor/',
+]);
+
+let exitCode = 0;
+const scripts = [`dprint fmt ${quote(tomlFiles)}`];
+
+for (const element of scripts) {
+  exitCode = await exec(element);
+
+  if (exitCode !== 0) process.exitCode = exitCode;
+}

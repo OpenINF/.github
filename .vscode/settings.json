@@ -1,51 +1,90 @@
 {
+  // ---------------------------------------------------------------------------
+  // Default Configuration Overrides
+  // ---------------------------------------------------------------------------
   // See https://code.visualstudio.com/docs/getstarted/settings
   // for the documentation about the extensions.json format.
 
   // Editor
-  // ///////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
 
-  "editor.stickyScroll.enabled": false,
   "editor.codeLens": true,
+  "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
 
-  "[javascript][json][json5][jsonc][typescript][yaml]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // Insert spaces when pressing `Tab`. This setting is overridden based on the
+  // file contents when `editor.detectIndentation` is on.
+  "editor.insertSpaces": false,
+
+  // The number of spaces a tab is equal to. This setting is overridden based
+  // on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 4,
+  "editor.wordWrap": "off",
+
+  // ---------------------------------------------------------------------------
+
+  "[dockerfile]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    }
+      "source.fixAll.dprint": "explicit"
+    },
+    "editor.defaultFormatter": "dprint.dprint"
   },
 
+  // Jekyll's Liquid, which prettier formats through
+  // @shopify/prettier-plugin-liquid -- the same plugin `nps format.liquid`
+  // uses, so the editor and the task agree.
   "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  // "[toml]": {
-  //   "editor.codeActionsOnSave": {
-  //     "source.fixAll.dprint": "explicit"
-  //   },
-  //   "editor.defaultFormatter": "dprint.dprint"
-  // },
 
   "[markdown]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": "explicit"
     },
-    "editor.formatOnSave": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode"
-    "editor.defaultFormatter": "unifiedjs.vscode-remark"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "unifiedjs.vscode-remark"
     // "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
 
+  // "[ruby]": {
+  //   "editor.defaultFormatter": "rubocop.vscode-rubocop",
+  // },
+
+  "[svg]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[toml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.dprint": "explicit"
+    },
+    "editor.defaultFormatter": "dprint.dprint"
+  },
+
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   // Render vertical rulers after a certain number of monospace characters.
-  "editor.rulers": [50, 72, 80, 100], // Use a few values for multi rulers.
+  "editor.rulers": [50, 72, 80, 100], // Uses multiple values for multiple rulers.
 
   // Terminal
   //////////////////////////////////////////////////////////////////////////////
 
+  "terminal.integrated.hideOnStartup": "always",
+
+  // The Linux profiles to present when creating a new terminal via the
+  // terminal dropdown. When set, these will override the default detected
+  // profiles. They are comprised of a `path` and optional `args`.
+  //////////////////////////////////////////////////////////////////////////////
+
   // A set of terminal profile customizations for Linux that allows adding,
-  // removing, or changing how terminals are launched. Profiles are made up of
-  // a mandatory path, optional arguments, and other presentation options.
+  // removing, or changing how terminals are launched. Profiles are comprised of
+  // a mandatory `path` and optional `args`, and other presentation options.
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash"
@@ -66,36 +105,45 @@
   // The default terminal profile on Linux.
   "terminal.integrated.defaultProfile.linux": "fish",
 
-  // TODO(DerekNonGeneric):
   // A set of terminal profile customizations for macOS which allows adding,
-  // removing or changing how terminals are launched. Profiles are made up of
-  // a mandatory path, optional arguments and other presentation options.
-  "terminal.integrated.profiles.osx": {},
+  // removing, or changing how terminals are launched. Profiles are comprised of
+  // a mandatory `path` and optional `args`, and other presentation options.
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    }
+  },
 
-  // TODO(DerekNonGeneric): The default terminal profile on macOS.
-  "terminal.integrated.defaultProfile.osx": null,
+  // The default terminal profile on macOS.
+  "terminal.integrated.defaultProfile.osx": "fish",
 
   // Controls whether or not WSL distros are shown in the terminal dropdown.
   // Not actually recommended, but useful one-offs if that may be the case.
   "terminal.integrated.useWslProfiles": true,
 
   // A set of terminal profile customizations for Windows which allows adding,
-  // removing or changing how terminals are launched. Profiles are made up of
-  // a mandatory path, optional arguments and other presentation options.
+  // removing, or changing how terminals are launched. Profiles are comprised of
+  // a mandatory `path` and optional `args`, and other presentation options.
   "terminal.integrated.profiles.windows": {
     "Git Bash": null,
     "pwsh": {
       "path": "pwsh.exe",
       "source": "PowerShell",
-      "icon": "terminal-powershell",
+      "icon": "terminal-powershell"
     },
     "Command Prompt": {
       "path": [
         "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
       ],
-      "icon": "terminal-cmd",
-    },
+      "icon": "terminal-cmd"
+    }
   },
 
   // The default terminal profile on Windows.
@@ -129,20 +177,60 @@
     ".vscode/*.json": "jsonc",
     "tsconfig.*.json": "jsonc",
     "tsconfig.json": "jsonc",
-    ".ecrc.json": "json",
-    ".eslintrc.json": "jsonc",
-    ".prettierrc.json": "json5",
-    ".prettierrc.json5": "json5",
     ".deepsource.toml": "toml",
-    ".renovaterc.json": "json5",
+    ".renovaterc.json5": "json5",
     ".snyk": "yaml",
-    ".html": "liquid",
+    "*.html": "liquid",
+    ".ecrc.json": "json"
   },
+
+  // Configure glob patterns for excluding files and folders. For example, the
+  // files explorer decides which files and folders to show or hide based on
+  // this setting. Read more about glob patterns [here][].
+  // [here]:https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options
+  "files.exclude": {
+    "!**/node_modules/": true,
+    ".git": false,
+    "**/.DS_Store": true
+  },
+
+  // Configure glob patterns for excluding files and folders in searches.
+  // Inherits all glob patterns from the `files.exclude` setting.
+  "search.exclude": {
+    "!**/node_modules": true,
+    "**/node_modules": false
+  },
+
+  // The default character set encoding to use when reading and writing files.
+  // This setting can also be configured per language.
+  "files.encoding": "utf8",
+
+  // The default end of line character.
+  //  - \n: LF
+  //  - \r\n: CRLF
+  //  - auto: Uses operating system specific end of line character.
+  "files.eol": "auto",
+
+  // When enabled, insert a final new line at the end of the file when saving
+  // it.
+  "files.insertFinalNewline": true,
+
+  // When enabled, will trim trailing whitespace when saving a file.
+  // Extension: EditorConfig known issue: trim_trailing_whitespace = false is
+  // not applied when user/workspace setting of files.trimTrailingWhitespace is
+  // set to true.
+  "files.trimTrailingWhitespace": false,
+
+  // Git
+  //////////////////////////////////////////////////////////////////////////////
+
+  // Ignores the warning when there are too many changes in a repository.
+  "git.ignoreLimitWarning": true,
 
   // JavaScript/TypeScript
   //////////////////////////////////////////////////////////////////////////////
 
-  // Disable JS/TS validation. (These should be handled by ESLint.)
+  // Disable JS/TS validation. (These should be handled by Biome.)
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
   "typescript.tsdk": "node_modules/typescript/lib",
@@ -172,7 +260,11 @@
   // Dprint
   /////////////////////////////////////////////
 
-  // "dprint.path": "~/.dprint/bin/dprint",
+  // No "dprint.path" here on purpose. The extension (0.12.0+) auto-resolves
+  // node_modules/.bin/dprint when present, which is where pnpm installs the
+  // exact version package.json pins -- pointing this at a separately
+  // installed global binary would drift from that pin instead of tracking
+  // it.
 
   // EditorConfig (https://editorconfig.org/)
   /////////////////////////////////////////////
@@ -182,26 +274,42 @@
   // files.insertFinalNewline, and files.trimTrailingWhitespace.
   "editorconfig.generateAuto": false,
 
-  // ESLint (ESLint is a separate extension)
+  // Remote
   /////////////////////////////////////////////
-
-  "eslint.format.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "json",
-    "json5",
-    "jsonc",
-    "markdown",
-    "typescript",
-    "yaml"
-  ],
-  "eslint.workingDirectories": [
-    "./"
+  "remote.SSH.defaultForwardedPorts": [
+    {
+      "remotePort": 2222
+    }
   ],
 
   // cSpell
   /////////////////////////////////////////////
 
+  // The Language local to use when spell checking. "en" and "en-GB" are
+  // currently supported.
+  "cSpell.language": "en",
+
+  // Controls the maximum number of spelling errors per document.
+  "cSpell.maxNumberOfProblems": 100,
+
+  // Controls the number of suggestions shown.
+  "cSpell.numSuggestions": 8,
+
+  // The minimum length of a word before checking it against a dictionary.
+  "cSpell.minWordLength": 4,
+
+  // Enable / Disable the spell checker.
+  "cSpell.enabled": true,
+
+  // Enable / Disable compound words like 'errormessage'.
+  "cSpell.allowCompoundWords": true,
+
+  // Specify paths/files to ignore.
+  "cSpell.ignorePaths": [".git/", "node_modules/"],
+
+  // Set custom workspace dictionaries.
+  // Define custom dictionaries to be included by default. If `addWords` is true
+  // words will be added to this dictionary.
   "cSpell.customDictionaries": {
     "project-terms": {
       "name": "project-terms",
@@ -209,11 +317,5 @@
       "description": "Terms used in this project",
       "addWords": true
     }
-  },
-  "terminal.integrated.enableImages": true,
-  "terminal.integrated.automationProfile.linux": {
-    "path": "fish",
-  },
-
+  }
 }
-

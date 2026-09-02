@@ -164,8 +164,11 @@
     "ol_single": 1,
     // Spaces for multi-line unordered list items
     "ul_multi": 1,
-    // Spaces for multi-line ordered list items
-    "ol_multi": 2
+    // Spaces for multi-line ordered list items. One, not two: prettier writes
+    // `1. ` and reformats anything else back to it, so asking for two here
+    // put the two tools in a loop -- `markdownlint --fix` widened the marker
+    // and prettier narrowed it again.
+    "ol_multi": 1
   },
 
   // MD031/blanks-around-fences - Fenced code blocks should be surrounded by blank lines

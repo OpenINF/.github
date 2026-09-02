@@ -1,5 +1,5 @@
-## Vizija[^1]  
-  
+# Vizija[^1]
+
 Cilj OpenINF-a je da ojača zajednicu otvorenog koda pomoću alata za agregiranje,
 prečišćavanje, proširenje i primenu informacija dobijenih iz različitih izvora
 kroz uspostavljanje prijateljskih, otvorenih, razvojnih procesa orijentisanih na

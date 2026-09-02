@@ -64,4 +64,5 @@ distrib/** linguist-generated=true
 > consequences. C. We must develop AI with a blueprint of ethical principles to
 > prevent dangerous, unintended consequences. &mdash; OpenINF Community Effort
 
-[^1]: https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
+[^1]:
+    <https://github.com/github-linguist/linguist/blob/master/docs/overrides.md>

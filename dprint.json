@@ -1,17 +1,9 @@
 {
-  "includes": [
-    "**/**.json?(5|c)",
-    "**.json?(5|c)",
-    ".*.json?(5|c)",
-    "OWNERS",
-    ".*.t?(o)ml",
-    "*.t?(o)ml",
-    "**/.*.t?(o)ml",
-    "**/*.t?(o)ml"
-  ],
+  "toml": {},
+  "dockerfile": {},
   "excludes": [],
   "plugins": [
-    "https://plugins.dprint.dev/json-0.17.2.wasm",
-    "https://plugins.dprint.dev/toml-0.5.4.wasm"
+    "https://plugins.dprint.dev/toml-0.8.0.wasm",
+    "https://plugins.dprint.dev/dockerfile-0.6.0.wasm"
   ]
 }

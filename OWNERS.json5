@@ -5,7 +5,7 @@
   "rules": [
     {
       // TODO: Replace this team with the team that owns the repo.
-      "owners": [{ "name": "wg-a-team" }]
-    }
-  ]
+      "owners": [{ "name": "wg-a-team" }],
+    },
+  ],
 }

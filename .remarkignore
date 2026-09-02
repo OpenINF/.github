@@ -1,2 +1,17 @@
+.github/ISSUE_TEMPLATE/*.md
+doc/_site/
+lib/
 node_modules/
 vendor/
+LICENSE/
+
+# The prose rules below remark are English ones -- readability scores,
+# simpler-word suggestions -- and none of them mean anything applied to a
+# translation. markdownlint still reads these for structure.
+VISION.jp.md
+VISION.sr_Cyr.md
+VISION.sr_Latn.md
+
+# The package store, which lives in the project because hard links cannot
+# cross a filesystem. It holds other people's files.
+.pnpm-store/

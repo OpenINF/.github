@@ -1,27 +1,37 @@
 scripts:
   compile:
-    site: node build/tasks/compile/compile-site.mjs
+    # The documentation site under doc/, which Jekyll builds. Nothing in the
+    # checks below depends on it, so CI does not run it.
+    docs: bundle exec jekyll build --source ./doc --destination ./doc/_site
   verify:
-    all: for i in build/tasks/verify/*.mjs; do node "$i"; done
-    css: node build/tasks/verify/verify-css.mjs
-    ecHarmony: node build/tasks/verify/verify-ec-harmony.mjs
-    html: node build/tasks/verify/verify-html.mjs
-    js: node build/tasks/verify/verify-js.mjs
-    json: node build/tasks/verify/verify-json.mjs
-    md: node build/tasks/verify/verify-md.mjs
-    svg: node build/tasks/verify/verify-svg.mjs
-    toml: node build/tasks/verify/verify-toml.mjs
-    ts: node build/tasks/verify/verify-ts.mjs
-    yaml: node build/tasks/verify/verify-yaml.mjs
+    # Announces each task and names the ones that failed. Without this the
+    # output is a wall of tool chatter with no indication of which task
+    # produced it.
+    all: 'rc=0; failed=; for i in build/tasks/verify/*.mts; do echo "==> $i"; node "$i" || { rc=1; failed="$failed $i"; }; done; [ -z "$failed" ] || echo "FAILED:$failed" >&2; exit $rc'
+    commits: node build/tasks/verify/verify-commits.mts
+    dockerfile: node build/tasks/verify/verify-dockerfile.mts
+    fileModes: node build/tasks/verify/verify-file-modes.mts
+    filenames: node build/tasks/verify/verify-filenames.mts
+    js: node build/tasks/verify/verify-js.mts
+    json: node build/tasks/verify/verify-json.mts
+    liquid: node build/tasks/verify/verify-liquid.mts
+    md: node build/tasks/verify/verify-md.mts
+    spelling: node build/tasks/verify/verify-spelling.mts
+    toml: node build/tasks/verify/verify-toml.mts
+    ts: node build/tasks/verify/verify-ts.mts
+    unit: node build/tasks/verify/verify-unit.mts
+    validForEC: node build/tasks/verify/verify-valid-for-ec.mts
+    yaml: node build/tasks/verify/verify-yaml.mts
   format:
-    all: for i in build/tasks/format/*.mjs; do node "$i"; done
-    css: node build/tasks/format/format-css.mjs
-    html: node build/tasks/format/format-html.mjs
-    js: node build/tasks/format/format-js.mjs
-    json: node build/tasks/format/format-json.mjs
-    md: node build/tasks/format/format-md.mjs
-    svg: node build/tasks/format/format-svg.mjs
-    toml: node build/tasks/format/format-toml.mjs
-    ts: node build/tasks/format/format-ts.mjs
-    yaml: node build/tasks/format/format-yaml.mjs
+    all: 'rc=0; for i in build/tasks/format/*.mts; do node "$i" || rc=1; done; exit $rc'
+    dockerfile: node build/tasks/format/format-dockerfile.mts
+    js: node build/tasks/format/format-js.mts
+    json: node build/tasks/format/format-json.mts
+    liquid: node build/tasks/format/format-liquid.mts
+    md: node build/tasks/format/format-md.mts
+    toml: node build/tasks/format/format-toml.mts
+    ts: node build/tasks/format/format-ts.mts
+    yaml: node build/tasks/format/format-yaml.mts
+  build: nps compile.docs
   test: nps verify.all
+  default: nps test
