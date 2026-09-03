@@ -21,7 +21,7 @@
     "test": "nps test"
   },
   "devDependencies": {
-    "@babel/core": "7.24.5",
+    "@babel/core": "7.29.6",
     "@babel/eslint-parser": "7.24.5",
     "@babel/plugin-syntax-jsx": "7.24.1",
     "@babel/plugin-syntax-top-level-await": "7.14.5",
