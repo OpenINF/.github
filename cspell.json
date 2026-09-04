@@ -1,0 +1,23 @@
+{
+  "language": "en",
+  "dictionaries": ["project-terms"],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-terms",
+      "path": "./project-terms.txt"
+    }
+  ],
+  "ignorePaths": [
+    ".pnpm-store/**",
+    "doc/_site/**",
+    "lib/**",
+    "node_modules/**",
+    "vendor/**",
+    "**/COPYING.md",
+    "LICENSE/**",
+    "pnpm-lock.yaml",
+    "VISION.jp.md",
+    "VISION.sr_Cyr.md",
+    "VISION.sr_Latn.md"
+  ]
+}

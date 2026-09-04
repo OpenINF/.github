@@ -54,8 +54,8 @@ Thanks!
 
 </summary>
 
-1. [Cascading Metadata &amp; Community Health Files](#cascading-metadata-community-health-files)
-1. [Local Metadata &amp; Community Health Files](#local-metadata-community-health-files)
+1. [Cascading Metadata &amp; Community Health Files](#cascadingmetadata-communityhealthfiles)
+1. [Local Metadata &amp; Community Health Files](#localmetadata-communityhealthfiles)
 1. [Contributing](#contributing)
 1. [License](#license)
 
@@ -125,12 +125,12 @@ how these files are expected to look.
 
 <br /><div align="center">
 
-| File name        | Title               | Description                                                             |
-| :--------------- | :------------------ | :---------------------------------------------------------------------- |
-| [`AUTHORS`][]    | The OpenINF Authors | Lists the contributors of their respective project repositories[^2][^3] |
-| [`README.md`][]  | Homepage            | Serves as a project landing page of sorts                               |
-| [`/LICENSE/`][]  | Software License(s) | The open-source software license(s) associated with a project           |
-| [`VISION.md`][]  | Project Vision      | The goal(s) and/or scope of a project                                   |
+| File name       | Title               | Description                                                             |
+| :-------------- | :------------------ | :---------------------------------------------------------------------- |
+| [`AUTHORS`][]   | The OpenINF Authors | Lists the contributors of their respective project repositories[^2][^3] |
+| [`README.md`][] | Homepage            | Serves as a project landing page of sorts                               |
+| [`/LICENSE/`][] | Software License(s) | The open-source software license(s) associated with a project           |
+| [`VISION.md`][] | Project Vision      | The goal(s) and/or scope of a project                                   |
 
 </div><br />
 
@@ -244,7 +244,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 [license-badge--shields]:
   https://img.shields.io/badge/license-MIT%2FApache--2.0%2FBlueOak--1.0.0-blue.svg?logo=github
   'License: MIT/Apache 2.0/BlueOak 1.0.0'
-[license-badge-url]: ./#license 'License: MIT/Apache 2.0/BlueOak 1.0.0'
+[license-badge-url]: #license 'License: MIT/Apache 2.0/BlueOak 1.0.0'
 [matrix-badge--shields]:
   https://img.shields.io/badge/matrix-join%20chat-%2346BC99?logo=matrix
   'Chat on Matrix'

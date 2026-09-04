@@ -1,4 +1,28 @@
-# See https://pnpm.io/workspaces for usage and examples.
+# pnpm 10 onwards reads .npmrc for auth and registry only; everything else
+# belongs here.
+saveExact: true
 
-packages:
-  - doc
+# Makes the exact node and pnpm in engines requirements rather than notes.
+engineStrict: true
+
+# A week, in minutes, between a version being published and this project
+# installing it -- covering the transitive versions a lockfile refresh picks
+# up, which is past what renovate can hold back. Setting this turns on
+# minimumReleaseAgeStrict, so an immature pick fails the install rather than
+# quietly adding itself to minimumReleaseAgeExclude.
+minimumReleaseAge: 10080
+
+# pnpm wants an explicit decision for every dependency that asks to run an
+# install script, and fails until it gets one. The answer is no throughout:
+# nothing here needs a script to work, because the binaries either arrive as
+# optional dependencies per platform or ship inside the package. Confirm that
+# with the verify tasks before allowing any.
+allowBuilds:
+  '@biomejs/biome': false
+  dprint: false
+  es5-ext: false
+
+# The dprint VS Code extension looks for node_modules/@dprint/<platform>, which
+# pnpm keeps in the virtual store where the extension cannot see it.
+publicHoistPattern:
+  - '@dprint/*'

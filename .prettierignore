@@ -1,17 +1,17 @@
 !.*
-!.*.*
-!.*/**/*
-!package.json
-
-.bundle/
 .git/
 .pnpm-store/
-.moon/cache/
-
-_site/
+doc/_site/
+lib/
 node_modules/
 vendor/
-
+LICENSE/
+package.json
+pnpm-lock.yaml
 Gemfile
 Gemfile.lock
-pnpm-lock.yaml
+
+# Japanese has no word boundaries for prettier to wrap at, so `proseWrap`
+# joins the whole paragraph into one line that then trips the line-length
+# rule. It is wrapped by hand instead.
+VISION.jp.md
