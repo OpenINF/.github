@@ -72,7 +72,12 @@ your pull request merged:
 - Keep your change as focused as possible. If there are multiple changes you
   would like to make that are not dependent upon each other, consider submitting
   them as separate pull requests.
-- Write a [good commit message][].
+- Write a [good commit message][], and follow the [format this organization
+  writes them in][commit-messages]. Several repositories check it as part of
+  their pull request checks, and where a commit queue does the merging, the
+  title of the pull request becomes the subject of the commit that lands — so it
+  answers to the same rules.
+- [Sign off](#certifying-the-origin-of-your-work) every commit.
 
 Contributions to this project are [released][contrib-license] to the public
 under the project’s open-source license(s). The license(s) for a project may be
@@ -102,6 +107,23 @@ on Twitter.
 
 By participating in this project, you are expected to uphold our Code of
 Conduct. Please see the [`CODE_OF_CONDUCT.md`][] file for expected behavior.
+
+## Certifying the Origin of Your Work
+
+Every commit needs a `Signed-off-by:` line naming its own author, which is how
+you certify the Developer’s Certificate of Origin reproduced below. Git writes
+it for you:
+
+```bash
+git commit --signoff
+```
+
+The name and address have to match the commit’s author, because only the author
+can certify their own work. An assistant that helped is disclosed separately,
+with an `Assisted-by:` trailer, and signs nothing.
+
+If you forget, `git commit --amend --signoff` fixes the last commit, and
+`git rebase --signoff <base>` fixes a branch of them.
 
 ## Developer’s Certificate of Origin 1.1
 
@@ -151,6 +173,7 @@ Please see the [`SECURITY.md`][] file.
 [`SECURITY.md`]:
   https://github.com/OpenINF/.github/blob/HEAD/SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
+[commit-messages]: https://open.inf.is/docs/handbook/style/commit-messages/
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
 [draft pull request]:
