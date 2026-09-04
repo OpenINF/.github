@@ -7,14 +7,7 @@
 
 import { exec, glob, quote } from '@openinf/.github/build/utils';
 
-const tsFiles = await glob([
-  '**/*.ts',
-  '**/*.mts',
-  '!doc/_site/',
-  '!lib/',
-  '!node_modules/',
-  '!vendor/',
-]);
+const tsFiles = await glob(['**/*.ts', '**/*.mts', '!lib/', '!node_modules/']);
 
 let exitCode = 0;
 const scripts = [`biome check --write ${quote(tsFiles)}`];

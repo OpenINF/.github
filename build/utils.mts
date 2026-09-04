@@ -42,7 +42,7 @@ export const quote = (paths: string | string[]) =>
     .join(' ');
 
 /**
- * Expands a trailing-slash directory pattern (e.g. `_site/`) to cover
+ * Expands a trailing-slash directory pattern (e.g. `lib/`) to cover
  * everything beneath it. On its own, a trailing slash matches just the one
  * directory entry, which is never what a build task means by naming a
  * directory.

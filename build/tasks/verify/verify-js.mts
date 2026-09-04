@@ -7,14 +7,7 @@
 
 import { exec, glob, quote } from '@openinf/.github/build/utils';
 
-const jsFiles = await glob([
-  '**/*.js',
-  '**/*.mjs',
-  '!doc/_site/',
-  '!lib/',
-  '!node_modules/',
-  '!vendor/',
-]);
+const jsFiles = await glob(['**/*.js', '**/*.mjs', '!lib/', '!node_modules/']);
 
 let exitCode = 0;
 const scripts = [`biome check ${quote(jsFiles)}`];

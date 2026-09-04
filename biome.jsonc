@@ -4,10 +4,8 @@
     "includes": [
       "**",
       "!**/.git/",
-      "!**/doc/_site/",
       "!**/lib/",
       "!**/node_modules/",
-      "!**/vendor/",
       "!**/package.json",
       "!**/pnpm-lock.yaml"
     ]

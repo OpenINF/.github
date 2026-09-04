@@ -11,12 +11,10 @@ import { exec, glob, quote } from '@openinf/.github/build/utils';
 // cspell's `en` dictionary is the American one, so this is also what holds the
 // project to American spelling: a British variant is an unknown word to it.
 const files = await glob([
-  '**/*.{md,html,mts,mjs,json,json5,jsonc,yml,yaml,sh}',
+  '**/*.{md,mts,mjs,json,json5,jsonc,yml,yaml,sh}',
   '!.pnpm-store/',
-  '!doc/_site/',
   '!lib/',
   '!node_modules/',
-  '!vendor/',
   // Other people's words, reproduced verbatim: a license is not ours to edit,
   // a lockfile is not prose, and the translated VISION files are not English.
   '!**/COPYING.md',

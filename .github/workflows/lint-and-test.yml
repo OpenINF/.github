@@ -47,9 +47,7 @@ jobs:
           pnpm install
           echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
 
-      # No build step. `nps build` runs Jekyll over doc/, which wants a Ruby
-      # toolchain that nothing below reads the output of -- the checks read
-      # the sources.
+      # No build step: there is nothing to build. The checks read the sources.
 
       # Checks to see if any files in the PR match one of the listed file types.
       # We can use this filter to decide whether or not to run linters or tests.
@@ -69,9 +67,6 @@ jobs:
               - '**/*.json'
               - '**/*.json5'
               - '**/*.jsonc'
-            liquid:
-              - '**/*.html'
-              - '**/*.liquid'
             md:
               - '**/*.md'
             toml:
@@ -101,10 +96,6 @@ jobs:
       - name: Verify JSON
         if: ${{ steps.filter.outputs.json == 'true' }}
         run: nps verify.json
-
-      - name: Verify Liquid
-        if: ${{ steps.filter.outputs.liquid == 'true' }}
-        run: nps verify.liquid
 
       - name: Verify Markdown
         if: ${{ steps.filter.outputs.md == 'true' }}

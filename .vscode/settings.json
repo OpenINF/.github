@@ -34,13 +34,6 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
 
-  // Jekyll's Liquid, which prettier formats through
-  // @shopify/prettier-plugin-liquid -- the same plugin `nps format.liquid`
-  // uses, so the editor and the task agree.
-  "[liquid]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "[markdown]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": "explicit"
@@ -49,10 +42,6 @@
     // "editor.defaultFormatter": "unifiedjs.vscode-remark"
     // "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
-
-  // "[ruby]": {
-  //   "editor.defaultFormatter": "rubocop.vscode-rubocop",
-  // },
 
   "[svg]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -180,7 +169,6 @@
     ".deepsource.toml": "toml",
     ".renovaterc.json5": "json5",
     ".snyk": "yaml",
-    "*.html": "liquid",
     ".ecrc.json": "json"
   },
 

@@ -25,18 +25,12 @@ const METADATA_CASE = /^[A-Z][A-Z0-9_-]*$/;
  * Names a tool dictates and we do not get to choose. Anything under a
  * dot-directory is exempt wholesale, on the same reasoning.
  */
-const EXEMPT = new Set([
-  // Bundler looks for this name and no other.
-  'Gemfile',
-  'Gemfile.lock',
-]);
+const EXEMPT = new Set<string>([]);
 
 const files = await glob([
   '**/*',
-  '!doc/_site/',
   '!lib/',
   '!node_modules/',
-  '!vendor/',
   // SPDX identifiers, which are neither kebab-case nor shouted and are not
   // ours to rename: the name is the identifier.
   '!LICENSE/',

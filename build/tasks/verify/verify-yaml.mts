@@ -10,10 +10,8 @@ import { exec, glob, quote } from '@openinf/.github/build/utils';
 const yamlFiles = await glob([
   '**/*.yml',
   '**/*.yaml',
-  '!doc/_site/',
   '!lib/',
   '!node_modules/',
-  '!vendor/',
   // Written by pnpm, not by hand.
   '!pnpm-lock.yaml',
 ]);

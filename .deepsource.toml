@@ -1,8 +1,6 @@
 version = 1
 exclude_patterns = [
-  "doc/_site/**",
   "lib/**",
-  "vendor/**",
   "pnpm-lock.yaml",
 ]
 
