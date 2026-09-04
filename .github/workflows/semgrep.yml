@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - master
     paths:
       - .github/workflows/semgrep.yml
   schedule:
@@ -16,7 +15,7 @@ jobs:
     env:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     container:
-      image: returntocorp/semgrep@sha256:18fcd539c83a1e8a3df78e77dddce457511f25dc2bd92b6e3bf999f51ab425d3 # latest
+      image: returntocorp/semgrep@sha256:98c2572fced2474539fd27cab3207ebd8e95e4e7aab4c3b381fdc5e2641d9941 # latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - run: semgrep ci

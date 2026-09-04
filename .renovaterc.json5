@@ -10,6 +10,11 @@
     ":semanticCommitTypeAll(chore)",
     "schedule:earlyMondays",
   ],
+  // `config:best-practices` pulls in `abandonments:recommended`, which calls a
+  // package abandoned after a year without a release. Most of what that flags
+  // here is the unified ecosystem, where packages are small and finished
+  // rather than neglected. Per-package community overrides still apply.
+  abandonmentThreshold: "2 years",
   groupName: "all",
   ignorePresets: [":prHourlyLimit2"],
   vulnerabilityAlerts: {
@@ -19,14 +24,29 @@
   },
   lockFileMaintenance: {
     enabled: true,
+    labels: ["dependencies", "build"],
   },
-  platformCommit: true,
+  platformCommit: "enabled",
   rangeStrategy: "pin",
   semanticCommits: "enabled",
   commitMessageAction: "bump",
   commitMessageTopic: "{{depName}}",
-  // A version pinned in a shell variable is invisible to renovate otherwise.
+  // Nothing else watches these two files. Everything installed through npm is
+  // covered by the managers above, but a version pinned in a URL or a shell
+  // variable is invisible to renovate without being told -- which is how the
+  // dprint dockerfile plugin reached four years out of date and stopped being
+  // able to parse a digest-pinned FROM line.
   customManagers: [
+    {
+      customType: "regex",
+      description: "dprint plugins, pinned by URL in dprint.json",
+      managerFilePatterns: ["/^dprint\\.json$/"],
+      matchStrings: [
+        "https://plugins\\.dprint\\.dev/(?<depName>[a-z-]+)-(?<currentValue>\\d+\\.\\d+\\.\\d+)\\.wasm",
+      ],
+      depNameTemplate: "dprint/dprint-plugin-{{{depName}}}",
+      datasourceTemplate: "github-releases",
+    },
     {
       customType: "regex",
       description: "fish tooling pinned in the dev container post-create script",
@@ -38,19 +58,36 @@
       ],
     },
   ],
+
   packageRules: [
-    {
-      matchUpdateTypes: ["minor", "patch", "pin", "digest"],
-    },
     {
       matchDepTypes: ["dependencies"],
       commitMessagePrefix: "chore(deps):",
-      labels: ["dependencies", "deps-prod"],
+      labels: ["dependencies"],
     },
     {
       matchDepTypes: ["devDependencies"],
       commitMessagePrefix: "build(deps-dev):",
-      labels: ["dependencies", "build", "deps-dev"],
+      labels: ["dependencies", "deps-dev", "build"],
+    },
+    // `config:best-practices` already waits, through
+    // `security:minimumReleaseAgeNpm`, but only three days and only for npm --
+    // leaving the action digests and the URL-pinned dprint plugins with no
+    // wait at all. A preset's rules are merged ahead of these, and the last
+    // matching rule wins, so raising the figure has to happen here.
+    {
+      description: "Let a new release be looked at before taking it",
+      matchPackageNames: ["*"],
+      minimumReleaseAge: "7 days",
+    },
+    {
+      // Restores what the preset set and the rule above would undo: renovate
+      // cannot apply the wait to the transitive versions a lockfile refresh
+      // picks up. pnpm enforces it there instead, during the install renovate
+      // runs to produce the branch.
+      description: "Lock file maintenance resolves through the package manager",
+      matchUpdateTypes: ["lockFileMaintenance"],
+      minimumReleaseAge: null,
     },
   ],
 }

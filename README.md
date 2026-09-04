@@ -36,6 +36,7 @@ Thanks!
 
 <div align="center">
 
+[![Lint and test][lint-badge-img]][lint-badge-url]
 [![Code Style: Prettier][prettier-badge]][prettier-url]
 [![Chat on Matrix][matrix-badge--shields]][matrix-url]
 
@@ -241,6 +242,10 @@ The [SPDX](https://spdx.dev) license identifier for this project is
   'What the goal(s) and/or scope are of this project'
 [**@OpenINF**]: https://github.com/OpenINF
 [Community Profile]: https://github.com/OpenINF/.github/community
+[lint-badge-img]:
+  https://github.com/OpenINF/.github/actions/workflows/lint-and-test.yml/badge.svg
+[lint-badge-url]:
+  https://github.com/OpenINF/.github/actions/workflows/lint-and-test.yml
 [license-badge--shields]:
   https://img.shields.io/badge/license-MIT%2FApache--2.0%2FBlueOak--1.0.0-blue.svg?logo=github
   'License: MIT/Apache 2.0/BlueOak 1.0.0'
