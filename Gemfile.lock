@@ -3,8 +3,8 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
-    cgi (0.4.1)
-    charlock_holmes (0.7.7)
+    cgi (0.5.2)
+    charlock_holmes (0.7.9)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
     dotenv (3.1.2)
@@ -14,7 +14,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    github-linguist (7.29.0)
+    github-linguist (9.7.0)
       cgi
       charlock_holmes (~> 0.7.7)
       mini_mime (~> 1.0)
@@ -70,7 +70,7 @@ GEM
     rexml (3.2.8)
       strscan (>= 3.0.9)
     rouge (4.2.1)
-    rugged (1.7.2)
+    rugged (1.9.6)
     safe_yaml (1.0.5)
     sass-embedded (1.77.2-aarch64-linux-gnu)
       google-protobuf (>= 3.25, < 5.0)
@@ -89,7 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  github-linguist (~> 7.28)
+  github-linguist (~> 9.0)
   jekyll (~> 4.3.0)
   jekyll-redirect-from
   jekyll-relative-links
