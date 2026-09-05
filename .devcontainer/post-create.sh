@@ -21,20 +21,13 @@ readonly FISHER_COMMIT=a04308be92daa6cfecdbb0ca58b1e8508664cff2 # 4.4.8
 readonly NVM_FISH_COMMIT=abd3002b6d2d578d484a5aea94dd1517dded6d42 # 2.2.17
 
 # Each file exists for its own tool -- .nvmrc for nvm.fish, engines.node for
-# pnpm -- so all that is left to guard is that they agree. Exact versions only:
-# an alias like lts/iron floats and will eventually stop matching the pin.
+# pnpm -- so all that is left to guard is that they agree. The rule lives in
+# `verify.runtimes`, which the checks run too: stated twice it would be two
+# rules, and the one nobody runs is the one that rots. It reads only what node
+# ships with, so it works here, before anything is installed.
+node build/tasks/verify/verify-runtimes.mts || exit 1
+
 required="$(node -p 'require("./package.json").engines.node')"
-declared="$(tr -d '[:space:]' < .nvmrc)"
-
-if [ "${declared}" != "${required}" ]; then
-  cat >&2 <<EOF
-.nvmrc says "${declared}" but package.json requires exactly "${required}".
-
-nvm.fish resolves \`nvm use\` from .nvmrc, so they have to agree or the version
-you get in fish will be rejected by engine-strict.
-EOF
-  exit 1
-fi
 
 echo "==> Node ${required} (image ships $(node -v))"
 

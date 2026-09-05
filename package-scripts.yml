@@ -19,6 +19,7 @@ scripts:
     # Outside verify/ on purpose: it needs a pull request in the environment,
     # and verify.all runs everything in that directory.
     pullRequest: node build/tasks/verify-pull-request.mts
+    runtimes: node build/tasks/verify/verify-runtimes.mts
     spelling: node build/tasks/verify/verify-spelling.mts
     toml: node build/tasks/verify/verify-toml.mts
     ts: node build/tasks/verify/verify-ts.mts
