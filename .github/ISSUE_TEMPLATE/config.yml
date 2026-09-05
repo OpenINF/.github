@@ -1,0 +1,19 @@
+# Blank issues stay available on purpose. This file is inherited by every
+# repository in the organization that has no .github/ISSUE_TEMPLATE of its
+# own, and a form that fits one of them will not fit all of them; turning the
+# blank option off would leave anybody the templates do not suit with nowhere
+# to go.
+blank_issues_enabled: true
+
+contact_links:
+  - name: 🗝️ Report a security vulnerability
+    url: https://github.com/OpenINF/.github/blob/HEAD/SECURITY.md
+    # Quoted, here and below: a space before `#` opens a YAML comment, so an
+    # unquoted channel name would silently truncate the sentence.
+    about: 'Do not open a public issue for a vulnerability. This explains how to report one privately.'
+  - name: 💬 Ask a question in Discord
+    url: https://discord.gg/Cgqgwu3FVR
+    about: 'The #support channel on the OpenINF Community Server, which SUPPORT.md names as the venue to prefer.'
+  - name: 📖 Read the documentation
+    url: https://open.inf.is
+    about: 'Docs and tutorials for what OpenINF publishes.'
