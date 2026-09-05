@@ -1,0 +1,95 @@
+# Watching the links in this project's prose for rot.
+#
+# Weekly rather than on every pull request, because this reaches the network:
+# a host that is slow, rate-limiting or briefly down would otherwise fail
+# changes that have nothing to do with it. The same reasoning that keeps
+# `verify.links` out of the verify/ directory keeps it out of the pull request
+# checks.
+#
+# It opens an issue rather than a pull request. A link that has rotted needs
+# somebody to decide where it should point instead, which is not a thing to
+# guess at, and the answer is often to delete the sentence around it.
+#
+# Actions are pinned by commit, never by tag.
+name: Link rot
+
+on:
+  schedule:
+    # Thursday, clear of the other scheduled runs.
+    - cron: '0 5 * * 4'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+# A scheduled run and a hand-started one should not both file the same report.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out project repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Node.js runtime
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: 'package.json'
+      # The task reads only what node ships with, so there is nothing to
+      # install and no lockfile to resolve before it can run.
+      - name: Look for rot
+        id: check
+        env:
+          # GitHub answers 404 for a page it will not show an anonymous
+          # client, so without this the task cannot tell a repository that was
+          # deleted from one that is merely private, and says so rather than
+          # guessing. The token settles it.
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node build/tasks/check-links.mts > report.md || code=$?
+          cat report.md
+
+          # Both bits are read: one link being dead says nothing about whether
+          # another was reachable, so neither answer is allowed to hide the
+          # other.
+          echo "dead=$(( (${code:-0} & 1) != 0 ))" >> "$GITHUB_OUTPUT"
+          echo "unchecked=$(( (${code:-0} & 2) != 0 ))" >> "$GITHUB_OUTPUT"
+      - name: Say so, once
+        if: steps.check.outputs.dead == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: 🔗 a link in this project leads nowhere
+        run: |
+          # Matched against the open issues themselves rather than through
+          # search, which is an index and lags behind what was just written.
+          # One issue at a time: a weekly comment on a report nobody has acted
+          # on yet says nothing the report did not.
+          open=$(gh issue list --state open --limit 1000 --json number,title \
+            --jq 'map(select(.title == env.TITLE)) | .[0].number // empty')
+
+          if [ -n "$open" ]; then
+            echo "already reported in #${open}"
+            exit 0
+          fi
+
+          {
+            echo 'These were followed and did not arrive anywhere. Decide'
+            echo 'where each should point, or take the sentence out.'
+            echo
+            cat report.md
+          } > body.md
+
+          gh issue create --title "$TITLE" --body-file body.md \
+            --label '📖 Category: Documentation'
+      # Not a failure. A host that would not answer is not this project's
+      # problem to fix, and failing here weekly would teach everyone to ignore
+      # a workflow that is usually right.
+      - name: Note what could not be checked
+        if: always() && steps.check.outputs.unchecked == '1'
+        run: echo '::notice::some links could not be checked; see the log'
