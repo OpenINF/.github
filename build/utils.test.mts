@@ -140,6 +140,17 @@ describe('quote', () => {
     deepStrictEqual(quote("it's.md"), "'it'\\''s.md'");
   });
 
+  test('keeps a name that looks like an option from being read as one', () => {
+    // Quoting alone leaves `--write.md` arriving at the tool as `--write.md`.
+    deepStrictEqual(quote('--write.md'), "'./--write.md'");
+    deepStrictEqual(quote('-'), "'./-'");
+  });
+
+  test('leaves an ordinary path alone', () => {
+    deepStrictEqual(quote('doc/adr/0001-a.md'), "'doc/adr/0001-a.md'");
+    deepStrictEqual(quote('/abs/path.jar'), "'/abs/path.jar'");
+  });
+
   test('survives a round trip through the shell it is written for', async () => {
     // The escaping is only worth anything if the shell `exec` uses agrees
     // with it, so this asks that shell rather than a model of it.
