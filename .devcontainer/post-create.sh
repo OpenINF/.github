@@ -104,7 +104,6 @@ cat <<EOF
 Ready, on Node $(node -v).
 
   pnpm test    the verify suite (nps verify.all)
-  pnpm build   nps build
 
 In fish, \`nvm use\` reads .nvmrc, for that session only.
 EOF

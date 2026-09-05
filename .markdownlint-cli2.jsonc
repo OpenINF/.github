@@ -7,10 +7,8 @@
 
   // Define glob expressions to ignore
   "ignores": [
-    "doc/_site/",
     "lib/",
     "node_modules/",
-    "vendor/",
     // The package store, which lives in the project because hard links
     // cannot cross a filesystem. It holds other people's files.
     ".pnpm-store/",

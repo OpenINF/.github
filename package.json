@@ -24,14 +24,12 @@
     "test": "test"
   },
   "scripts": {
-    "build": "nps build",
     "start": "nps",
     "test": "nps test"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.11",
     "@isaacs/catcher": "1.0.4",
-    "@shopify/prettier-plugin-liquid": "1.11.0",
     "@tsconfig/node-lts": "24.0.1",
     "@types/node": "24.13.3",
     "@yarnpkg/shell": "4.1.3",

@@ -9,10 +9,8 @@ import { exec, glob, quote } from '@openinf/.github/build/utils';
 
 const markdownFiles = await glob([
   '**/*.md',
-  '!doc/_site/',
   '!lib/',
   '!node_modules/',
-  '!vendor/',
   // Other people's words, reproduced verbatim.
   '!**/COPYING.md',
   '!LICENSE/',

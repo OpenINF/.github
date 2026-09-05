@@ -1,15 +1,11 @@
 !.*
 .git/
 .pnpm-store/
-doc/_site/
 lib/
 node_modules/
-vendor/
 LICENSE/
 package.json
 pnpm-lock.yaml
-Gemfile
-Gemfile.lock
 
 # Japanese has no word boundaries for prettier to wrap at, so `proseWrap`
 # joins the whole paragraph into one line that then trips the line-length

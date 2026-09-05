@@ -53,24 +53,6 @@
       "type": "shell",
       "command": "nps format.all",
       "problemMatcher": []
-    },
-    {
-      "label": "Serve docs",
-      "type": "shell",
-      "command": "bundle exec jekyll serve --force_polling --livereload --baseurl='' --source ./doc --destination ./doc/_site",
-      "isBackground": true,
-      "problemMatcher": []
-    },
-    {
-      "label": "Build docs",
-      "type": "shell",
-      "command": "nps build",
-      // Mark as the default build task so cmd/ctrl+shift+b will run it.
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
     }
   ]
 }

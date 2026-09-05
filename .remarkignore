@@ -1,8 +1,6 @@
 .github/ISSUE_TEMPLATE/*.md
-doc/_site/
 lib/
 node_modules/
-vendor/
 LICENSE/
 
 # The prose rules below remark are English ones -- readability scores,

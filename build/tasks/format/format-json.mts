@@ -7,7 +7,7 @@
 
 import { exec, glob, quote } from '@openinf/.github/build/utils';
 
-const EXCLUDED = ['!doc/_site/', '!lib/', '!node_modules/', '!vendor/'];
+const EXCLUDED = ['!lib/', '!node_modules/'];
 
 const jsonFiles = await glob(['**/*.json', '**/*.jsonc', ...EXCLUDED]);
 // Biome has no JSON5 parser. Handed one it reports the path as ignored and

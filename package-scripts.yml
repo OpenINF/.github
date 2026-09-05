@@ -1,8 +1,4 @@
 scripts:
-  compile:
-    # The documentation site under doc/, which Jekyll builds. Nothing in the
-    # checks below depends on it, so CI does not run it.
-    docs: bundle exec jekyll build --source ./doc --destination ./doc/_site
   verify:
     # Announces each task and names the ones that failed. Without this the
     # output is a wall of tool chatter with no indication of which task
@@ -14,7 +10,6 @@ scripts:
     filenames: node build/tasks/verify/verify-filenames.mts
     js: node build/tasks/verify/verify-js.mts
     json: node build/tasks/verify/verify-json.mts
-    liquid: node build/tasks/verify/verify-liquid.mts
     md: node build/tasks/verify/verify-md.mts
     # Outside verify/ on purpose: it needs a pull request in the environment,
     # and verify.all runs everything in that directory.
@@ -30,7 +25,6 @@ scripts:
     dockerfile: node build/tasks/format/format-dockerfile.mts
     js: node build/tasks/format/format-js.mts
     json: node build/tasks/format/format-json.mts
-    liquid: node build/tasks/format/format-liquid.mts
     md: node build/tasks/format/format-md.mts
     toml: node build/tasks/format/format-toml.mts
     ts: node build/tasks/format/format-ts.mts
@@ -38,6 +32,5 @@ scripts:
   # Squash a pull request into one commit with a message built from the
   # commits it contains. Takes a number, and --dry-run to see it first.
   land: node build/tasks/land-pull-request.mts
-  build: nps compile.docs
   test: nps verify.all
   default: nps test

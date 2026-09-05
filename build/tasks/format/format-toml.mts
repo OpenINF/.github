@@ -7,13 +7,7 @@
 
 import { exec, glob, quote } from '@openinf/.github/build/utils';
 
-const tomlFiles = await glob([
-  '**/*.toml',
-  '!doc/_site/',
-  '!lib/',
-  '!node_modules/',
-  '!vendor/',
-]);
+const tomlFiles = await glob(['**/*.toml', '!lib/', '!node_modules/']);
 
 let exitCode = 0;
 const scripts = [`dprint fmt ${quote(tomlFiles)}`];

@@ -9,10 +9,8 @@
   ],
   "ignorePaths": [
     ".pnpm-store/**",
-    "doc/_site/**",
     "lib/**",
     "node_modules/**",
-    "vendor/**",
     "**/COPYING.md",
     "LICENSE/**",
     "pnpm-lock.yaml",

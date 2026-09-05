@@ -1,6 +1,4 @@
 ---
-plugins:
-  - '@shopify/prettier-plugin-liquid'
 arrowParens: always
 bracketSpacing: true
 endOfLine: lf
@@ -16,13 +14,6 @@ overrides:
       - '*.svg'
     options:
       parser: html
-  - files:
-      - '*.html'
-    options:
-      bracketSameLine: true
-      parser: 'liquid-html'
-      singleAttributePerLine: false
-      singleQuote: false
   - files:
       - '*.json5'
     options:
