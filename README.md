@@ -1,6 +1,6 @@
 <a href="https://open.inf.is">
   <img
-    src="https://open.inf.is/assets/img/svg/logogram-color.svg"
+    src="https://open.inf.is/assets/img/logogram-color.svg"
     alt="OpenINF logo"
     title="OpenINF"
     align="right"
@@ -78,15 +78,13 @@ Thanks!
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/light-theme/info.svg">
-  <img alt="Info" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/info.svg">
-</picture><br>
-
-While these files themselves won't appear in the file browser or Git history of
-each repository, they will be surfaced throughout developers' workflows, such as
-when opening a new issue or when viewing the project's [Community Profile][],
-just as if it were committed to the repository directly.[^1]
+> [!NOTE]
+>
+> While these files themselves won't appear in the file browser or Git history
+> of each repository, they will be surfaced throughout developers' workflows,
+> such as when opening a new issue or when viewing the project's [Community
+> Profile][community-profile], just as if it were committed to the repository
+> directly.[^1]
 
 <br /><div align="center">
 
@@ -113,16 +111,13 @@ just as if it were committed to the repository directly.[^1]
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/light-theme/issue.svg">
-  <img alt="Issue" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/issue.svg">
-</picture><br>
-
-We cannot create organization-wide defaults for the following files as they are
-often unique per project. Therefore, they must be added to each individual
-repository so that they will be included when the project is cloned, packaged,
-or downloaded. Refer to the ones contained in this repository for guidance on
-how these files are expected to look.
+> [!IMPORTANT]
+>
+> We cannot create organization-wide defaults for the following files as they
+> are often unique per project. Therefore, they must be added to each individual
+> repository so that they will be included when the project is cloned, packaged,
+> or downloaded. Refer to the ones contained in this repository for guidance on
+> how these files are expected to look.
 
 <br /><div align="center">
 
@@ -135,15 +130,13 @@ how these files are expected to look.
 
 </div><br />
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/light-theme/tip.svg">
-  <img alt="Tip" src="https://raw.githubusercontent.com/OpenINF/GitHub-Markdown/HEAD/blockquotes/badge/dark-theme/tip.svg">
-</picture><br>
-
-The [`VISION.md`][] file can be useful for offloading project goals that should
-typically be specified in the root [`README.md`][] file. It may optionally exist
-alongside it as an alternative location to even include project scope as well,
-but should be linked to from the root [`README.md`][] file in these cases.
+> [!TIP]
+>
+> The [`VISION.md`][] file can be useful for offloading project goals that
+> should typically be specified in the root [`README.md`][] file. It may
+> optionally exist alongside it as an alternative location to even include
+> project scope as well, but should be linked to from the root [`README.md`][]
+> file in these cases.
 
 </section>
 
@@ -196,7 +189,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
   <!-- markdownlint-disable-next-line line-length -->
-  <img alt="The OpenINF logo" height="32px" width="32px" src="https://open.inf.is/assets/img/svg/logogram-color.svg" />
+  <img alt="The OpenINF logo" height="32px" width="32px" src="https://open.inf.is/assets/img/logogram-color.svg" />
 </a>
 
 </div>
@@ -241,7 +234,7 @@ The [SPDX](https://spdx.dev) license identifier for this project is
   https://github.com/OpenINF/.github/blob/HEAD/VISION.md
   'What the goal(s) and/or scope are of this project'
 [**@OpenINF**]: https://github.com/OpenINF
-[Community Profile]: https://github.com/OpenINF/.github/community
+[community-profile]: https://github.com/OpenINF/.github/community
 [lint-badge-img]:
   https://github.com/OpenINF/.github/actions/workflows/lint-and-test.yml/badge.svg
 [lint-badge-url]:
