@@ -38,7 +38,17 @@ export const exec = catchWrap(execute, 99);
 export const quote = (paths: string | string[]) =>
   [paths]
     .flat()
-    .map((path) => `'${path.replaceAll("'", "'\\''")}'`)
+    .map((path) => {
+      // Quoting settles what the shell does with a name and nothing about
+      // what the tool then makes of it: `'--write.md'` arrives at prettier as
+      // `--write.md`, which it reads as an option. It answered that one by
+      // printing an error and exiting 0 -- a check that passed having checked
+      // nothing. A leading `./` says the argument is a path and costs a
+      // relative name two characters.
+      const safe = path.startsWith('-') ? `./${path}` : path;
+
+      return `'${safe.replaceAll("'", "'\\''")}'`;
+    })
     .join(' ');
 
 /**
