@@ -5,7 +5,7 @@
  * @module {type ES6Module} build/tasks/verify/verify-yaml
  */
 
-import { exec, glob, quote } from '@openinf/.github/build/utils';
+import { exec, glob, matched, quote } from '@openinf/.github/build/utils';
 
 const yamlFiles = await glob([
   '**/*.yml',
@@ -17,7 +17,9 @@ const yamlFiles = await glob([
 ]);
 
 let exitCode = 0;
-const scripts = [`prettier --check ${quote(yamlFiles)}`];
+const scripts = matched(yamlFiles, '**/*.yml, **/*.yaml')
+  ? [`prettier --check ${quote(yamlFiles)}`]
+  : [];
 
 for (const element of scripts) {
   exitCode = await exec(element);

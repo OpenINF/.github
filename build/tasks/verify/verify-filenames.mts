@@ -5,7 +5,7 @@
  * @module {type ES6Module} build/tasks/verify/verify-filenames
  */
 
-import { glob } from '@openinf/.github/build/utils';
+import { glob, matched } from '@openinf/.github/build/utils';
 
 /**
  * Lowercase words joined by hyphens. A leading underscore is Eleventy's and
@@ -35,6 +35,10 @@ const files = await glob([
   // ours to rename: the name is the identifier.
   '!LICENSE/',
 ]);
+
+// This one hands nothing to a tool, but `glob` finding nothing would still
+// leave it looping zero times and reporting success.
+if (!matched(files, '**/*')) process.exit(1);
 
 // A directory is only ever seen here as part of some file's path, and the
 // same directory is part of many, so each is judged once.
