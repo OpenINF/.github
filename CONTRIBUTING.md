@@ -72,7 +72,12 @@ your pull request merged:
 - Keep your change as focused as possible. If there are multiple changes you
   would like to make that are not dependent upon each other, consider submitting
   them as separate pull requests.
-- Write a [good commit message][].
+- Write a [good commit message][], and follow the [format this organization
+  writes them in][commit-messages]. Several repositories check it as part of
+  their pull request checks, and where a commit queue does the merging, the
+  title of the pull request becomes the subject of the commit that lands — so it
+  answers to the same rules.
+- [Sign off](#certifying-the-origin-of-your-work) every commit.
 
 Contributions to this project are [released][contrib-license] to the public
 under the project’s open-source license(s). The license(s) for a project may be
@@ -102,6 +107,38 @@ on Twitter.
 
 By participating in this project, you are expected to uphold our Code of
 Conduct. Please see the [`CODE_OF_CONDUCT.md`][] file for expected behavior.
+
+## Certifying the Origin of Your Work
+
+Every commit needs a `Signed-off-by:` line naming its own author, which is how
+you certify the Developer’s Certificate of Origin reproduced below. Git writes
+it for you:
+
+```bash
+git commit --signoff
+```
+
+Only the author can certify their own work, so the trailer has to name the
+author — and this is the one sharp edge. **`--signoff` writes the _committer_,
+not the author.** They are the same person on an ordinary commit, and the checks
+are happy. They differ the moment you commit with `--author`, apply somebody’s
+patch, or rebase a branch that is not yours, and then the trailer names the
+wrong person and the commit is refused:
+
+```text
+`Signed-off-by:` names You <you@example.com>, but the author is Them <them@example.com>
+```
+
+So keep `git config user.name` and `user.email` as the identity you commit
+under, and sign off only what you wrote.
+
+If you forget, `git commit --amend --signoff` fixes the last commit.
+`git rebase --signoff <base>` fixes a whole branch of them — but it signs off as
+_you_ on every commit it rewrites, so reach for it only where you are the author
+of all of them. A commit somebody else wrote has to be signed off by them.
+
+An assistant that helped is disclosed separately, with an `Assisted-by:`
+trailer, and signs nothing.
 
 ## Developer’s Certificate of Origin 1.1
 
@@ -151,6 +188,7 @@ Please see the [`SECURITY.md`][] file.
 [`SECURITY.md`]:
   https://github.com/OpenINF/.github/blob/HEAD/SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
+[commit-messages]: https://open.inf.is/docs/handbook/style/commit-messages/
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
 [draft pull request]:
