@@ -4,10 +4,10 @@
   "author": "The OpenINF Authors & Friends",
   "private": true,
   "description": "Org-level default metadata & community health files",
-  "packageManager": "pnpm@11.25.0",
+  "packageManager": "pnpm@12.1.0",
   "engines": {
     "node": "24.20.0",
-    "pnpm": "11.25.0"
+    "pnpm": "12.1.0"
   },
   "exports": {
     "./build/commit-message": "./build/shared/commit-message.mts",
