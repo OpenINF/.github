@@ -5,12 +5,14 @@
  * @module {type ES6Module} build/tasks/format/format-js
  */
 
-import { exec, glob, quote } from '@openinf/.github/build/utils';
+import { exec, glob, matched, quote } from '@openinf/.github/build/utils';
 
 const jsFiles = await glob(['**/*.js', '**/*.mjs', '!lib/', '!node_modules/']);
 
 let exitCode = 0;
-const scripts = [`biome check --write ${quote(jsFiles)}`];
+const scripts = matched(jsFiles, '**/*.js, **/*.mjs')
+  ? [`biome check --write ${quote(jsFiles)}`]
+  : [];
 
 for (const element of scripts) {
   exitCode = await exec(element);

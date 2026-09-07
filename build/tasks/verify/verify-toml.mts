@@ -5,12 +5,14 @@
  * @module {type ES6Module} build/tasks/verify/verify-toml
  */
 
-import { exec, glob, quote } from '@openinf/.github/build/utils';
+import { exec, glob, matched, quote } from '@openinf/.github/build/utils';
 
 const tomlFiles = await glob(['**/*.toml', '!lib/', '!node_modules/']);
 
 let exitCode = 0;
-const scripts = [`dprint check ${quote(tomlFiles)}`];
+const scripts = matched(tomlFiles, '**/*.toml')
+  ? [`dprint check ${quote(tomlFiles)}`]
+  : [];
 
 for (const element of scripts) {
   exitCode = await exec(element);
