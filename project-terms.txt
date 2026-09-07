@@ -44,6 +44,7 @@ hrefs
 htmlparser
 incentivizing
 Irulen
+isaacs
 itemprop
 itemscope
 itemtype
@@ -98,4 +99,5 @@ unconfigured
 unentitled
 unifiedjs
 windir
+yarnpkg
 zindex

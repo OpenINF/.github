@@ -17,7 +17,7 @@
 
 import { readFile } from 'node:fs/promises';
 import { urlsIn } from '@openinf/.github/build/links';
-import { glob } from '@openinf/.github/build/utils';
+import { glob, matched } from '@openinf/.github/build/utils';
 
 /** How long to wait on a host before giving up, in milliseconds. */
 const TIMEOUT = 20_000;
@@ -120,6 +120,12 @@ async function collect(): Promise<Link[]> {
     '!**/COPYING.md',
     '!LICENSE/',
   ]);
+
+  // The same guard the verify tasks carry. A glob that stopped matching would
+  // otherwise report zero links checked and nothing wrong with any of them,
+  // which is the one answer a check must never give.
+  if (!matched(files, '**/*.md')) return [];
+
   const found = new Map<string, Set<string>>();
 
   for (const file of files) {
