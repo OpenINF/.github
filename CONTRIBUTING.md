@@ -138,7 +138,14 @@ _you_ on every commit it rewrites, so reach for it only where you are the author
 of all of them. A commit somebody else wrote has to be signed off by them.
 
 An assistant that helped is disclosed separately, with an `Assisted-by:`
-trailer, and signs nothing.
+trailer, and signs nothing. It does not go in `Co-authored-by:` either, which is
+for people, and the check refuses one naming an assistant or a bot account.
+Authorship is a claim only a person can make, and an agent writing its own
+commit message reaches for that trailer by habit. It refuses on the `[bot]`
+suffix, which GitHub reserves so that no person can hold it, on the addresses
+the agents commit under, and on a handful of product names. Only the last can
+reach a person. If it ever refuses a real co-author, narrow the pattern in the
+same pull request rather than dropping the credit.
 
 ## Developer’s Certificate of Origin 1.1
 
