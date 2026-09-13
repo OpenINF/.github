@@ -13,6 +13,7 @@ import {
   ACTIONS,
   BODY_MAX,
   CATEGORIES,
+  checkSignOff,
   readTrailers,
   validateCommitMessage,
 } from '@openinf/.github/build/commit-message';
@@ -247,6 +248,92 @@ describe('validateCommitMessage: the trailers', () => {
     );
   });
 
+  test('accepts a person as a co-author', () => {
+    deepStrictEqual(
+      validateCommitMessage(
+        '🏗️🔧：fix it\n\nCo-authored-by: Ada Lovelace <ada@example.com>'
+      ),
+      []
+    );
+  });
+
+  test('rejects an assistant credited as a co-author', () => {
+    // The mistake this exists to stop. An assistant is disclosed with
+    // `Assisted-by`, and putting it here instead claims it wrote the code and
+    // certified the Developer Certificate of Origin, neither of which a tool
+    // can do.
+    match(
+      soleProblem(
+        '🏗️🔧：fix it\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Ada Lovelace <ada@example.com>'
+      ),
+      /credits a tool with authorship/
+    );
+  });
+
+  test('rejects an assistant co-author with no address to give it away', () => {
+    match(
+      soleProblem('🏗️🔧：fix it\n\nCo-authored-by: GitHub Copilot'),
+      /credits a tool with authorship/
+    );
+  });
+
+  test('rejects a bot account as a co-author', () => {
+    match(
+      soleProblem(
+        '🏗️🔧：fix it\n\nCo-authored-by: some-app[bot] <1234+some-app[bot]@users.noreply.github.com>'
+      ),
+      /credits a tool with authorship/
+    );
+  });
+
+  test('leaves a person at one of those companies alone', () => {
+    // Only the agents' `noreply` address is theirs. Somebody who works there
+    // and writes part of a change is a co-author like anybody else.
+    deepStrictEqual(
+      validateCommitMessage(
+        '🏗️🔧：fix it\n\nCo-authored-by: Ada Lovelace <ada@anthropic.com>'
+      ),
+      []
+    );
+  });
+
+  test('leaves a person whose name an agent also goes by alone', () => {
+    // `devin` and `gemini` are names before they are products, and both of
+    // those integrations commit as `[bot]` accounts anyway, so neither has to
+    // be named here. `claude` is the one kept, and the one that can misfire.
+    deepStrictEqual(
+      validateCommitMessage(
+        '🏗️🔧：fix it\n\nCo-authored-by: Devin Gemini <devin@example.com>'
+      ),
+      []
+    );
+  });
+
+  test('rejects an assistant whose address is on a folded line', () => {
+    // git joins the indented line onto the value and reads one trailer, so a
+    // wrapped address is still the address. Keeping only the token line would
+    // have made folding a way around the check.
+    match(
+      soleProblem(
+        '🏗️🔧：fix it\n\nCo-authored-by: Some Person\n <noreply@anthropic.com>'
+      ),
+      /credits a tool with authorship/
+    );
+  });
+
+  test('reads a folded sign-off as the whole address', () => {
+    // The same fold, on the trailer whose value the sign-off check compares
+    // against the author. Dropping the continuation put the author out of
+    // reach and the sign-off passed for nobody.
+    deepStrictEqual(
+      checkSignOff(
+        '🏗️🔧：fix it\n\nSigned-off-by: Ada Lovelace\n <ada@example.com>',
+        'Ada Lovelace <ada@example.com>'
+      ),
+      []
+    );
+  });
+
   test('rejects a token this project does not use', () => {
     match(
       soleProblem('🏗️🔧：fix it\n\nCloses: https://x/1'),
@@ -369,8 +456,9 @@ describe('the vocabulary', () => {
 
 describe('the width limit', () => {
   test('leaves a trailer that cannot be wrapped alone', () => {
-    // Folding this to fit would put the author on a continuation line, where
-    // `readTrailers` does not look and so `checkSignOff` could not match it.
+    // Trailers are metadata rather than prose, and the limit is for prose.
+    // Folding this one to fit would be read correctly either way, but there
+    // is no reason to make somebody wrap an address to please a linter.
     const long =
       'Signed-off-by: Christopher Alexander Montgomery ' +
       '<christopher.montgomery@example.org>';

@@ -119,6 +119,28 @@ const TRAILER_LINE = /^(?<token>[A-Za-z][\w-]*):[ \t]*(?<value>.*)$/;
  */
 const ASSISTED_BY_VALUE = /^[^\s:]+:\S+( \S+)*$/;
 
+/**
+ * A `Co-authored-by` value naming something that is not a person. Authorship
+ * is a claim only a person can make: the Developer Certificate of Origin is
+ * certified by whoever wrote the code, and a tool certifies nothing. An
+ * assistant is disclosed with `Assisted-by` instead, which says what was used
+ * rather than who wrote it.
+ *
+ * `[bot]` cannot catch a person: GitHub reserves the suffix and no account may
+ * be named with it, which is the same fact the commit checker relies on to
+ * recognize a bot author. The agents' noreply addresses are theirs alone. Only
+ * the product names can reach a person, and only one of them realistically:
+ * Claude is a name people have. That is the trade accepted here, since the
+ * alternative is a tool standing in the history as an author. If it ever
+ * refuses a real co-author, narrow the pattern rather than drop the credit.
+ *
+ * An agent whose integration commits as a `[bot]` account needs no name here.
+ * Renovate and Dependabot are out of reach either way: their commits are
+ * skipped whole, so their own `[bot]` co-authors are not this check's business.
+ */
+const TOOL_COAUTHOR =
+  /\[bot]|\bnoreply@(?:anthropic|openai)\.com\b|\b(?:aider|chatgpt|claude|codex|copilot|cursor)\b/i;
+
 /** git folds a trailer whose value runs onto an indented line beneath it. */
 export const CONTINUATION_LINE = /^\s/;
 
@@ -199,7 +221,25 @@ const trailerBlockOf = (paragraphs: string[][]) => {
       (line) => TRAILER_LINE.test(line) || CONTINUATION_LINE.test(line)
     );
 
-  return isBlock ? last.filter((line) => !CONTINUATION_LINE.test(line)) : [];
+  // A folded trailer is one trailer, not a trailer and a stray line. git
+  // joins the indented line onto the value, and `git interpret-trailers
+  // --parse` prints the two back as one, so this does the same. Dropping the
+  // continuation instead would put whatever got wrapped out of reach of every
+  // check below -- an address most of all, which is the half that says who a
+  // trailer names.
+  return isBlock
+    ? last.reduce<string[]>((folded, line) => {
+        const previous = folded.at(-1);
+
+        if (previous !== undefined && CONTINUATION_LINE.test(line)) {
+          folded[folded.length - 1] = `${previous} ${line.trim()}`;
+        } else {
+          folded.push(line);
+        }
+
+        return folded;
+      }, [])
+    : [];
 };
 
 /**
@@ -371,6 +411,15 @@ const checkTrailers = (lines: string[]) => {
         );
       }
 
+      if (
+        token.toLowerCase() === 'co-authored-by' &&
+        TOOL_COAUTHOR.test(found?.value ?? '')
+      ) {
+        problems.push(
+          `“Co-authored-by: ${found?.value}” credits a tool with authorship: an assistant is disclosed with “Assisted-by:” and co-authors nothing`
+        );
+      }
+
       // Case is part of the spelling. git and GitHub would match these either
       // way, so this is about a history that reads the same throughout rather
       // than about being understood.
@@ -423,12 +472,12 @@ export function validateCommitMessage(message: string) {
     problems.push('the line after the subject has to be blank');
   }
 
-  // Where the trailer block starts, or past the end when there is none. A
-  // trailer is one line by construction here: git would read a folded value,
-  // but `readTrailers` keeps only the token line, so wrapping a long
-  // `Signed-off-by:` to fit would put the author out of reach of the sign-off
-  // check. The block is exempt from the width limit rather than made to fit
-  // inside it, which is also what the limit is for -- prose that is read.
+  // Where the trailer block starts, or past the end when there is none. The
+  // block is exempt from the width limit rather than made to fit inside it,
+  // which is what the limit is for -- prose that is read. A trailer long
+  // enough to need wrapping is wrapped by nobody here, and one that arrives
+  // wrapped anyway is read whole, since `trailerBlockOf` folds it back the
+  // way git does.
   const paragraphs = paragraphsOf(rest);
   const blockStart =
     trailerBlockOf(paragraphs).length > 0
