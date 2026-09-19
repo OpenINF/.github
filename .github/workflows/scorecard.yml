@@ -1,0 +1,51 @@
+# Grading this repository's security practices, the same way the SDK does.
+#
+# OpenSSF Scorecard reads branch protection, pinned dependencies, token
+# permissions, SAST coverage and the rest, and publishes the result to the
+# Security tab. Whoever arrives from an OpenINF package and follows it back
+# here sees the same grade the SDK carries, which is the point of grading the
+# defaults alongside the code that inherits them.
+#
+# It needs a public repository: the checks read history through an API the
+# default token cannot reach on a private one, and publishing a result is
+# public by definition. The job waits for that rather than failing until then.
+#
+# Actions are pinned by commit, never by tag.
+name: Scorecard
+
+on:
+  branch_protection_rule:
+  push:
+    branches: [main]
+  schedule:
+    # Monday, clear of the other scheduled runs.
+    - cron: '17 5 * * 1'
+
+permissions: {}
+
+jobs:
+  analysis:
+    name: Scorecard analysis
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write # upload the SARIF result
+      id-token: write # sign the result so it can be published
+    steps:
+      - name: Check out project repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Run analysis
+        uses: ossf/scorecard-action@2d1146689b8cda280b9bc96326124645441f03bc # v2.4.4
+        with:
+          results_file: results.sarif
+          results_format: sarif
+          publish_results: true
+
+      - name: Upload result to the Security tab
+        uses: github/codeql-action/upload-sarif@cdf488f595d80d6e07e03d4674febd5ab45fa938 # v4.37.9
+        with:
+          sarif_file: results.sarif
