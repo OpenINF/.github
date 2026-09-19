@@ -376,6 +376,32 @@ describe('validateCommitMessage: the trailers', () => {
     );
   });
 
+  test('leaves a person with [bot] inside their name or address alone', () => {
+    // `[bot]` is read where an account name ends, not wherever it appears. A
+    // trailer is free text, so an unanchored match also finds one sitting in
+    // the middle of somebody's name -- and a sign-off, unlike a co-author
+    // credit, cannot be dropped to get past a false positive.
+    deepStrictEqual(
+      validateCommitMessage(
+        '🏗️🔧：fix it\n\nSigned-off-by: Ada [bot] Smith <ada@example.com>'
+      ),
+      []
+    );
+    deepStrictEqual(
+      validateCommitMessage(
+        '🏗️🔧：fix it\n\nCo-authored-by: Ada Smith <ada[bot]smith@example.com>'
+      ),
+      []
+    );
+  });
+
+  test('still reads a bot account with no address to end it', () => {
+    match(
+      soleProblem('🏗️🔧：fix it\n\nCo-authored-by: some-app[bot]'),
+      /credits a tool with authorship/
+    );
+  });
+
   test('leaves a person at one of those companies signing off alone', () => {
     deepStrictEqual(
       validateCommitMessage(

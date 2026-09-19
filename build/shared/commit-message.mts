@@ -129,7 +129,13 @@ const ASSISTED_BY_VALUE = /^[^\s:]+:\S+( \S+)*$/;
  *
  * `[bot]` cannot catch a person: GitHub reserves the suffix and no account may
  * be named with it, which is the same fact the commit checker relies on to
- * recognize a bot author. The agents' noreply addresses are theirs alone. Only
+ * recognize a bot author. It is matched where an account name ends -- before
+ * the `@` of an address, or at the end of the value -- because a trailer is
+ * free text and not an account name, so an unanchored `[bot]` would also find
+ * one sitting inside somebody's name. That mattered little while only a
+ * co-author was read this way and matters now: a sign-off cannot be dropped to
+ * get around a false positive, the way a co-author credited in error could be.
+ * The agents' noreply addresses are theirs alone. Only
  * the product names can reach a person, and only one of them realistically:
  * Claude is a name people have. That is the trade accepted here, since the
  * alternative is a tool standing in the history as an author. If it ever
@@ -140,7 +146,7 @@ const ASSISTED_BY_VALUE = /^[^\s:]+:\S+( \S+)*$/;
  * skipped whole, so their own `[bot]` co-authors are not this check's business.
  */
 const TOOL_IDENTITY =
-  /\[bot]|\bnoreply@(?:anthropic|openai)\.com\b|\b(?:aider|chatgpt|claude|codex|copilot|cursor)\b/i;
+  /\[bot](?=@|\s*(?:<[^>]*>)?\s*$)|\bnoreply@(?:anthropic|openai)\.com\b|\b(?:aider|chatgpt|claude|codex|copilot|cursor)\b/i;
 
 /** git folds a trailer whose value runs onto an indented line beneath it. */
 export const CONTINUATION_LINE = /^\s/;
