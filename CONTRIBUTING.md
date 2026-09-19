@@ -79,11 +79,39 @@ your pull request merged:
   answers to the same rules.
 - [Sign off](#certifying-the-origin-of-your-work) every commit.
 
-Contributions to this project are [released][contrib-license] to the public
-under the project’s open-source license(s). The license(s) for a project may be
-located within the [`LICENSE`][] folder in the root directory of the repository.
+## License
 
-<!-- TODO: Guidance on SPDX corpus text files using `.txt` extension. -->
+Contributions to this project are [released][contrib-license] to the public
+under the licenses the project offers. A project says which those are in three
+places, and the three agree.
+
+The [`LICENSE`][] path at the root of the repository holds the license texts. A
+project offering one license has a single file; a project offering several has a
+directory holding one file each. Either way a file is named for the license’s
+[SPDX identifier][spdx-list] and ends in `.txt`, and its contents are the text
+SPDX publishes, copied from [`spdx/license-list-data`][spdx-text] rather than
+retyped.
+
+What that rules out is a `LICENSE.md` explaining an arrangement of licenses.
+Prose about licensing is not a license, and a file that mixes the two leaves
+GitHub unable to say which license the project is under.
+
+The `license` field of `package.json` names the same licenses as an SPDX
+expression. For this repository that is `MIT OR Apache-2.0 OR BlueOak-1.0.0`,
+where `OR` is a choice the project offers and whoever uses it makes.
+
+The `README.md` names them again in prose, for a reader deciding whether to
+depend on the project at all.
+
+### Contribution
+
+Unless you say otherwise, a contribution you intentionally submit for inclusion
+in the work, as defined in the Apache-2.0 license, is licensed on the terms
+above, with no additional terms or conditions.
+
+This is separate from the sign-off each of your commits carries. The sign-off
+certifies where a contribution came from and that you have the right to submit
+it; the terms above are what it is licensed under once it lands.
 
 ## Project Documentation
 
@@ -214,5 +242,7 @@ Please see the [`SECURITY.md`][] file.
   https://github.com/search?q=org%3Aopeninf+is%3Apr+is%3Aopen+label%3A%22help+wanted%22
 [pull request]:
   https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request
+[spdx-list]: https://spdx.org/licenses/
+[spdx-text]: https://github.com/spdx/license-list-data/tree/main/text
 
 <!-- END LINK DEFINITIONS -->
