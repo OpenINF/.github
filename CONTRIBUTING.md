@@ -137,15 +137,35 @@ If you forget, `git commit --amend --signoff` fixes the last commit.
 _you_ on every commit it rewrites, so reach for it only where you are the author
 of all of them. A commit somebody else wrote has to be signed off by them.
 
+### An assistant is not an author
+
 An assistant that helped is disclosed separately, with an `Assisted-by:`
-trailer, and signs nothing. It does not go in `Co-authored-by:` either, which is
-for people, and the check refuses one naming an assistant or a bot account.
-Authorship is a claim only a person can make, and an agent writing its own
-commit message reaches for that trailer by habit. It refuses on the `[bot]`
-suffix, which GitHub reserves so that no person can hold it, on the addresses
-the agents commit under, and on a handful of product names. Only the last can
-reach a person. If it ever refuses a real co-author, narrow the pattern in the
-same pull request rather than dropping the credit.
+trailer, and signs nothing. Only a person can certify the Developer’s
+Certificate of Origin, so a `Signed-off-by:` naming an assistant or a bot
+account is refused whoever the commit is authored by:
+
+```text
+“Signed-off-by: Claude <noreply@anthropic.com>” certifies the Developer Certificate of Origin as a tool: only the person answerable for the change can sign it off, and an assistant is disclosed with “Assisted-by:”
+```
+
+**The author of a commit has to be a person too**, which is the half of this
+that goes without saying until an agent reads the rules to the letter. An agent
+running under its own git identity writes itself into the sign-off — `--signoff`
+copies whatever `git config user.name` says — and the trailer then agrees with
+the author, because the agent is the author. Every sentence above is satisfied
+and a tool has certified the origin of the work. So an agent committing on
+somebody’s behalf commits _as them_, with the sign-off to match, and names
+itself in `Assisted-by:`. The person in those two trailers is answerable for
+every line, whatever wrote it; that is what signing off says.
+
+An assistant does not go in `Co-authored-by:` either, which is for people, and
+the check refuses one naming an assistant or a bot account. Authorship is a
+claim only a person can make, and an agent writing its own commit message
+reaches for that trailer by habit. Both trailers are refused on the same three
+things: the `[bot]` suffix, which GitHub reserves so that no person can hold it,
+the addresses the agents commit under, and a handful of product names. Only the
+last can reach a person. If it ever refuses a real contributor, narrow the
+pattern in the same pull request rather than dropping the trailer.
 
 ## Developer’s Certificate of Origin 1.1
 
