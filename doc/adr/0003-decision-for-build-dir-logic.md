@@ -2,23 +2,23 @@
 adr_name: ADR 0003
 title: Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
 date: 2023-05-11 13:00:00 -0800
-updated: 2024-02-06 13:00:00 -0800
+updated: 2026-09-25 13:00:00 -0800
 status: Approved
 ---
 
-## Context
+## Problem Statement
 
 We needed to determine where to place build-related scripts/configurations as
 well as build artifacts (object files, binaries, etc.).
 
-### Decision
+## Decision
 
 We decided to have two directories:
 
 - A "build" directory at workspace root containing build config and scripts
 - A "distrib" subdirectory in each package root to contain final build artifacts
 
-#### Codebase Overview
+### Codebase Overview
 
 ```dir
 ├── 📁 build
@@ -28,9 +28,9 @@ We decided to have two directories:
             └── 📂 distrib
 ```
 
-### Results
+## Results
 
-#### For `build`
+### For `build`
 
 - Provides isolation of build-specific logic from source code
 - Allows flexibility for platform/configuration-specific builds
@@ -44,7 +44,7 @@ believe this directory to contain generated (non-source) build products.[^1]
 build/** linguist-generated=false
 ```
 
-#### For `dist`
+### For `dist`
 
 - Final build artifacts clearly separated from the source code and buildsystem
 - Artifacts can be packaged or deployed directly from the "distrib" directory
@@ -56,8 +56,6 @@ We configure `.gitattributes` to be configured as seen here:[^1]
 ```gitattributes
 distrib/** linguist-generated=true
 ```
-
-### Next Steps
 
 > P.1 The development of AI without a blueprint of ethical principles will have
 > dangerous, unintended consequences. P.2 We must prevent dangerous, unintended
