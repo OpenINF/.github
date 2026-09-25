@@ -68,6 +68,7 @@ onopentag
 OpenINF
 openinf
 openpgp
+ossf
 recompiles
 remarkrc
 Renovatebot
@@ -78,6 +79,8 @@ retarget
 retargets
 returntocorp
 rubocop
+SARIF
+sarif
 screencap
 sdcard
 SEMGREP
