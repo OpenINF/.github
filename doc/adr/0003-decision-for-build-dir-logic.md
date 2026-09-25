@@ -1,66 +1,52 @@
 ---
 adr_name: ADR 0003
-title: Adoption of Dedicated Top-Level “Build” Directory in Codebase Layouts
+title: Build Logic in a Top-Level build/, Build Output in Each Package's dist/
 date: 2023-05-11 13:00:00 -0800
-updated: 2026-09-25 13:00:00 -0800
+updated: 2026-09-24 23:00:00 -0800
 status: Approved
 ---
 
 ## Problem Statement
 
-We needed to determine where to place build-related scripts/configurations as
-well as build artifacts (object files, binaries, etc.).
+A repository needs somewhere for the code that builds, checks and lands it, and
+somewhere for what the build produces. Left undecided, the first ends up in the
+repository root and the second next to the source it was built from.
+
+## Context
+
+Much of that code is the same in every OpenINF repository: the commit message
+rules, the commit queue, and the checks a pull request has to pass. It can only
+be copied between repositories as a unit if it sits in the same place, with the
+same layout, in each of them.
+
+Build output is disposable. It can be deleted and regenerated at any time, it
+should never be edited by hand, and it is what npm publishes from a package.
+
+### Exemplary Prior Art
+
+[Chromium][] and [Firefox][] both keep their build configuration in a top-level
+`build/` directory. `dist/` is the directory most npm packages build into, and
+the one tools and contributors expect to find.
 
 ## Decision
 
-We decided to have two directories:
-
-- A "build" directory at workspace root containing build config and scripts
-- A "distrib" subdirectory in each package root to contain final build artifacts
-
-### Codebase Overview
-
-```dir
-├── 📁 build
-│   └── 📂 tasks
-└── 📁 packages
-    └── 📦 inf-log
-            └── 📂 distrib
-```
+Each OpenINF repository keeps the code that builds, checks and lands it in a
+top-level `build/` directory, with the entry points in `build/tasks/` and the
+modules they share in `build/shared/`. Each package writes its build output to
+`dist/` in its own directory, and git ignores it.
 
 ## Results
 
-### For `build`
+Every repository keeps its build logic in the same place, so the shared parts
+can be copied between repositories file for file, and a contributor who knows
+one repository knows where to look in the others.
 
-- Provides isolation of build-specific logic from source code
-- Allows flexibility for platform/configuration-specific builds
-- Follows conventions established by large cross-platform software
-- Simplifies contribution for new contributors by following expected conventions
+Build output never shows up in a diff. A package's `exports` map points into its
+`dist/`, which is built fresh for every release.
 
-Linguist prefers `.gitattributes` to be configured as below; otherwise, may
-believe this directory to contain generated (non-source) build products.[^1]
+<!-- BEGIN LINK DEFINITIONS -->
 
-```gitattributes
-build/** linguist-generated=false
-```
+[Chromium]: https://source.chromium.org/chromium/chromium/src/+/main:build/
+[Firefox]: https://searchfox.org/mozilla-central/source/build
 
-### For `dist`
-
-- Final build artifacts clearly separated from the source code and buildsystem
-- Artifacts can be packaged or deployed directly from the "distrib" directory
-- The "distrib" directory can be emptied or archived without impacting source or
-  buildsystem files.
-
-We configure `.gitattributes` to be configured as seen here:[^1]
-
-```gitattributes
-distrib/** linguist-generated=true
-```
-
-> P.1 The development of AI without a blueprint of ethical principles will have
-> dangerous, unintended consequences. P.2 We must prevent dangerous, unintended
-> consequences. C. We must develop AI with a blueprint of ethical principles to
-> prevent dangerous, unintended consequences. &mdash; OpenINF Community Effort
-
-[^1]:
-    <https://github.com/github-linguist/linguist/blob/master/docs/overrides.md>
+<!-- END LINK DEFINITIONS -->
