@@ -2,18 +2,14 @@
 adr_name: ADR 0004
 title: Adoption of Dedicated Top-Level “Tools” Directory in Codebase Layouts
 date: 2024-01-26 23:45:00 -0800
-updated: 2024-02-02 13:00:00 -0800
+updated: 2026-09-25 13:00:00 -0800
 status: Approved
 ---
 
 ## Problem Statement
 
-<br />
-
 Typically a project will necessitate additional scripts and utilities supporting
 the activities involved in project maintenance, development, and delivery.
-
-<br />
 
 - **Inspiration**:
   - [@OpenINF/ATeamGrimesAI][]
@@ -23,11 +19,7 @@ the activities involved in project maintenance, development, and delivery.
 - **Editors**:
   - [@OpenINF/ATeamGrammarly][]
 
-<br /><br />
-
 ## Context
-
-<br />
 
 The convention of having a top-level “tools” directory in a codebase has become
 a standard best practice in software engineering. While its origins may be
@@ -52,11 +44,7 @@ While the exact origins of this convention may be challenging to pinpoint, its
 widespread adoption is a testament to its utility and effectiveness in helping
 software engineers manage and organize their codebases.
 
-<br /><br />
-
 ### Exemplary Prior Art
-
-<br />
 
 A few notable high-profile open-source projects currently making good use of the
 top-level “tools” directory convention can be found in the wild:
@@ -66,11 +54,7 @@ top-level “tools” directory convention can be found in the wild:
 - [Web Platform Tests][]
 - [Test262][]
 
-<br /><br />
-
 ### Alternatives Considered
-
-<br />
 
 Prevalent competing alternatives to this codebase layout convention do, however,
 exist. We’ll briefly weigh the pros and cons of popular alternative solutions,
@@ -78,11 +62,7 @@ focusing on drawbacks to obviate why they may not be suitable for _our_ needs.
 
 <!-- TODO(DerekNonGeneric): top-level scripts dir, build-system dir, etc.  -->
 
-<br /><br />
-
 ## Decision
-
-<br />
 
 We have resolved to adopt the top-level “tools” directory convention in our
 codebases to improve the organization, discoverability, and collaboration for
@@ -101,11 +81,7 @@ Our tools directory hierarchy may look similar to the diagram below.
 │       └── 📦 generic-directives
 ```
 
-<br /><br />
-
 ## Results
-
-<br />
 
 Our codebases are expected to continue to grow organically, which means
 supporting additional scripts, jobs, and utilities that would otherwise be
@@ -113,11 +89,7 @@ placed in ad-hoc locations. This scattering may lead to tight coupling, lack of
 conventions, and difficulty discovering/reusing tools, which may risk becoming
 unmaintainable.
 
-<br /><br />
-
 ## Next Steps
-
-<br />
 
 1. Update the coding standards and guidelines to include the top-level “tools”
    directory convention.
@@ -126,8 +98,6 @@ unmaintainable.
 1. Update existing codebases to adhere to the new convention.
 1. Monitor the effectiveness of the convention and gather feedback from team
    members to identify any potential improvements or adjustments.
-
-<br /><br />
 
 <!-- LINK LABEL DEFINITIONS - START -->
 
