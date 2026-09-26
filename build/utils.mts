@@ -9,6 +9,7 @@
 // Requirements
 // -----------------------------------------------------------------------------
 
+import { spawnSync } from 'node:child_process';
 import { glob as nodeGlob } from 'node:fs/promises';
 import { join as pathJoin, relative as pathRelative } from 'node:path';
 import { catchWrap } from '@isaacs/catcher';
@@ -171,4 +172,63 @@ export async function glob(patterns: string | string[]) {
     .map((entry) =>
       pathRelative(process.cwd(), pathJoin(entry.parentPath, entry.name))
     );
+}
+
+/**
+ * Says what prettier would change, as a diff, for the files it would change.
+ *
+ * `prettier --check` names a file and nothing else. Whoever reads that in a
+ * CI log is left to reproduce the run to learn whether it objected to a line
+ * that ran long, a list marker or a table, and a contributor who cannot run
+ * the tools locally has no way to learn it at all. The diff answers that on
+ * the spot, the same way a reviewer would: here is the line, here is what it
+ * should be.
+ *
+ * Tools are run without a shell, so a path reaches them as one argument
+ * whatever it contains; only the leading `./` that `quote` adds, for a name
+ * that would read as an option, is still needed.
+ * @param {string[]} files The files the check was handed.
+ * @returns {string} A unified diff per file prettier would change, or nothing.
+ */
+export function formattingFixes(files: string[]) {
+  const paths = files.map((path) =>
+    path.startsWith('-') ? `./${path}` : path
+  );
+  const listed = spawnSync('prettier', ['--list-different', ...paths], {
+    encoding: 'utf8',
+  });
+  const changed = (listed.stdout ?? '').split('\n').filter(Boolean);
+  let fixes = '';
+
+  for (const path of changed) {
+    const formatted = spawnSync('prettier', [path], { encoding: 'utf8' });
+
+    // A file prettier cannot parse has no formatted version to compare, and
+    // the check already printed why.
+    if (formatted.status !== 0) continue;
+
+    const diff = spawnSync(
+      'diff',
+      ['-u', '--label', path, '--label', `${path} (formatted)`, path, '-'],
+      { encoding: 'utf8', input: formatted.stdout }
+    );
+
+    fixes += diff.stdout ?? '';
+  }
+
+  return fixes;
+}
+
+/**
+ * Prints what prettier would change, after a check of those files failed.
+ * @param {string[]} files The files the check was handed.
+ */
+export function reportFormattingFixes(files: string[]) {
+  const fixes = formattingFixes(files);
+
+  if (fixes === '') return;
+
+  console.error(
+    `\nWhat prettier would change (\`nps format.all\` applies it):\n\n${fixes}`
+  );
 }
