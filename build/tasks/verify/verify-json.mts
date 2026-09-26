@@ -5,7 +5,13 @@
  * @module {type ES6Module} build/tasks/verify/verify-json
  */
 
-import { exec, glob, matched, quote } from '@openinf/.github/build/utils';
+import {
+  exec,
+  glob,
+  matched,
+  quote,
+  reportFormattingFixes,
+} from '@openinf/.github/build/utils';
 
 const EXCLUDED = ['!lib/', '!node_modules/'];
 
@@ -31,5 +37,9 @@ const scripts = [
 for (const element of scripts) {
   exitCode = await exec(element);
 
-  if (exitCode !== 0) process.exitCode = exitCode;
+  if (exitCode !== 0) {
+    process.exitCode = exitCode;
+
+    if (element.startsWith('prettier')) reportFormattingFixes(json5Files);
+  }
 }
