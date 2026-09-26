@@ -1,8 +1,8 @@
 ---
 adr_name: ADR 0001
 title: Record Architecture Decisions in a Numbered Log
-date: 2023-01-03 11:14:00 -0800
-updated: 2026-09-24 23:00:00 -0800
+date: 2023-01-03T11:14:00-08:00
+updated: 2026-09-24T23:00:00-08:00
 status: Final
 ---
 
