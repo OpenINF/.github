@@ -4,6 +4,7 @@ scripts:
     # output is a wall of tool chatter with no indication of which task
     # produced it.
     all: 'rc=0; failed=; for i in build/tasks/verify/*.mts; do echo "==> $i"; node "$i" || { rc=1; failed="$failed $i"; }; done; [ -z "$failed" ] || echo "FAILED:$failed" >&2; exit $rc'
+    adrs: node build/tasks/verify/verify-adrs.mts
     commits: node build/tasks/verify/verify-commits.mts
     dockerfile: node build/tasks/verify/verify-dockerfile.mts
     fileModes: node build/tasks/verify/verify-file-modes.mts

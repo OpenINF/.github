@@ -1,8 +1,8 @@
 ---
 adr_name: ADR 0002
 title: Keep Every OpenINF Package in One Repository
-date: 2023-04-19 13:00:00 -0800
-updated: 2026-09-24 23:00:00 -0800
+date: 2023-04-19T13:00:00-08:00
+updated: 2026-09-24T23:00:00-08:00
 status: Approved
 ---
 
