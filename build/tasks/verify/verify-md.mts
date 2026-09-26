@@ -5,7 +5,13 @@
  * @module {type ES6Module} build/tasks/verify/verify-md
  */
 
-import { exec, glob, matched, quote } from '@openinf/.github/build/utils';
+import {
+  exec,
+  glob,
+  matched,
+  quote,
+  reportFormattingFixes,
+} from '@openinf/.github/build/utils';
 
 const markdownFiles = await glob([
   '**/*.md',
@@ -28,5 +34,9 @@ const scripts = matched(markdownFiles, '**/*.md')
 for (const element of scripts) {
   exitCode = await exec(element);
 
-  if (exitCode !== 0) process.exitCode = exitCode;
+  if (exitCode !== 0) {
+    process.exitCode = exitCode;
+
+    if (element.startsWith('prettier')) reportFormattingFixes(markdownFiles);
+  }
 }
