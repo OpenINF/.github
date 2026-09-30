@@ -1,8 +1,8 @@
 ---
 adr_name: ADR NNNN
 title: Decision for Something
-date: YYYY-MM-DD HH:MM:SS -0800
-updated: YYYY-MM-DD HH:MM:SS -0800
+date: YYYY-MM-DDTHH:MM:SS-08:00
+updated: YYYY-MM-DDTHH:MM:SS-08:00
 status: Proposed
 ---
 

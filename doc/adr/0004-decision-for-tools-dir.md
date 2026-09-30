@@ -1,8 +1,8 @@
 ---
 adr_name: ADR 0004
 title: Maintenance Scripts in a Top-Level tools/
-date: 2024-01-26 23:45:00 -0800
-updated: 2026-09-24 23:00:00 -0800
+date: 2024-01-26T23:45:00-08:00
+updated: 2026-09-24T23:00:00-08:00
 status: Approved
 ---
 

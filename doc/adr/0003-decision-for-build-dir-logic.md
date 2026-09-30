@@ -1,8 +1,8 @@
 ---
 adr_name: ADR 0003
 title: Build Logic in a Top-Level build/, Build Output in Each Package's dist/
-date: 2023-05-11 13:00:00 -0800
-updated: 2026-09-24 23:00:00 -0800
+date: 2023-05-11T13:00:00-08:00
+updated: 2026-09-24T23:00:00-08:00
 status: Approved
 ---
 
