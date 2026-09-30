@@ -78,6 +78,36 @@ your pull request merged:
   title of the pull request becomes the subject of the commit that lands — so it
   answers to the same rules.
 - [Sign off](#certifying-the-origin-of-your-work) every commit.
+- Add a [changeset](#changelogs) when the change is one a package's users will
+  notice.
+
+## Changelogs
+
+A project that publishes packages keeps a `CHANGELOG.md` for each of them, and
+nobody writes one by hand. [Changesets][] writes them when a release is cut,
+from the changeset files that pull requests leave behind in `.changeset/`.
+
+So a pull request that changes what a published package does adds a changeset
+alongside the code:
+
+```bash
+pnpm exec changeset
+```
+
+It asks which packages the change touches and how far each version moves, and
+the summary it asks for becomes that release's changelog entry. Write the
+summary for someone who uses the package, not for a reviewer of the code:
+somebody reading a changelog wants to know what is different for them and
+whether to act on it.
+
+A changelog is not the commit history. Commits record how the code got where it
+is, for the people who work on it; the changelog records what changed for the
+people who depend on it, one release at a time. Changes nobody using the package
+would notice, such as tests, refactors, CI and documentation, need no changeset.
+
+Changesets owns the `CHANGELOG.md` files, so an edit to one made by hand is lost
+or misplaced at the next release. To change what a release will say, edit the
+changeset before the release is cut.
 
 ## License
 
@@ -248,6 +278,7 @@ Please see the [`SECURITY.md`][] file.
 [`SECURITY.md`]:
   https://github.com/OpenINF/.github/blob/HEAD/SECURITY.md
   'Instructions on how to report security vulnerabilities for this project'
+[Changesets]: https://github.com/changesets/changesets
 [commit-messages]: https://open.inf.is/docs/handbook/style/commit-messages/
 [contrib-license]:
   https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license
