@@ -5,7 +5,13 @@
  * @module {type ES6Module} build/tasks/verify/verify-yaml
  */
 
-import { exec, glob, matched, quote } from '@openinf/.github/build/utils';
+import {
+  exec,
+  glob,
+  matched,
+  quote,
+  reportFormattingFixes,
+} from '@openinf/.github/build/utils';
 
 const yamlFiles = await glob([
   '**/*.yml',
@@ -24,5 +30,9 @@ const scripts = matched(yamlFiles, '**/*.yml, **/*.yaml')
 for (const element of scripts) {
   exitCode = await exec(element);
 
-  if (exitCode !== 0) process.exitCode = exitCode;
+  if (exitCode !== 0) {
+    process.exitCode = exitCode;
+
+    if (element.startsWith('prettier')) reportFormattingFixes(yamlFiles);
+  }
 }

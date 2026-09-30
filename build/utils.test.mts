@@ -10,7 +10,12 @@ import { mkdir, mkdtemp, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join as pathJoin } from 'node:path';
 import { after, before, describe, test } from 'node:test';
-import { exec, glob, quote } from '@openinf/.github/build/utils';
+import {
+  exec,
+  formattingFixes,
+  glob,
+  quote,
+} from '@openinf/.github/build/utils';
 
 // Every pattern a build task writes is relative to the directory the task
 // runs in, so the fixture has to become that directory.
@@ -176,5 +181,31 @@ describe('quote', () => {
     } finally {
       process.chdir(here);
     }
+  });
+});
+
+describe('formattingFixes', () => {
+  before(async () => {
+    const root = await mkdtemp(pathJoin(tmpdir(), 'openinf-format-'));
+
+    await writeFile(pathJoin(root, 'untidy.md'), '#  Title\n\n* item\n');
+    await writeFile(pathJoin(root, 'tidy.md'), '# Title\n\n- item\n');
+    process.chdir(root);
+  });
+
+  after(() => {
+    process.chdir(cwd);
+  });
+
+  test('shows the lines prettier would change, and what to', () => {
+    const fixes = formattingFixes(['untidy.md', 'tidy.md']);
+
+    ok(fixes.includes('--- untidy.md\n+++ untidy.md (formatted)\n'));
+    ok(fixes.includes('\n-#  Title\n+# Title\n'));
+    ok(fixes.includes('\n-* item\n+- item\n'));
+  });
+
+  test('says nothing about a file already formatted', () => {
+    deepStrictEqual(formattingFixes(['tidy.md']), '');
   });
 });
