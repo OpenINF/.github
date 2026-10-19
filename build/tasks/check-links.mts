@@ -31,6 +31,12 @@ const DEAD = 1;
 const UNCHECKED = 2;
 
 /**
+ * Past both bits, so it cannot be read as either: the task did not get as far
+ * as checking anything. `link-rot.yml` treats any code above 3 as that.
+ */
+const DID_NOT_RUN = 4;
+
+/**
  * Only these mean the link is gone. Everything else that is not a success --
  * a rate limit, a login wall, a host having a bad afternoon -- is a question
  * this task could not answer, and reporting it as rot is how a check like
@@ -108,9 +114,9 @@ type Link = { url: string; files: string[] };
 
 /**
  * Reads every http(s) link out of the project's prose.
- * @returns {Promise<Link[]>} Each distinct URL, with the files naming it.
+ * @returns {Promise<Link[] | undefined>} Each distinct URL, with the files naming it, or undefined if no file matched.
  */
-async function collect(): Promise<Link[]> {
+async function collect(): Promise<Link[] | undefined> {
   const files = await glob([
     '**/*.md',
     '!doc/_site/',
@@ -124,7 +130,7 @@ async function collect(): Promise<Link[]> {
   // The same guard the verify tasks carry. A glob that stopped matching would
   // otherwise report zero links checked and nothing wrong with any of them,
   // which is the one answer a check must never give.
-  if (!matched(files, '**/*.md')) return [];
+  if (!matched(files, '**/*.md')) return undefined;
 
   const found = new Map<string, Set<string>>();
 
@@ -196,6 +202,12 @@ async function inBatches<T, R>(items: T[], work: (item: T) => Promise<R>) {
 }
 
 const links = await collect();
+
+// `matched` has said why. Stopping before the summary line matters as much
+// as the code: the final assignment below would put back a 0, and "Checked 0
+// links" on stdout is a report the workflow would take at its word.
+if (links === undefined) process.exit(DID_NOT_RUN);
+
 const verdicts = await inBatches(links, async (link) => ({
   ...link,
   ...(await probe(link.url)),
